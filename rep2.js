@@ -1,8336 +1,7771 @@
 function roCon(strIn) {
 	val = strIn;
-	val = val.replace(/djwùdj/g,'쵗')
-				.replace(/zhyach/g,'샺')
-				.replace(/zhyadj/g,'샻')
-				.replace(/zhwach/g,'솾')
-				.replace(/zhwadj/g,'솿')
-				.replace(/zhwùdj/g,'쇛')
-				.replace(/zhwùch/g,'쇚')
-				.replace(/zhyùdj/g,'섗')
-				.replace(/zhyùch/g,'섖')
-				.replace(/zhwèdj/g,'쉋')
-				.replace(/zhwèch/g,'쉊')
-				.replace(/zhyèdj/g,'셫')
-				.replace(/zhyèch/g,'셪')
-				.replace(/zhwodj/g,'쇷')
-				.replace(/zhwoch/g,'쇶')
-				.replace(/zhyodj/g,'숓')
-				.replace(/zhyoch/g,'숒')
-				.replace(/chyich/g,'즺')
-				.replace(/chyidj/g,'즻')
-				.replace(/chwich/g,'쥦')
-				.replace(/chwidj/g,'쥧')
-				.replace(/chyuch/g,'줒')
-				.replace(/chyudj/g,'줓')
-				.replace(/chwuch/g,'즂')
-				.replace(/chwudj/g,'즃')
-				.replace(/chyech/g,'졪')
-				.replace(/chyedj/g,'졫')
-				.replace(/chwech/g,'쥊')
-				.replace(/chwedj/g,'쥋')
-				.replace(/chyoch/g,'죶')
-				.replace(/chyodj/g,'죷')
-				.replace(/chwoch/g,'죚')
-				.replace(/chwodj/g,'죛')
-				.replace(/zhwedj/g,'쉧')
-				.replace(/chyèch/g,'졎')
-				.replace(/chyèdj/g,'졏')
-				.replace(/zhwech/g,'쉦')
-				.replace(/chwèch/g,'줮')
-				.replace(/chwèdj/g,'줯')
-				.replace(/chyùch/g,'쟺')
-				.replace(/chyùdj/g,'쟻')
-				.replace(/chwùch/g,'좾')
-				.replace(/chwùdj/g,'좿')
-				.replace(/chyach/g,'쟞')
-				.replace(/chyadj/g,'쟟')
-				.replace(/chwach/g,'좢')
-				.replace(/chwadj/g,'좣')
-				.replace(/zhyedj/g,'솇')
-				.replace(/zhyech/g,'솆')
-				.replace(/zhwudj/g,'슟')
-				.replace(/zhwuch/g,'슞')
-				.replace(/zhyudj/g,'숯')
-				.replace(/zhyuch/g,'숮')
-				.replace(/zhwidj/g,'슃')
-				.replace(/zhwich/g,'슂')
-				.replace(/zhyidj/g,'싗')
-				.replace(/zhyich/g,'싖')
-				.replace(/tsyich/g,'띚')
-				.replace(/tsyidj/g,'띛')
-				.replace(/djyich/g,'칒')
-				.replace(/djyidj/g,'칓')
-				.replace(/djwich/g,'췾')
-				.replace(/djwidj/g,'췿')
-				.replace(/djyuch/g,'춪')
-				.replace(/djyudj/g,'춫')
-				.replace(/djwuch/g,'츚')
-				.replace(/djwudj/g,'츛')
-				.replace(/djyech/g,'촂')
-				.replace(/djyedj/g,'촃')
-				.replace(/djwech/g,'췢')
-				.replace(/djwedj/g,'췣')
-				.replace(/djyoch/g,'춎')
-				.replace(/djyodj/g,'춏')
-				.replace(/djwoch/g,'쵲')
-				.replace(/djwodj/g,'쵳')
-				.replace(/djyèch/g,'쳦')
-				.replace(/djyèdj/g,'쳧')
-				.replace(/shwadj/g,'솿')
-				.replace(/djwèch/g,'췆')
-				.replace(/djwèdj/g,'췇')
-				.replace(/shwach/g,'솾')
-				.replace(/djyùch/g,'첒')
-				.replace(/djyùdj/g,'첓')
-				.replace(/djwùch/g,'쵖')
-				.replace(/dzwach/g,'뽲')
-				.replace(/djyach/g,'챶')
-				.replace(/djyadj/g,'챷')
-				.replace(/djwach/g,'촺')
-				.replace(/djwadj/g,'촻')
-				.replace(/shyadj/g,'샻')
-				.replace(/shyach/g,'샺')
-				.replace(/shwùdj/g,'쇛')
-				.replace(/shwùch/g,'쇚')
-				.replace(/shyùdj/g,'섗')
-				.replace(/shyùch/g,'섖')
-				.replace(/shwèdj/g,'쉋')
-				.replace(/shwèch/g,'쉊')
-				.replace(/shyèdj/g,'셫')
-				.replace(/shyèch/g,'셪')
-				.replace(/shwodj/g,'쇷')
-				.replace(/shwoch/g,'쇶')
-				.replace(/shyodj/g,'숓')
-				.replace(/shyoch/g,'숒')
-				.replace(/shwedj/g,'쉧')
-				.replace(/shwech/g,'쉦')
-				.replace(/shyedj/g,'솇')
-				.replace(/shyech/g,'솆')
-				.replace(/shwudj/g,'슟')
-				.replace(/shwuch/g,'슞')
-				.replace(/shyudj/g,'숯')
-				.replace(/shyuch/g,'숮')
-				.replace(/shwidj/g,'슃')
-				.replace(/shwich/g,'슂')
-				.replace(/shyidj/g,'싗')
-				.replace(/shyich/g,'싖')
-				.replace(/tswich/g,'뜆')
-				.replace(/tswidj/g,'뜇')
-				.replace(/tsyuch/g,'뚲')
-				.replace(/tsyudj/g,'뚳')
-				.replace(/tswuch/g,'뜢')
-				.replace(/tswudj/g,'뜣')
-				.replace(/tsyech/g,'똊')
-				.replace(/tsyedj/g,'똋')
-				.replace(/tswech/g,'뛪')
-				.replace(/tswedj/g,'뛫')
-				.replace(/tsyoch/g,'뚖')
-				.replace(/tsyodj/g,'뚗')
-				.replace(/tswoch/g,'뙺')
-				.replace(/tswodj/g,'뙻')
-				.replace(/tsyèch/g,'뗮')
-				.replace(/tsyèdj/g,'뗯')
-				.replace(/tswèch/g,'뛎')
-				.replace(/tswèdj/g,'뛏')
-				.replace(/tsyùch/g,'떚')
-				.replace(/tsyùdj/g,'떛')
-				.replace(/tswùch/g,'뙞')
-				.replace(/tswùdj/g,'뙟')
-				.replace(/tsyach/g,'땾')
-				.replace(/tsyadj/g,'땿')
-				.replace(/tswach/g,'뙂')
-				.replace(/tswadj/g,'뙃')
-				.replace(/dzyich/g,'삊')
-				.replace(/dzyidj/g,'삋')
-				.replace(/dzwich/g,'쀶')
-				.replace(/dzwidj/g,'쀷')
-				.replace(/dzyuch/g,'뿢')
-				.replace(/dzyudj/g,'뿣')
-				.replace(/dzwuch/g,'쁒')
-				.replace(/dzwudj/g,'쁓')
-				.replace(/dzyech/g,'뼺')
-				.replace(/dzyedj/g,'뼻')
-				.replace(/dzwech/g,'쀚')
-				.replace(/dzwedj/g,'쀛')
-				.replace(/dzyoch/g,'뿆')
-				.replace(/dzyodj/g,'뿇')
-				.replace(/dzwoch/g,'뾪')
-				.replace(/dzwodj/g,'뾫')
-				.replace(/dzyèch/g,'뼞')
-				.replace(/dzyèdj/g,'뼟')
-				.replace(/dzwèch/g,'뿾')
-				.replace(/dzwèdj/g,'뿿')
-				.replace(/dzyùch/g,'뻊')
-				.replace(/dzyùdj/g,'뻋')
-				.replace(/dzwùch/g,'뾎')
-				.replace(/dzwùdj/g,'뾏')
-				.replace(/dzyach/g,'뺮')
-				.replace(/dzyadj/g,'뺯')
-				.replace(/dzwadj/g,'뽳')
-				.replace(/kyèdj/g,'켳')
-				.replace(/mwoch/g,'묒')
-				.replace(/mwodj/g,'묓')
-				.replace(/myèch/g,'몆')
-				.replace(/myèdj/g,'몇')
-				.replace(/mwèch/g,'뭦')
-				.replace(/mwèdj/g,'뭧')
-				.replace(/myùch/g,'먲')
-				.replace(/myùdj/g,'먳')
-				.replace(/mwùch/g,'뫶')
-				.replace(/mwùdj/g,'뫷')
-				.replace(/myach/g,'먖')
-				.replace(/syèch/g,'쪚')
-				.replace(/syèdj/g,'쪛')
-				.replace(/myadj/g,'먗')
-				.replace(/mwach/g,'뫚')
-				.replace(/mwadj/g,'뫛')
-				.replace(/lyidj/g,'릧')
-				.replace(/lyich/g,'릦')
-				.replace(/dzwaq/g,'뽱')
-				.replace(/dzwag/g,'뽝')
-				.replace(/dzwak/g,'뽴')
-				.replace(/myodj/g,'묯')
-				.replace(/myoch/g,'묮')
-				.replace(/dzwav/g,'뽮')
-				.replace(/dzwaf/g,'뽪')
-				.replace(/dzwac/g,'뽷')
-				.replace(/dzwab/g,'뽭')
-				.replace(/dzwap/g,'뽶')
-				.replace(/dzwam/g,'뽬')
-				.replace(/dzwad/g,'뽣')
-				.replace(/swèch/g,'쭺')
-				.replace(/dzwat/g,'뽵')
-				.replace(/dzwan/g,'뽠')
-				.replace(/swèdj/g,'쭻')
-				.replace(/dzwal/g,'뽤')
-				.replace(/dzwaz/g,'뽰')
-				.replace(/dzwas/g,'뽯')
-				.replace(/dzyaq/g,'뺭')
-				.replace(/dzyag/g,'뺙')
-				.replace(/dzyak/g,'뺰')
-				.replace(/mwedj/g,'뮃')
-				.replace(/mwech/g,'뮂')
-				.replace(/dzyav/g,'뺪')
-				.replace(/dzyaf/g,'뺦')
-				.replace(/dzyac/g,'뺳')
-				.replace(/dzyab/g,'뺩')
-				.replace(/dzyap/g,'뺲')
-				.replace(/dzyam/g,'뺨')
-				.replace(/dzyad/g,'뺟')
-				.replace(/dzyat/g,'뺱')
-				.replace(/dzyan/g,'뺜')
-				.replace(/syùch/g,'쩆')
-				.replace(/syùdj/g,'쩇')
-				.replace(/dzyal/g,'뺠')
-				.replace(/dzyaz/g,'뺬')
-				.replace(/dzyas/g,'뺫')
-				.replace(/dzwùq/g,'뾍')
-				.replace(/dzwùg/g,'뽹')
-				.replace(/dzwùk/g,'뾐')
-				.replace(/myedj/g,'몣')
-				.replace(/myech/g,'몢')
-				.replace(/dzwùv/g,'뾊')
-				.replace(/dzwùf/g,'뾆')
-				.replace(/dzwùc/g,'뾓')
-				.replace(/dzwùb/g,'뾉')
-				.replace(/dzwùp/g,'뾒')
-				.replace(/dzwùm/g,'뾈')
-				.replace(/dzwùd/g,'뽿')
-				.replace(/dzwùt/g,'뾑')
-				.replace(/dzwùn/g,'뽼')
-				.replace(/swùch/g,'쬊')
-				.replace(/swùdj/g,'쬋')
-				.replace(/dzwùl/g,'뾀')
-				.replace(/dzwùz/g,'뾌')
-				.replace(/dzwùs/g,'뾋')
-				.replace(/dzyùq/g,'뻉')
-				.replace(/dzyùg/g,'뺵')
-				.replace(/dzyùk/g,'뻌')
-				.replace(/swodj/g,'쬧')
-				.replace(/swoch/g,'쬦')
-				.replace(/dzyùv/g,'뻆')
-				.replace(/dzyùf/g,'뻂')
-				.replace(/dzyùc/g,'뻏')
-				.replace(/dzyùb/g,'뻅')
-				.replace(/dzyùp/g,'뻎')
-				.replace(/dzyùm/g,'뻄')
-				.replace(/dzyùd/g,'뺻')
-				.replace(/dzyùt/g,'뻍')
-				.replace(/dzyùn/g,'뺸')
-				.replace(/syach/g,'쨪')
-				.replace(/syadj/g,'쨫')
-				.replace(/dzyùl/g,'뺼')
-				.replace(/dzyùz/g,'뻈')
-				.replace(/dzyùs/g,'뻇')
-				.replace(/dzwèq/g,'뿽')
-				.replace(/dzwèg/g,'뿩')
-				.replace(/dzwèk/g,'쀀')
-				.replace(/mwudj/g,'뮻')
-				.replace(/mwuch/g,'뮺')
-				.replace(/dzwèv/g,'뿺')
-				.replace(/dzwèf/g,'뿶')
-				.replace(/dzwèc/g,'쀃')
-				.replace(/dzwèb/g,'뿹')
-				.replace(/pyich/g,'픶')
-				.replace(/pyidj/g,'픷')
-				.replace(/dzwèp/g,'쀂')
-				.replace(/swach/g,'쫮')
-				.replace(/swadj/g,'쫯')
-				.replace(/pwich/g,'퓢')
-				.replace(/pwidj/g,'퓣')
-				.replace(/dzwèm/g,'뿸')
-				.replace(/pyuch/g,'풎')
-				.replace(/pyudj/g,'풏')
-				.replace(/dzwèd/g,'뿯')
-				.replace(/pwuch/g,'퓾')
-				.replace(/pwudj/g,'퓿')
-				.replace(/dzwèt/g,'쀁')
-				.replace(/pyech/g,'폦')
-				.replace(/pyedj/g,'폧')
-				.replace(/dzwèn/g,'뿬')
-				.replace(/pwech/g,'퓆')
-				.replace(/pwedj/g,'퓇')
-				.replace(/dzwèl/g,'뿰')
-				.replace(/pyoch/g,'푲')
-				.replace(/pyodj/g,'푳')
-				.replace(/dzwèz/g,'뿼')
-				.replace(/pwoch/g,'푖')
-				.replace(/pwodj/g,'푗')
-				.replace(/dzwès/g,'뿻')
-				.replace(/pyèch/g,'폊')
-				.replace(/pyèdj/g,'폋')
-				.replace(/dzyèq/g,'뼝')
-				.replace(/pwèch/g,'풪')
-				.replace(/pwèdj/g,'풫')
-				.replace(/pyùch/g,'퍶')
-				.replace(/pyùdj/g,'퍷')
-				.replace(/dzyèg/g,'뼉')
-				.replace(/zyich/g,'씢')
-				.replace(/zyidj/g,'씣')
-				.replace(/pwùch/g,'퐺')
-				.replace(/pwùdj/g,'퐻')
-				.replace(/dzyèk/g,'뼠')
-				.replace(/pyach/g,'퍚')
-				.replace(/pyadj/g,'퍛')
-				.replace(/myudj/g,'뭋')
-				.replace(/pwach/g,'퐞')
-				.replace(/pwadj/g,'퐟')
-				.replace(/myuch/g,'뭊')
-				.replace(/dzyèv/g,'뼚')
-				.replace(/dzyèf/g,'뼖')
-				.replace(/dzyèc/g,'뼣')
-				.replace(/dzyèb/g,'뼙')
-				.replace(/dzyèp/g,'뼢')
-				.replace(/dzyèm/g,'뼘')
-				.replace(/zwich/g,'쓎')
-				.replace(/zwidj/g,'쓏')
-				.replace(/dzyèd/g,'뼏')
-				.replace(/dzyèt/g,'뼡')
-				.replace(/dzyèn/g,'뼌')
-				.replace(/dzyèl/g,'뼐')
-				.replace(/dzyèz/g,'뼜')
-				.replace(/dzyès/g,'뼛')
-				.replace(/dzwoq/g,'뾩')
-				.replace(/dzwog/g,'뾕')
-				.replace(/dzwok/g,'뾬')
-				.replace(/mwidj/g,'뮟')
-				.replace(/mwich/g,'뮞')
-				.replace(/dzwov/g,'뾦')
-				.replace(/dzwof/g,'뾢')
-				.replace(/dzwoc/g,'뾯')
-				.replace(/dzwob/g,'뾥')
-				.replace(/zyuch/g,'쑺')
-				.replace(/zyudj/g,'쑻')
-				.replace(/dzwop/g,'뾮')
-				.replace(/dzwom/g,'뾤')
-				.replace(/dzwod/g,'뾛')
-				.replace(/dzwot/g,'뾭')
-				.replace(/dzwon/g,'뾘')
-				.replace(/dzwol/g,'뾜')
-				.replace(/dzwoz/g,'뾨')
-				.replace(/dzwos/g,'뾧')
-				.replace(/dzyoq/g,'뿅')
-				.replace(/dzyog/g,'뾱')
-				.replace(/dzyok/g,'뿈')
-				.replace(/lwich/g,'륒')
-				.replace(/myidj/g,'믳')
-				.replace(/dzyov/g,'뿂')
-				.replace(/dzyof/g,'뾾')
-				.replace(/zwuch/g,'쓪')
-				.replace(/zwudj/g,'쓫')
-				.replace(/dzyoc/g,'뿋')
-				.replace(/dzyob/g,'뿁')
-				.replace(/dzyop/g,'뿊')
-				.replace(/dzyom/g,'뿀')
-				.replace(/dzyod/g,'뾷')
-				.replace(/dzyot/g,'뿉')
-				.replace(/dzyon/g,'뾴')
-				.replace(/dzyol/g,'뾸')
-				.replace(/dzyoz/g,'뿄')
-				.replace(/dzyos/g,'뿃')
-				.replace(/dzweq/g,'쀙')
-				.replace(/dzweg/g,'쀅')
-				.replace(/dzwek/g,'쀜')
-				.replace(/myich/g,'믲')
-				.replace(/lwidj/g,'륓')
-				.replace(/zyech/g,'쏒')
-				.replace(/zyedj/g,'쏓')
-				.replace(/dzwev/g,'쀖')
-				.replace(/dzwef/g,'쀒')
-				.replace(/dzwec/g,'쀟')
-				.replace(/dzweb/g,'쀕')
-				.replace(/dzwep/g,'쀞')
-				.replace(/dzwem/g,'쀔')
-				.replace(/dzwed/g,'쀋')
-				.replace(/dzwet/g,'쀝')
-				.replace(/dzwen/g,'쀈')
-				.replace(/dzwel/g,'쀌')
-				.replace(/dzwez/g,'쀘')
-				.replace(/dzwes/g,'쀗')
-				.replace(/dzyeq/g,'뼹')
-				.replace(/dzyeg/g,'뼥')
-				.replace(/dzyek/g,'뼼')
-				.replace(/zwech/g,'쒲')
-				.replace(/zwedj/g,'쒳')
-				.replace(/lyuch/g,'룾')
-				.replace(/lyudj/g,'룿')
-				.replace(/dzyev/g,'뼶')
-				.replace(/dzyef/g,'뼲')
-				.replace(/dzyec/g,'뼿')
-				.replace(/gwadj/g,'괓')
-				.replace(/gwach/g,'괒')
-				.replace(/dzyeb/g,'뼵')
-				.replace(/dzyep/g,'뼾')
-				.replace(/dzyem/g,'뼴')
-				.replace(/dzyed/g,'뼫')
-				.replace(/dzyet/g,'뼽')
-				.replace(/dzyen/g,'뼨')
-				.replace(/dzyel/g,'뼬')
-				.replace(/dzyez/g,'뼸')
-				.replace(/dzyes/g,'뼷')
-				.replace(/dzwuq/g,'쁑')
-				.replace(/dzwug/g,'쀽')
-				.replace(/dzwuk/g,'쁔')
-				.replace(/lwuch/g,'륮')
-				.replace(/lwudj/g,'륯')
-				.replace(/dzwuv/g,'쁎')
-				.replace(/dzwuf/g,'쁊')
-				.replace(/gyadj/g,'걏')
-				.replace(/gyach/g,'걎')
-				.replace(/dzwuc/g,'쁗')
-				.replace(/dzwub/g,'쁍')
-				.replace(/dzwup/g,'쁖')
-				.replace(/dzwum/g,'쁌')
-				.replace(/dzwud/g,'쁃')
-				.replace(/dzwut/g,'쁕')
-				.replace(/dzwun/g,'쁀')
-				.replace(/dzwul/g,'쁄')
-				.replace(/dzwuz/g,'쁐')
-				.replace(/dzwus/g,'쁏')
-				.replace(/dzyuq/g,'뿡')
-				.replace(/dzyug/g,'뿍')
-				.replace(/dzyuk/g,'뿤')
-				.replace(/lyech/g,'롖')
-				.replace(/lyedj/g,'롗')
-				.replace(/dzyuv/g,'뿞')
-				.replace(/gwùdj/g,'괯')
-				.replace(/gwùch/g,'괮')
-				.replace(/dzyuf/g,'뿚')
-				.replace(/dzyuc/g,'뿧')
-				.replace(/dzyub/g,'뿝')
-				.replace(/byich/g,'븾')
-				.replace(/byidj/g,'븿')
-				.replace(/dzyup/g,'뿦')
-				.replace(/bwich/g,'뷪')
-				.replace(/bwidj/g,'뷫')
-				.replace(/dzyum/g,'뿜')
-				.replace(/byuch/g,'붖')
-				.replace(/byudj/g,'붗')
-				.replace(/dzyud/g,'뿓')
-				.replace(/bwuch/g,'븆')
-				.replace(/bwudj/g,'븇')
-				.replace(/dzyut/g,'뿥')
-				.replace(/byech/g,'볮')
-				.replace(/gyùdj/g,'걫')
-				.replace(/gyùch/g,'걪')
-				.replace(/byedj/g,'볯')
-				.replace(/dzyun/g,'뿐')
-				.replace(/bwech/g,'뷎')
-				.replace(/bwedj/g,'뷏')
-				.replace(/dzyul/g,'뿔')
-				.replace(/byoch/g,'뵺')
-				.replace(/byodj/g,'뵻')
-				.replace(/dzyuz/g,'뿠')
-				.replace(/bwoch/g,'뵞')
-				.replace(/bwodj/g,'뵟')
-				.replace(/dzyus/g,'뿟')
-				.replace(/byèch/g,'볒')
-				.replace(/byèdj/g,'볓')
-				.replace(/dzwiq/g,'쀵')
-				.replace(/bwèch/g,'붲')
-				.replace(/bwèdj/g,'붳')
-				.replace(/gwèdj/g,'궟')
-				.replace(/gwèch/g,'궞')
-				.replace(/byùch/g,'뱾')
-				.replace(/byùdj/g,'뱿')
-				.replace(/dzwig/g,'쀡')
-				.replace(/bwùch/g,'뵂')
-				.replace(/bwùdj/g,'뵃')
-				.replace(/dzwik/g,'쀸')
-				.replace(/byach/g,'뱢')
-				.replace(/byadj/g,'뱣')
-				.replace(/lwech/g,'뤶')
-				.replace(/bwach/g,'봦')
-				.replace(/bwadj/g,'봧')
-				.replace(/syodj/g,'쭃')
-				.replace(/dzwiv/g,'쀲')
-				.replace(/dzwif/g,'쀮')
-				.replace(/dzwic/g,'쀻')
-				.replace(/dzwib/g,'쀱')
-				.replace(/gyèdj/g,'겿')
-				.replace(/gyèch/g,'겾')
-				.replace(/dzwip/g,'쀺')
-				.replace(/dzwim/g,'쀰')
-				.replace(/dzwid/g,'쀧')
-				.replace(/dzwit/g,'쀹')
-				.replace(/dzwin/g,'쀤')
-				.replace(/dzwil/g,'쀨')
-				.replace(/dzwiz/g,'쀴')
-				.replace(/dzwis/g,'쀳')
-				.replace(/dzyiq/g,'삉')
-				.replace(/dzyig/g,'쁵')
-				.replace(/dzyik/g,'삌')
-				.replace(/syoch/g,'쭂')
-				.replace(/lwedj/g,'뤷')
-				.replace(/dzyiv/g,'삆')
-				.replace(/dzyif/g,'삂')
-				.replace(/dzyic/g,'삏')
-				.replace(/gwodj/g,'굋')
-				.replace(/gwoch/g,'굊')
-				.replace(/dzyib/g,'삅')
-				.replace(/dzyip/g,'삎')
-				.replace(/dzyim/g,'삄')
-				.replace(/dzyid/g,'쁻')
-				.replace(/dzyit/g,'삍')
-				.replace(/dzyin/g,'쁸')
-				.replace(/dzyil/g,'쁼')
-				.replace(/dzyiz/g,'삈')
-				.replace(/dzyis/g,'삇')
-				.replace(/dzadj/g,'빷')
-				.replace(/dzach/g,'빶')
-				.replace(/dzedj/g,'뼃')
-				.replace(/dzech/g,'뼂')
-				.replace(/dzodj/g,'뽗')
-				.replace(/dzoch/g,'뽖')
-				.replace(/dzèdj/g,'뻧')
-				.replace(/gyodj/g,'굧')
-				.replace(/gyoch/g,'굦')
-				.replace(/dzèch/g,'뻦')
-				.replace(/dzùdj/g,'뺓')
-				.replace(/dzùch/g,'뺒')
-				.replace(/cyich/g,'힂')
-				.replace(/cyidj/g,'힃')
-				.replace(/cwich/g,'휮')
-				.replace(/cwidj/g,'휯')
-				.replace(/cyuch/g,'훚')
-				.replace(/cyudj/g,'훛')
-				.replace(/cwuch/g,'흊')
-				.replace(/cwudj/g,'흋')
-				.replace(/cyech/g,'혲')
-				.replace(/cyedj/g,'혳')
-				.replace(/cwech/g,'휒')
-				.replace(/cwedj/g,'휓')
-				.replace(/cyoch/g,'횾')
-				.replace(/gwedj/g,'궻')
-				.replace(/gwech/g,'궺')
-				.replace(/cyodj/g,'횿')
-				.replace(/dzidj/g,'삧')
-				.replace(/cwoch/g,'횢')
-				.replace(/cwodj/g,'횣')
-				.replace(/dzich/g,'삦')
-				.replace(/cyèch/g,'혖')
-				.replace(/cyèdj/g,'혗')
-				.replace(/cwèch/g,'훶')
-				.replace(/cwèdj/g,'훷')
-				.replace(/cyùch/g,'헂')
-				.replace(/cyùdj/g,'헃')
-				.replace(/cwùch/g,'횆')
-				.replace(/cwùdj/g,'횇')
-				.replace(/cyach/g,'햦')
-				.replace(/cyadj/g,'햧')
-				.replace(/cwach/g,'홪')
-				.replace(/gyedj/g,'곛')
-				.replace(/gyech/g,'곚')
-				.replace(/cwadj/g,'홫')
-				.replace(/dzudj/g,'쁯')
-				.replace(/dzuch/g,'쁮')
-				.replace(/tswaq/g,'뙁')
-				.replace(/tswag/g,'똭')
-				.replace(/tswak/g,'뙄')
-				.replace(/lyoch/g,'룢')
-				.replace(/lyodj/g,'룣')
-				.replace(/tswav/g,'똾')
-				.replace(/tswaf/g,'똺')
-				.replace(/tswac/g,'뙇')
-				.replace(/tswab/g,'똽')
-				.replace(/tswap/g,'뙆')
-				.replace(/tswam/g,'똼')
-				.replace(/tswad/g,'똳')
-				.replace(/tswat/g,'뙅')
-				.replace(/gwudj/g,'귳')
-				.replace(/gwuch/g,'귲')
-				.replace(/tswan/g,'똰')
-				.replace(/tswal/g,'똴')
-				.replace(/tswaz/g,'뙀')
-				.replace(/tswas/g,'똿')
-				.replace(/tsyaq/g,'땽')
-				.replace(/tsyag/g,'땩')
-				.replace(/tsyak/g,'떀')
-				.replace(/lwoch/g,'룆')
-				.replace(/lwodj/g,'룇')
-				.replace(/tsyav/g,'땺')
-				.replace(/tsyaf/g,'땶')
-				.replace(/tsyac/g,'떃')
-				.replace(/tsyab/g,'땹')
-				.replace(/tsyap/g,'떂')
-				.replace(/tsyam/g,'땸')
-				.replace(/tsyad/g,'땯')
-				.replace(/gyudj/g,'궃')
-				.replace(/gyuch/g,'궂')
-				.replace(/tsyat/g,'떁')
-				.replace(/tsyan/g,'땬')
-				.replace(/tsyal/g,'땰')
-				.replace(/tsyaz/g,'땼')
-				.replace(/tsyas/g,'땻')
-				.replace(/tswùq/g,'뙝')
-				.replace(/tswùg/g,'뙉')
-				.replace(/tswùk/g,'뙠')
-				.replace(/rwadj/g,'뢏')
-				.replace(/rwach/g,'뢎')
-				.replace(/tswùv/g,'뙚')
-				.replace(/tswùf/g,'뙖')
-				.replace(/tswùc/g,'뙣')
-				.replace(/tswùb/g,'뙙')
-				.replace(/tswùp/g,'뙢')
-				.replace(/tswùm/g,'뙘')
-				.replace(/gwidj/g,'귗')
-				.replace(/gwich/g,'귖')
-				.replace(/tswùd/g,'뙏')
-				.replace(/tswùt/g,'뙡')
-				.replace(/tswùn/g,'뙌')
-				.replace(/tswùl/g,'뙐')
-				.replace(/tswùz/g,'뙜')
-				.replace(/tswùs/g,'뙛')
-				.replace(/tsyùq/g,'떙')
-				.replace(/tsyùg/g,'떅')
-				.replace(/tsyùk/g,'떜')
-				.replace(/ryadj/g,'럋')
-				.replace(/ryach/g,'럊')
-				.replace(/tsyùv/g,'떖')
-				.replace(/tsyùf/g,'떒')
-				.replace(/tsyùc/g,'떟')
-				.replace(/tsyùb/g,'떕')
-				.replace(/tsyùp/g,'떞')
-				.replace(/gyidj/g,'긫')
-				.replace(/gyich/g,'긪')
-				.replace(/tsyùm/g,'떔')
-				.replace(/tsyùd/g,'떋')
-				.replace(/tsyùt/g,'떝')
-				.replace(/tsyùn/g,'떈')
-				.replace(/tsyùl/g,'떌')
-				.replace(/tsyùz/g,'떘')
-				.replace(/tsyùs/g,'떗')
-				.replace(/tswèq/g,'뛍')
-				.replace(/tswèg/g,'뚹')
-				.replace(/tswèk/g,'뛐')
-				.replace(/rwùdj/g,'뢫')
-				.replace(/rwùch/g,'뢪')
-				.replace(/zyoch/g,'쑞')
-				.replace(/zyodj/g,'쑟')
-				.replace(/tswèv/g,'뛊')
-				.replace(/tswèf/g,'뛆')
-				.replace(/tswèc/g,'뛓')
-				.replace(/tswèb/g,'뛉')
-				.replace(/tswèp/g,'뛒')
-				.replace(/tswèm/g,'뛈')
-				.replace(/tswèd/g,'뚿')
-				.replace(/tswèt/g,'뛑')
-				.replace(/tswèn/g,'뚼')
-				.replace(/tswèl/g,'뛀')
-				.replace(/tswèz/g,'뛌')
-				.replace(/fyich/g,'픶')
-				.replace(/fyidj/g,'픷')
-				.replace(/tswès/g,'뛋')
-				.replace(/fwich/g,'퓢')
-				.replace(/fwidj/g,'퓣')
-				.replace(/tsyèq/g,'뗭')
-				.replace(/zwoch/g,'쑂')
-				.replace(/zwodj/g,'쑃')
-				.replace(/fyuch/g,'풎')
-				.replace(/fyudj/g,'풏')
-				.replace(/fwuch/g,'퓾')
-				.replace(/fwudj/g,'퓿')
-				.replace(/tsyèg/g,'뗙')
-				.replace(/fyech/g,'폦')
-				.replace(/fyedj/g,'폧')
-				.replace(/tsyèk/g,'뗰')
-				.replace(/fwech/g,'퓆')
-				.replace(/fwedj/g,'퓇')
-				.replace(/ryùdj/g,'럧')
-				.replace(/fyoch/g,'푲')
-				.replace(/fyodj/g,'푳')
-				.replace(/ryùch/g,'럦')
-				.replace(/fwoch/g,'푖')
-				.replace(/fwodj/g,'푗')
-				.replace(/tsyèv/g,'뗪')
-				.replace(/zyèch/g,'쎶')
-				.replace(/zyèdj/g,'쎷')
-				.replace(/fyèch/g,'폊')
-				.replace(/fyèdj/g,'폋')
-				.replace(/tsyèf/g,'뗦')
-				.replace(/fwèch/g,'풪')
-				.replace(/fwèdj/g,'풫')
-				.replace(/tsyèc/g,'뗳')
-				.replace(/fyùch/g,'퍶')
-				.replace(/fyùdj/g,'퍷')
-				.replace(/tsyèb/g,'뗩')
-				.replace(/fwùch/g,'퐺')
-				.replace(/fwùdj/g,'퐻')
-				.replace(/tsyèp/g,'뗲')
-				.replace(/fyach/g,'퍚')
-				.replace(/fyadj/g,'퍛')
-				.replace(/tsyèm/g,'뗨')
-				.replace(/fwach/g,'퐞')
-				.replace(/fwadj/g,'퐟')
-				.replace(/zwèch/g,'쒖')
-				.replace(/tsyèd/g,'뗟')
-				.replace(/tsyèt/g,'뗱')
-				.replace(/zwèdj/g,'쒗')
-				.replace(/tsyèn/g,'뗜')
-				.replace(/tsyèl/g,'뗠')
-				.replace(/tsyèz/g,'뗬')
-				.replace(/tsyès/g,'뗫')
-				.replace(/tswoq/g,'뙹')
-				.replace(/tswog/g,'뙥')
-				.replace(/tswok/g,'뙼')
-				.replace(/rwèdj/g,'뤛')
-				.replace(/rwèch/g,'뤚')
-				.replace(/tswov/g,'뙶')
-				.replace(/tswof/g,'뙲')
-				.replace(/tswoc/g,'뙿')
-				.replace(/tswob/g,'뙵')
-				.replace(/tswop/g,'뙾')
-				.replace(/tswom/g,'뙴')
-				.replace(/tswod/g,'뙫')
-				.replace(/tswot/g,'뙽')
-				.replace(/zyùch/g,'썢')
-				.replace(/zyùdj/g,'썣')
-				.replace(/tswon/g,'뙨')
-				.replace(/tswol/g,'뙬')
-				.replace(/tswoz/g,'뙸')
-				.replace(/tswos/g,'뙷')
-				.replace(/tsyoq/g,'뚕')
-				.replace(/tsyog/g,'뚁')
-				.replace(/tsyok/g,'뚘')
-				.replace(/ryèdj/g,'렻')
-				.replace(/ryèch/g,'렺')
-				.replace(/tsyov/g,'뚒')
-				.replace(/tsyof/g,'뚎')
-				.replace(/tsyoc/g,'뚛')
-				.replace(/tsyob/g,'뚑')
-				.replace(/tsyop/g,'뚚')
-				.replace(/tsyom/g,'뚐')
-				.replace(/tsyod/g,'뚇')
-				.replace(/tsyot/g,'뚙')
-				.replace(/zwùch/g,'쐦')
-				.replace(/zwùdj/g,'쐧')
-				.replace(/tsyon/g,'뚄')
-				.replace(/tsyol/g,'뚈')
-				.replace(/tsyoz/g,'뚔')
-				.replace(/tsyos/g,'뚓')
-				.replace(/tsweq/g,'뛩')
-				.replace(/tsweg/g,'뛕')
-				.replace(/tswek/g,'뛬')
-				.replace(/swedj/g,'쮗')
-				.replace(/swech/g,'쮖')
-				.replace(/tswev/g,'뛦')
-				.replace(/tswef/g,'뛢')
-				.replace(/tswec/g,'뛯')
-				.replace(/tsweb/g,'뛥')
-				.replace(/tswep/g,'뛮')
-				.replace(/tswem/g,'뛤')
-				.replace(/tswed/g,'뛛')
-				.replace(/tswet/g,'뛭')
-				.replace(/zyach/g,'썆')
-				.replace(/zyadj/g,'썇')
-				.replace(/tswen/g,'뛘')
-				.replace(/tswel/g,'뛜')
-				.replace(/tswez/g,'뛨')
-				.replace(/tswes/g,'뛧')
-				.replace(/tsyeq/g,'똉')
-				.replace(/tsyeg/g,'뗵')
-				.replace(/tsyek/g,'똌')
-				.replace(/lyèch/g,'렺')
-				.replace(/rwodj/g,'룇')
-				.replace(/tsyev/g,'똆')
-				.replace(/tsyef/g,'똂')
-				.replace(/tsyec/g,'똏')
-				.replace(/kwadj/g,'쾇')
-				.replace(/kwach/g,'쾆')
-				.replace(/tsyeb/g,'똅')
-				.replace(/tsyep/g,'똎')
-				.replace(/tsyem/g,'똄')
-				.replace(/tsyed/g,'뗻')
-				.replace(/tsyet/g,'똍')
-				.replace(/tsyen/g,'뗸')
-				.replace(/tsyel/g,'뗼')
-				.replace(/tsyez/g,'똈')
-				.replace(/tsyes/g,'똇')
-				.replace(/tswuq/g,'뜡')
-				.replace(/tswug/g,'뜍')
-				.replace(/tswuk/g,'뜤')
-				.replace(/rwoch/g,'룆')
-				.replace(/lyèdj/g,'렻')
-				.replace(/tswuv/g,'뜞')
-				.replace(/tswuf/g,'뜚')
-				.replace(/kyadj/g,'컃')
-				.replace(/kyach/g,'컂')
-				.replace(/tswuc/g,'뜧')
-				.replace(/tswub/g,'뜝')
-				.replace(/tswup/g,'뜦')
-				.replace(/tswum/g,'뜜')
-				.replace(/tswud/g,'뜓')
-				.replace(/tswut/g,'뜥')
-				.replace(/tswun/g,'뜐')
-				.replace(/tswul/g,'뜔')
-				.replace(/tswuz/g,'뜠')
-				.replace(/tswus/g,'뜟')
-				.replace(/tsyuq/g,'뚱')
-				.replace(/tsyug/g,'뚝')
-				.replace(/tsyuk/g,'뚴')
-				.replace(/ryodj/g,'룣')
-				.replace(/ryoch/g,'룢')
-				.replace(/tsyuv/g,'뚮')
-				.replace(/kwùdj/g,'쾣')
-				.replace(/kwùch/g,'쾢')
-				.replace(/tsyuf/g,'뚪')
-				.replace(/tsyuc/g,'뚷')
-				.replace(/tsyub/g,'뚭')
-				.replace(/tsyup/g,'뚶')
-				.replace(/tsyum/g,'뚬')
-				.replace(/tsyud/g,'뚣')
-				.replace(/tsyut/g,'뚵')
-				.replace(/tsyun/g,'뚠')
-				.replace(/tsyul/g,'뚤')
-				.replace(/tsyuz/g,'뚰')
-				.replace(/vyich/g,'븾')
-				.replace(/vyidj/g,'븿')
-				.replace(/tsyus/g,'뚯')
-				.replace(/vwich/g,'뷪')
-				.replace(/vwidj/g,'뷫')
-				.replace(/tswiq/g,'뜅')
-				.replace(/kyùdj/g,'컟')
-				.replace(/kyùch/g,'컞')
-				.replace(/vyuch/g,'붖')
-				.replace(/vyudj/g,'붗')
-				.replace(/vwuch/g,'븆')
-				.replace(/vwudj/g,'븇')
-				.replace(/tswig/g,'뛱')
-				.replace(/vyech/g,'볮')
-				.replace(/vyedj/g,'볯')
-				.replace(/tswik/g,'뜈')
-				.replace(/vwech/g,'뷎')
-				.replace(/vwedj/g,'뷏')
-				.replace(/rwedj/g,'뤷')
-				.replace(/vyoch/g,'뵺')
-				.replace(/vyodj/g,'뵻')
-				.replace(/rwech/g,'뤶')
-				.replace(/vwoch/g,'뵞')
-				.replace(/vwodj/g,'뵟')
-				.replace(/kwèdj/g,'퀓')
-				.replace(/kwèch/g,'퀒')
-				.replace(/tswiv/g,'뜂')
-				.replace(/vyèch/g,'볒')
-				.replace(/vyèdj/g,'볓')
-				.replace(/tswif/g,'뛾')
-				.replace(/vwèch/g,'붲')
-				.replace(/vwèdj/g,'붳')
-				.replace(/tswic/g,'뜋')
-				.replace(/vyùch/g,'뱾')
-				.replace(/vyùdj/g,'뱿')
-				.replace(/tswib/g,'뜁')
-				.replace(/vwùch/g,'뵂')
-				.replace(/vwùdj/g,'뵃')
-				.replace(/tswip/g,'뜊')
-				.replace(/vyach/g,'뱢')
-				.replace(/vyadj/g,'뱣')
-				.replace(/tswim/g,'뜀')
-				.replace(/zhyaf/g,'샲')
-				.replace(/kyèch/g,'켲')
-				.replace(/vwach/g,'봦')
-				.replace(/vwadj/g,'봧')
-				.replace(/tswid/g,'뛷')
-				.replace(/shuch/g,'슺')
-				.replace(/shudj/g,'슻')
-				.replace(/tswit/g,'뜉')
-				.replace(/shich/g,'싲')
-				.replace(/shidj/g,'싳')
-				.replace(/tswin/g,'뛴')
-				.replace(/shùch/g,'샞')
-				.replace(/shùdj/g,'샟')
-				.replace(/tswil/g,'뛸')
-				.replace(/shèch/g,'섲')
-				.replace(/shèdj/g,'섳')
-				.replace(/tswiz/g,'뜄')
-				.replace(/shoch/g,'솢')
-				.replace(/kwodj/g,'쾿')
-				.replace(/kwoch/g,'쾾')
-				.replace(/shodj/g,'솣')
-				.replace(/tswis/g,'뜃')
-				.replace(/shech/g,'셎')
-				.replace(/shedj/g,'셏')
-				.replace(/tsyiq/g,'띙')
-				.replace(/shach/g,'샂')
-				.replace(/shadj/g,'샃')
-				.replace(/shyis/g,'싓')
-				.replace(/shyiz/g,'싔')
-				.replace(/shyil/g,'싈')
-				.replace(/shyin/g,'싄')
-				.replace(/shyit/g,'싙')
-				.replace(/shyid/g,'싇')
-				.replace(/zwach/g,'쐊')
-				.replace(/shyim/g,'싐')
-				.replace(/shyip/g,'싚')
-				.replace(/kyodj/g,'쿛')
-				.replace(/kyoch/g,'쿚')
-				.replace(/shyib/g,'싑')
-				.replace(/shyic/g,'싛')
-				.replace(/shyif/g,'싎')
-				.replace(/shyiv/g,'싒')
-				.replace(/ryedj/g,'롗')
-				.replace(/ryech/g,'롖')
-				.replace(/shyik/g,'싘')
-				.replace(/shyig/g,'싁')
-				.replace(/shyiq/g,'싕')
-				.replace(/shwis/g,'쉿')
-				.replace(/shwiz/g,'슀')
-				.replace(/shwil/g,'쉴')
-				.replace(/shwin/g,'쉰')
-				.replace(/zwadj/g,'쐋')
-				.replace(/shwit/g,'슅')
-				.replace(/shwid/g,'쉳')
-				.replace(/kwedj/g,'퀯')
-				.replace(/kwech/g,'퀮')
-				.replace(/shwim/g,'쉼')
-				.replace(/shwip/g,'슆')
-				.replace(/shwib/g,'쉽')
-				.replace(/shwic/g,'슇')
-				.replace(/shwif/g,'쉺')
-				.replace(/shwiv/g,'쉾')
-				.replace(/rwudj/g,'륯')
-				.replace(/rwuch/g,'륮')
-				.replace(/shwik/g,'슄')
-				.replace(/shwig/g,'쉭')
-				.replace(/shwiq/g,'슁')
-				.replace(/shyus/g,'숫')
-				.replace(/shyuz/g,'숬')
-				.replace(/shyul/g,'술')
-				.replace(/shyun/g,'순')
-				.replace(/shyut/g,'숱')
-				.replace(/kyedj/g,'콏')
-				.replace(/kyech/g,'콎')
-				.replace(/shyud/g,'숟')
-				.replace(/shyum/g,'숨')
-				.replace(/shyup/g,'숲')
-				.replace(/shyub/g,'숩')
-				.replace(/shyuc/g,'숳')
-				.replace(/shyuf/g,'숦')
-				.replace(/shyuv/g,'숪')
-				.replace(/ryudj/g,'룿')
-				.replace(/ryuch/g,'룾')
-				.replace(/shyuk/g,'숰')
-				.replace(/shyug/g,'숙')
-				.replace(/shyuq/g,'숭')
-				.replace(/shwus/g,'슛')
-				.replace(/shwuz/g,'슜')
-				.replace(/shwul/g,'슐')
-				.replace(/shwun/g,'슌')
-				.replace(/kwudj/g,'큧')
-				.replace(/kwuch/g,'큦')
-				.replace(/shwut/g,'슡')
-				.replace(/shwud/g,'슏')
-				.replace(/shwum/g,'슘')
-				.replace(/shwup/g,'슢')
-				.replace(/shwub/g,'슙')
-				.replace(/shwuc/g,'슣')
-				.replace(/shwuf/g,'슖')
-				.replace(/shwuv/g,'슚')
-				.replace(/rwidj/g,'륓')
-				.replace(/rwich/g,'륒')
-				.replace(/shwuk/g,'슠')
-				.replace(/shwug/g,'슉')
-				.replace(/shwuq/g,'슝')
-				.replace(/shyes/g,'솃')
-				.replace(/shyez/g,'솄')
-				.replace(/shyel/g,'셸')
-				.replace(/kyudj/g,'쿷')
-				.replace(/kyuch/g,'쿶')
-				.replace(/shyen/g,'셴')
-				.replace(/shyet/g,'솉')
-				.replace(/shyed/g,'셷')
-				.replace(/shyem/g,'솀')
-				.replace(/shyep/g,'솊')
-				.replace(/shyeb/g,'솁')
-				.replace(/shyec/g,'솋')
-				.replace(/shyef/g,'셾')
-				.replace(/shyev/g,'솂')
-				.replace(/syedj/g,'쪷')
-				.replace(/syech/g,'쪶')
-				.replace(/shyek/g,'솈')
-				.replace(/shyeg/g,'셱')
-				.replace(/shyeq/g,'솅')
-				.replace(/shwes/g,'쉣')
-				.replace(/shwez/g,'쉤')
-				.replace(/kwidj/g,'큋')
-				.replace(/kwich/g,'큊')
-				.replace(/shwel/g,'쉘')
-				.replace(/shwen/g,'쉔')
-				.replace(/shwet/g,'쉩')
-				.replace(/shwed/g,'쉗')
-				.replace(/shwem/g,'쉠')
-				.replace(/shwep/g,'쉪')
-				.replace(/shweb/g,'쉡')
-				.replace(/shwec/g,'쉫')
-				.replace(/shwef/g,'쉞')
-				.replace(/shwev/g,'쉢')
-				.replace(/ryidj/g,'릧')
-				.replace(/ryich/g,'릦')
-				.replace(/shwek/g,'쉨')
-				.replace(/shweg/g,'쉑')
-				.replace(/shweq/g,'쉥')
-				.replace(/shyos/g,'숏')
-				.replace(/kyidj/g,'킟')
-				.replace(/kyich/g,'킞')
-				.replace(/shyoz/g,'숐')
-				.replace(/shyol/g,'숄')
-				.replace(/shyon/g,'숀')
-				.replace(/shyot/g,'숕')
-				.replace(/shyod/g,'숃')
-				.replace(/shyom/g,'숌')
-				.replace(/shyop/g,'숖')
-				.replace(/shyob/g,'숍')
-				.replace(/shyoc/g,'숗')
-				.replace(/shyof/g,'숊')
-				.replace(/shyov/g,'숎')
-				.replace(/lwèch/g,'뤚')
-				.replace(/lwèdj/g,'뤛')
-				.replace(/shyok/g,'숔')
-				.replace(/shyog/g,'쇽')
-				.replace(/shyoq/g,'숑')
-				.replace(/shwos/g,'쇳')
-				.replace(/shwoz/g,'쇴')
-				.replace(/shwol/g,'쇨')
-				.replace(/shwon/g,'쇤')
-				.replace(/shwot/g,'쇹')
-				.replace(/shwod/g,'쇧')
-				.replace(/shwom/g,'쇰')
-				.replace(/shwop/g,'쇺')
-				.replace(/tsuch/g,'뜾')
-				.replace(/tsudj/g,'뜿')
-				.replace(/shwob/g,'쇱')
-				.replace(/shwoc/g,'쇻')
-				.replace(/shwof/g,'쇮')
-				.replace(/shwov/g,'쇲')
-				.replace(/lyùch/g,'럦')
-				.replace(/lyùdj/g,'럧')
-				.replace(/shwok/g,'쇸')
-				.replace(/shwog/g,'쇡')
-				.replace(/shwoq/g,'쇵')
-				.replace(/shyès/g,'셧')
-				.replace(/shyèz/g,'셨')
-				.replace(/shyèl/g,'셜')
-				.replace(/shyèn/g,'션')
-				.replace(/shyèt/g,'셭')
-				.replace(/shyèd/g,'셛')
-				.replace(/shyèm/g,'셤')
-				.replace(/shyèp/g,'셮')
-				.replace(/tsich/g,'띶')
-				.replace(/tsidj/g,'띷')
-				.replace(/shyèb/g,'셥')
-				.replace(/shyèc/g,'셯')
-				.replace(/shyèf/g,'셢')
-				.replace(/shyèv/g,'셦')
-				.replace(/lwùch/g,'뢪')
-				.replace(/lwùdj/g,'뢫')
-				.replace(/shyèk/g,'셬')
-				.replace(/shyèg/g,'셕')
-				.replace(/shyèq/g,'셩')
-				.replace(/shwès/g,'쉇')
-				.replace(/shwèz/g,'쉈')
-				.replace(/shwèl/g,'숼')
-				.replace(/shwèn/g,'숸')
-				.replace(/shwèt/g,'쉍')
-				.replace(/shwèd/g,'숻')
-				.replace(/shwèm/g,'쉄')
-				.replace(/shwèp/g,'쉎')
-				.replace(/tsùch/g,'땢')
-				.replace(/tsùdj/g,'땣')
-				.replace(/shwèb/g,'쉅')
-				.replace(/shwèc/g,'쉏')
-				.replace(/shwèf/g,'쉂')
-				.replace(/shwèv/g,'쉆')
-				.replace(/lyach/g,'럊')
-				.replace(/lyadj/g,'럋')
-				.replace(/shwèk/g,'쉌')
-				.replace(/shwèg/g,'숵')
-				.replace(/shwèq/g,'쉉')
-				.replace(/shyùs/g,'섓')
-				.replace(/shyùz/g,'섔')
-				.replace(/shyùl/g,'섈')
-				.replace(/shyùn/g,'섄')
-				.replace(/shyùt/g,'섙')
-				.replace(/shyùd/g,'섇')
-				.replace(/shyùm/g,'섐')
-				.replace(/shyùp/g,'섚')
-				.replace(/tsèch/g,'떶')
-				.replace(/tsèdj/g,'떷')
-				.replace(/shyùb/g,'섑')
-				.replace(/shyùc/g,'섛')
-				.replace(/shyùf/g,'섎')
-				.replace(/shyùv/g,'섒')
-				.replace(/lwach/g,'뢎')
-				.replace(/lwadj/g,'뢏')
-				.replace(/shyùk/g,'섘')
-				.replace(/shyùg/g,'섁')
-				.replace(/shyùq/g,'섕')
-				.replace(/shwùs/g,'쇗')
-				.replace(/shwùz/g,'쇘')
-				.replace(/shwùl/g,'쇌')
-				.replace(/shwùn/g,'쇈')
-				.replace(/shwùt/g,'쇝')
-				.replace(/shwùd/g,'쇋')
-				.replace(/shwùm/g,'쇔')
-				.replace(/shwùp/g,'쇞')
-				.replace(/tsoch/g,'똦')
-				.replace(/tsodj/g,'똧')
-				.replace(/shwùb/g,'쇕')
-				.replace(/shwùc/g,'쇟')
-				.replace(/shwùf/g,'쇒')
-				.replace(/shwùv/g,'쇖')
-				.replace(/nyich/g,'닂')
-				.replace(/nyidj/g,'닃')
-				.replace(/shwùk/g,'쇜')
-				.replace(/shwùg/g,'쇅')
-				.replace(/shwùq/g,'쇙')
-				.replace(/shyas/g,'샷')
-				.replace(/shyaz/g,'샸')
-				.replace(/shyal/g,'샬')
-				.replace(/shyan/g,'샨')
-				.replace(/shyat/g,'샽')
-				.replace(/shyad/g,'샫')
-				.replace(/shyam/g,'샴')
-				.replace(/shyap/g,'샾')
-				.replace(/tsech/g,'뗒')
-				.replace(/tsedj/g,'뗓')
-				.replace(/shyab/g,'샵')
-				.replace(/shyac/g,'샿')
-				.replace(/shyaf/g,'샲')
-				.replace(/shyav/g,'샶')
-				.replace(/dwadj/g,'돷')
-				.replace(/dwach/g,'돶')
-				.replace(/shyak/g,'샼')
-				.replace(/shyag/g,'샥')
-				.replace(/shyaq/g,'샹')
-				.replace(/shwas/g,'솻')
-				.replace(/shwaz/g,'솼')
-				.replace(/shwal/g,'솰')
-				.replace(/shwan/g,'솬')
-				.replace(/shwat/g,'쇁')
-				.replace(/shwad/g,'솯')
-				.replace(/shwam/g,'솸')
-				.replace(/shwap/g,'쇂')
-				.replace(/djwaq/g,'촹')
-				.replace(/shwab/g,'솹')
-				.replace(/djwag/g,'촥')
-				.replace(/djwak/g,'촼')
-				.replace(/dyadj/g,'댳')
-				.replace(/swudj/g,'쯏')
-				.replace(/djwav/g,'촶')
-				.replace(/djwaf/g,'촲')
-				.replace(/djwac/g,'촿')
-				.replace(/djwab/g,'촵')
-				.replace(/djwap/g,'촾')
-				.replace(/djwam/g,'촴')
-				.replace(/djwad/g,'촫')
-				.replace(/djwat/g,'촽')
-				.replace(/djwan/g,'촨')
-				.replace(/djwal/g,'촬')
-				.replace(/djwaz/g,'촸')
-				.replace(/djwas/g,'촷')
-				.replace(/djyaq/g,'챵')
-				.replace(/shwac/g,'쇃')
-				.replace(/djyag/g,'챡')
-				.replace(/djyak/g,'챸')
-				.replace(/swuch/g,'쯎')
-				.replace(/dyach/g,'댲')
-				.replace(/djyav/g,'챲')
-				.replace(/djyaf/g,'챮')
-				.replace(/djyac/g,'챻')
-				.replace(/djyab/g,'챱')
-				.replace(/djyap/g,'챺')
-				.replace(/djyam/g,'챰')
-				.replace(/djyad/g,'챧')
-				.replace(/djyat/g,'챹')
-				.replace(/djyan/g,'챤')
-				.replace(/djyal/g,'챨')
-				.replace(/djyaz/g,'챴')
-				.replace(/djyas/g,'챳')
-				.replace(/djwùq/g,'쵕')
-				.replace(/shwaf/g,'솶')
-				.replace(/djwùg/g,'쵁')
-				.replace(/djwùk/g,'쵘')
-				.replace(/dwùdj/g,'됓')
-				.replace(/dwùch/g,'됒')
-				.replace(/djwùv/g,'쵒')
-				.replace(/djwùf/g,'쵎')
-				.replace(/djwùc/g,'쵛')
-				.replace(/djwùb/g,'쵑')
-				.replace(/djwùp/g,'쵚')
-				.replace(/djwùm/g,'쵐')
-				.replace(/djwùd/g,'쵇')
-				.replace(/djwùt/g,'쵙')
-				.replace(/djwùn/g,'쵄')
-				.replace(/djwùl/g,'쵈')
-				.replace(/djwùz/g,'쵔')
-				.replace(/djwùs/g,'쵓')
-				.replace(/djyùq/g,'첑')
-				.replace(/shwav/g,'솺')
-				.replace(/djyùg/g,'챽')
-				.replace(/djyùk/g,'첔')
-				.replace(/dyùdj/g,'덏')
-				.replace(/dyùch/g,'덎')
-				.replace(/djyùv/g,'첎')
-				.replace(/djyùf/g,'첊')
-				.replace(/djyùc/g,'첗')
-				.replace(/djyùb/g,'첍')
-				.replace(/djyùp/g,'첖')
-				.replace(/djyùm/g,'첌')
-				.replace(/djyùd/g,'첃')
-				.replace(/djyùt/g,'첕')
-				.replace(/djyùn/g,'첀')
-				.replace(/djyùl/g,'첄')
-				.replace(/djyùz/g,'첐')
-				.replace(/djyùs/g,'첏')
-				.replace(/djwèq/g,'췅')
-				.replace(/dwèdj/g,'뒃')
-				.replace(/djwèg/g,'춱')
-				.replace(/djwèk/g,'췈')
-				.replace(/dwèch/g,'뒂')
-				.replace(/dyèdj/g,'뎣')
-				.replace(/djwèv/g,'췂')
-				.replace(/djwèf/g,'춾')
-				.replace(/djwèc/g,'췋')
-				.replace(/djwèb/g,'췁')
-				.replace(/djwèp/g,'췊')
-				.replace(/djwèm/g,'췀')
-				.replace(/djwèd/g,'춷')
-				.replace(/djwèt/g,'췉')
-				.replace(/djwèn/g,'춴')
-				.replace(/djwèl/g,'춸')
-				.replace(/djwèz/g,'췄')
-				.replace(/djwès/g,'췃')
-				.replace(/djyèq/g,'쳥')
-				.replace(/dyèch/g,'뎢')
-				.replace(/djyèg/g,'쳑')
-				.replace(/djyèk/g,'쳨')
-				.replace(/dwodj/g,'됯')
-				.replace(/dwoch/g,'됮')
-				.replace(/djyèv/g,'쳢')
-				.replace(/djyèf/g,'쳞')
-				.replace(/djyèc/g,'쳫')
-				.replace(/djyèb/g,'쳡')
-				.replace(/djyèp/g,'쳪')
-				.replace(/djyèm/g,'쳠')
-				.replace(/djyèd/g,'쳗')
-				.replace(/djyèt/g,'쳩')
-				.replace(/djyèn/g,'쳔')
-				.replace(/djyèl/g,'쳘')
-				.replace(/djyèz/g,'쳤')
-				.replace(/djyès/g,'쳣')
-				.replace(/djwoq/g,'쵱')
-				.replace(/shwak/g,'쇀')
-				.replace(/djwog/g,'쵝')
-				.replace(/djwok/g,'쵴')
-				.replace(/dyodj/g,'둋')
-				.replace(/dyoch/g,'둊')
-				.replace(/djwov/g,'쵮')
-				.replace(/djwof/g,'쵪')
-				.replace(/djwoc/g,'쵷')
-				.replace(/djwob/g,'쵭')
-				.replace(/djwop/g,'쵶')
-				.replace(/djwom/g,'쵬')
-				.replace(/djwod/g,'쵣')
-				.replace(/djwot/g,'쵵')
-				.replace(/djwon/g,'쵠')
-				.replace(/djwol/g,'쵤')
-				.replace(/djwoz/g,'쵰')
-				.replace(/djwos/g,'쵯')
-				.replace(/djyoq/g,'춍')
-				.replace(/shwag/g,'솩')
-				.replace(/djyog/g,'쵹')
-				.replace(/djyok/g,'춐')
-				.replace(/dwedj/g,'뒟')
-				.replace(/dwech/g,'뒞')
-				.replace(/djyov/g,'춊')
-				.replace(/djyof/g,'춆')
-				.replace(/djyoc/g,'춓')
-				.replace(/djyob/g,'춉')
-				.replace(/djyop/g,'춒')
-				.replace(/djyom/g,'춈')
-				.replace(/djyod/g,'쵿')
-				.replace(/djyot/g,'춑')
-				.replace(/djyon/g,'쵼')
-				.replace(/djyol/g,'춀')
-				.replace(/djyoz/g,'춌')
-				.replace(/djyos/g,'춋')
-				.replace(/djweq/g,'췡')
-				.replace(/shwaq/g,'솽')
-				.replace(/djweg/g,'췍')
-				.replace(/djwek/g,'췤')
-				.replace(/dyedj/g,'뎿')
-				.replace(/dyech/g,'뎾')
-				.replace(/djwev/g,'췞')
-				.replace(/djwef/g,'췚')
-				.replace(/djwec/g,'췧')
-				.replace(/djweb/g,'췝')
-				.replace(/djwep/g,'췦')
-				.replace(/djwem/g,'췜')
-				.replace(/djwed/g,'췓')
-				.replace(/djwet/g,'췥')
-				.replace(/djwen/g,'췐')
-				.replace(/djwel/g,'췔')
-				.replace(/djwez/g,'췠')
-				.replace(/djwes/g,'췟')
-				.replace(/djyeq/g,'촁')
-				.replace(/zhuch/g,'슺')
-				.replace(/djyeg/g,'쳭')
-				.replace(/djyek/g,'촄')
-				.replace(/syudj/g,'쭟')
-				.replace(/syuch/g,'쭞')
-				.replace(/djyev/g,'쳾')
-				.replace(/djyef/g,'쳺')
-				.replace(/djyec/g,'촇')
-				.replace(/djyeb/g,'쳽')
-				.replace(/djyep/g,'촆')
-				.replace(/djyem/g,'쳼')
-				.replace(/djyed/g,'쳳')
-				.replace(/djyet/g,'촅')
-				.replace(/djyen/g,'쳰')
-				.replace(/djyel/g,'쳴')
-				.replace(/djyez/g,'촀')
-				.replace(/djyes/g,'쳿')
-				.replace(/djwuq/g,'츙')
-				.replace(/zhudj/g,'슻')
-				.replace(/djwug/g,'츅')
-				.replace(/djwuk/g,'츜')
-				.replace(/dwudj/g,'듗')
-				.replace(/dwuch/g,'듖')
-				.replace(/djwuv/g,'츖')
-				.replace(/djwuf/g,'츒')
-				.replace(/djwuc/g,'츟')
-				.replace(/djwub/g,'츕')
-				.replace(/djwup/g,'츞')
-				.replace(/djwum/g,'츔')
-				.replace(/djwud/g,'츋')
-				.replace(/djwut/g,'츝')
-				.replace(/djwun/g,'츈')
-				.replace(/djwul/g,'츌')
-				.replace(/djwuz/g,'츘')
-				.replace(/djwus/g,'츗')
-				.replace(/djyuq/g,'충')
-				.replace(/tsyig/g,'띅')
-				.replace(/djyug/g,'축')
-				.replace(/djyuk/g,'춬')
-				.replace(/dyudj/g,'둧')
-				.replace(/dyuch/g,'둦')
-				.replace(/djyuv/g,'춦')
-				.replace(/djyuf/g,'춢')
-				.replace(/djyuc/g,'춯')
-				.replace(/djyub/g,'춥')
-				.replace(/djyup/g,'춮')
-				.replace(/djyum/g,'춤')
-				.replace(/djyud/g,'춛')
-				.replace(/djyut/g,'춭')
-				.replace(/djyun/g,'춘')
-				.replace(/djyul/g,'출')
-				.replace(/djyuz/g,'춨')
-				.replace(/djyus/g,'춧')
-				.replace(/djwiq/g,'췽')
-				.replace(/zhich/g,'싲')
-				.replace(/djwig/g,'췩')
-				.replace(/djwik/g,'츀')
-				.replace(/dwidj/g,'뒻')
-				.replace(/dwich/g,'뒺')
-				.replace(/djwiv/g,'췺')
-				.replace(/djwif/g,'췶')
-				.replace(/djwic/g,'츃')
-				.replace(/djwib/g,'췹')
-				.replace(/djwip/g,'츂')
-				.replace(/djwim/g,'췸')
-				.replace(/djwid/g,'췯')
-				.replace(/djwit/g,'츁')
-				.replace(/djwin/g,'췬')
-				.replace(/djwil/g,'췰')
-				.replace(/djwiz/g,'췼')
-				.replace(/djwis/g,'췻')
-				.replace(/djyiq/g,'칑')
-				.replace(/zhidj/g,'싳')
-				.replace(/djyig/g,'츽')
-				.replace(/djyik/g,'칔')
-				.replace(/nwich/g,'뉮')
-				.replace(/dyidj/g,'딏')
-				.replace(/djyiv/g,'칎')
-				.replace(/djyif/g,'칊')
-				.replace(/djyic/g,'칗')
-				.replace(/djyib/g,'칍')
-				.replace(/djyip/g,'칖')
-				.replace(/djyim/g,'칌')
-				.replace(/djyid/g,'칃')
-				.replace(/djyit/g,'칕')
-				.replace(/djyin/g,'칀')
-				.replace(/djyil/g,'칄')
-				.replace(/djyiz/g,'칐')
-				.replace(/djyis/g,'칏')
-				.replace(/tsyik/g,'띜')
-				.replace(/tsach/g,'땆')
-				.replace(/zhùch/g,'샞')
-				.replace(/zhùdj/g,'샟')
-				.replace(/djadj/g,'찿')
-				.replace(/djach/g,'찾')
-				.replace(/dyich/g,'딎')
-				.replace(/zhèch/g,'섲')
-				.replace(/zhèdj/g,'섳')
-				.replace(/nwidj/g,'뉯')
-				.replace(/zhoch/g,'솢')
-				.replace(/zhodj/g,'솣')
-				.replace(/tsyiv/g,'띖')
-				.replace(/zhech/g,'셎')
-				.replace(/zhedj/g,'셏')
-				.replace(/tsyif/g,'띒')
-				.replace(/zhach/g,'샂')
-				.replace(/zhadj/g,'샃')
-				.replace(/tsyic/g,'띟')
-				.replace(/tsadj/g,'땇')
-				.replace(/zhyis/g,'싓')
-				.replace(/zhyiz/g,'싔')
-				.replace(/djedj/g,'쳋')
-				.replace(/djech/g,'쳊')
-				.replace(/zhyil/g,'싈')
-				.replace(/zhyin/g,'싄')
-				.replace(/zhyit/g,'싙')
-				.replace(/zhyid/g,'싇')
-				.replace(/zhyim/g,'싐')
-				.replace(/zhyip/g,'싚')
-				.replace(/zhyib/g,'싑')
-				.replace(/zhyic/g,'싛')
-				.replace(/zhyif/g,'싎')
-				.replace(/zhyiv/g,'싒')
-				.replace(/nyuch/g,'눚')
-				.replace(/nyudj/g,'눛')
-				.replace(/zhyik/g,'싘')
-				.replace(/zhyig/g,'싁')
-				.replace(/zhyiq/g,'싕')
-				.replace(/zhwis/g,'쉿')
-				.replace(/djodj/g,'촟')
-				.replace(/djoch/g,'촞')
-				.replace(/zhwiz/g,'슀')
-				.replace(/zhwil/g,'쉴')
-				.replace(/zhwin/g,'쉰')
-				.replace(/zhwit/g,'슅')
-				.replace(/zhwid/g,'쉳')
-				.replace(/zhwim/g,'쉼')
-				.replace(/zhwip/g,'슆')
-				.replace(/zhwib/g,'쉽')
-				.replace(/zhwic/g,'슇')
-				.replace(/zhwif/g,'쉺')
-				.replace(/zhwiv/g,'쉾')
-				.replace(/nwuch/g,'늊')
-				.replace(/nwudj/g,'늋')
-				.replace(/zhwik/g,'슄')
-				.replace(/zhwig/g,'쉭')
-				.replace(/zhwiq/g,'슁')
-				.replace(/djèdj/g,'첯')
-				.replace(/djèch/g,'첮')
-				.replace(/zhyus/g,'숫')
-				.replace(/zhyuz/g,'숬')
-				.replace(/zhyul/g,'술')
-				.replace(/zhyun/g,'순')
-				.replace(/zhyut/g,'숱')
-				.replace(/zhyud/g,'숟')
-				.replace(/zhyum/g,'숨')
-				.replace(/zhyup/g,'숲')
-				.replace(/zhyub/g,'숩')
-				.replace(/zhyuc/g,'숳')
-				.replace(/zhyuf/g,'숦')
-				.replace(/zhyuv/g,'숪')
-				.replace(/nyech/g,'녲')
-				.replace(/nyedj/g,'녳')
-				.replace(/zhyuk/g,'숰')
-				.replace(/zhyug/g,'숙')
-				.replace(/djùdj/g,'챛')
-				.replace(/djùch/g,'챚')
-				.replace(/zhyuq/g,'숭')
-				.replace(/zhwus/g,'슛')
-				.replace(/zhwuz/g,'슜')
-				.replace(/zhwul/g,'슐')
-				.replace(/zhwun/g,'슌')
-				.replace(/zhwut/g,'슡')
-				.replace(/zhwud/g,'슏')
-				.replace(/zhwum/g,'슘')
-				.replace(/zhwup/g,'슢')
-				.replace(/zhwub/g,'슙')
-				.replace(/zhwuc/g,'슣')
-				.replace(/zhwuf/g,'슖')
-				.replace(/zhwuv/g,'슚')
-				.replace(/tsyis/g,'띗')
-				.replace(/nwech/g,'뉒')
-				.replace(/swidj/g,'쮳')
-				.replace(/djidj/g,'칯')
-				.replace(/djich/g,'칮')
-				.replace(/zhwuk/g,'슠')
-				.replace(/zhwug/g,'슉')
-				.replace(/zhwuq/g,'슝')
-				.replace(/zhyes/g,'솃')
-				.replace(/zhyez/g,'솄')
-				.replace(/zhyel/g,'셸')
-				.replace(/zhyen/g,'셴')
-				.replace(/zhyet/g,'솉')
-				.replace(/zhyed/g,'셷')
-				.replace(/zhyem/g,'솀')
-				.replace(/zhyep/g,'솊')
-				.replace(/zhyeb/g,'솁')
-				.replace(/zhyec/g,'솋')
-				.replace(/tsyiz/g,'띘')
-				.replace(/zhyef/g,'셾')
-				.replace(/zhyev/g,'솂')
-				.replace(/djudj/g,'츷')
-				.replace(/djuch/g,'츶')
-				.replace(/swich/g,'쮲')
-				.replace(/nwedj/g,'뉓')
-				.replace(/zhyek/g,'솈')
-				.replace(/zhyeg/g,'셱')
-				.replace(/zhyeq/g,'솅')
-				.replace(/zhwes/g,'쉣')
-				.replace(/zhwez/g,'쉤')
-				.replace(/zhwel/g,'쉘')
-				.replace(/zhwen/g,'쉔')
-				.replace(/zhwet/g,'쉩')
-				.replace(/zhwed/g,'쉗')
-				.replace(/zhwem/g,'쉠')
-				.replace(/chwaq/g,'좡')
-				.replace(/zhwep/g,'쉪')
-				.replace(/chwag/g,'좍')
-				.replace(/chwak/g,'좤')
-				.replace(/nyoch/g,'뇾')
-				.replace(/nyodj/g,'뇿')
-				.replace(/chwav/g,'좞')
-				.replace(/chwaf/g,'좚')
-				.replace(/chwac/g,'좧')
-				.replace(/chwab/g,'좝')
-				.replace(/chwap/g,'좦')
-				.replace(/chwam/g,'좜')
-				.replace(/chwad/g,'좓')
-				.replace(/chwat/g,'좥')
-				.replace(/chwan/g,'좐')
-				.replace(/chwal/g,'좔')
-				.replace(/chwaz/g,'좠')
-				.replace(/chwas/g,'좟')
-				.replace(/chyaq/g,'쟝')
-				.replace(/zhweb/g,'쉡')
-				.replace(/chyag/g,'쟉')
-				.replace(/chyak/g,'쟠')
-				.replace(/nwoch/g,'뇢')
-				.replace(/nwodj/g,'뇣')
-				.replace(/chyav/g,'쟚')
-				.replace(/chyaf/g,'쟖')
-				.replace(/chyac/g,'쟣')
-				.replace(/chyab/g,'쟙')
-				.replace(/chyap/g,'쟢')
-				.replace(/chyam/g,'쟘')
-				.replace(/chyad/g,'쟏')
-				.replace(/chyat/g,'쟡')
-				.replace(/chyan/g,'쟌')
-				.replace(/chyal/g,'쟐')
-				.replace(/chyaz/g,'쟜')
-				.replace(/chyas/g,'쟛')
-				.replace(/chwùq/g,'좽')
-				.replace(/zhwec/g,'쉫')
-				.replace(/chwùg/g,'좩')
-				.replace(/chwùk/g,'죀')
-				.replace(/twadj/g,'퇓')
-				.replace(/twach/g,'퇒')
-				.replace(/chwùv/g,'좺')
-				.replace(/chwùf/g,'좶')
-				.replace(/chwùc/g,'죃')
-				.replace(/chwùb/g,'좹')
-				.replace(/chwùp/g,'죂')
-				.replace(/chwùm/g,'좸')
-				.replace(/chwùd/g,'좯')
-				.replace(/chwùt/g,'죁')
-				.replace(/chwùn/g,'좬')
-				.replace(/chwùl/g,'좰')
-				.replace(/chwùz/g,'좼')
-				.replace(/chwùs/g,'좻')
-				.replace(/chyùq/g,'쟹')
-				.replace(/zhwef/g,'쉞')
-				.replace(/chyùg/g,'쟥')
-				.replace(/chyùk/g,'쟼')
-				.replace(/tyadj/g,'턏')
-				.replace(/tyach/g,'턎')
-				.replace(/chyùv/g,'쟶')
-				.replace(/chyùf/g,'쟲')
-				.replace(/chyùc/g,'쟿')
-				.replace(/chyùb/g,'쟵')
-				.replace(/chyùp/g,'쟾')
-				.replace(/chyùm/g,'쟴')
-				.replace(/chyùd/g,'쟫')
-				.replace(/chyùt/g,'쟽')
-				.replace(/chyùn/g,'쟨')
-				.replace(/chyùl/g,'쟬')
-				.replace(/chyùz/g,'쟸')
-				.replace(/chyùs/g,'쟷')
-				.replace(/chwèq/g,'줭')
-				.replace(/zhwev/g,'쉢')
-				.replace(/chwèg/g,'줙')
-				.replace(/chwèk/g,'줰')
-				.replace(/twùdj/g,'퇯')
-				.replace(/twùch/g,'퇮')
-				.replace(/chwèv/g,'줪')
-				.replace(/chwèf/g,'줦')
-				.replace(/chwèc/g,'줳')
-				.replace(/chwèb/g,'줩')
-				.replace(/chwèp/g,'줲')
-				.replace(/chwèm/g,'줨')
-				.replace(/chwèd/g,'줟')
-				.replace(/chwèt/g,'줱')
-				.replace(/chwèn/g,'줜')
-				.replace(/chwèl/g,'줠')
-				.replace(/chwèz/g,'줬')
-				.replace(/chwès/g,'줫')
-				.replace(/chyèq/g,'졍')
-				.replace(/tyùdj/g,'턫')
-				.replace(/chyèg/g,'젹')
-				.replace(/chyèk/g,'졐')
-				.replace(/tyùch/g,'턪')
-				.replace(/twèdj/g,'퉟')
-				.replace(/chyèv/g,'졊')
-				.replace(/chyèf/g,'졆')
-				.replace(/chyèc/g,'졓')
-				.replace(/chyèb/g,'졉')
-				.replace(/chyèp/g,'졒')
-				.replace(/chyèm/g,'졈')
-				.replace(/chyèd/g,'젿')
-				.replace(/chyèt/g,'졑')
-				.replace(/chyèn/g,'젼')
-				.replace(/chyèl/g,'졀')
-				.replace(/chyèz/g,'졌')
-				.replace(/chyès/g,'졋')
-				.replace(/chwoq/g,'죙')
-				.replace(/twèch/g,'퉞')
-				.replace(/chwog/g,'죅')
-				.replace(/chwok/g,'죜')
-				.replace(/tyèdj/g,'텿')
-				.replace(/tyèch/g,'텾')
-				.replace(/chwov/g,'죖')
-				.replace(/chwof/g,'죒')
-				.replace(/chwoc/g,'죟')
-				.replace(/chwob/g,'죕')
-				.replace(/chwop/g,'죞')
-				.replace(/chwom/g,'죔')
-				.replace(/chwod/g,'죋')
-				.replace(/chwot/g,'죝')
-				.replace(/chwon/g,'죈')
-				.replace(/chwol/g,'죌')
-				.replace(/chwoz/g,'죘')
-				.replace(/chwos/g,'죗')
-				.replace(/chyoq/g,'죵')
-				.replace(/zhwek/g,'쉨')
-				.replace(/chyog/g,'죡')
-				.replace(/chyok/g,'죸')
-				.replace(/syidj/g,'찇')
-				.replace(/syich/g,'찆')
-				.replace(/chyov/g,'죲')
-				.replace(/chyof/g,'죮')
-				.replace(/chyoc/g,'죻')
-				.replace(/chyob/g,'죱')
-				.replace(/chyop/g,'죺')
-				.replace(/chyom/g,'죰')
-				.replace(/chyod/g,'죧')
-				.replace(/chyot/g,'죹')
-				.replace(/chyon/g,'죤')
-				.replace(/chyol/g,'죨')
-				.replace(/chyoz/g,'죴')
-				.replace(/chyos/g,'죳')
-				.replace(/chweq/g,'쥉')
-				.replace(/zhweg/g,'쉑')
-				.replace(/chweg/g,'줵')
-				.replace(/chwek/g,'쥌')
-				.replace(/nyèch/g,'녖')
-				.replace(/twodj/g,'툋')
-				.replace(/chwev/g,'쥆')
-				.replace(/chwef/g,'쥂')
-				.replace(/chwec/g,'쥏')
-				.replace(/chweb/g,'쥅')
-				.replace(/chwep/g,'쥎')
-				.replace(/chwem/g,'쥄')
-				.replace(/chwed/g,'줻')
-				.replace(/chwet/g,'쥍')
-				.replace(/chwen/g,'줸')
-				.replace(/chwel/g,'줼')
-				.replace(/chwez/g,'쥈')
-				.replace(/chwes/g,'쥇')
-				.replace(/chyeq/g,'졩')
-				.replace(/zhweq/g,'쉥')
-				.replace(/chyeg/g,'졕')
-				.replace(/chyek/g,'졬')
-				.replace(/twoch/g,'툊')
-				.replace(/nyèdj/g,'녗')
-				.replace(/chyev/g,'졦')
-				.replace(/chyef/g,'졢')
-				.replace(/chyec/g,'졯')
-				.replace(/chyeb/g,'졥')
-				.replace(/chyep/g,'졮')
-				.replace(/chyem/g,'졤')
-				.replace(/chyed/g,'졛')
-				.replace(/chyet/g,'졭')
-				.replace(/chyen/g,'졘')
-				.replace(/chyel/g,'졜')
-				.replace(/chyez/g,'졨')
-				.replace(/chyes/g,'졧')
-				.replace(/chwuq/g,'즁')
-				.replace(/zhyos/g,'숏')
-				.replace(/chwug/g,'쥭')
-				.replace(/chwuk/g,'즄')
-				.replace(/tyodj/g,'툧')
-				.replace(/tyoch/g,'툦')
-				.replace(/chwuv/g,'쥾')
-				.replace(/chwuf/g,'쥺')
-				.replace(/chwuc/g,'즇')
-				.replace(/chwub/g,'쥽')
-				.replace(/chwup/g,'즆')
-				.replace(/chwum/g,'쥼')
-				.replace(/chwud/g,'쥳')
-				.replace(/chwut/g,'즅')
-				.replace(/chwun/g,'쥰')
-				.replace(/chwul/g,'쥴')
-				.replace(/chwuz/g,'즀')
-				.replace(/chwus/g,'쥿')
-				.replace(/chyuq/g,'중')
-				.replace(/zhyoz/g,'숐')
-				.replace(/chyug/g,'죽')
-				.replace(/chyuk/g,'줔')
-				.replace(/twedj/g,'퉻')
-				.replace(/twech/g,'퉺')
-				.replace(/chyuv/g,'줎')
-				.replace(/chyuf/g,'줊')
-				.replace(/chyuc/g,'줗')
-				.replace(/chyub/g,'줍')
-				.replace(/chyup/g,'줖')
-				.replace(/chyum/g,'줌')
-				.replace(/chyud/g,'줃')
-				.replace(/chyut/g,'줕')
-				.replace(/chyun/g,'준')
-				.replace(/chyul/g,'줄')
-				.replace(/chyuz/g,'줐')
-				.replace(/chyus/g,'줏')
-				.replace(/chwiq/g,'쥥')
-				.replace(/zhyol/g,'숄')
-				.replace(/chwig/g,'쥑')
-				.replace(/chwik/g,'쥨')
-				.replace(/tyedj/g,'톛')
-				.replace(/tyech/g,'톚')
-				.replace(/chwiv/g,'쥢')
-				.replace(/chwif/g,'쥞')
-				.replace(/chwic/g,'쥫')
-				.replace(/chwib/g,'쥡')
-				.replace(/chwip/g,'쥪')
-				.replace(/chwim/g,'쥠')
-				.replace(/chwid/g,'쥗')
-				.replace(/chwit/g,'쥩')
-				.replace(/chwin/g,'쥔')
-				.replace(/chwil/g,'쥘')
-				.replace(/chwiz/g,'쥤')
-				.replace(/chwis/g,'쥣')
-				.replace(/chyiq/g,'즹')
-				.replace(/zhyon/g,'숀')
-				.replace(/chyig/g,'즥')
-				.replace(/chyik/g,'즼')
-				.replace(/twudj/g,'튳')
-				.replace(/twuch/g,'튲')
-				.replace(/chyiv/g,'즶')
-				.replace(/chyif/g,'즲')
-				.replace(/chyic/g,'즿')
-				.replace(/chyib/g,'즵')
-				.replace(/chyip/g,'즾')
-				.replace(/chyim/g,'즴')
-				.replace(/chyid/g,'즫')
-				.replace(/chyit/g,'즽')
-				.replace(/chyin/g,'즨')
-				.replace(/chyil/g,'즬')
-				.replace(/chyiz/g,'즸')
-				.replace(/chyis/g,'즷')
-				.replace(/zhyot/g,'숕')
-				.replace(/tsyil/g,'띌')
-				.replace(/zhyod/g,'숃')
-				.replace(/zhyom/g,'숌')
-				.replace(/chadj/g,'잧')
-				.replace(/chach/g,'잦')
-				.replace(/zhyop/g,'숖')
-				.replace(/zhyob/g,'숍')
-				.replace(/zhyoc/g,'숗')
-				.replace(/zhyof/g,'숊')
-				.replace(/zhyov/g,'숎')
-				.replace(/tyudj/g,'퉃')
-				.replace(/tyuch/g,'퉂')
-				.replace(/zhyok/g,'숔')
-				.replace(/zhyog/g,'쇽')
-				.replace(/zhyoq/g,'숑')
-				.replace(/zhwos/g,'쇳')
-				.replace(/zhwoz/g,'쇴')
-				.replace(/zhwol/g,'쇨')
-				.replace(/tsyin/g,'띈')
-				.replace(/zhwon/g,'쇤')
-				.replace(/zhwot/g,'쇹')
-				.replace(/chedj/g,'젳')
-				.replace(/chech/g,'젲')
-				.replace(/zhwod/g,'쇧')
-				.replace(/zhwom/g,'쇰')
-				.replace(/zhwop/g,'쇺')
-				.replace(/zhwob/g,'쇱')
-				.replace(/zhwoc/g,'쇻')
-				.replace(/zhwof/g,'쇮')
-				.replace(/zhwov/g,'쇲')
-				.replace(/twidj/g,'튗')
-				.replace(/twich/g,'튖')
-				.replace(/zhwok/g,'쇸')
-				.replace(/zhwog/g,'쇡')
-				.replace(/zhwoq/g,'쇵')
-				.replace(/zhyès/g,'셧')
-				.replace(/tsyit/g,'띝')
-				.replace(/zhyèz/g,'셨')
-				.replace(/zhyèl/g,'셜')
-				.replace(/chodj/g,'좇')
-				.replace(/choch/g,'좆')
-				.replace(/zhyèn/g,'션')
-				.replace(/zhyèt/g,'셭')
-				.replace(/zhyèd/g,'셛')
-				.replace(/zhyèm/g,'셤')
-				.replace(/zhyèp/g,'셮')
-				.replace(/zhyèb/g,'셥')
-				.replace(/zhyèc/g,'셯')
-				.replace(/zhyèf/g,'셢')
-				.replace(/zhyèv/g,'셦')
-				.replace(/tyidj/g,'틫')
-				.replace(/tyich/g,'틪')
-				.replace(/zhyèk/g,'셬')
-				.replace(/zhyèg/g,'셕')
-				.replace(/tsyid/g,'띋')
-				.replace(/zhyèq/g,'셩')
-				.replace(/zhwès/g,'쉇')
-				.replace(/chèdj/g,'젗')
-				.replace(/chèch/g,'젖')
-				.replace(/zhwèz/g,'쉈')
-				.replace(/zhwèl/g,'숼')
-				.replace(/zhwèn/g,'숸')
-				.replace(/zhwèt/g,'쉍')
-				.replace(/zhwèd/g,'숻')
-				.replace(/zhwèm/g,'쉄')
-				.replace(/zhwèp/g,'쉎')
-				.replace(/zhwèb/g,'쉅')
-				.replace(/zhwèc/g,'쉏')
-				.replace(/zhwèf/g,'쉂')
-				.replace(/zhwèv/g,'쉆')
-				.replace(/nwèch/g,'눶')
-				.replace(/nwèdj/g,'눷')
-				.replace(/tsyim/g,'띔')
-				.replace(/zhwèk/g,'쉌')
-				.replace(/zhwèg/g,'숵')
-				.replace(/chùdj/g,'쟃')
-				.replace(/chùch/g,'쟂')
-				.replace(/zhwèq/g,'쉉')
-				.replace(/zhyùs/g,'섓')
-				.replace(/zhyùz/g,'섔')
-				.replace(/zhyùl/g,'섈')
-				.replace(/zhyùn/g,'섄')
-				.replace(/zhyùt/g,'섙')
-				.replace(/zhyùd/g,'섇')
-				.replace(/zhyùm/g,'섐')
-				.replace(/zhyùp/g,'섚')
-				.replace(/zhyùb/g,'섑')
-				.replace(/zhyùc/g,'섛')
-				.replace(/zhyùf/g,'섎')
-				.replace(/zhyùv/g,'섒')
-				.replace(/tsyip/g,'띞')
-				.replace(/nyùch/g,'넂')
-				.replace(/nyùdj/g,'넃')
-				.replace(/chidj/g,'짗')
-				.replace(/chich/g,'짖')
-				.replace(/zhyùk/g,'섘')
-				.replace(/zhyùg/g,'섁')
-				.replace(/zhyùq/g,'섕')
-				.replace(/zhwùs/g,'쇗')
-				.replace(/zhwùz/g,'쇘')
-				.replace(/zhwùl/g,'쇌')
-				.replace(/zhwùn/g,'쇈')
-				.replace(/zhwùt/g,'쇝')
-				.replace(/zhwùd/g,'쇋')
-				.replace(/zhwùm/g,'쇔')
-				.replace(/zhwùp/g,'쇞')
-				.replace(/zhwùb/g,'쇕')
-				.replace(/zhwùc/g,'쇟')
-				.replace(/tsyib/g,'띕')
-				.replace(/zhwùf/g,'쇒')
-				.replace(/zhwùv/g,'쇖')
-				.replace(/chudj/g,'즟')
-				.replace(/chuch/g,'즞')
-				.replace(/nwùch/g,'뇆')
-				.replace(/nwùdj/g,'뇇')
-				.replace(/zhwùk/g,'쇜')
-				.replace(/zhwùg/g,'쇅')
-				.replace(/zhwùq/g,'쇙')
-				.replace(/zhyas/g,'샷')
-				.replace(/zhyaz/g,'샸')
-				.replace(/zhyal/g,'샬')
-				.replace(/zhyan/g,'샨')
-				.replace(/zhyat/g,'샽')
-				.replace(/zhyad/g,'샫')
-				.replace(/zhyam/g,'샴')
-				.replace(/zhwaq/g,'솽')
-				.replace(/zhyap/g,'샾')
-				.replace(/zhwag/g,'솩')
-				.replace(/zhwak/g,'쇀')
-				.replace(/nyach/g,'냦')
-				.replace(/nyadj/g,'냧')
-				.replace(/zhwav/g,'솺')
-				.replace(/zhwaf/g,'솶')
-				.replace(/zhwac/g,'쇃')
-				.replace(/zhwab/g,'솹')
-				.replace(/zhwap/g,'쇂')
-				.replace(/zhwam/g,'솸')
-				.replace(/zhwad/g,'솯')
-				.replace(/zhwat/g,'쇁')
-				.replace(/zhwan/g,'솬')
-				.replace(/zhwal/g,'솰')
-				.replace(/zhwaz/g,'솼')
-				.replace(/zhwas/g,'솻')
-				.replace(/zhyaq/g,'샹')
-				.replace(/zhyab/g,'샵')
-				.replace(/zhyag/g,'샥')
-				.replace(/zhyak/g,'샼')
-				.replace(/nwach/g,'놪')
-				.replace(/nwadj/g,'놫')
-				.replace(/zhyav/g,'샶')
-				.replace(/zhyac/g,'샿')
-				.replace(/syeg/g,'쪡')
-				.replace(/zhya/g,'샤')
-				.replace(/zhwa/g,'솨')
-				.replace(/chus/g,'즛')
-				.replace(/chuz/g,'즜')
-				.replace(/chul/g,'즐')
-				.replace(/chun/g,'즌')
-				.replace(/chut/g,'즡')
-				.replace(/chud/g,'즏')
-				.replace(/chum/g,'즘')
-				.replace(/chup/g,'즢')
-				.replace(/zhwù/g,'쇄')
-				.replace(/chub/g,'즙')
-				.replace(/chuc/g,'즣')
-				.replace(/chuf/g,'즖')
-				.replace(/chuv/g,'즚')
-				.replace(/chuk/g,'즠')
-				.replace(/chug/g,'즉')
-				.replace(/chuq/g,'증')
-				.replace(/chis/g,'짓')
-				.replace(/chiz/g,'짔')
-				.replace(/chil/g,'질')
-				.replace(/chin/g,'진')
-				.replace(/chit/g,'짙')
-				.replace(/chid/g,'짇')
-				.replace(/chim/g,'짐')
-				.replace(/chip/g,'짚')
-				.replace(/chib/g,'집')
-				.replace(/chic/g,'짛')
-				.replace(/zhyù/g,'섀')
-				.replace(/chif/g,'짎')
-				.replace(/chiv/g,'짒')
-				.replace(/chik/g,'짘')
-				.replace(/chig/g,'직')
-				.replace(/chiq/g,'징')
-				.replace(/chùs/g,'잿')
-				.replace(/chùz/g,'쟀')
-				.replace(/chùl/g,'잴')
-				.replace(/chùn/g,'잰')
-				.replace(/chùt/g,'쟅')
-				.replace(/chùd/g,'잳')
-				.replace(/chùm/g,'잼')
-				.replace(/chùp/g,'쟆')
-				.replace(/chùb/g,'잽')
-				.replace(/chùc/g,'쟇')
-				.replace(/chùf/g,'잺')
-				.replace(/chùv/g,'잾')
-				.replace(/zhwè/g,'숴')
-				.replace(/chùk/g,'쟄')
-				.replace(/chùg/g,'잭')
-				.replace(/chùq/g,'쟁')
-				.replace(/chès/g,'젓')
-				.replace(/chèz/g,'젔')
-				.replace(/chèl/g,'절')
-				.replace(/chèn/g,'전')
-				.replace(/chèt/g,'젙')
-				.replace(/chèd/g,'젇')
-				.replace(/chèm/g,'점')
-				.replace(/chèp/g,'젚')
-				.replace(/chèb/g,'접')
-				.replace(/chèc/g,'젛')
-				.replace(/chèf/g,'젎')
-				.replace(/chèv/g,'젒')
-				.replace(/chèk/g,'젘')
-				.replace(/chèg/g,'적')
-				.replace(/zhyè/g,'셔')
-				.replace(/chèq/g,'정')
-				.replace(/chos/g,'좃')
-				.replace(/choz/g,'좄')
-				.replace(/chol/g,'졸')
-				.replace(/chon/g,'존')
-				.replace(/chot/g,'좉')
-				.replace(/chod/g,'졷')
-				.replace(/chom/g,'좀')
-				.replace(/chop/g,'좊')
-				.replace(/chob/g,'좁')
-				.replace(/choc/g,'좋')
-				.replace(/chof/g,'졾')
-				.replace(/chov/g,'좂')
-				.replace(/chok/g,'좈')
-				.replace(/chog/g,'족')
-				.replace(/choq/g,'종')
-				.replace(/ches/g,'젯')
-				.replace(/zhwo/g,'쇠')
-				.replace(/chez/g,'젰')
-				.replace(/chel/g,'젤')
-				.replace(/chen/g,'젠')
-				.replace(/chet/g,'젵')
-				.replace(/ched/g,'젣')
-				.replace(/chem/g,'젬')
-				.replace(/chep/g,'젶')
-				.replace(/cheb/g,'젭')
-				.replace(/chec/g,'젷')
-				.replace(/chef/g,'젪')
-				.replace(/chev/g,'젮')
-				.replace(/chek/g,'젴')
-				.replace(/cheg/g,'젝')
-				.replace(/cheq/g,'젱')
-				.replace(/chas/g,'잣')
-				.replace(/chaz/g,'잤')
-				.replace(/chal/g,'잘')
-				.replace(/zhyo/g,'쇼')
-				.replace(/chan/g,'잔')
-				.replace(/chat/g,'잩')
-				.replace(/chad/g,'잗')
-				.replace(/cham/g,'잠')
-				.replace(/chap/g,'잪')
-				.replace(/chab/g,'잡')
-				.replace(/chac/g,'잫')
-				.replace(/chaf/g,'잞')
-				.replace(/chav/g,'잢')
-				.replace(/chak/g,'잨')
-				.replace(/chag/g,'작')
-				.replace(/chaq/g,'장')
-				.replace(/chyi/g,'즤')
-				.replace(/chwi/g,'쥐')
-				.replace(/chyu/g,'주')
-				.replace(/chwu/g,'쥬')
-				.replace(/chye/g,'졔')
-				.replace(/zhwe/g,'쉐')
-				.replace(/chwe/g,'줴')
-				.replace(/chyo/g,'죠')
-				.replace(/chwo/g,'죄')
-				.replace(/chyè/g,'져')
-				.replace(/chwè/g,'줘')
-				.replace(/chyù/g,'쟤')
-				.replace(/chwù/g,'좨')
-				.replace(/chya/g,'쟈')
-				.replace(/chwa/g,'좌')
-				.replace(/djus/g,'츳')
-				.replace(/djuz/g,'츴')
-				.replace(/djul/g,'츨')
-				.replace(/djun/g,'츤')
-				.replace(/djut/g,'츹')
-				.replace(/djud/g,'츧')
-				.replace(/djum/g,'츰')
-				.replace(/djup/g,'츺')
-				.replace(/zhye/g,'셰')
-				.replace(/djub/g,'츱')
-				.replace(/djuc/g,'츻')
-				.replace(/djuf/g,'츮')
-				.replace(/djuv/g,'츲')
-				.replace(/djuk/g,'츸')
-				.replace(/djug/g,'측')
-				.replace(/djuq/g,'층')
-				.replace(/djis/g,'칫')
-				.replace(/djiz/g,'칬')
-				.replace(/djil/g,'칠')
-				.replace(/djin/g,'친')
-				.replace(/djit/g,'칱')
-				.replace(/djid/g,'칟')
-				.replace(/djim/g,'침')
-				.replace(/djip/g,'칲')
-				.replace(/djib/g,'칩')
-				.replace(/djic/g,'칳')
-				.replace(/zhwu/g,'슈')
-				.replace(/djif/g,'칦')
-				.replace(/djiv/g,'칪')
-				.replace(/djik/g,'칰')
-				.replace(/djig/g,'칙')
-				.replace(/djiq/g,'칭')
-				.replace(/djùs/g,'챗')
-				.replace(/djùz/g,'챘')
-				.replace(/djùl/g,'챌')
-				.replace(/djùn/g,'챈')
-				.replace(/djùt/g,'챝')
-				.replace(/djùd/g,'챋')
-				.replace(/djùm/g,'챔')
-				.replace(/djùp/g,'챞')
-				.replace(/djùb/g,'챕')
-				.replace(/djùc/g,'챟')
-				.replace(/djùf/g,'챒')
-				.replace(/djùv/g,'챖')
-				.replace(/zhyu/g,'수')
-				.replace(/djùk/g,'챜')
-				.replace(/djùg/g,'책')
-				.replace(/tsaq/g,'땅')
-				.replace(/djùq/g,'챙')
-				.replace(/djès/g,'첫')
-				.replace(/djèz/g,'첬')
-				.replace(/djèl/g,'철')
-				.replace(/djèn/g,'천')
-				.replace(/djèt/g,'첱')
-				.replace(/djèd/g,'첟')
-				.replace(/djèm/g,'첨')
-				.replace(/djèp/g,'첲')
-				.replace(/djèb/g,'첩')
-				.replace(/djèc/g,'첳')
-				.replace(/djèf/g,'첦')
-				.replace(/djèv/g,'첪')
-				.replace(/djèk/g,'첰')
-				.replace(/zhwi/g,'쉬')
-				.replace(/djèg/g,'척')
-				.replace(/tsag/g,'딱')
-				.replace(/djèq/g,'청')
-				.replace(/djos/g,'촛')
-				.replace(/djoz/g,'촜')
-				.replace(/djol/g,'촐')
-				.replace(/djon/g,'촌')
-				.replace(/djot/g,'촡')
-				.replace(/djod/g,'촏')
-				.replace(/djom/g,'촘')
-				.replace(/djop/g,'촢')
-				.replace(/djob/g,'촙')
-				.replace(/djoc/g,'촣')
-				.replace(/djof/g,'촖')
-				.replace(/djov/g,'촚')
-				.replace(/djok/g,'촠')
-				.replace(/djog/g,'촉')
-				.replace(/zhyi/g,'싀')
-				.replace(/tsak/g,'땈')
-				.replace(/djoq/g,'총')
-				.replace(/djes/g,'쳇')
-				.replace(/djez/g,'쳈')
-				.replace(/djel/g,'첼')
-				.replace(/djen/g,'첸')
-				.replace(/djet/g,'쳍')
-				.replace(/djed/g,'첻')
-				.replace(/djem/g,'쳄')
-				.replace(/djep/g,'쳎')
-				.replace(/djeb/g,'쳅')
-				.replace(/djec/g,'쳏')
-				.replace(/djef/g,'쳂')
-				.replace(/djev/g,'쳆')
-				.replace(/djek/g,'쳌')
-				.replace(/djeg/g,'첵')
-				.replace(/zhaq/g,'상')
-				.replace(/djeq/g,'쳉')
-				.replace(/zhag/g,'삭')
-				.replace(/zhak/g,'샄')
-				.replace(/djas/g,'찻')
-				.replace(/djaz/g,'찼')
-				.replace(/zhav/g,'삾')
-				.replace(/zhaf/g,'삺')
-				.replace(/zhac/g,'샇')
-				.replace(/zhab/g,'삽')
-				.replace(/zhap/g,'샆')
-				.replace(/zham/g,'삼')
-				.replace(/zhad/g,'삳')
-				.replace(/zhat/g,'샅')
-				.replace(/zhan/g,'산')
-				.replace(/zhal/g,'살')
-				.replace(/zhaz/g,'샀')
-				.replace(/zhas/g,'삿')
-				.replace(/zheq/g,'셍')
-				.replace(/djal/g,'찰')
-				.replace(/zheg/g,'섹')
-				.replace(/zhek/g,'셐')
-				.replace(/djan/g,'찬')
-				.replace(/djat/g,'챁')
-				.replace(/zhev/g,'셊')
-				.replace(/zhef/g,'셆')
-				.replace(/zhec/g,'셓')
-				.replace(/zheb/g,'셉')
-				.replace(/zhep/g,'셒')
-				.replace(/zhem/g,'셈')
-				.replace(/zhed/g,'섿')
-				.replace(/zhet/g,'셑')
-				.replace(/zhen/g,'센')
-				.replace(/zhel/g,'셀')
-				.replace(/zhez/g,'셌')
-				.replace(/zhes/g,'셋')
-				.replace(/zhoq/g,'송')
-				.replace(/djad/g,'찯')
-				.replace(/zhog/g,'속')
-				.replace(/zhok/g,'솤')
-				.replace(/djam/g,'참')
-				.replace(/djap/g,'챂')
-				.replace(/zhov/g,'솞')
-				.replace(/zhof/g,'솚')
-				.replace(/zhoc/g,'솧')
-				.replace(/zhob/g,'솝')
-				.replace(/zhop/g,'솦')
-				.replace(/zhom/g,'솜')
-				.replace(/zhod/g,'솓')
-				.replace(/zhot/g,'솥')
-				.replace(/zhon/g,'손')
-				.replace(/zhol/g,'솔')
-				.replace(/zhoz/g,'솠')
-				.replace(/zhos/g,'솟')
-				.replace(/zhèq/g,'성')
-				.replace(/djab/g,'찹')
-				.replace(/zhèg/g,'석')
-				.replace(/zhèk/g,'섴')
-				.replace(/djac/g,'챃')
-				.replace(/djaf/g,'찶')
-				.replace(/zhèv/g,'섮')
-				.replace(/zhèf/g,'섪')
-				.replace(/zhèc/g,'섷')
-				.replace(/zhèb/g,'섭')
-				.replace(/zhèp/g,'섶')
-				.replace(/zhèm/g,'섬')
-				.replace(/zhèd/g,'섣')
-				.replace(/zhèt/g,'섵')
-				.replace(/zhèn/g,'선')
-				.replace(/zhèl/g,'설')
-				.replace(/zhèz/g,'섰')
-				.replace(/zhès/g,'섯')
-				.replace(/zhùq/g,'생')
-				.replace(/djav/g,'찺')
-				.replace(/zhùg/g,'색')
-				.replace(/zhùk/g,'샠')
-				.replace(/djak/g,'챀')
-				.replace(/djag/g,'착')
-				.replace(/zhùv/g,'샚')
-				.replace(/zhùf/g,'샖')
-				.replace(/zhùc/g,'샣')
-				.replace(/zhùb/g,'샙')
-				.replace(/zhùp/g,'샢')
-				.replace(/zhùm/g,'샘')
-				.replace(/zhùd/g,'샏')
-				.replace(/zhùt/g,'샡')
-				.replace(/zhùn/g,'샌')
-				.replace(/zhùl/g,'샐')
-				.replace(/zhùz/g,'샜')
-				.replace(/zhùs/g,'샛')
-				.replace(/zhiq/g,'싱')
-				.replace(/djaq/g,'창')
-				.replace(/zhig/g,'식')
-				.replace(/zhik/g,'싴')
-				.replace(/djyi/g,'츼')
-				.replace(/djwi/g,'취')
-				.replace(/zhiv/g,'싮')
-				.replace(/zhif/g,'싪')
-				.replace(/zhic/g,'싷')
-				.replace(/zhib/g,'십')
-				.replace(/zhip/g,'싶')
-				.replace(/zhim/g,'심')
-				.replace(/zhid/g,'싣')
-				.replace(/zhit/g,'싵')
-				.replace(/zhin/g,'신')
-				.replace(/zhil/g,'실')
-				.replace(/zhiz/g,'싰')
-				.replace(/zhis/g,'싯')
-				.replace(/zhuq/g,'승')
-				.replace(/djyu/g,'추')
-				.replace(/zhug/g,'슥')
-				.replace(/zhuk/g,'슼')
-				.replace(/djwu/g,'츄')
-				.replace(/djye/g,'쳬')
-				.replace(/zhuv/g,'슶')
-				.replace(/zhuf/g,'슲')
-				.replace(/zhuc/g,'슿')
-				.replace(/zhub/g,'습')
-				.replace(/zhup/g,'슾')
-				.replace(/zhum/g,'슴')
-				.replace(/zhud/g,'슫')
-				.replace(/zhut/g,'슽')
-				.replace(/zhun/g,'슨')
-				.replace(/zhul/g,'슬')
-				.replace(/zhuz/g,'슸')
-				.replace(/zhus/g,'슷')
-				.replace(/djwe/g,'췌')
-				.replace(/shwa/g,'솨')
-				.replace(/djyo/g,'쵸')
-				.replace(/djwo/g,'최')
-				.replace(/djyè/g,'쳐')
-				.replace(/djwè/g,'춰')
-				.replace(/djyù/g,'챼')
-				.replace(/djwù/g,'쵀')
-				.replace(/djya/g,'챠')
-				.replace(/djwa/g,'촤')
-				.replace(/tsav/g,'땂')
-				.replace(/tsaf/g,'딾')
-				.replace(/tsac/g,'땋')
-				.replace(/tsab/g,'땁')
-				.replace(/tsap/g,'땊')
-				.replace(/tsam/g,'땀')
-				.replace(/tsad/g,'딷')
-				.replace(/tsat/g,'땉')
-				.replace(/tsan/g,'딴')
-				.replace(/shya/g,'샤')
-				.replace(/tsal/g,'딸')
-				.replace(/tsaz/g,'땄')
-				.replace(/tsas/g,'땃')
-				.replace(/kuch/g,'킂')
-				.replace(/kudj/g,'킃')
-				.replace(/tseq/g,'뗑')
-				.replace(/tseg/g,'떽')
-				.replace(/tsek/g,'뗔')
-				.replace(/tsev/g,'뗎')
-				.replace(/tsef/g,'뗊')
-				.replace(/tsec/g,'뗗')
-				.replace(/tseb/g,'뗍')
-				.replace(/tsep/g,'뗖')
-				.replace(/tsem/g,'뗌')
-				.replace(/tsed/g,'뗃')
-				.replace(/tset/g,'뗕')
-				.replace(/tsen/g,'뗀')
-				.replace(/shwù/g,'쇄')
-				.replace(/tsel/g,'뗄')
-				.replace(/tsez/g,'뗐')
-				.replace(/kich/g,'킺')
-				.replace(/kidj/g,'킻')
-				.replace(/tses/g,'뗏')
-				.replace(/tsoq/g,'똥')
-				.replace(/tsog/g,'똑')
-				.replace(/tsok/g,'똨')
-				.replace(/tsov/g,'똢')
-				.replace(/tsof/g,'똞')
-				.replace(/tsoc/g,'똫')
-				.replace(/tsob/g,'똡')
-				.replace(/tsop/g,'똪')
-				.replace(/tsom/g,'똠')
-				.replace(/tsod/g,'똗')
-				.replace(/tsot/g,'똩')
-				.replace(/tson/g,'똔')
-				.replace(/shyù/g,'섀')
-				.replace(/tsol/g,'똘')
-				.replace(/kùch/g,'캦')
-				.replace(/kùdj/g,'캧')
-				.replace(/tsoz/g,'똤')
-				.replace(/tsos/g,'똣')
-				.replace(/tsèq/g,'떵')
-				.replace(/tsèg/g,'떡')
-				.replace(/tsèk/g,'떸')
-				.replace(/tsèv/g,'떲')
-				.replace(/tsèf/g,'떮')
-				.replace(/tsèc/g,'떻')
-				.replace(/tsèb/g,'떱')
-				.replace(/tsèp/g,'떺')
-				.replace(/tsèm/g,'떰')
-				.replace(/tsèd/g,'떧')
-				.replace(/tsèt/g,'떹')
-				.replace(/tsèn/g,'떤')
-				.replace(/shwè/g,'숴')
-				.replace(/kèch/g,'컺')
-				.replace(/kèdj/g,'컻')
-				.replace(/tsèl/g,'떨')
-				.replace(/tsèz/g,'떴')
-				.replace(/tsès/g,'떳')
-				.replace(/tsùq/g,'땡')
-				.replace(/tsùg/g,'땍')
-				.replace(/tsùk/g,'땤')
-				.replace(/tsùv/g,'땞')
-				.replace(/tsùf/g,'땚')
-				.replace(/tsùc/g,'땧')
-				.replace(/tsùb/g,'땝')
-				.replace(/tsùp/g,'땦')
-				.replace(/tsùm/g,'땜')
-				.replace(/tsùd/g,'땓')
-				.replace(/tsùt/g,'땥')
-				.replace(/koch/g,'콪')
-				.replace(/shyè/g,'셔')
-				.replace(/kodj/g,'콫')
-				.replace(/tsùn/g,'땐')
-				.replace(/tsùl/g,'땔')
-				.replace(/tsùz/g,'땠')
-				.replace(/tsùs/g,'땟')
-				.replace(/tsiq/g,'띵')
-				.replace(/tsig/g,'띡')
-				.replace(/tsik/g,'띸')
-				.replace(/tsiv/g,'띲')
-				.replace(/tsif/g,'띮')
-				.replace(/tsic/g,'띻')
-				.replace(/tsib/g,'띱')
-				.replace(/tsip/g,'띺')
-				.replace(/tsim/g,'띰')
-				.replace(/tsid/g,'띧')
-				.replace(/kech/g,'켖')
-				.replace(/kedj/g,'켗')
-				.replace(/shwo/g,'쇠')
-				.replace(/tsit/g,'띹')
-				.replace(/tsin/g,'띤')
-				.replace(/tsil/g,'띨')
-				.replace(/tsiz/g,'띴')
-				.replace(/tsis/g,'띳')
-				.replace(/tsuq/g,'뜽')
-				.replace(/tsug/g,'뜩')
-				.replace(/tsuk/g,'띀')
-				.replace(/tsuv/g,'뜺')
-				.replace(/tsuf/g,'뜶')
-				.replace(/tsuc/g,'띃')
-				.replace(/tsub/g,'뜹')
-				.replace(/tsup/g,'띂')
-				.replace(/tsum/g,'뜸')
-				.replace(/kach/g,'캊')
-				.replace(/kadj/g,'캋')
-				.replace(/tsud/g,'뜯')
-				.replace(/shyo/g,'쇼')
-				.replace(/tsut/g,'띁')
-				.replace(/tsun/g,'뜬')
-				.replace(/tsul/g,'뜰')
-				.replace(/kyis/g,'킛')
-				.replace(/kyiz/g,'킜')
-				.replace(/kyil/g,'킐')
-				.replace(/kyin/g,'킌')
-				.replace(/kyit/g,'킡')
-				.replace(/kyid/g,'킏')
-				.replace(/kyim/g,'킘')
-				.replace(/kyip/g,'킢')
-				.replace(/kyib/g,'킙')
-				.replace(/kyic/g,'킣')
-				.replace(/kyif/g,'킖')
-				.replace(/kyiv/g,'킚')
-				.replace(/kyik/g,'킠')
-				.replace(/kyig/g,'킉')
-				.replace(/shwe/g,'쉐')
-				.replace(/tsuz/g,'뜼')
-				.replace(/kyiq/g,'킝')
-				.replace(/kwis/g,'큇')
-				.replace(/kwiz/g,'큈')
-				.replace(/kwil/g,'퀼')
-				.replace(/kwin/g,'퀸')
-				.replace(/kwit/g,'큍')
-				.replace(/kwid/g,'퀻')
-				.replace(/kwim/g,'큄')
-				.replace(/kwip/g,'큎')
-				.replace(/kwib/g,'큅')
-				.replace(/kwic/g,'큏')
-				.replace(/kwif/g,'큂')
-				.replace(/kwiv/g,'큆')
-				.replace(/kwik/g,'큌')
-				.replace(/kwig/g,'퀵')
-				.replace(/tsus/g,'뜻')
-				.replace(/shye/g,'셰')
-				.replace(/kwiq/g,'큉')
-				.replace(/kyus/g,'쿳')
-				.replace(/kyuz/g,'쿴')
-				.replace(/kyul/g,'쿨')
-				.replace(/kyun/g,'쿤')
-				.replace(/kyut/g,'쿹')
-				.replace(/kyud/g,'쿧')
-				.replace(/kyum/g,'쿰')
-				.replace(/kyup/g,'쿺')
-				.replace(/kyub/g,'쿱')
-				.replace(/kyuc/g,'쿻')
-				.replace(/kyuf/g,'쿮')
-				.replace(/kyuv/g,'쿲')
-				.replace(/kyuk/g,'쿸')
-				.replace(/kyug/g,'쿡')
-				.replace(/zwaq/g,'쐉')
-				.replace(/kyuq/g,'쿵')
-				.replace(/shwu/g,'슈')
-				.replace(/kwus/g,'큣')
-				.replace(/kwuz/g,'큤')
-				.replace(/kwul/g,'큘')
-				.replace(/kwun/g,'큔')
-				.replace(/kwut/g,'큩')
-				.replace(/kwud/g,'큗')
-				.replace(/kwum/g,'큠')
-				.replace(/kwup/g,'큪')
-				.replace(/kwub/g,'큡')
-				.replace(/kwuc/g,'큫')
-				.replace(/kwuf/g,'큞')
-				.replace(/kwuv/g,'큢')
-				.replace(/kwuk/g,'큨')
-				.replace(/kwug/g,'큑')
-				.replace(/zwag/g,'쏵')
-				.replace(/kwuq/g,'큥')
-				.replace(/kyes/g,'콋')
-				.replace(/shyu/g,'수')
-				.replace(/kyez/g,'콌')
-				.replace(/kyel/g,'콀')
-				.replace(/kyen/g,'켼')
-				.replace(/kyet/g,'콑')
-				.replace(/kyed/g,'켿')
-				.replace(/kyem/g,'콈')
-				.replace(/kyep/g,'콒')
-				.replace(/kyeb/g,'콉')
-				.replace(/kyec/g,'콓')
-				.replace(/kyef/g,'콆')
-				.replace(/kyev/g,'콊')
-				.replace(/kyek/g,'콐')
-				.replace(/kyeg/g,'켹')
-				.replace(/zwak/g,'쐌')
-				.replace(/kyeq/g,'콍')
-				.replace(/kwes/g,'퀫')
-				.replace(/kwez/g,'퀬')
-				.replace(/shwi/g,'쉬')
-				.replace(/kwel/g,'퀠')
-				.replace(/kwen/g,'퀜')
-				.replace(/kwet/g,'퀱')
-				.replace(/kwed/g,'퀟')
-				.replace(/kwem/g,'퀨')
-				.replace(/kwep/g,'퀲')
-				.replace(/kweb/g,'퀩')
-				.replace(/kwec/g,'퀳')
-				.replace(/kwef/g,'퀦')
-				.replace(/kwev/g,'퀪')
-				.replace(/kwek/g,'퀰')
-				.replace(/kweg/g,'퀙')
-				.replace(/kweq/g,'퀭')
-				.replace(/kyos/g,'쿗')
-				.replace(/kyoz/g,'쿘')
-				.replace(/kyol/g,'쿌')
-				.replace(/kyon/g,'쿈')
-				.replace(/shyi/g,'싀')
-				.replace(/kyot/g,'쿝')
-				.replace(/kyod/g,'쿋')
-				.replace(/kyom/g,'쿔')
-				.replace(/kyop/g,'쿞')
-				.replace(/kyob/g,'쿕')
-				.replace(/kyoc/g,'쿟')
-				.replace(/kyof/g,'쿒')
-				.replace(/kyov/g,'쿖')
-				.replace(/kyok/g,'쿜')
-				.replace(/kyog/g,'쿅')
-				.replace(/kyoq/g,'쿙')
-				.replace(/kwos/g,'쾻')
-				.replace(/kwoz/g,'쾼')
-				.replace(/kwol/g,'쾰')
-				.replace(/kwon/g,'쾬')
-				.replace(/kwot/g,'쿁')
-				.replace(/shaq/g,'상')
-				.replace(/tsyi/g,'띄')
-				.replace(/shag/g,'삭')
-				.replace(/shak/g,'샄')
-				.replace(/kwod/g,'쾯')
-				.replace(/kwom/g,'쾸')
-				.replace(/shav/g,'삾')
-				.replace(/shaf/g,'삺')
-				.replace(/shac/g,'샇')
-				.replace(/shab/g,'삽')
-				.replace(/shap/g,'샆')
-				.replace(/sham/g,'삼')
-				.replace(/shad/g,'삳')
-				.replace(/shat/g,'샅')
-				.replace(/shan/g,'산')
-				.replace(/shal/g,'살')
-				.replace(/shaz/g,'샀')
-				.replace(/shas/g,'삿')
-				.replace(/sheq/g,'셍')
-				.replace(/kwop/g,'쿂')
-				.replace(/sheg/g,'섹')
-				.replace(/shek/g,'셐')
-				.replace(/kwob/g,'쾹')
-				.replace(/kwoc/g,'쿃')
-				.replace(/shev/g,'셊')
-				.replace(/shef/g,'셆')
-				.replace(/shec/g,'셓')
-				.replace(/sheb/g,'셉')
-				.replace(/shep/g,'셒')
-				.replace(/shem/g,'셈')
-				.replace(/shed/g,'섿')
-				.replace(/shet/g,'셑')
-				.replace(/shen/g,'센')
-				.replace(/shel/g,'셀')
-				.replace(/shez/g,'셌')
-				.replace(/shes/g,'셋')
-				.replace(/shoq/g,'송')
-				.replace(/kwof/g,'쾶')
-				.replace(/shog/g,'속')
-				.replace(/shok/g,'솤')
-				.replace(/kwov/g,'쾺')
-				.replace(/kwok/g,'쿀')
-				.replace(/shov/g,'솞')
-				.replace(/shof/g,'솚')
-				.replace(/shoc/g,'솧')
-				.replace(/shob/g,'솝')
-				.replace(/shop/g,'솦')
-				.replace(/shom/g,'솜')
-				.replace(/shod/g,'솓')
-				.replace(/shot/g,'솥')
-				.replace(/shon/g,'손')
-				.replace(/shol/g,'솔')
-				.replace(/shoz/g,'솠')
-				.replace(/shos/g,'솟')
-				.replace(/shèq/g,'성')
-				.replace(/kwog/g,'쾩')
-				.replace(/shèg/g,'석')
-				.replace(/shèk/g,'섴')
-				.replace(/zwav/g,'쐆')
-				.replace(/kwoq/g,'쾽')
-				.replace(/shèv/g,'섮')
-				.replace(/shèf/g,'섪')
-				.replace(/shèc/g,'섷')
-				.replace(/shèb/g,'섭')
-				.replace(/shèp/g,'섶')
-				.replace(/shèm/g,'섬')
-				.replace(/shèd/g,'섣')
-				.replace(/shèt/g,'섵')
-				.replace(/shèn/g,'선')
-				.replace(/shèl/g,'설')
-				.replace(/shèz/g,'섰')
-				.replace(/shès/g,'섯')
-				.replace(/shùq/g,'생')
-				.replace(/kyès/g,'켯')
-				.replace(/shùg/g,'색')
-				.replace(/shùk/g,'샠')
-				.replace(/kyèz/g,'켰')
-				.replace(/kyèl/g,'켤')
-				.replace(/shùv/g,'샚')
-				.replace(/shùf/g,'샖')
-				.replace(/shùc/g,'샣')
-				.replace(/shùb/g,'샙')
-				.replace(/shùp/g,'샢')
-				.replace(/shùm/g,'샘')
-				.replace(/shùd/g,'샏')
-				.replace(/shùt/g,'샡')
-				.replace(/shùn/g,'샌')
-				.replace(/shùl/g,'샐')
-				.replace(/shùz/g,'샜')
-				.replace(/shùs/g,'샛')
-				.replace(/shiq/g,'싱')
-				.replace(/kyèn/g,'켠')
-				.replace(/shig/g,'식')
-				.replace(/shik/g,'싴')
-				.replace(/kyèt/g,'켵')
-				.replace(/kyèd/g,'켣')
-				.replace(/shiv/g,'싮')
-				.replace(/shif/g,'싪')
-				.replace(/shic/g,'싷')
-				.replace(/shib/g,'십')
-				.replace(/ship/g,'싶')
-				.replace(/shim/g,'심')
-				.replace(/shid/g,'싣')
-				.replace(/shit/g,'싵')
-				.replace(/shin/g,'신')
-				.replace(/shil/g,'실')
-				.replace(/shiz/g,'싰')
-				.replace(/shis/g,'싯')
-				.replace(/shuq/g,'승')
-				.replace(/kyèm/g,'켬')
-				.replace(/shug/g,'슥')
-				.replace(/shuk/g,'슼')
-				.replace(/kyèp/g,'켶')
-				.replace(/kyèb/g,'켭')
-				.replace(/shuv/g,'슶')
-				.replace(/shuf/g,'슲')
-				.replace(/shuc/g,'슿')
-				.replace(/shub/g,'습')
-				.replace(/shup/g,'슾')
-				.replace(/shum/g,'슴')
-				.replace(/shud/g,'슫')
-				.replace(/shut/g,'슽')
-				.replace(/shun/g,'슨')
-				.replace(/shul/g,'슬')
-				.replace(/shuz/g,'슸')
-				.replace(/shus/g,'슷')
-				.replace(/vwaq/g,'봥')
-				.replace(/kyèc/g,'켷')
-				.replace(/vwag/g,'봑')
-				.replace(/vwak/g,'봨')
-				.replace(/kyèf/g,'켪')
-				.replace(/kyèv/g,'켮')
-				.replace(/vwav/g,'봢')
-				.replace(/vwaf/g,'봞')
-				.replace(/vwac/g,'봫')
-				.replace(/vwab/g,'봡')
-				.replace(/vwap/g,'봪')
-				.replace(/vwam/g,'봠')
-				.replace(/vwad/g,'봗')
-				.replace(/vwat/g,'봩')
-				.replace(/vwan/g,'봔')
-				.replace(/vwal/g,'봘')
-				.replace(/vwaz/g,'봤')
-				.replace(/vwas/g,'봣')
-				.replace(/vyaq/g,'뱡')
-				.replace(/kyèk/g,'켴')
-				.replace(/vyag/g,'뱍')
-				.replace(/vyak/g,'뱤')
-				.replace(/kyèg/g,'켝')
-				.replace(/zwaf/g,'쐂')
-				.replace(/vyav/g,'뱞')
-				.replace(/vyaf/g,'뱚')
-				.replace(/vyac/g,'뱧')
-				.replace(/vyab/g,'뱝')
-				.replace(/vyap/g,'뱦')
-				.replace(/vyam/g,'뱜')
-				.replace(/vyad/g,'뱓')
-				.replace(/vyat/g,'뱥')
-				.replace(/vyan/g,'뱐')
-				.replace(/vyal/g,'뱔')
-				.replace(/vyaz/g,'뱠')
-				.replace(/vyas/g,'뱟')
-				.replace(/vwùq/g,'뵁')
-				.replace(/kyèq/g,'켱')
-				.replace(/vwùg/g,'봭')
-				.replace(/vwùk/g,'뵄')
-				.replace(/kwès/g,'퀏')
-				.replace(/kwèz/g,'퀐')
-				.replace(/vwùv/g,'봾')
-				.replace(/vwùf/g,'봺')
-				.replace(/vwùc/g,'뵇')
-				.replace(/vwùb/g,'봽')
-				.replace(/vwùp/g,'뵆')
-				.replace(/vwùm/g,'봼')
-				.replace(/vwùd/g,'봳')
-				.replace(/vwùt/g,'뵅')
-				.replace(/vwùn/g,'봰')
-				.replace(/vwùl/g,'봴')
-				.replace(/vwùz/g,'뵀')
-				.replace(/vwùs/g,'봿')
-				.replace(/vyùq/g,'뱽')
-				.replace(/kwèl/g,'퀄')
-				.replace(/vyùg/g,'뱩')
-				.replace(/vyùk/g,'벀')
-				.replace(/kwèn/g,'퀀')
-				.replace(/kwèt/g,'퀕')
-				.replace(/vyùv/g,'뱺')
-				.replace(/vyùf/g,'뱶')
-				.replace(/vyùc/g,'벃')
-				.replace(/vyùb/g,'뱹')
-				.replace(/vyùp/g,'벂')
-				.replace(/vyùm/g,'뱸')
-				.replace(/vyùd/g,'뱯')
-				.replace(/vyùt/g,'벁')
-				.replace(/vyùn/g,'뱬')
-				.replace(/vyùl/g,'뱰')
-				.replace(/vyùz/g,'뱼')
-				.replace(/vyùs/g,'뱻')
-				.replace(/vwèq/g,'붱')
-				.replace(/kwèd/g,'퀃')
-				.replace(/vwèg/g,'붝')
-				.replace(/vwèk/g,'붴')
-				.replace(/kwèm/g,'퀌')
-				.replace(/kwèp/g,'퀖')
-				.replace(/vwèv/g,'붮')
-				.replace(/vwèf/g,'붪')
-				.replace(/vwèc/g,'붷')
-				.replace(/vwèb/g,'붭')
-				.replace(/vwèp/g,'붶')
-				.replace(/vwèm/g,'붬')
-				.replace(/vwèd/g,'붣')
-				.replace(/vwèt/g,'붵')
-				.replace(/vwèn/g,'붠')
-				.replace(/vwèl/g,'붤')
-				.replace(/vwèz/g,'붰')
-				.replace(/vwès/g,'붯')
-				.replace(/vyèq/g,'병')
-				.replace(/kwèb/g,'퀍')
-				.replace(/vyèg/g,'벽')
-				.replace(/vyèk/g,'볔')
-				.replace(/kwèc/g,'퀗')
-				.replace(/kwèf/g,'퀊')
-				.replace(/vyèv/g,'볎')
-				.replace(/vyèf/g,'볊')
-				.replace(/vyèc/g,'볗')
-				.replace(/vyèb/g,'볍')
-				.replace(/vyèp/g,'볖')
-				.replace(/vyèm/g,'볌')
-				.replace(/vyèd/g,'볃')
-				.replace(/vyèt/g,'볕')
-				.replace(/vyèn/g,'변')
-				.replace(/vyèl/g,'별')
-				.replace(/vyèz/g,'볐')
-				.replace(/vyès/g,'볏')
-				.replace(/vwoq/g,'뵝')
-				.replace(/kwèv/g,'퀎')
-				.replace(/vwog/g,'뵉')
-				.replace(/vwok/g,'뵠')
-				.replace(/kwèk/g,'퀔')
-				.replace(/kwèg/g,'쿽')
-				.replace(/vwov/g,'뵚')
-				.replace(/vwof/g,'뵖')
-				.replace(/vwoc/g,'뵣')
-				.replace(/vwob/g,'뵙')
-				.replace(/vwop/g,'뵢')
-				.replace(/vwom/g,'뵘')
-				.replace(/vwod/g,'뵏')
-				.replace(/vwot/g,'뵡')
-				.replace(/vwon/g,'뵌')
-				.replace(/vwol/g,'뵐')
-				.replace(/vwoz/g,'뵜')
-				.replace(/vwos/g,'뵛')
-				.replace(/vyoq/g,'뵹')
-				.replace(/zwac/g,'쐏')
-				.replace(/vyog/g,'뵥')
-				.replace(/vyok/g,'뵼')
-				.replace(/kwèq/g,'퀑')
-				.replace(/kyùs/g,'컛')
-				.replace(/vyov/g,'뵶')
-				.replace(/vyof/g,'뵲')
-				.replace(/vyoc/g,'뵿')
-				.replace(/vyob/g,'뵵')
-				.replace(/vyop/g,'뵾')
-				.replace(/vyom/g,'뵴')
-				.replace(/vyod/g,'뵫')
-				.replace(/vyot/g,'뵽')
-				.replace(/vyon/g,'뵨')
-				.replace(/vyol/g,'뵬')
-				.replace(/vyoz/g,'뵸')
-				.replace(/vyos/g,'뵷')
-				.replace(/vweq/g,'뷍')
-				.replace(/kyùz/g,'컜')
-				.replace(/vweg/g,'붹')
-				.replace(/vwek/g,'뷐')
-				.replace(/kyùl/g,'컐')
-				.replace(/kyùn/g,'컌')
-				.replace(/vwev/g,'뷊')
-				.replace(/vwef/g,'뷆')
-				.replace(/vwec/g,'뷓')
-				.replace(/vweb/g,'뷉')
-				.replace(/vwep/g,'뷒')
-				.replace(/vwem/g,'뷈')
-				.replace(/vwed/g,'붿')
-				.replace(/vwet/g,'뷑')
-				.replace(/vwen/g,'붼')
-				.replace(/vwel/g,'뷀')
-				.replace(/vwez/g,'뷌')
-				.replace(/vwes/g,'뷋')
-				.replace(/vyeq/g,'볭')
-				.replace(/kyùt/g,'컡')
-				.replace(/vyeg/g,'볙')
-				.replace(/vyek/g,'볰')
-				.replace(/kyùd/g,'컏')
-				.replace(/kyùm/g,'컘')
-				.replace(/vyev/g,'볪')
-				.replace(/vyef/g,'볦')
-				.replace(/vyec/g,'볳')
-				.replace(/vyeb/g,'볩')
-				.replace(/vyep/g,'볲')
-				.replace(/vyem/g,'볨')
-				.replace(/vyed/g,'볟')
-				.replace(/vyet/g,'볱')
-				.replace(/vyen/g,'볜')
-				.replace(/vyel/g,'볠')
-				.replace(/vyez/g,'볬')
-				.replace(/vyes/g,'볫')
-				.replace(/vwuq/g,'븅')
-				.replace(/kyùp/g,'컢')
-				.replace(/vwug/g,'뷱')
-				.replace(/vwuk/g,'븈')
-				.replace(/kyùb/g,'컙')
-				.replace(/kyùc/g,'컣')
-				.replace(/vwuv/g,'븂')
-				.replace(/vwuf/g,'뷾')
-				.replace(/vwuc/g,'븋')
-				.replace(/vwub/g,'븁')
-				.replace(/vwup/g,'븊')
-				.replace(/vwum/g,'븀')
-				.replace(/vwud/g,'뷷')
-				.replace(/vwut/g,'븉')
-				.replace(/vwun/g,'뷴')
-				.replace(/vwul/g,'뷸')
-				.replace(/vwuz/g,'븄')
-				.replace(/vwus/g,'븃')
-				.replace(/vyuq/g,'붕')
-				.replace(/tswi/g,'뛰')
-				.replace(/vyug/g,'북')
-				.replace(/vyuk/g,'붘')
-				.replace(/kyùf/g,'컖')
-				.replace(/kyùv/g,'컚')
-				.replace(/vyuv/g,'붒')
-				.replace(/vyuf/g,'붎')
-				.replace(/vyuc/g,'붛')
-				.replace(/vyub/g,'붑')
-				.replace(/vyup/g,'붚')
-				.replace(/vyum/g,'붐')
-				.replace(/vyud/g,'붇')
-				.replace(/vyut/g,'붙')
-				.replace(/vyun/g,'분')
-				.replace(/vyul/g,'불')
-				.replace(/vyuz/g,'붔')
-				.replace(/vyus/g,'붓')
-				.replace(/vwiq/g,'뷩')
-				.replace(/kyùk/g,'컠')
-				.replace(/vwig/g,'뷕')
-				.replace(/vwik/g,'뷬')
-				.replace(/kyùg/g,'컉')
-				.replace(/zwab/g,'쐅')
-				.replace(/vwiv/g,'뷦')
-				.replace(/vwif/g,'뷢')
-				.replace(/vwic/g,'뷯')
-				.replace(/vwib/g,'뷥')
-				.replace(/vwip/g,'뷮')
-				.replace(/vwim/g,'뷤')
-				.replace(/vwid/g,'뷛')
-				.replace(/vwit/g,'뷭')
-				.replace(/vwin/g,'뷘')
-				.replace(/vwil/g,'뷜')
-				.replace(/vwiz/g,'뷨')
-				.replace(/vwis/g,'뷧')
-				.replace(/vyiq/g,'븽')
-				.replace(/kyùq/g,'컝')
-				.replace(/vyig/g,'븩')
-				.replace(/vyik/g,'빀')
-				.replace(/kwùs/g,'쾟')
-				.replace(/kwùz/g,'쾠')
-				.replace(/vyiv/g,'븺')
-				.replace(/vyif/g,'븶')
-				.replace(/vyic/g,'빃')
-				.replace(/vyib/g,'븹')
-				.replace(/vyip/g,'빂')
-				.replace(/vyim/g,'븸')
-				.replace(/vyid/g,'븯')
-				.replace(/vyit/g,'빁')
-				.replace(/vyin/g,'븬')
-				.replace(/vyil/g,'븰')
-				.replace(/vyiz/g,'븼')
-				.replace(/vyis/g,'븻')
-				.replace(/kwùl/g,'쾔')
-				.replace(/kwùn/g,'쾐')
-				.replace(/kwùt/g,'쾥')
-				.replace(/kwùd/g,'쾓')
-				.replace(/vadj/g,'밫')
-				.replace(/vach/g,'밪')
-				.replace(/kwùm/g,'쾜')
-				.replace(/kwùp/g,'쾦')
-				.replace(/kwùb/g,'쾝')
-				.replace(/kwùc/g,'쾧')
-				.replace(/kwùf/g,'쾚')
-				.replace(/kwùv/g,'쾞')
-				.replace(/kwùk/g,'쾤')
-				.replace(/kwùg/g,'쾍')
-				.replace(/zwap/g,'쐎')
-				.replace(/kwùq/g,'쾡')
-				.replace(/kyas/g,'캿')
-				.replace(/tsyu/g,'뚜')
-				.replace(/kyaz/g,'컀')
-				.replace(/kyal/g,'캴')
-				.replace(/kyan/g,'캰')
-				.replace(/kyat/g,'컅')
-				.replace(/vedj/g,'벷')
-				.replace(/vech/g,'벶')
-				.replace(/kyad/g,'캳')
-				.replace(/kyam/g,'캼')
-				.replace(/kyap/g,'컆')
-				.replace(/kyab/g,'캽')
-				.replace(/kyac/g,'컇')
-				.replace(/kyaf/g,'캺')
-				.replace(/kyav/g,'캾')
-				.replace(/kyak/g,'컄')
-				.replace(/kyag/g,'캭')
-				.replace(/zwam/g,'쐄')
-				.replace(/kyaq/g,'컁')
-				.replace(/kwas/g,'쾃')
-				.replace(/kwaz/g,'쾄')
-				.replace(/tswu/g,'뜌')
-				.replace(/kwal/g,'콸')
-				.replace(/kwan/g,'콴')
-				.replace(/vodj/g,'봋')
-				.replace(/voch/g,'봊')
-				.replace(/kwat/g,'쾉')
-				.replace(/kwad/g,'콷')
-				.replace(/kwam/g,'쾀')
-				.replace(/kwap/g,'쾊')
-				.replace(/kwab/g,'쾁')
-				.replace(/kwac/g,'쾋')
-				.replace(/kwaf/g,'콾')
-				.replace(/kwav/g,'쾂')
-				.replace(/kwak/g,'쾈')
-				.replace(/kwag/g,'콱')
-				.replace(/zwad/g,'쏻')
-				.replace(/kwaq/g,'쾅')
-				.replace(/zwat/g,'쐍')
-				.replace(/zwan/g,'쏸')
-				.replace(/zwal/g,'쏼')
-				.replace(/tsye/g,'뗴')
-				.replace(/vèdj/g,'벛')
-				.replace(/vèch/g,'벚')
-				.replace(/zwaz/g,'쐈')
-				.replace(/zwas/g,'쐇')
-				.replace(/zyaq/g,'썅')
-				.replace(/zyag/g,'쌱')
-				.replace(/zyak/g,'썈')
-				.replace(/zyav/g,'썂')
-				.replace(/zyaf/g,'쌾')
-				.replace(/guch/g,'긎')
-				.replace(/gudj/g,'긏')
-				.replace(/zyac/g,'썋')
-				.replace(/zyab/g,'썁')
-				.replace(/zyap/g,'썊')
-				.replace(/zyam/g,'썀')
-				.replace(/zyad/g,'쌷')
-				.replace(/zyat/g,'썉')
-				.replace(/zyan/g,'쌴')
-				.replace(/vùdj/g,'뱇')
-				.replace(/vùch/g,'뱆')
-				.replace(/zyal/g,'쌸')
-				.replace(/tswe/g,'뛔')
-				.replace(/zyaz/g,'썄')
-				.replace(/zyas/g,'썃')
-				.replace(/zwùq/g,'쐥')
-				.replace(/zwùg/g,'쐑')
-				.replace(/zwùk/g,'쐨')
-				.replace(/zwùv/g,'쐢')
-				.replace(/gich/g,'깆')
-				.replace(/gidj/g,'깇')
-				.replace(/zwùf/g,'쐞')
-				.replace(/zwùc/g,'쐫')
-				.replace(/zwùb/g,'쐡')
-				.replace(/zwùp/g,'쐪')
-				.replace(/zwùm/g,'쐠')
-				.replace(/zwùd/g,'쐗')
-				.replace(/vidj/g,'빛')
-				.replace(/vich/g,'빚')
-				.replace(/zwùt/g,'쐩')
-				.replace(/zwùn/g,'쐔')
-				.replace(/zwùl/g,'쐘')
-				.replace(/tsyo/g,'뚀')
-				.replace(/zwùz/g,'쐤')
-				.replace(/zwùs/g,'쐣')
-				.replace(/zyùq/g,'썡')
-				.replace(/zyùg/g,'썍')
-				.replace(/zyùk/g,'썤')
-				.replace(/gùch/g,'갲')
-				.replace(/gùdj/g,'갳')
-				.replace(/zyùv/g,'썞')
-				.replace(/zyùf/g,'썚')
-				.replace(/zyùc/g,'썧')
-				.replace(/zyùb/g,'썝')
-				.replace(/zyùp/g,'썦')
-				.replace(/vudj/g,'븣')
-				.replace(/vuch/g,'븢')
-				.replace(/zyùm/g,'썜')
-				.replace(/zyùd/g,'썓')
-				.replace(/zyùt/g,'썥')
-				.replace(/zyùn/g,'썐')
-				.replace(/zyùl/g,'썔')
-				.replace(/tswo/g,'뙤')
-				.replace(/zyùz/g,'썠')
-				.replace(/zyùs/g,'썟')
-				.replace(/zwèq/g,'쒕')
-				.replace(/zwèg/g,'쒁')
-				.replace(/zwèk/g,'쒘')
-				.replace(/gèch/g,'겆')
-				.replace(/fwaq/g,'퐝')
-				.replace(/gèdj/g,'겇')
-				.replace(/fwag/g,'퐉')
-				.replace(/fwak/g,'퐠')
-				.replace(/zwèv/g,'쒒')
-				.replace(/zwèf/g,'쒎')
-				.replace(/fwav/g,'퐚')
-				.replace(/fwaf/g,'퐖')
-				.replace(/fwac/g,'퐣')
-				.replace(/fwab/g,'퐙')
-				.replace(/fwap/g,'퐢')
-				.replace(/fwam/g,'퐘')
-				.replace(/fwad/g,'퐏')
-				.replace(/fwat/g,'퐡')
-				.replace(/fwan/g,'퐌')
-				.replace(/fwal/g,'퐐')
-				.replace(/fwaz/g,'퐜')
-				.replace(/fwas/g,'퐛')
-				.replace(/fyaq/g,'퍙')
-				.replace(/zwèc/g,'쒛')
-				.replace(/fyag/g,'퍅')
-				.replace(/fyak/g,'퍜')
-				.replace(/zwèb/g,'쒑')
-				.replace(/zwèp/g,'쒚')
-				.replace(/fyav/g,'퍖')
-				.replace(/fyaf/g,'퍒')
-				.replace(/fyac/g,'퍟')
-				.replace(/fyab/g,'퍕')
-				.replace(/fyap/g,'퍞')
-				.replace(/fyam/g,'퍔')
-				.replace(/fyad/g,'퍋')
-				.replace(/fyat/g,'퍝')
-				.replace(/fyan/g,'퍈')
-				.replace(/fyal/g,'퍌')
-				.replace(/fyaz/g,'퍘')
-				.replace(/fyas/g,'퍗')
-				.replace(/fwùq/g,'퐹')
-				.replace(/zwèm/g,'쒐')
-				.replace(/fwùg/g,'퐥')
-				.replace(/fwùk/g,'퐼')
-				.replace(/zwèd/g,'쒇')
-				.replace(/zwèt/g,'쒙')
-				.replace(/fwùv/g,'퐶')
-				.replace(/fwùf/g,'퐲')
-				.replace(/fwùc/g,'퐿')
-				.replace(/fwùb/g,'퐵')
-				.replace(/fwùp/g,'퐾')
-				.replace(/fwùm/g,'퐴')
-				.replace(/fwùd/g,'퐫')
-				.replace(/fwùt/g,'퐽')
-				.replace(/fwùn/g,'퐨')
-				.replace(/fwùl/g,'퐬')
-				.replace(/fwùz/g,'퐸')
-				.replace(/fwùs/g,'퐷')
-				.replace(/fyùq/g,'퍵')
-				.replace(/zwèn/g,'쒄')
-				.replace(/fyùg/g,'퍡')
-				.replace(/fyùk/g,'퍸')
-				.replace(/zwèl/g,'쒈')
-				.replace(/zwèz/g,'쒔')
-				.replace(/fyùv/g,'퍲')
-				.replace(/fyùf/g,'퍮')
-				.replace(/fyùc/g,'퍻')
-				.replace(/fyùb/g,'퍱')
-				.replace(/fyùp/g,'퍺')
-				.replace(/fyùm/g,'퍰')
-				.replace(/fyùd/g,'퍧')
-				.replace(/fyùt/g,'퍹')
-				.replace(/fyùn/g,'퍤')
-				.replace(/fyùl/g,'퍨')
-				.replace(/fyùz/g,'퍴')
-				.replace(/fyùs/g,'퍳')
-				.replace(/fwèq/g,'풩')
-				.replace(/zwès/g,'쒓')
-				.replace(/fwèg/g,'풕')
-				.replace(/fwèk/g,'풬')
-				.replace(/zyèq/g,'쎵')
-				.replace(/zyèg/g,'쎡')
-				.replace(/fwèv/g,'풦')
-				.replace(/fwèf/g,'풢')
-				.replace(/fwèc/g,'풯')
-				.replace(/fwèb/g,'풥')
-				.replace(/fwèp/g,'풮')
-				.replace(/fwèm/g,'풤')
-				.replace(/fwèd/g,'풛')
-				.replace(/fwèt/g,'풭')
-				.replace(/fwèn/g,'풘')
-				.replace(/fwèl/g,'풜')
-				.replace(/fwèz/g,'풨')
-				.replace(/fwès/g,'풧')
-				.replace(/fyèq/g,'평')
-				.replace(/zyèk/g,'쎸')
-				.replace(/fyèg/g,'펵')
-				.replace(/fyèk/g,'폌')
-				.replace(/goch/g,'곶')
-				.replace(/godj/g,'곷')
-				.replace(/fyèv/g,'폆')
-				.replace(/fyèf/g,'폂')
-				.replace(/fyèc/g,'폏')
-				.replace(/fyèb/g,'폅')
-				.replace(/fyèp/g,'폎')
-				.replace(/fyèm/g,'폄')
-				.replace(/fyèd/g,'펻')
-				.replace(/fyèt/g,'폍')
-				.replace(/fyèn/g,'편')
-				.replace(/fyèl/g,'펼')
-				.replace(/fyèz/g,'폈')
-				.replace(/fyès/g,'폇')
-				.replace(/fwoq/g,'푕')
-				.replace(/zyèv/g,'쎲')
-				.replace(/fwog/g,'푁')
-				.replace(/fwok/g,'푘')
-				.replace(/zyèf/g,'쎮')
-				.replace(/zyèc/g,'쎻')
-				.replace(/fwov/g,'푒')
-				.replace(/fwof/g,'푎')
-				.replace(/fwoc/g,'푛')
-				.replace(/fwob/g,'푑')
-				.replace(/fwop/g,'푚')
-				.replace(/fwom/g,'푐')
-				.replace(/fwod/g,'푇')
-				.replace(/fwot/g,'푙')
-				.replace(/fwon/g,'푄')
-				.replace(/fwol/g,'푈')
-				.replace(/fwoz/g,'푔')
-				.replace(/fwos/g,'푓')
-				.replace(/fyoq/g,'푱')
-				.replace(/zyèb/g,'쎱')
-				.replace(/fyog/g,'푝')
-				.replace(/fyok/g,'푴')
-				.replace(/zyèp/g,'쎺')
-				.replace(/zyèm/g,'쎰')
-				.replace(/fyov/g,'푮')
-				.replace(/fyof/g,'푪')
-				.replace(/fyoc/g,'푷')
-				.replace(/fyob/g,'푭')
-				.replace(/fyop/g,'푶')
-				.replace(/fyom/g,'푬')
-				.replace(/fyod/g,'푣')
-				.replace(/fyot/g,'푵')
-				.replace(/fyon/g,'푠')
-				.replace(/fyol/g,'푤')
-				.replace(/fyoz/g,'푰')
-				.replace(/fyos/g,'푯')
-				.replace(/fweq/g,'퓅')
-				.replace(/zyèd/g,'쎧')
-				.replace(/fweg/g,'풱')
-				.replace(/fwek/g,'퓈')
-				.replace(/zyèt/g,'쎹')
-				.replace(/zyèn/g,'쎤')
-				.replace(/fwev/g,'퓂')
-				.replace(/fwef/g,'풾')
-				.replace(/fwec/g,'퓋')
-				.replace(/fweb/g,'퓁')
-				.replace(/fwep/g,'퓊')
-				.replace(/fwem/g,'퓀')
-				.replace(/fwed/g,'풷')
-				.replace(/fwet/g,'퓉')
-				.replace(/fwen/g,'풴')
-				.replace(/fwel/g,'풸')
-				.replace(/fwez/g,'퓄')
-				.replace(/fwes/g,'퓃')
-				.replace(/fyeq/g,'폥')
-				.replace(/zyèl/g,'쎨')
-				.replace(/fyeg/g,'폑')
-				.replace(/fyek/g,'폨')
-				.replace(/zyèz/g,'쎴')
-				.replace(/zyès/g,'쎳')
-				.replace(/fyev/g,'폢')
-				.replace(/fyef/g,'폞')
-				.replace(/fyec/g,'폫')
-				.replace(/fyeb/g,'폡')
-				.replace(/fyep/g,'폪')
-				.replace(/fyem/g,'폠')
-				.replace(/fyed/g,'폗')
-				.replace(/fyet/g,'폩')
-				.replace(/fyen/g,'폔')
-				.replace(/fyel/g,'폘')
-				.replace(/fyez/g,'폤')
-				.replace(/fyes/g,'폣')
-				.replace(/fwuq/g,'퓽')
-				.replace(/zwoq/g,'쑁')
-				.replace(/fwug/g,'퓩')
-				.replace(/fwuk/g,'픀')
-				.replace(/zwog/g,'쐭')
-				.replace(/gech/g,'겢')
-				.replace(/fwuv/g,'퓺')
-				.replace(/fwuf/g,'퓶')
-				.replace(/fwuc/g,'픃')
-				.replace(/fwub/g,'퓹')
-				.replace(/fwup/g,'픂')
-				.replace(/fwum/g,'퓸')
-				.replace(/fwud/g,'퓯')
-				.replace(/fwut/g,'픁')
-				.replace(/fwun/g,'퓬')
-				.replace(/fwul/g,'퓰')
-				.replace(/fwuz/g,'퓼')
-				.replace(/fwus/g,'퓻')
-				.replace(/fyuq/g,'풍')
-				.replace(/tsyè/g,'뗘')
-				.replace(/fyug/g,'푹')
-				.replace(/fyuk/g,'풐')
-				.replace(/gedj/g,'겣')
-				.replace(/zwok/g,'쑄')
-				.replace(/fyuv/g,'풊')
-				.replace(/fyuf/g,'풆')
-				.replace(/fyuc/g,'풓')
-				.replace(/fyub/g,'풉')
-				.replace(/fyup/g,'풒')
-				.replace(/fyum/g,'품')
-				.replace(/fyud/g,'푿')
-				.replace(/fyut/g,'풑')
-				.replace(/fyun/g,'푼')
-				.replace(/fyul/g,'풀')
-				.replace(/fyuz/g,'풌')
-				.replace(/fyus/g,'풋')
-				.replace(/fwiq/g,'퓡')
-				.replace(/zwov/g,'쐾')
-				.replace(/fwig/g,'퓍')
-				.replace(/fwik/g,'퓤')
-				.replace(/zwof/g,'쐺')
-				.replace(/zwoc/g,'쑇')
-				.replace(/fwiv/g,'퓞')
-				.replace(/fwif/g,'퓚')
-				.replace(/fwic/g,'퓧')
-				.replace(/fwib/g,'퓝')
-				.replace(/fwip/g,'퓦')
-				.replace(/fwim/g,'퓜')
-				.replace(/fwid/g,'퓓')
-				.replace(/fwit/g,'퓥')
-				.replace(/fwin/g,'퓐')
-				.replace(/fwil/g,'퓔')
-				.replace(/fwiz/g,'퓠')
-				.replace(/fwis/g,'퓟')
-				.replace(/fyiq/g,'픵')
-				.replace(/zwob/g,'쐽')
-				.replace(/fyig/g,'픡')
-				.replace(/fyik/g,'픸')
-				.replace(/zwop/g,'쑆')
-				.replace(/zwom/g,'쐼')
-				.replace(/fyiv/g,'픲')
-				.replace(/fyif/g,'픮')
-				.replace(/fyic/g,'픻')
-				.replace(/fyib/g,'픱')
-				.replace(/fyip/g,'픺')
-				.replace(/fyim/g,'픰')
-				.replace(/fyid/g,'픧')
-				.replace(/fyit/g,'픹')
-				.replace(/fyin/g,'픤')
-				.replace(/fyil/g,'픨')
-				.replace(/fyiz/g,'픴')
-				.replace(/fyis/g,'픳')
-				.replace(/zwod/g,'쐳')
-				.replace(/zwot/g,'쑅')
-				.replace(/zwon/g,'쐰')
-				.replace(/zwol/g,'쐴')
-				.replace(/fadj/g,'팣')
-				.replace(/fach/g,'팢')
-				.replace(/zwoz/g,'쑀')
-				.replace(/zwos/g,'쐿')
-				.replace(/zyoq/g,'쑝')
-				.replace(/gach/g,'갖')
-				.replace(/gadj/g,'갗')
-				.replace(/zyog/g,'쑉')
-				.replace(/zyok/g,'쑠')
-				.replace(/gyis/g,'긧')
-				.replace(/gyiz/g,'긨')
-				.replace(/gyil/g,'긜')
-				.replace(/gyin/g,'긘')
-				.replace(/tswè/g,'뚸')
-				.replace(/gyit/g,'긭')
-				.replace(/gyid/g,'긛')
-				.replace(/gyim/g,'긤')
-				.replace(/gyip/g,'긮')
-				.replace(/fedj/g,'펯')
-				.replace(/fech/g,'펮')
-				.replace(/gyib/g,'긥')
-				.replace(/gyic/g,'긯')
-				.replace(/gyif/g,'긢')
-				.replace(/gyiv/g,'긦')
-				.replace(/gyik/g,'긬')
-				.replace(/gyig/g,'긕')
-				.replace(/zyov/g,'쑚')
-				.replace(/gyiq/g,'긩')
-				.replace(/gwis/g,'귓')
-				.replace(/gwiz/g,'귔')
-				.replace(/gwil/g,'귈')
-				.replace(/gwin/g,'귄')
-				.replace(/gwit/g,'귙')
-				.replace(/tsyù/g,'떄')
-				.replace(/gwid/g,'귇')
-				.replace(/gwim/g,'귐')
-				.replace(/fodj/g,'퐃')
-				.replace(/foch/g,'퐂')
-				.replace(/gwip/g,'귚')
-				.replace(/gwib/g,'귑')
-				.replace(/gwic/g,'귛')
-				.replace(/gwif/g,'귎')
-				.replace(/gwiv/g,'귒')
-				.replace(/gwik/g,'귘')
-				.replace(/gwig/g,'귁')
-				.replace(/zyof/g,'쑖')
-				.replace(/gwiq/g,'귕')
-				.replace(/gyus/g,'굿')
-				.replace(/gyuz/g,'궀')
-				.replace(/gyul/g,'굴')
-				.replace(/gyun/g,'군')
-				.replace(/gyut/g,'궅')
-				.replace(/gyud/g,'굳')
-				.replace(/tswù/g,'뙈')
-				.replace(/fèdj/g,'펓')
-				.replace(/fèch/g,'펒')
-				.replace(/gyum/g,'굼')
-				.replace(/gyup/g,'궆')
-				.replace(/gyub/g,'굽')
-				.replace(/gyuc/g,'궇')
-				.replace(/gyuf/g,'굺')
-				.replace(/gyuv/g,'굾')
-				.replace(/gyuk/g,'궄')
-				.replace(/gyug/g,'국')
-				.replace(/zyoc/g,'쑣')
-				.replace(/gyuq/g,'궁')
-				.replace(/gwus/g,'귯')
-				.replace(/gwuz/g,'귰')
-				.replace(/gwul/g,'귤')
-				.replace(/gwun/g,'균')
-				.replace(/gwut/g,'귵')
-				.replace(/gwud/g,'귣')
-				.replace(/fùdj/g,'팿')
-				.replace(/fùch/g,'팾')
-				.replace(/gwum/g,'귬')
-				.replace(/tsya/g,'땨')
-				.replace(/gwup/g,'귶')
-				.replace(/gwub/g,'귭')
-				.replace(/gwuc/g,'귷')
-				.replace(/gwuf/g,'귪')
-				.replace(/gwuv/g,'귮')
-				.replace(/gwuk/g,'귴')
-				.replace(/gwug/g,'귝')
-				.replace(/zyob/g,'쑙')
-				.replace(/gwuq/g,'귱')
-				.replace(/gyes/g,'곗')
-				.replace(/gyez/g,'곘')
-				.replace(/gyel/g,'곌')
-				.replace(/gyen/g,'곈')
-				.replace(/gyet/g,'곝')
-				.replace(/fidj/g,'핓')
-				.replace(/fich/g,'핒')
-				.replace(/gyed/g,'곋')
-				.replace(/gyem/g,'곔')
-				.replace(/gyep/g,'곞')
-				.replace(/tswa/g,'똬')
-				.replace(/gyeb/g,'곕')
-				.replace(/dzus/g,'쁫')
-				.replace(/dzuz/g,'쁬')
-				.replace(/dzul/g,'쁠')
-				.replace(/dzun/g,'쁜')
-				.replace(/dzut/g,'쁱')
-				.replace(/dzud/g,'쁟')
-				.replace(/dzum/g,'쁨')
-				.replace(/dzup/g,'쁲')
-				.replace(/dzub/g,'쁩')
-				.replace(/dzuc/g,'쁳')
-				.replace(/dzuf/g,'쁦')
-				.replace(/fudj/g,'픛')
-				.replace(/fuch/g,'픚')
-				.replace(/dzuv/g,'쁪')
-				.replace(/gyec/g,'곟')
-				.replace(/gyef/g,'곒')
-				.replace(/dzuk/g,'쁰')
-				.replace(/dzug/g,'쁙')
-				.replace(/dzuq/g,'쁭')
-				.replace(/dzis/g,'삣')
-				.replace(/dziz/g,'삤')
-				.replace(/dzil/g,'삘')
-				.replace(/dzin/g,'삔')
-				.replace(/dzit/g,'삩')
-				.replace(/dzid/g,'삗')
-				.replace(/cwaq/g,'황')
-				.replace(/dzim/g,'삠')
-				.replace(/cwag/g,'확')
-				.replace(/cwak/g,'홬')
-				.replace(/gyev/g,'곖')
-				.replace(/gyek/g,'곜')
-				.replace(/cwav/g,'홦')
-				.replace(/cwaf/g,'홢')
-				.replace(/cwac/g,'홯')
-				.replace(/cwab/g,'홥')
-				.replace(/cwap/g,'홮')
-				.replace(/cwam/g,'홤')
-				.replace(/cwad/g,'홛')
-				.replace(/cwat/g,'홭')
-				.replace(/cwan/g,'환')
-				.replace(/cwal/g,'활')
-				.replace(/cwaz/g,'홨')
-				.replace(/cwas/g,'홧')
-				.replace(/cyaq/g,'향')
-				.replace(/dzip/g,'삪')
-				.replace(/cyag/g,'햑')
-				.replace(/cyak/g,'햨')
-				.replace(/gyeg/g,'곅')
-				.replace(/zyop/g,'쑢')
-				.replace(/cyav/g,'햢')
-				.replace(/cyaf/g,'햞')
-				.replace(/cyac/g,'햫')
-				.replace(/cyab/g,'햡')
-				.replace(/cyap/g,'햪')
-				.replace(/cyam/g,'햠')
-				.replace(/cyad/g,'햗')
-				.replace(/cyat/g,'햩')
-				.replace(/cyan/g,'햔')
-				.replace(/cyal/g,'햘')
-				.replace(/cyaz/g,'햤')
-				.replace(/cyas/g,'햣')
-				.replace(/cwùq/g,'횅')
-				.replace(/dzib/g,'삡')
-				.replace(/cwùg/g,'홱')
-				.replace(/cwùk/g,'횈')
-				.replace(/gyeq/g,'곙')
-				.replace(/gwes/g,'궷')
-				.replace(/cwùv/g,'횂')
-				.replace(/cwùf/g,'홾')
-				.replace(/cwùc/g,'횋')
-				.replace(/cwùb/g,'횁')
-				.replace(/cwùp/g,'횊')
-				.replace(/cwùm/g,'횀')
-				.replace(/cwùd/g,'홷')
-				.replace(/cwùt/g,'횉')
-				.replace(/cwùn/g,'홴')
-				.replace(/cwùl/g,'홸')
-				.replace(/cwùz/g,'횄')
-				.replace(/cwùs/g,'횃')
-				.replace(/cyùq/g,'헁')
-				.replace(/dzic/g,'삫')
-				.replace(/cyùg/g,'햭')
-				.replace(/cyùk/g,'헄')
-				.replace(/gwez/g,'궸')
-				.replace(/gwel/g,'궬')
-				.replace(/cyùv/g,'햾')
-				.replace(/cyùf/g,'햺')
-				.replace(/cyùc/g,'헇')
-				.replace(/cyùb/g,'햽')
-				.replace(/cyùp/g,'헆')
-				.replace(/cyùm/g,'햼')
-				.replace(/cyùd/g,'햳')
-				.replace(/cyùt/g,'헅')
-				.replace(/cyùn/g,'햰')
-				.replace(/cyùl/g,'햴')
-				.replace(/cyùz/g,'헀')
-				.replace(/cyùs/g,'햿')
-				.replace(/cwèq/g,'훵')
-				.replace(/dzif/g,'삞')
-				.replace(/cwèg/g,'훡')
-				.replace(/cwèk/g,'훸')
-				.replace(/gwen/g,'궨')
-				.replace(/gwet/g,'궽')
-				.replace(/cwèv/g,'훲')
-				.replace(/cwèf/g,'훮')
-				.replace(/cwèc/g,'훻')
-				.replace(/cwèb/g,'훱')
-				.replace(/cwèp/g,'훺')
-				.replace(/cwèm/g,'훰')
-				.replace(/cwèd/g,'훧')
-				.replace(/cwèt/g,'훹')
-				.replace(/cwèn/g,'훤')
-				.replace(/cwèl/g,'훨')
-				.replace(/cwèz/g,'훴')
-				.replace(/cwès/g,'훳')
-				.replace(/cyèq/g,'형')
-				.replace(/dziv/g,'삢')
-				.replace(/cyèg/g,'혁')
-				.replace(/cyèk/g,'혘')
-				.replace(/gwed/g,'궫')
-				.replace(/gwem/g,'궴')
-				.replace(/cyèv/g,'혒')
-				.replace(/cyèf/g,'혎')
-				.replace(/cyèc/g,'혛')
-				.replace(/cyèb/g,'협')
-				.replace(/cyèp/g,'혚')
-				.replace(/cyèm/g,'혐')
-				.replace(/cyèd/g,'혇')
-				.replace(/cyèt/g,'혙')
-				.replace(/cyèn/g,'현')
-				.replace(/cyèl/g,'혈')
-				.replace(/cyèz/g,'혔')
-				.replace(/cyès/g,'혓')
-				.replace(/cwoq/g,'횡')
-				.replace(/gwep/g,'궾')
-				.replace(/cwog/g,'획')
-				.replace(/cwok/g,'횤')
-				.replace(/gweb/g,'궵')
-				.replace(/gwec/g,'궿')
-				.replace(/cwov/g,'횞')
-				.replace(/cwof/g,'횚')
-				.replace(/cwoc/g,'횧')
-				.replace(/cwob/g,'횝')
-				.replace(/cwop/g,'횦')
-				.replace(/cwom/g,'횜')
-				.replace(/cwod/g,'횓')
-				.replace(/cwot/g,'횥')
-				.replace(/cwon/g,'횐')
-				.replace(/cwol/g,'횔')
-				.replace(/cwoz/g,'횠')
-				.replace(/cwos/g,'횟')
-				.replace(/cyoq/g,'횽')
-				.replace(/gwef/g,'궲')
-				.replace(/cyog/g,'횩')
-				.replace(/cyok/g,'훀')
-				.replace(/gwev/g,'궶')
-				.replace(/gwek/g,'궼')
-				.replace(/cyov/g,'횺')
-				.replace(/cyof/g,'횶')
-				.replace(/cyoc/g,'훃')
-				.replace(/cyob/g,'횹')
-				.replace(/cyop/g,'훂')
-				.replace(/cyom/g,'횸')
-				.replace(/cyod/g,'횯')
-				.replace(/cyot/g,'훁')
-				.replace(/cyon/g,'횬')
-				.replace(/cyol/g,'횰')
-				.replace(/cyoz/g,'횼')
-				.replace(/cyos/g,'횻')
-				.replace(/cweq/g,'휑')
-				.replace(/dzik/g,'삨')
-				.replace(/cweg/g,'훽')
-				.replace(/cwek/g,'휔')
-				.replace(/gweg/g,'궥')
-				.replace(/zyom/g,'쑘')
-				.replace(/cwev/g,'휎')
-				.replace(/cwef/g,'휊')
-				.replace(/cwec/g,'휗')
-				.replace(/cweb/g,'휍')
-				.replace(/cwep/g,'휖')
-				.replace(/cwem/g,'휌')
-				.replace(/cwed/g,'휃')
-				.replace(/cwet/g,'휕')
-				.replace(/cwen/g,'휀')
-				.replace(/cwel/g,'휄')
-				.replace(/cwez/g,'휐')
-				.replace(/cwes/g,'휏')
-				.replace(/cyeq/g,'혱')
-				.replace(/dzig/g,'삑')
-				.replace(/cyeg/g,'혝')
-				.replace(/cyek/g,'혴')
-				.replace(/gweq/g,'궹')
-				.replace(/gyos/g,'굣')
-				.replace(/cyev/g,'혮')
-				.replace(/cyef/g,'혪')
-				.replace(/cyec/g,'혷')
-				.replace(/cyeb/g,'혭')
-				.replace(/cyep/g,'혶')
-				.replace(/cyem/g,'혬')
-				.replace(/cyed/g,'혣')
-				.replace(/cyet/g,'혵')
-				.replace(/cyen/g,'혠')
-				.replace(/cyel/g,'혤')
-				.replace(/cyez/g,'혰')
-				.replace(/cyes/g,'혯')
-				.replace(/cwuq/g,'흉')
-				.replace(/dziq/g,'삥')
-				.replace(/cwug/g,'휵')
-				.replace(/cwuk/g,'흌')
-				.replace(/gyoz/g,'굤')
-				.replace(/gyol/g,'굘')
-				.replace(/cwuv/g,'흆')
-				.replace(/cwuf/g,'흂')
-				.replace(/cwuc/g,'흏')
-				.replace(/cwub/g,'흅')
-				.replace(/cwup/g,'흎')
-				.replace(/cwum/g,'흄')
-				.replace(/cwud/g,'휻')
-				.replace(/cwut/g,'흍')
-				.replace(/cwun/g,'휸')
-				.replace(/cwul/g,'휼')
-				.replace(/cwuz/g,'흈')
-				.replace(/cwus/g,'흇')
-				.replace(/cyuq/g,'훙')
-				.replace(/dzùs/g,'뺏')
-				.replace(/cyug/g,'훅')
-				.replace(/cyuk/g,'훜')
-				.replace(/gyon/g,'굔')
-				.replace(/gyot/g,'굩')
-				.replace(/cyuv/g,'훖')
-				.replace(/cyuf/g,'훒')
-				.replace(/cyuc/g,'훟')
-				.replace(/cyub/g,'훕')
-				.replace(/cyup/g,'훞')
-				.replace(/cyum/g,'훔')
-				.replace(/cyud/g,'훋')
-				.replace(/cyut/g,'훝')
-				.replace(/cyun/g,'훈')
-				.replace(/cyul/g,'훌')
-				.replace(/cyuz/g,'훘')
-				.replace(/cyus/g,'훗')
-				.replace(/cwiq/g,'휭')
-				.replace(/dzùz/g,'뺐')
-				.replace(/cwig/g,'휙')
-				.replace(/cwik/g,'휰')
-				.replace(/gyod/g,'굗')
-				.replace(/gyom/g,'굠')
-				.replace(/cwiv/g,'휪')
-				.replace(/cwif/g,'휦')
-				.replace(/cwic/g,'휳')
-				.replace(/cwib/g,'휩')
-				.replace(/cwip/g,'휲')
-				.replace(/cwim/g,'휨')
-				.replace(/cwid/g,'휟')
-				.replace(/cwit/g,'휱')
-				.replace(/cwin/g,'휜')
-				.replace(/cwil/g,'휠')
-				.replace(/cwiz/g,'휬')
-				.replace(/cwis/g,'휫')
-				.replace(/cyiq/g,'힁')
-				.replace(/dzùl/g,'뺄')
-				.replace(/cyig/g,'흭')
-				.replace(/cyik/g,'힄')
-				.replace(/gyop/g,'굪')
-				.replace(/gyob/g,'굡')
-				.replace(/cyiv/g,'흾')
-				.replace(/cyif/g,'흺')
-				.replace(/cyic/g,'힇')
-				.replace(/cyib/g,'흽')
-				.replace(/cyip/g,'힆')
-				.replace(/cyim/g,'흼')
-				.replace(/cyid/g,'흳')
-				.replace(/cyit/g,'힅')
-				.replace(/cyin/g,'흰')
-				.replace(/cyil/g,'흴')
-				.replace(/cyiz/g,'힀')
-				.replace(/cyis/g,'흿')
-				.replace(/dzùn/g,'뺀')
-				.replace(/dzùt/g,'뺕')
-				.replace(/dzùd/g,'뺃')
-				.replace(/dzùm/g,'뺌')
-				.replace(/cadj/g,'핯')
-				.replace(/cach/g,'핮')
-				.replace(/dzùp/g,'뺖')
-				.replace(/dzùb/g,'뺍')
-				.replace(/dzùc/g,'뺗')
-				.replace(/dzùf/g,'뺊')
-				.replace(/dzùv/g,'뺎')
-				.replace(/gyoc/g,'굫')
-				.replace(/gyof/g,'굞')
-				.replace(/dzùk/g,'뺔')
-				.replace(/dzùg/g,'빽')
-				.replace(/dzùq/g,'뺑')
-				.replace(/dzès/g,'뻣')
-				.replace(/dzèz/g,'뻤')
-				.replace(/dzèl/g,'뻘')
-				.replace(/dzèn/g,'뻔')
-				.replace(/dzèt/g,'뻩')
-				.replace(/dzèd/g,'뻗')
-				.replace(/cedj/g,'헻')
-				.replace(/cech/g,'헺')
-				.replace(/dzèm/g,'뻠')
-				.replace(/dzèp/g,'뻪')
-				.replace(/dzèb/g,'뻡')
-				.replace(/dzèc/g,'뻫')
-				.replace(/dzèf/g,'뻞')
-				.replace(/dzèv/g,'뻢')
-				.replace(/gyov/g,'굢')
-				.replace(/gyok/g,'굨')
-				.replace(/dzèk/g,'뻨')
-				.replace(/dzèg/g,'뻑')
-				.replace(/dzèq/g,'뻥')
-				.replace(/dzos/g,'뽓')
-				.replace(/dzoz/g,'뽔')
-				.replace(/dzol/g,'뽈')
-				.replace(/dzon/g,'뽄')
-				.replace(/dzot/g,'뽙')
-				.replace(/codj/g,'홏')
-				.replace(/coch/g,'홎')
-				.replace(/dzod/g,'뽇')
-				.replace(/dzom/g,'뽐')
-				.replace(/dzop/g,'뽚')
-				.replace(/dzob/g,'뽑')
-				.replace(/dzoc/g,'뽛')
-				.replace(/dzof/g,'뽎')
-				.replace(/dzov/g,'뽒')
-				.replace(/gyog/g,'굑')
-				.replace(/zyod/g,'쑏')
-				.replace(/dzok/g,'뽘')
-				.replace(/dzog/g,'뽁')
-				.replace(/dzoq/g,'뽕')
-				.replace(/dzes/g,'뻿')
-				.replace(/dzez/g,'뼀')
-				.replace(/dzel/g,'뻴')
-				.replace(/dzen/g,'뻰')
-				.replace(/cèdj/g,'헟')
-				.replace(/cèch/g,'헞')
-				.replace(/dzet/g,'뼅')
-				.replace(/dzed/g,'뻳')
-				.replace(/dzem/g,'뻼')
-				.replace(/dzep/g,'뼆')
-				.replace(/dzeb/g,'뻽')
-				.replace(/dzec/g,'뼇')
-				.replace(/dzef/g,'뻺')
-				.replace(/dzev/g,'뻾')
-				.replace(/gyoq/g,'굥')
-				.replace(/gwos/g,'굇')
-				.replace(/dzek/g,'뼄')
-				.replace(/dzeg/g,'뻭')
-				.replace(/dzeq/g,'뼁')
-				.replace(/dzas/g,'빳')
-				.replace(/dzaz/g,'빴')
-				.replace(/dzal/g,'빨')
-				.replace(/cùdj/g,'햋')
-				.replace(/cùch/g,'햊')
-				.replace(/dzan/g,'빤')
-				.replace(/dzat/g,'빹')
-				.replace(/dzad/g,'빧')
-				.replace(/dzam/g,'빰')
-				.replace(/dzap/g,'빺')
-				.replace(/dzab/g,'빱')
-				.replace(/dzac/g,'빻')
-				.replace(/dzaf/g,'빮')
-				.replace(/dzav/g,'빲')
-				.replace(/gwoz/g,'굈')
-				.replace(/gwol/g,'괼')
-				.replace(/dzak/g,'빸')
-				.replace(/dzag/g,'빡')
-				.replace(/dzaq/g,'빵')
-				.replace(/gwon/g,'괸')
-				.replace(/gwot/g,'굍')
-				.replace(/cidj/g,'힟')
-				.replace(/cich/g,'힞')
-				.replace(/gwod/g,'괻')
-				.replace(/gwom/g,'굄')
-				.replace(/gwop/g,'굎')
-				.replace(/gwob/g,'굅')
-				.replace(/gwoc/g,'굏')
-				.replace(/gwof/g,'굂')
-				.replace(/gwov/g,'굆')
-				.replace(/gwok/g,'굌')
-				.replace(/gwog/g,'괵')
-				.replace(/zyot/g,'쑡')
-				.replace(/gwoq/g,'굉')
-				.replace(/gyès/g,'겻')
-				.replace(/gyèz/g,'겼')
-				.replace(/gyèl/g,'결')
-				.replace(/dzyi/g,'쁴')
-				.replace(/gyèn/g,'견')
-				.replace(/cudj/g,'흧')
-				.replace(/cuch/g,'흦')
-				.replace(/gyèt/g,'곁')
-				.replace(/gyèd/g,'겯')
-				.replace(/gyèm/g,'겸')
-				.replace(/gyèp/g,'곂')
-				.replace(/gyèb/g,'겹')
-				.replace(/gyèc/g,'곃')
-				.replace(/gyèf/g,'겶')
-				.replace(/gyèv/g,'겺')
-				.replace(/gyèk/g,'곀')
-				.replace(/gyèg/g,'격')
-				.replace(/zyon/g,'쑌')
-				.replace(/gyèq/g,'경')
-				.replace(/bwaq/g,'봥')
-				.replace(/gwès/g,'궛')
-				.replace(/bwag/g,'봑')
-				.replace(/bwak/g,'봨')
-				.replace(/gwèz/g,'궜')
-				.replace(/gwèl/g,'궐')
-				.replace(/bwav/g,'봢')
-				.replace(/bwaf/g,'봞')
-				.replace(/bwac/g,'봫')
-				.replace(/bwab/g,'봡')
-				.replace(/bwap/g,'봪')
-				.replace(/bwam/g,'봠')
-				.replace(/bwad/g,'봗')
-				.replace(/bwat/g,'봩')
-				.replace(/bwan/g,'봔')
-				.replace(/bwal/g,'봘')
-				.replace(/bwaz/g,'봤')
-				.replace(/bwas/g,'봣')
-				.replace(/byaq/g,'뱡')
-				.replace(/gwèn/g,'권')
-				.replace(/byag/g,'뱍')
-				.replace(/byak/g,'뱤')
-				.replace(/gwèt/g,'궡')
-				.replace(/gwèd/g,'궏')
-				.replace(/byav/g,'뱞')
-				.replace(/byaf/g,'뱚')
-				.replace(/byac/g,'뱧')
-				.replace(/byab/g,'뱝')
-				.replace(/byap/g,'뱦')
-				.replace(/byam/g,'뱜')
-				.replace(/byad/g,'뱓')
-				.replace(/byat/g,'뱥')
-				.replace(/byan/g,'뱐')
-				.replace(/byal/g,'뱔')
-				.replace(/byaz/g,'뱠')
-				.replace(/byas/g,'뱟')
-				.replace(/bwùq/g,'뵁')
-				.replace(/gwèm/g,'궘')
-				.replace(/bwùg/g,'봭')
-				.replace(/bwùk/g,'뵄')
-				.replace(/gwèp/g,'궢')
-				.replace(/gwèb/g,'궙')
-				.replace(/bwùv/g,'봾')
-				.replace(/bwùf/g,'봺')
-				.replace(/bwùc/g,'뵇')
-				.replace(/bwùb/g,'봽')
-				.replace(/bwùp/g,'뵆')
-				.replace(/bwùm/g,'봼')
-				.replace(/bwùd/g,'봳')
-				.replace(/bwùt/g,'뵅')
-				.replace(/bwùn/g,'봰')
-				.replace(/bwùl/g,'봴')
-				.replace(/bwùz/g,'뵀')
-				.replace(/bwùs/g,'봿')
-				.replace(/byùq/g,'뱽')
-				.replace(/gwèc/g,'궣')
-				.replace(/byùg/g,'뱩')
-				.replace(/byùk/g,'벀')
-				.replace(/gwèf/g,'궖')
-				.replace(/gwèv/g,'궚')
-				.replace(/byùv/g,'뱺')
-				.replace(/byùf/g,'뱶')
-				.replace(/byùc/g,'벃')
-				.replace(/byùb/g,'뱹')
-				.replace(/byùp/g,'벂')
-				.replace(/byùm/g,'뱸')
-				.replace(/byùd/g,'뱯')
-				.replace(/byùt/g,'벁')
-				.replace(/byùn/g,'뱬')
-				.replace(/byùl/g,'뱰')
-				.replace(/byùz/g,'뱼')
-				.replace(/byùs/g,'뱻')
-				.replace(/bwèq/g,'붱')
-				.replace(/dzwi/g,'쀠')
-				.replace(/bwèg/g,'붝')
-				.replace(/bwèk/g,'붴')
-				.replace(/gwèk/g,'궠')
-				.replace(/gwèg/g,'궉')
-				.replace(/bwèv/g,'붮')
-				.replace(/bwèf/g,'붪')
-				.replace(/bwèc/g,'붷')
-				.replace(/bwèb/g,'붭')
-				.replace(/bwèp/g,'붶')
-				.replace(/bwèm/g,'붬')
-				.replace(/bwèd/g,'붣')
-				.replace(/bwèt/g,'붵')
-				.replace(/bwèn/g,'붠')
-				.replace(/bwèl/g,'붤')
-				.replace(/bwèz/g,'붰')
-				.replace(/bwès/g,'붯')
-				.replace(/byèq/g,'병')
-				.replace(/zyol/g,'쑐')
-				.replace(/byèg/g,'벽')
-				.replace(/byèk/g,'볔')
-				.replace(/gwèq/g,'궝')
-				.replace(/gyùs/g,'걧')
-				.replace(/byèv/g,'볎')
-				.replace(/byèf/g,'볊')
-				.replace(/byèc/g,'볗')
-				.replace(/byèb/g,'볍')
-				.replace(/byèp/g,'볖')
-				.replace(/byèm/g,'볌')
-				.replace(/byèd/g,'볃')
-				.replace(/byèt/g,'볕')
-				.replace(/byèn/g,'변')
-				.replace(/byèl/g,'별')
-				.replace(/byèz/g,'볐')
-				.replace(/byès/g,'볏')
-				.replace(/bwoq/g,'뵝')
-				.replace(/gyùz/g,'걨')
-				.replace(/bwog/g,'뵉')
-				.replace(/bwok/g,'뵠')
-				.replace(/gyùl/g,'걜')
-				.replace(/gyùn/g,'걘')
-				.replace(/bwov/g,'뵚')
-				.replace(/bwof/g,'뵖')
-				.replace(/bwoc/g,'뵣')
-				.replace(/bwob/g,'뵙')
-				.replace(/bwop/g,'뵢')
-				.replace(/bwom/g,'뵘')
-				.replace(/bwod/g,'뵏')
-				.replace(/bwot/g,'뵡')
-				.replace(/bwon/g,'뵌')
-				.replace(/bwol/g,'뵐')
-				.replace(/bwoz/g,'뵜')
-				.replace(/bwos/g,'뵛')
-				.replace(/byoq/g,'뵹')
-				.replace(/gyùt/g,'걭')
-				.replace(/byog/g,'뵥')
-				.replace(/byok/g,'뵼')
-				.replace(/gyùd/g,'걛')
-				.replace(/gyùm/g,'걤')
-				.replace(/byov/g,'뵶')
-				.replace(/byof/g,'뵲')
-				.replace(/byoc/g,'뵿')
-				.replace(/byob/g,'뵵')
-				.replace(/byop/g,'뵾')
-				.replace(/byom/g,'뵴')
-				.replace(/byod/g,'뵫')
-				.replace(/byot/g,'뵽')
-				.replace(/byon/g,'뵨')
-				.replace(/byol/g,'뵬')
-				.replace(/byoz/g,'뵸')
-				.replace(/byos/g,'뵷')
-				.replace(/bweq/g,'뷍')
-				.replace(/gyùp/g,'걮')
-				.replace(/bweg/g,'붹')
-				.replace(/bwek/g,'뷐')
-				.replace(/gyùb/g,'걥')
-				.replace(/gyùc/g,'걯')
-				.replace(/bwev/g,'뷊')
-				.replace(/bwef/g,'뷆')
-				.replace(/bwec/g,'뷓')
-				.replace(/bweb/g,'뷉')
-				.replace(/bwep/g,'뷒')
-				.replace(/bwem/g,'뷈')
-				.replace(/bwed/g,'붿')
-				.replace(/bwet/g,'뷑')
-				.replace(/bwen/g,'붼')
-				.replace(/bwel/g,'뷀')
-				.replace(/bwez/g,'뷌')
-				.replace(/bwes/g,'뷋')
-				.replace(/byeq/g,'볭')
-				.replace(/gyùf/g,'걢')
-				.replace(/byeg/g,'볙')
-				.replace(/byek/g,'볰')
-				.replace(/gyùv/g,'걦')
-				.replace(/gyùk/g,'걬')
-				.replace(/byev/g,'볪')
-				.replace(/byef/g,'볦')
-				.replace(/byec/g,'볳')
-				.replace(/byeb/g,'볩')
-				.replace(/byep/g,'볲')
-				.replace(/byem/g,'볨')
-				.replace(/byed/g,'볟')
-				.replace(/byet/g,'볱')
-				.replace(/byen/g,'볜')
-				.replace(/byel/g,'볠')
-				.replace(/byez/g,'볬')
-				.replace(/byes/g,'볫')
-				.replace(/bwuq/g,'븅')
-				.replace(/gyùg/g,'걕')
-				.replace(/bwug/g,'뷱')
-				.replace(/bwuk/g,'븈')
-				.replace(/zyoz/g,'쑜')
-				.replace(/gyùq/g,'걩')
-				.replace(/bwuv/g,'븂')
-				.replace(/bwuf/g,'뷾')
-				.replace(/bwuc/g,'븋')
-				.replace(/bwub/g,'븁')
-				.replace(/bwup/g,'븊')
-				.replace(/bwum/g,'븀')
-				.replace(/bwud/g,'뷷')
-				.replace(/bwut/g,'븉')
-				.replace(/bwun/g,'뷴')
-				.replace(/bwul/g,'뷸')
-				.replace(/bwuz/g,'븄')
-				.replace(/bwus/g,'븃')
-				.replace(/byuq/g,'붕')
-				.replace(/gwùs/g,'괫')
-				.replace(/byug/g,'북')
-				.replace(/byuk/g,'붘')
-				.replace(/gwùz/g,'괬')
-				.replace(/gwùl/g,'괠')
-				.replace(/byuv/g,'붒')
-				.replace(/byuf/g,'붎')
-				.replace(/byuc/g,'붛')
-				.replace(/byub/g,'붑')
-				.replace(/byup/g,'붚')
-				.replace(/byum/g,'붐')
-				.replace(/byud/g,'붇')
-				.replace(/byut/g,'붙')
-				.replace(/byun/g,'분')
-				.replace(/byul/g,'불')
-				.replace(/byuz/g,'붔')
-				.replace(/byus/g,'붓')
-				.replace(/bwiq/g,'뷩')
-				.replace(/gwùn/g,'괜')
-				.replace(/bwig/g,'뷕')
-				.replace(/bwik/g,'뷬')
-				.replace(/gwùt/g,'괱')
-				.replace(/gwùd/g,'괟')
-				.replace(/bwiv/g,'뷦')
-				.replace(/bwif/g,'뷢')
-				.replace(/bwic/g,'뷯')
-				.replace(/bwib/g,'뷥')
-				.replace(/bwip/g,'뷮')
-				.replace(/bwim/g,'뷤')
-				.replace(/bwid/g,'뷛')
-				.replace(/bwit/g,'뷭')
-				.replace(/bwin/g,'뷘')
-				.replace(/bwil/g,'뷜')
-				.replace(/bwiz/g,'뷨')
-				.replace(/bwis/g,'뷧')
-				.replace(/byiq/g,'븽')
-				.replace(/gwùm/g,'괨')
-				.replace(/byig/g,'븩')
-				.replace(/byik/g,'빀')
-				.replace(/gwùp/g,'괲')
-				.replace(/gwùb/g,'괩')
-				.replace(/byiv/g,'븺')
-				.replace(/byif/g,'븶')
-				.replace(/byic/g,'빃')
-				.replace(/byib/g,'븹')
-				.replace(/byip/g,'빂')
-				.replace(/byim/g,'븸')
-				.replace(/byid/g,'븯')
-				.replace(/byit/g,'빁')
-				.replace(/byin/g,'븬')
-				.replace(/byil/g,'븰')
-				.replace(/byiz/g,'븼')
-				.replace(/byis/g,'븻')
-				.replace(/gwùc/g,'괳')
-				.replace(/gwùf/g,'괦')
-				.replace(/gwùv/g,'괪')
-				.replace(/gwùk/g,'괰')
-				.replace(/badj/g,'밫')
-				.replace(/bach/g,'밪')
-				.replace(/gwùg/g,'괙')
-				.replace(/zyos/g,'쑛')
-				.replace(/gwùq/g,'괭')
-				.replace(/gyas/g,'걋')
-				.replace(/dzyu/g,'뿌')
-				.replace(/gyaz/g,'걌')
-				.replace(/gyal/g,'걀')
-				.replace(/gyan/g,'갼')
-				.replace(/gyat/g,'걑')
-				.replace(/gyad/g,'갿')
-				.replace(/gyam/g,'걈')
-				.replace(/gyap/g,'걒')
-				.replace(/gyab/g,'걉')
-				.replace(/gyac/g,'걓')
-				.replace(/gyaf/g,'걆')
-				.replace(/gyav/g,'걊')
-				.replace(/bedj/g,'벷')
-				.replace(/bech/g,'벶')
-				.replace(/gyak/g,'걐')
-				.replace(/gyag/g,'갹')
-				.replace(/zweq/g,'쒱')
-				.replace(/gyaq/g,'걍')
-				.replace(/gwas/g,'괏')
-				.replace(/gwaz/g,'괐')
-				.replace(/dzwu/g,'쀼')
-				.replace(/gwal/g,'괄')
-				.replace(/gwan/g,'관')
-				.replace(/gwat/g,'괕')
-				.replace(/gwad/g,'괃')
-				.replace(/gwam/g,'괌')
-				.replace(/gwap/g,'괖')
-				.replace(/gwab/g,'괍')
-				.replace(/gwac/g,'괗')
-				.replace(/gwaf/g,'괊')
-				.replace(/bodj/g,'봋')
-				.replace(/boch/g,'봊')
-				.replace(/gwav/g,'괎')
-				.replace(/gwak/g,'괔')
-				.replace(/gwag/g,'곽')
-				.replace(/zweg/g,'쒝')
-				.replace(/gwaq/g,'광')
-				.replace(/zwek/g,'쒴')
-				.replace(/zwev/g,'쒮')
-				.replace(/zwef/g,'쒪')
-				.replace(/dzye/g,'뼤')
-				.replace(/zwec/g,'쒷')
-				.replace(/zweb/g,'쒭')
-				.replace(/zwep/g,'쒶')
-				.replace(/zwem/g,'쒬')
-				.replace(/zwed/g,'쒣')
-				.replace(/zwet/g,'쒵')
-				.replace(/zwen/g,'쒠')
-				.replace(/bèdj/g,'벛')
-				.replace(/bèch/g,'벚')
-				.replace(/zwel/g,'쒤')
-				.replace(/zwez/g,'쒰')
-				.replace(/zwes/g,'쒯')
-				.replace(/zyeq/g,'쏑')
-				.replace(/zyeg/g,'쎽')
-				.replace(/zyek/g,'쏔')
-				.replace(/zyev/g,'쏎')
-				.replace(/zyef/g,'쏊')
-				.replace(/zyec/g,'쏗')
-				.replace(/zyeb/g,'쏍')
-				.replace(/dzwe/g,'쀄')
-				.replace(/zyep/g,'쏖')
-				.replace(/zyem/g,'쏌')
-				.replace(/zyed/g,'쏃')
-				.replace(/zyet/g,'쏕')
-				.replace(/zyen/g,'쏀')
-				.replace(/bùdj/g,'뱇')
-				.replace(/bùch/g,'뱆')
-				.replace(/zyel/g,'쏄')
-				.replace(/zyez/g,'쏐')
-				.replace(/zyes/g,'쏏')
-				.replace(/zwuq/g,'쓩')
-				.replace(/zwug/g,'쓕')
-				.replace(/zwuk/g,'쓬')
-				.replace(/zwuv/g,'쓦')
-				.replace(/zwuf/g,'쓢')
-				.replace(/zwuc/g,'쓯')
-				.replace(/zwub/g,'쓥')
-				.replace(/zwup/g,'쓮')
-				.replace(/zwum/g,'쓤')
-				.replace(/dzyo/g,'뾰')
-				.replace(/zwud/g,'쓛')
-				.replace(/zwut/g,'쓭')
-				.replace(/zwun/g,'쓘')
-				.replace(/bidj/g,'빛')
-				.replace(/bich/g,'빚')
-				.replace(/zwul/g,'쓜')
-				.replace(/zwuz/g,'쓨')
-				.replace(/zwus/g,'쓧')
-				.replace(/zyuq/g,'쑹')
-				.replace(/zyug/g,'쑥')
-				.replace(/zyuk/g,'쑼')
-				.replace(/zyuv/g,'쑶')
-				.replace(/zyuf/g,'쑲')
-				.replace(/zyuc/g,'쑿')
-				.replace(/zyub/g,'쑵')
-				.replace(/zyup/g,'쑾')
-				.replace(/zyum/g,'쑴')
-				.replace(/zyud/g,'쑫')
-				.replace(/zyut/g,'쑽')
-				.replace(/dzwo/g,'뾔')
-				.replace(/zyun/g,'쑨')
-				.replace(/budj/g,'븣')
-				.replace(/buch/g,'븢')
-				.replace(/zyul/g,'쑬')
-				.replace(/zyuz/g,'쑸')
-				.replace(/zyus/g,'쑷')
-				.replace(/zwiq/g,'쓍')
-				.replace(/zwig/g,'쒹')
-				.replace(/zwik/g,'쓐')
-				.replace(/zwiv/g,'쓊')
-				.replace(/zwif/g,'쓆')
-				.replace(/zwic/g,'쓓')
-				.replace(/zwib/g,'쓉')
-				.replace(/zwip/g,'쓒')
-				.replace(/zwim/g,'쓈')
-				.replace(/pwaq/g,'퐝')
-				.replace(/zwid/g,'쒿')
-				.replace(/pwag/g,'퐉')
-				.replace(/pwak/g,'퐠')
-				.replace(/zwit/g,'쓑')
-				.replace(/zwin/g,'쒼')
-				.replace(/pwav/g,'퐚')
-				.replace(/pwaf/g,'퐖')
-				.replace(/pwac/g,'퐣')
-				.replace(/pwab/g,'퐙')
-				.replace(/pwap/g,'퐢')
-				.replace(/pwam/g,'퐘')
-				.replace(/pwad/g,'퐏')
-				.replace(/pwat/g,'퐡')
-				.replace(/pwan/g,'퐌')
-				.replace(/pwal/g,'퐐')
-				.replace(/pwaz/g,'퐜')
-				.replace(/pwas/g,'퐛')
-				.replace(/pyaq/g,'퍙')
-				.replace(/zwil/g,'쓀')
-				.replace(/pyag/g,'퍅')
-				.replace(/pyak/g,'퍜')
-				.replace(/zwiz/g,'쓌')
-				.replace(/zwis/g,'쓋')
-				.replace(/pyav/g,'퍖')
-				.replace(/pyaf/g,'퍒')
-				.replace(/pyac/g,'퍟')
-				.replace(/pyab/g,'퍕')
-				.replace(/pyap/g,'퍞')
-				.replace(/pyam/g,'퍔')
-				.replace(/pyad/g,'퍋')
-				.replace(/pyat/g,'퍝')
-				.replace(/pyan/g,'퍈')
-				.replace(/pyal/g,'퍌')
-				.replace(/pyaz/g,'퍘')
-				.replace(/pyas/g,'퍗')
-				.replace(/pwùq/g,'퐹')
-				.replace(/zyiq/g,'씡')
-				.replace(/pwùg/g,'퐥')
-				.replace(/pwùk/g,'퐼')
-				.replace(/zyig/g,'씍')
-				.replace(/zyik/g,'씤')
-				.replace(/pwùv/g,'퐶')
-				.replace(/pwùf/g,'퐲')
-				.replace(/pwùc/g,'퐿')
-				.replace(/pwùb/g,'퐵')
-				.replace(/pwùp/g,'퐾')
-				.replace(/pwùm/g,'퐴')
-				.replace(/pwùd/g,'퐫')
-				.replace(/pwùt/g,'퐽')
-				.replace(/pwùn/g,'퐨')
-				.replace(/pwùl/g,'퐬')
-				.replace(/pwùz/g,'퐸')
-				.replace(/pwùs/g,'퐷')
-				.replace(/pyùq/g,'퍵')
-				.replace(/zyiv/g,'씞')
-				.replace(/pyùg/g,'퍡')
-				.replace(/pyùk/g,'퍸')
-				.replace(/zyif/g,'씚')
-				.replace(/zyic/g,'씧')
-				.replace(/pyùv/g,'퍲')
-				.replace(/pyùf/g,'퍮')
-				.replace(/pyùc/g,'퍻')
-				.replace(/pyùb/g,'퍱')
-				.replace(/pyùp/g,'퍺')
-				.replace(/pyùm/g,'퍰')
-				.replace(/pyùd/g,'퍧')
-				.replace(/pyùt/g,'퍹')
-				.replace(/pyùn/g,'퍤')
-				.replace(/pyùl/g,'퍨')
-				.replace(/pyùz/g,'퍴')
-				.replace(/pyùs/g,'퍳')
-				.replace(/pwèq/g,'풩')
-				.replace(/dzyè/g,'뼈')
-				.replace(/pwèg/g,'풕')
-				.replace(/pwèk/g,'풬')
-				.replace(/zyib/g,'씝')
-				.replace(/zyip/g,'씦')
-				.replace(/pwèv/g,'풦')
-				.replace(/pwèf/g,'풢')
-				.replace(/pwèc/g,'풯')
-				.replace(/pwèb/g,'풥')
-				.replace(/pwèp/g,'풮')
-				.replace(/pwèm/g,'풤')
-				.replace(/pwèd/g,'풛')
-				.replace(/pwèt/g,'풭')
-				.replace(/pwèn/g,'풘')
-				.replace(/pwèl/g,'풜')
-				.replace(/pwèz/g,'풨')
-				.replace(/pwès/g,'풧')
-				.replace(/pyèq/g,'평')
-				.replace(/zyim/g,'씜')
-				.replace(/pyèg/g,'펵')
-				.replace(/pyèk/g,'폌')
-				.replace(/zyid/g,'씓')
-				.replace(/zyit/g,'씥')
-				.replace(/pyèv/g,'폆')
-				.replace(/pyèf/g,'폂')
-				.replace(/pyèc/g,'폏')
-				.replace(/pyèb/g,'폅')
-				.replace(/pyèp/g,'폎')
-				.replace(/pyèm/g,'폄')
-				.replace(/pyèd/g,'펻')
-				.replace(/pyèt/g,'폍')
-				.replace(/pyèn/g,'편')
-				.replace(/pyèl/g,'펼')
-				.replace(/pyèz/g,'폈')
-				.replace(/pyès/g,'폇')
-				.replace(/pwoq/g,'푕')
-				.replace(/zyin/g,'씐')
-				.replace(/pwog/g,'푁')
-				.replace(/pwok/g,'푘')
-				.replace(/zyil/g,'씔')
-				.replace(/zyiz/g,'씠')
-				.replace(/pwov/g,'푒')
-				.replace(/pwof/g,'푎')
-				.replace(/pwoc/g,'푛')
-				.replace(/pwob/g,'푑')
-				.replace(/pwop/g,'푚')
-				.replace(/pwom/g,'푐')
-				.replace(/pwod/g,'푇')
-				.replace(/pwot/g,'푙')
-				.replace(/pwon/g,'푄')
-				.replace(/pwol/g,'푈')
-				.replace(/pwoz/g,'푔')
-				.replace(/pwos/g,'푓')
-				.replace(/pyoq/g,'푱')
-				.replace(/zyis/g,'씟')
-				.replace(/pyog/g,'푝')
-				.replace(/pyok/g,'푴')
-				.replace(/zadj/g,'쌏')
-				.replace(/zach/g,'쌎')
-				.replace(/pyov/g,'푮')
-				.replace(/pyof/g,'푪')
-				.replace(/pyoc/g,'푷')
-				.replace(/pyob/g,'푭')
-				.replace(/pyop/g,'푶')
-				.replace(/pyom/g,'푬')
-				.replace(/pyod/g,'푣')
-				.replace(/pyot/g,'푵')
-				.replace(/pyon/g,'푠')
-				.replace(/pyol/g,'푤')
-				.replace(/pyoz/g,'푰')
-				.replace(/pyos/g,'푯')
-				.replace(/pweq/g,'퓅')
-				.replace(/zedj/g,'쎛')
-				.replace(/pweg/g,'풱')
-				.replace(/pwek/g,'퓈')
-				.replace(/zech/g,'쎚')
-				.replace(/zodj/g,'쏯')
-				.replace(/pwev/g,'퓂')
-				.replace(/pwef/g,'풾')
-				.replace(/pwec/g,'퓋')
-				.replace(/pweb/g,'퓁')
-				.replace(/pwep/g,'퓊')
-				.replace(/pwem/g,'퓀')
-				.replace(/pwed/g,'풷')
-				.replace(/pwet/g,'퓉')
-				.replace(/pwen/g,'풴')
-				.replace(/pwel/g,'풸')
-				.replace(/pwez/g,'퓄')
-				.replace(/pwes/g,'퓃')
-				.replace(/pyeq/g,'폥')
-				.replace(/zoch/g,'쏮')
-				.replace(/pyeg/g,'폑')
-				.replace(/pyek/g,'폨')
-				.replace(/zèdj/g,'썿')
-				.replace(/zèch/g,'썾')
-				.replace(/pyev/g,'폢')
-				.replace(/pyef/g,'폞')
-				.replace(/pyec/g,'폫')
-				.replace(/pyeb/g,'폡')
-				.replace(/pyep/g,'폪')
-				.replace(/pyem/g,'폠')
-				.replace(/pyed/g,'폗')
-				.replace(/pyet/g,'폩')
-				.replace(/pyen/g,'폔')
-				.replace(/pyel/g,'폘')
-				.replace(/pyez/g,'폤')
-				.replace(/pyes/g,'폣')
-				.replace(/pwuq/g,'퓽')
-				.replace(/zùdj/g,'쌫')
-				.replace(/pwug/g,'퓩')
-				.replace(/pwuk/g,'픀')
-				.replace(/zùch/g,'쌪')
-				.replace(/zidj/g,'씿')
-				.replace(/pwuv/g,'퓺')
-				.replace(/pwuf/g,'퓶')
-				.replace(/pwuc/g,'픃')
-				.replace(/pwub/g,'퓹')
-				.replace(/pwup/g,'픂')
-				.replace(/pwum/g,'퓸')
-				.replace(/pwud/g,'퓯')
-				.replace(/pwut/g,'픁')
-				.replace(/pwun/g,'퓬')
-				.replace(/pwul/g,'퓰')
-				.replace(/pwuz/g,'퓼')
-				.replace(/pwus/g,'퓻')
-				.replace(/pyuq/g,'풍')
-				.replace(/zich/g,'씾')
-				.replace(/pyug/g,'푹')
-				.replace(/pyuk/g,'풐')
-				.replace(/zudj/g,'씇')
-				.replace(/zuch/g,'씆')
-				.replace(/pyuv/g,'풊')
-				.replace(/pyuf/g,'풆')
-				.replace(/pyuc/g,'풓')
-				.replace(/pyub/g,'풉')
-				.replace(/pyup/g,'풒')
-				.replace(/pyum/g,'품')
-				.replace(/pyud/g,'푿')
-				.replace(/pyut/g,'풑')
-				.replace(/pyun/g,'푼')
-				.replace(/pyul/g,'풀')
-				.replace(/pyuz/g,'풌')
-				.replace(/pyus/g,'풋')
-				.replace(/pwiq/g,'퓡')
-				.replace(/swaq/g,'쫭')
-				.replace(/pwig/g,'퓍')
-				.replace(/pwik/g,'퓤')
-				.replace(/swag/g,'쫙')
-				.replace(/swak/g,'쫰')
-				.replace(/pwiv/g,'퓞')
-				.replace(/pwif/g,'퓚')
-				.replace(/pwic/g,'퓧')
-				.replace(/pwib/g,'퓝')
-				.replace(/pwip/g,'퓦')
-				.replace(/pwim/g,'퓜')
-				.replace(/pwid/g,'퓓')
-				.replace(/pwit/g,'퓥')
-				.replace(/pwin/g,'퓐')
-				.replace(/pwil/g,'퓔')
-				.replace(/pwiz/g,'퓠')
-				.replace(/pwis/g,'퓟')
-				.replace(/pyiq/g,'픵')
-				.replace(/swav/g,'쫪')
-				.replace(/pyig/g,'픡')
-				.replace(/pyik/g,'픸')
-				.replace(/swaf/g,'쫦')
-				.replace(/swac/g,'쫳')
-				.replace(/pyiv/g,'픲')
-				.replace(/pyif/g,'픮')
-				.replace(/pyic/g,'픻')
-				.replace(/pyib/g,'픱')
-				.replace(/pyip/g,'픺')
-				.replace(/pyim/g,'픰')
-				.replace(/pyid/g,'픧')
-				.replace(/pyit/g,'픹')
-				.replace(/pyin/g,'픤')
-				.replace(/pyil/g,'픨')
-				.replace(/pyiz/g,'픴')
-				.replace(/pyis/g,'픳')
-				.replace(/swab/g,'쫩')
-				.replace(/swap/g,'쫲')
-				.replace(/swam/g,'쫨')
-				.replace(/swad/g,'쫟')
-				.replace(/padj/g,'팣')
-				.replace(/pach/g,'팢')
-				.replace(/swat/g,'쫱')
-				.replace(/swan/g,'쫜')
-				.replace(/swal/g,'쫠')
-				.replace(/swaz/g,'쫬')
-				.replace(/dzwè/g,'뿨')
-				.replace(/swas/g,'쫫')
-				.replace(/syaq/g,'쨩')
-				.replace(/syag/g,'쨕')
-				.replace(/syak/g,'쨬')
-				.replace(/syav/g,'쨦')
-				.replace(/syaf/g,'쨢')
-				.replace(/yich/g,'읮')
-				.replace(/yidj/g,'읯')
-				.replace(/syac/g,'쨯')
-				.replace(/syab/g,'쨥')
-				.replace(/syap/g,'쨮')
-				.replace(/pedj/g,'펯')
-				.replace(/pech/g,'펮')
-				.replace(/syam/g,'쨤')
-				.replace(/syad/g,'쨛')
-				.replace(/syat/g,'쨭')
-				.replace(/syan/g,'쨘')
-				.replace(/syal/g,'쨜')
-				.replace(/syaz/g,'쨨')
-				.replace(/dzyù/g,'뺴')
-				.replace(/syas/g,'쨧')
-				.replace(/swùq/g,'쬉')
-				.replace(/swùg/g,'쫵')
-				.replace(/swùk/g,'쬌')
-				.replace(/swùv/g,'쬆')
-				.replace(/wich/g,'윚')
-				.replace(/widj/g,'윛')
-				.replace(/swùf/g,'쬂')
-				.replace(/swùc/g,'쬏')
-				.replace(/podj/g,'퐃')
-				.replace(/poch/g,'퐂')
-				.replace(/swùb/g,'쬅')
-				.replace(/swùp/g,'쬎')
-				.replace(/swùm/g,'쬄')
-				.replace(/swùd/g,'쫻')
-				.replace(/swùt/g,'쬍')
-				.replace(/swùn/g,'쫸')
-				.replace(/swùl/g,'쫼')
-				.replace(/swùz/g,'쬈')
-				.replace(/dzwù/g,'뽸')
-				.replace(/swùs/g,'쬇')
-				.replace(/syùq/g,'쩅')
-				.replace(/syùg/g,'쨱')
-				.replace(/syùk/g,'쩈')
-				.replace(/yuch/g,'웆')
-				.replace(/yudj/g,'웇')
-				.replace(/syùv/g,'쩂')
-				.replace(/pèdj/g,'펓')
-				.replace(/pèch/g,'펒')
-				.replace(/syùf/g,'쨾')
-				.replace(/syùc/g,'쩋')
-				.replace(/syùb/g,'쩁')
-				.replace(/syùp/g,'쩊')
-				.replace(/syùm/g,'쩀')
-				.replace(/syùd/g,'쨷')
-				.replace(/syùt/g,'쩉')
-				.replace(/syùn/g,'쨴')
-				.replace(/syùl/g,'쨸')
-				.replace(/syùz/g,'쩄')
-				.replace(/dzya/g,'뺘')
-				.replace(/syùs/g,'쩃')
-				.replace(/swèq/g,'쭹')
-				.replace(/swèg/g,'쭥')
-				.replace(/swèk/g,'쭼')
-				.replace(/wuch/g,'윶')
-				.replace(/pùdj/g,'팿')
-				.replace(/pùch/g,'팾')
-				.replace(/wudj/g,'윷')
-				.replace(/swèv/g,'쭶')
-				.replace(/swèf/g,'쭲')
-				.replace(/swèc/g,'쭿')
-				.replace(/swèb/g,'쭵')
-				.replace(/swèp/g,'쭾')
-				.replace(/swèm/g,'쭴')
-				.replace(/swèd/g,'쭫')
-				.replace(/swèt/g,'쭽')
-				.replace(/swèn/g,'쭨')
-				.replace(/swèl/g,'쭬')
-				.replace(/swèz/g,'쭸')
-				.replace(/dzwa/g,'뽜')
-				.replace(/swès/g,'쭷')
-				.replace(/luch/g,'릊')
-				.replace(/ludj/g,'릋')
-				.replace(/pidj/g,'핓')
-				.replace(/pich/g,'핒')
-				.replace(/lich/g,'맂')
-				.replace(/lidj/g,'맃')
-				.replace(/lùch/g,'랮')
-				.replace(/lùdj/g,'랯')
-				.replace(/lèch/g,'렂')
-				.replace(/lèdj/g,'렃')
-				.replace(/loch/g,'롲')
-				.replace(/lodj/g,'롳')
-				.replace(/lech/g,'렞')
-				.replace(/ledj/g,'렟')
-				.replace(/lach/g,'랒')
-				.replace(/ladj/g,'랓')
-				.replace(/lyis/g,'릣')
-				.replace(/lyiz/g,'릤')
-				.replace(/lyil/g,'릘')
-				.replace(/lyin/g,'릔')
-				.replace(/pudj/g,'픛')
-				.replace(/puch/g,'픚')
-				.replace(/lyit/g,'릩')
-				.replace(/lyid/g,'릗')
-				.replace(/lyim/g,'릠')
-				.replace(/lyip/g,'릪')
-				.replace(/lyib/g,'릡')
-				.replace(/lyic/g,'릫')
-				.replace(/lyif/g,'릞')
-				.replace(/lyiv/g,'릢')
-				.replace(/syèq/g,'쪙')
-				.replace(/syèg/g,'쪅')
-				.replace(/lyik/g,'릨')
-				.replace(/lyig/g,'릑')
-				.replace(/mwaq/g,'뫙')
-				.replace(/lyiq/g,'릥')
-				.replace(/mwag/g,'뫅')
-				.replace(/mwak/g,'뫜')
-				.replace(/syèk/g,'쪜')
-				.replace(/yech/g,'옞')
-				.replace(/mwav/g,'뫖')
-				.replace(/mwaf/g,'뫒')
-				.replace(/mwac/g,'뫟')
-				.replace(/mwab/g,'뫕')
-				.replace(/mwap/g,'뫞')
-				.replace(/mwam/g,'뫔')
-				.replace(/mwad/g,'뫋')
-				.replace(/mwat/g,'뫝')
-				.replace(/mwan/g,'뫈')
-				.replace(/mwal/g,'뫌')
-				.replace(/mwaz/g,'뫘')
-				.replace(/mwas/g,'뫗')
-				.replace(/myaq/g,'먕')
-				.replace(/lwis/g,'륏')
-				.replace(/myag/g,'먁')
-				.replace(/myak/g,'먘')
-				.replace(/yedj/g,'옟')
-				.replace(/syèv/g,'쪖')
-				.replace(/myav/g,'먒')
-				.replace(/myaf/g,'먎')
-				.replace(/myac/g,'먛')
-				.replace(/myab/g,'먑')
-				.replace(/myap/g,'먚')
-				.replace(/myam/g,'먐')
-				.replace(/myad/g,'먇')
-				.replace(/myat/g,'먙')
-				.replace(/myan/g,'먄')
-				.replace(/myal/g,'먈')
-				.replace(/myaz/g,'먔')
-				.replace(/myas/g,'먓')
-				.replace(/mwùq/g,'뫵')
-				.replace(/lwiz/g,'륐')
-				.replace(/mwùg/g,'뫡')
-				.replace(/mwùk/g,'뫸')
-				.replace(/syèf/g,'쪒')
-				.replace(/syèc/g,'쪟')
-				.replace(/mwùv/g,'뫲')
-				.replace(/mwùf/g,'뫮')
-				.replace(/mwùc/g,'뫻')
-				.replace(/mwùb/g,'뫱')
-				.replace(/mwùp/g,'뫺')
-				.replace(/mwùm/g,'뫰')
-				.replace(/mwùd/g,'뫧')
-				.replace(/mwùt/g,'뫹')
-				.replace(/mwùn/g,'뫤')
-				.replace(/mwùl/g,'뫨')
-				.replace(/mwùz/g,'뫴')
-				.replace(/mwùs/g,'뫳')
-				.replace(/myùq/g,'먱')
-				.replace(/lwil/g,'륄')
-				.replace(/myùg/g,'먝')
-				.replace(/myùk/g,'먴')
-				.replace(/syèb/g,'쪕')
-				.replace(/syèp/g,'쪞')
-				.replace(/myùv/g,'먮')
-				.replace(/myùf/g,'먪')
-				.replace(/myùc/g,'먷')
-				.replace(/myùb/g,'먭')
-				.replace(/myùp/g,'먶')
-				.replace(/myùm/g,'먬')
-				.replace(/myùd/g,'먣')
-				.replace(/myùt/g,'먵')
-				.replace(/myùn/g,'먠')
-				.replace(/myùl/g,'먤')
-				.replace(/myùz/g,'먰')
-				.replace(/myùs/g,'먯')
-				.replace(/mwèq/g,'뭥')
-				.replace(/lwin/g,'륀')
-				.replace(/mwèg/g,'뭑')
-				.replace(/mwèk/g,'뭨')
-				.replace(/syèm/g,'쪔')
-				.replace(/syèd/g,'쪋')
-				.replace(/mwèv/g,'뭢')
-				.replace(/mwèf/g,'뭞')
-				.replace(/mwèc/g,'뭫')
-				.replace(/mwèb/g,'뭡')
-				.replace(/mwèp/g,'뭪')
-				.replace(/mwèm/g,'뭠')
-				.replace(/mwèd/g,'뭗')
-				.replace(/mwèt/g,'뭩')
-				.replace(/mwèn/g,'뭔')
-				.replace(/mwèl/g,'뭘')
-				.replace(/mwèz/g,'뭤')
-				.replace(/mwès/g,'뭣')
-				.replace(/myèq/g,'명')
-				.replace(/lwit/g,'륕')
-				.replace(/myèg/g,'멱')
-				.replace(/myèk/g,'몈')
-				.replace(/syèt/g,'쪝')
-				.replace(/syèn/g,'쪈')
-				.replace(/myèv/g,'몂')
-				.replace(/myèf/g,'멾')
-				.replace(/myèc/g,'몋')
-				.replace(/myèb/g,'몁')
-				.replace(/myèp/g,'몊')
-				.replace(/myèm/g,'몀')
-				.replace(/myèd/g,'멷')
-				.replace(/myèt/g,'몉')
-				.replace(/myèn/g,'면')
-				.replace(/myèl/g,'멸')
-				.replace(/myèz/g,'몄')
-				.replace(/myès/g,'몃')
-				.replace(/mwoq/g,'묑')
-				.replace(/lwid/g,'륃')
-				.replace(/mwog/g,'뫽')
-				.replace(/mwok/g,'묔')
-				.replace(/syèl/g,'쪌')
-				.replace(/syèz/g,'쪘')
-				.replace(/mwov/g,'묎')
-				.replace(/mwof/g,'묊')
-				.replace(/mwoc/g,'묗')
-				.replace(/mwob/g,'묍')
-				.replace(/mwop/g,'묖')
-				.replace(/mwom/g,'묌')
-				.replace(/mwod/g,'묃')
-				.replace(/mwot/g,'묕')
-				.replace(/mwon/g,'묀')
-				.replace(/mwol/g,'묄')
-				.replace(/mwoz/g,'묐')
-				.replace(/mwos/g,'묏')
-				.replace(/myoq/g,'묭')
-				.replace(/lwim/g,'륌')
-				.replace(/myog/g,'묙')
-				.replace(/myok/g,'묰')
-				.replace(/syès/g,'쪗')
-				.replace(/swoq/g,'쬥')
-				.replace(/myov/g,'묪')
-				.replace(/myof/g,'묦')
-				.replace(/myoc/g,'묳')
-				.replace(/myob/g,'묩')
-				.replace(/myop/g,'묲')
-				.replace(/myom/g,'묨')
-				.replace(/myod/g,'묟')
-				.replace(/myot/g,'묱')
-				.replace(/myon/g,'묜')
-				.replace(/myol/g,'묠')
-				.replace(/myoz/g,'묬')
-				.replace(/myos/g,'묫')
-				.replace(/mweq/g,'뮁')
-				.replace(/lwip/g,'륖')
-				.replace(/mweg/g,'뭭')
-				.replace(/mwek/g,'뮄')
-				.replace(/swog/g,'쬑')
-				.replace(/wech/g,'웾')
-				.replace(/mwev/g,'뭾')
-				.replace(/mwef/g,'뭺')
-				.replace(/mwec/g,'뮇')
-				.replace(/mweb/g,'뭽')
-				.replace(/mwep/g,'뮆')
-				.replace(/mwem/g,'뭼')
-				.replace(/mwed/g,'뭳')
-				.replace(/mwet/g,'뮅')
-				.replace(/mwen/g,'뭰')
-				.replace(/mwel/g,'뭴')
-				.replace(/mwez/g,'뮀')
-				.replace(/mwes/g,'뭿')
-				.replace(/myeq/g,'몡')
-				.replace(/lwib/g,'륍')
-				.replace(/myeg/g,'몍')
-				.replace(/myek/g,'몤')
-				.replace(/wedj/g,'웿')
-				.replace(/swok/g,'쬨')
-				.replace(/myev/g,'몞')
-				.replace(/myef/g,'몚')
-				.replace(/myec/g,'몧')
-				.replace(/myeb/g,'몝')
-				.replace(/myep/g,'몦')
-				.replace(/myem/g,'몜')
-				.replace(/myed/g,'몓')
-				.replace(/myet/g,'몥')
-				.replace(/myen/g,'몐')
-				.replace(/myel/g,'몔')
-				.replace(/myez/g,'몠')
-				.replace(/myes/g,'몟')
-				.replace(/mwuq/g,'뮹')
-				.replace(/lwic/g,'륗')
-				.replace(/mwug/g,'뮥')
-				.replace(/mwuk/g,'뮼')
-				.replace(/swov/g,'쬢')
-				.replace(/swof/g,'쬞')
-				.replace(/mwuv/g,'뮶')
-				.replace(/mwuf/g,'뮲')
-				.replace(/mwuc/g,'뮿')
-				.replace(/mwub/g,'뮵')
-				.replace(/mwup/g,'뮾')
-				.replace(/mwum/g,'뮴')
-				.replace(/mwud/g,'뮫')
-				.replace(/mwut/g,'뮽')
-				.replace(/mwun/g,'뮨')
-				.replace(/mwul/g,'뮬')
-				.replace(/mwuz/g,'뮸')
-				.replace(/mwus/g,'뮷')
-				.replace(/myuq/g,'뭉')
-				.replace(/lwif/g,'륊')
-				.replace(/myug/g,'묵')
-				.replace(/myuk/g,'뭌')
-				.replace(/swoc/g,'쬫')
-				.replace(/swob/g,'쬡')
-				.replace(/myuv/g,'뭆')
-				.replace(/myuf/g,'뭂')
-				.replace(/myuc/g,'뭏')
-				.replace(/myub/g,'뭅')
-				.replace(/myup/g,'뭎')
-				.replace(/myum/g,'뭄')
-				.replace(/myud/g,'묻')
-				.replace(/myut/g,'뭍')
-				.replace(/myun/g,'문')
-				.replace(/myul/g,'물')
-				.replace(/myuz/g,'뭈')
-				.replace(/myus/g,'뭇')
-				.replace(/mwiq/g,'뮝')
-				.replace(/lwiv/g,'륎')
-				.replace(/mwig/g,'뮉')
-				.replace(/mwik/g,'뮠')
-				.replace(/swop/g,'쬪')
-				.replace(/swom/g,'쬠')
-				.replace(/mwiv/g,'뮚')
-				.replace(/mwif/g,'뮖')
-				.replace(/mwic/g,'뮣')
-				.replace(/mwib/g,'뮙')
-				.replace(/mwip/g,'뮢')
-				.replace(/mwim/g,'뮘')
-				.replace(/mwid/g,'뮏')
-				.replace(/mwit/g,'뮡')
-				.replace(/mwin/g,'뮌')
-				.replace(/mwil/g,'뮐')
-				.replace(/mwiz/g,'뮜')
-				.replace(/mwis/g,'뮛')
-				.replace(/myiq/g,'믱')
-				.replace(/swod/g,'쬗')
-				.replace(/myig/g,'믝')
-				.replace(/myik/g,'믴')
-				.replace(/swot/g,'쬩')
-				.replace(/swon/g,'쬔')
-				.replace(/myiv/g,'믮')
-				.replace(/myif/g,'믪')
-				.replace(/myic/g,'믷')
-				.replace(/myib/g,'믭')
-				.replace(/myip/g,'믶')
-				.replace(/myim/g,'믬')
-				.replace(/myid/g,'믣')
-				.replace(/myit/g,'믵')
-				.replace(/myin/g,'믠')
-				.replace(/myil/g,'믤')
-				.replace(/myiz/g,'믰')
-				.replace(/myis/g,'믯')
-				.replace(/swol/g,'쬘')
-				.replace(/lwik/g,'륔')
-				.replace(/lwig/g,'뤽')
-				.replace(/lwiq/g,'륑')
-				.replace(/madj/g,'맟')
-				.replace(/mach/g,'맞')
-				.replace(/lyus/g,'룻')
-				.replace(/lyuz/g,'룼')
-				.replace(/lyul/g,'룰')
-				.replace(/lyun/g,'룬')
-				.replace(/lyut/g,'뤁')
-				.replace(/lyud/g,'룯')
-				.replace(/lyum/g,'룸')
-				.replace(/lyup/g,'뤂')
-				.replace(/lyub/g,'룹')
-				.replace(/lyuc/g,'뤃')
-				.replace(/lyuf/g,'룶')
-				.replace(/lyuv/g,'룺')
-				.replace(/swoz/g,'쬤')
-				.replace(/swos/g,'쬣')
-				.replace(/lyuk/g,'뤀')
-				.replace(/lyug/g,'룩')
-				.replace(/medj/g,'멫')
-				.replace(/mech/g,'멪')
-				.replace(/lyuq/g,'룽')
-				.replace(/lwus/g,'륫')
-				.replace(/lwuz/g,'륬')
-				.replace(/lwul/g,'률')
-				.replace(/lwun/g,'륜')
-				.replace(/lwut/g,'륱')
-				.replace(/lwud/g,'륟')
-				.replace(/lwum/g,'륨')
-				.replace(/lwup/g,'륲')
-				.replace(/lwub/g,'륩')
-				.replace(/lwuc/g,'륳')
-				.replace(/lwuf/g,'륦')
-				.replace(/lwuv/g,'륪')
-				.replace(/syoq/g,'쭁')
-				.replace(/yoch/g,'욪')
-				.replace(/lwuk/g,'륰')
-				.replace(/modj/g,'몿')
-				.replace(/moch/g,'몾')
-				.replace(/lwug/g,'륙')
-				.replace(/lwuq/g,'륭')
-				.replace(/lyes/g,'롓')
-				.replace(/lyez/g,'롔')
-				.replace(/lyel/g,'롈')
-				.replace(/lyen/g,'롄')
-				.replace(/lyet/g,'롙')
-				.replace(/lyed/g,'롇')
-				.replace(/lyem/g,'롐')
-				.replace(/lyep/g,'롚')
-				.replace(/lyeb/g,'롑')
-				.replace(/lyec/g,'롛')
-				.replace(/lyef/g,'롎')
-				.replace(/lyev/g,'롒')
-				.replace(/yodj/g,'욫')
-				.replace(/syog/g,'쬭')
-				.replace(/mèdj/g,'멏')
-				.replace(/mèch/g,'멎')
-				.replace(/lyek/g,'롘')
-				.replace(/lyeg/g,'롁')
-				.replace(/lyeq/g,'롕')
-				.replace(/lwes/g,'뤳')
-				.replace(/lwez/g,'뤴')
-				.replace(/lwel/g,'뤨')
-				.replace(/lwen/g,'뤤')
-				.replace(/lwet/g,'뤹')
-				.replace(/lwed/g,'뤧')
-				.replace(/lwem/g,'뤰')
-				.replace(/lwep/g,'뤺')
-				.replace(/lweb/g,'뤱')
-				.replace(/lwec/g,'뤻')
-				.replace(/lwef/g,'뤮')
-				.replace(/lwev/g,'뤲')
-				.replace(/syok/g,'쭄')
-				.replace(/mùdj/g,'맻')
-				.replace(/mùch/g,'맺')
-				.replace(/syov/g,'쬾')
-				.replace(/lwek/g,'뤸')
-				.replace(/lweg/g,'뤡')
-				.replace(/lweq/g,'뤵')
-				.replace(/lyos/g,'룟')
-				.replace(/lyoz/g,'룠')
-				.replace(/lyol/g,'룔')
-				.replace(/lyon/g,'룐')
-				.replace(/lyot/g,'룥')
-				.replace(/lyod/g,'룓')
-				.replace(/lyom/g,'룜')
-				.replace(/lyop/g,'룦')
-				.replace(/lyob/g,'룝')
-				.replace(/lyoc/g,'룧')
-				.replace(/lyof/g,'룚')
-				.replace(/lyov/g,'룞')
-				.replace(/midj/g,'및')
-				.replace(/mich/g,'밎')
-				.replace(/syof/g,'쬺')
-				.replace(/syoc/g,'쭇')
-				.replace(/lyok/g,'룤')
-				.replace(/lyog/g,'룍')
-				.replace(/lyoq/g,'룡')
-				.replace(/lwos/g,'룃')
-				.replace(/lwoz/g,'룄')
-				.replace(/lwol/g,'뢸')
-				.replace(/lwon/g,'뢴')
-				.replace(/lwot/g,'룉')
-				.replace(/lwod/g,'뢷')
-				.replace(/lwom/g,'룀')
-				.replace(/lwop/g,'룊')
-				.replace(/lwob/g,'룁')
-				.replace(/lwoc/g,'룋')
-				.replace(/lwof/g,'뢾')
-				.replace(/mudj/g,'믗')
-				.replace(/much/g,'믖')
-				.replace(/lwov/g,'룂')
-				.replace(/syob/g,'쬽')
-				.replace(/syop/g,'쭆')
-				.replace(/lwok/g,'룈')
-				.replace(/lwog/g,'뢱')
-				.replace(/lwoq/g,'룅')
-				.replace(/lyès/g,'렷')
-				.replace(/lyèz/g,'렸')
-				.replace(/lyèl/g,'렬')
-				.replace(/lyèn/g,'련')
-				.replace(/lyèt/g,'렽')
-				.replace(/lyèd/g,'렫')
-				.replace(/rwaq/g,'뢍')
-				.replace(/lyèm/g,'렴')
-				.replace(/rwag/g,'롹')
-				.replace(/rwak/g,'뢐')
-				.replace(/syom/g,'쬼')
-				.replace(/syod/g,'쬳')
-				.replace(/rwav/g,'뢊')
-				.replace(/rwaf/g,'뢆')
-				.replace(/rwac/g,'뢓')
-				.replace(/rwab/g,'뢉')
-				.replace(/rwap/g,'뢒')
-				.replace(/rwam/g,'뢈')
-				.replace(/rwad/g,'롿')
-				.replace(/rwat/g,'뢑')
-				.replace(/rwan/g,'롼')
-				.replace(/rwal/g,'뢀')
-				.replace(/rwaz/g,'뢌')
-				.replace(/rwas/g,'뢋')
-				.replace(/ryaq/g,'량')
-				.replace(/lyèp/g,'렾')
-				.replace(/ryag/g,'략')
-				.replace(/ryak/g,'럌')
-				.replace(/syot/g,'쭅')
-				.replace(/syon/g,'쬰')
-				.replace(/ryav/g,'럆')
-				.replace(/ryaf/g,'럂')
-				.replace(/ryac/g,'럏')
-				.replace(/ryab/g,'럅')
-				.replace(/ryap/g,'럎')
-				.replace(/ryam/g,'럄')
-				.replace(/ryad/g,'랻')
-				.replace(/ryat/g,'럍')
-				.replace(/ryan/g,'랸')
-				.replace(/ryal/g,'랼')
-				.replace(/ryaz/g,'럈')
-				.replace(/ryas/g,'럇')
-				.replace(/rwùq/g,'뢩')
-				.replace(/lyèb/g,'렵')
-				.replace(/rwùg/g,'뢕')
-				.replace(/rwùk/g,'뢬')
-				.replace(/syol/g,'쬴')
-				.replace(/syoz/g,'쭀')
-				.replace(/rwùv/g,'뢦')
-				.replace(/rwùf/g,'뢢')
-				.replace(/rwùc/g,'뢯')
-				.replace(/rwùb/g,'뢥')
-				.replace(/rwùp/g,'뢮')
-				.replace(/rwùm/g,'뢤')
-				.replace(/rwùd/g,'뢛')
-				.replace(/rwùt/g,'뢭')
-				.replace(/rwùn/g,'뢘')
-				.replace(/rwùl/g,'뢜')
-				.replace(/rwùz/g,'뢨')
-				.replace(/rwùs/g,'뢧')
-				.replace(/ryùq/g,'럥')
-				.replace(/lyèc/g,'렿')
-				.replace(/ryùg/g,'럑')
-				.replace(/ryùk/g,'럨')
-				.replace(/syos/g,'쬿')
-				.replace(/woch/g,'욎')
-				.replace(/ryùv/g,'럢')
-				.replace(/ryùf/g,'럞')
-				.replace(/ryùc/g,'럫')
-				.replace(/ryùb/g,'럡')
-				.replace(/ryùp/g,'럪')
-				.replace(/ryùm/g,'럠')
-				.replace(/ryùd/g,'럗')
-				.replace(/ryùt/g,'럩')
-				.replace(/ryùn/g,'럔')
-				.replace(/ryùl/g,'럘')
-				.replace(/ryùz/g,'럤')
-				.replace(/ryùs/g,'럣')
-				.replace(/rwèq/g,'뤙')
-				.replace(/lyèf/g,'렲')
-				.replace(/rwèg/g,'뤅')
-				.replace(/rwèk/g,'뤜')
-				.replace(/wodj/g,'욏')
-				.replace(/sweq/g,'쮕')
-				.replace(/rwèv/g,'뤖')
-				.replace(/rwèf/g,'뤒')
-				.replace(/rwèc/g,'뤟')
-				.replace(/rwèb/g,'뤕')
-				.replace(/rwèp/g,'뤞')
-				.replace(/rwèm/g,'뤔')
-				.replace(/rwèd/g,'뤋')
-				.replace(/rwèt/g,'뤝')
-				.replace(/rwèn/g,'뤈')
-				.replace(/rwèl/g,'뤌')
-				.replace(/rwèz/g,'뤘')
-				.replace(/rwès/g,'뤗')
-				.replace(/ryèq/g,'령')
-				.replace(/lyèv/g,'렶')
-				.replace(/ryèg/g,'력')
-				.replace(/ryèk/g,'렼')
-				.replace(/sweg/g,'쮁')
-				.replace(/swek/g,'쮘')
-				.replace(/ryèv/g,'렶')
-				.replace(/ryèf/g,'렲')
-				.replace(/ryèc/g,'렿')
-				.replace(/ryèb/g,'렵')
-				.replace(/ryèp/g,'렾')
-				.replace(/ryèm/g,'렴')
-				.replace(/ryèd/g,'렫')
-				.replace(/ryèt/g,'렽')
-				.replace(/ryèn/g,'련')
-				.replace(/ryèl/g,'렬')
-				.replace(/ryèz/g,'렸')
-				.replace(/ryès/g,'렷')
-				.replace(/rwoq/g,'룅')
-				.replace(/swev/g,'쮒')
-				.replace(/rwog/g,'뢱')
-				.replace(/rwok/g,'룈')
-				.replace(/swef/g,'쮎')
-				.replace(/swec/g,'쮛')
-				.replace(/rwov/g,'룂')
-				.replace(/rwof/g,'뢾')
-				.replace(/rwoc/g,'룋')
-				.replace(/rwob/g,'룁')
-				.replace(/rwop/g,'룊')
-				.replace(/rwom/g,'룀')
-				.replace(/rwod/g,'뢷')
-				.replace(/rwot/g,'룉')
-				.replace(/rwon/g,'뢴')
-				.replace(/rwol/g,'뢸')
-				.replace(/rwoz/g,'룄')
-				.replace(/rwos/g,'룃')
-				.replace(/ryoq/g,'룡')
-				.replace(/sweb/g,'쮑')
-				.replace(/ryog/g,'룍')
-				.replace(/ryok/g,'룤')
-				.replace(/swep/g,'쮚')
-				.replace(/swem/g,'쮐')
-				.replace(/ryov/g,'룞')
-				.replace(/ryof/g,'룚')
-				.replace(/ryoc/g,'룧')
-				.replace(/ryob/g,'룝')
-				.replace(/ryop/g,'룦')
-				.replace(/ryom/g,'룜')
-				.replace(/ryod/g,'룓')
-				.replace(/ryot/g,'룥')
-				.replace(/ryon/g,'룐')
-				.replace(/ryol/g,'룔')
-				.replace(/ryoz/g,'룠')
-				.replace(/ryos/g,'룟')
-				.replace(/rweq/g,'뤵')
-				.replace(/lyèk/g,'렼')
-				.replace(/rweg/g,'뤡')
-				.replace(/rwek/g,'뤸')
-				.replace(/swed/g,'쮇')
-				.replace(/swet/g,'쮙')
-				.replace(/rwev/g,'뤲')
-				.replace(/rwef/g,'뤮')
-				.replace(/rwec/g,'뤻')
-				.replace(/rweb/g,'뤱')
-				.replace(/rwep/g,'뤺')
-				.replace(/rwem/g,'뤰')
-				.replace(/rwed/g,'뤧')
-				.replace(/rwet/g,'뤹')
-				.replace(/rwen/g,'뤤')
-				.replace(/rwel/g,'뤨')
-				.replace(/rwez/g,'뤴')
-				.replace(/rwes/g,'뤳')
-				.replace(/ryeq/g,'롕')
-				.replace(/lyèg/g,'력')
-				.replace(/ryeg/g,'롁')
-				.replace(/ryek/g,'롘')
-				.replace(/swen/g,'쮄')
-				.replace(/swel/g,'쮈')
-				.replace(/ryev/g,'롒')
-				.replace(/ryef/g,'롎')
-				.replace(/ryec/g,'롛')
-				.replace(/ryeb/g,'롑')
-				.replace(/ryep/g,'롚')
-				.replace(/ryem/g,'롐')
-				.replace(/ryed/g,'롇')
-				.replace(/ryet/g,'롙')
-				.replace(/ryen/g,'롄')
-				.replace(/ryel/g,'롈')
-				.replace(/ryez/g,'롔')
-				.replace(/ryes/g,'롓')
-				.replace(/rwuq/g,'륭')
-				.replace(/lyèq/g,'령')
-				.replace(/rwug/g,'륙')
-				.replace(/rwuk/g,'륰')
-				.replace(/swez/g,'쮔')
-				.replace(/yèch/g,'옂')
-				.replace(/rwuv/g,'륪')
-				.replace(/rwuf/g,'륦')
-				.replace(/rwuc/g,'륳')
-				.replace(/rwub/g,'륩')
-				.replace(/rwup/g,'륲')
-				.replace(/rwum/g,'륨')
-				.replace(/rwud/g,'륟')
-				.replace(/rwut/g,'륱')
-				.replace(/rwun/g,'륜')
-				.replace(/rwul/g,'률')
-				.replace(/rwuz/g,'륬')
-				.replace(/rwus/g,'륫')
-				.replace(/ryuq/g,'룽')
-				.replace(/lwès/g,'뤗')
-				.replace(/ryug/g,'룩')
-				.replace(/ryuk/g,'뤀')
-				.replace(/yèdj/g,'옃')
-				.replace(/swes/g,'쮓')
-				.replace(/ryuv/g,'룺')
-				.replace(/ryuf/g,'룶')
-				.replace(/ryuc/g,'뤃')
-				.replace(/ryub/g,'룹')
-				.replace(/ryup/g,'뤂')
-				.replace(/ryum/g,'룸')
-				.replace(/ryud/g,'룯')
-				.replace(/ryut/g,'뤁')
-				.replace(/ryun/g,'룬')
-				.replace(/ryul/g,'룰')
-				.replace(/ryuz/g,'룼')
-				.replace(/ryus/g,'룻')
-				.replace(/rwiq/g,'륑')
-				.replace(/lwèz/g,'뤘')
-				.replace(/rwig/g,'뤽')
-				.replace(/rwik/g,'륔')
-				.replace(/syeq/g,'쪵')
-				.replace(/syek/g,'쪸')
-				.replace(/rwiv/g,'륎')
-				.replace(/rwif/g,'륊')
-				.replace(/rwic/g,'륗')
-				.replace(/rwib/g,'륍')
-				.replace(/rwip/g,'륖')
-				.replace(/rwim/g,'륌')
-				.replace(/rwid/g,'륃')
-				.replace(/rwit/g,'륕')
-				.replace(/rwin/g,'륀')
-				.replace(/rwil/g,'륄')
-				.replace(/rwiz/g,'륐')
-				.replace(/rwis/g,'륏')
-				.replace(/ryiq/g,'릥')
-				.replace(/lwèl/g,'뤌')
-				.replace(/ryig/g,'릑')
-				.replace(/ryik/g,'릨')
-				.replace(/syev/g,'쪲')
-				.replace(/syef/g,'쪮')
-				.replace(/ryiv/g,'릢')
-				.replace(/ryif/g,'릞')
-				.replace(/ryic/g,'릫')
-				.replace(/ryib/g,'릡')
-				.replace(/ryip/g,'릪')
-				.replace(/ryim/g,'릠')
-				.replace(/ryid/g,'릗')
-				.replace(/ryit/g,'릩')
-				.replace(/ryin/g,'릔')
-				.replace(/ryil/g,'릘')
-				.replace(/ryiz/g,'릤')
-				.replace(/ryis/g,'릣')
-				.replace(/lwèn/g,'뤈')
-				.replace(/lwèt/g,'뤝')
-				.replace(/lwèd/g,'뤋')
-				.replace(/lwèm/g,'뤔')
-				.replace(/radj/g,'랓')
-				.replace(/rach/g,'랒')
-				.replace(/lwèp/g,'뤞')
-				.replace(/lwèb/g,'뤕')
-				.replace(/lwèc/g,'뤟')
-				.replace(/lwèf/g,'뤒')
-				.replace(/lwèv/g,'뤖')
-				.replace(/syec/g,'쪻')
-				.replace(/syeb/g,'쪱')
-				.replace(/lwèk/g,'뤜')
-				.replace(/lwèg/g,'뤅')
-				.replace(/lwèq/g,'뤙')
-				.replace(/lyùs/g,'럣')
-				.replace(/lyùz/g,'럤')
-				.replace(/lyùl/g,'럘')
-				.replace(/lyùn/g,'럔')
-				.replace(/lyùt/g,'럩')
-				.replace(/lyùd/g,'럗')
-				.replace(/redj/g,'렟')
-				.replace(/rech/g,'렞')
-				.replace(/lyùm/g,'럠')
-				.replace(/lyùp/g,'럪')
-				.replace(/lyùb/g,'럡')
-				.replace(/lyùc/g,'럫')
-				.replace(/lyùf/g,'럞')
-				.replace(/lyùv/g,'럢')
-				.replace(/syep/g,'쪺')
-				.replace(/syem/g,'쪰')
-				.replace(/lyùk/g,'럨')
-				.replace(/lyùg/g,'럑')
-				.replace(/lyùq/g,'럥')
-				.replace(/lwùs/g,'뢧')
-				.replace(/lwùz/g,'뢨')
-				.replace(/lwùl/g,'뢜')
-				.replace(/lwùn/g,'뢘')
-				.replace(/lwùt/g,'뢭')
-				.replace(/rodj/g,'롳')
-				.replace(/roch/g,'롲')
-				.replace(/lwùd/g,'뢛')
-				.replace(/lwùm/g,'뢤')
-				.replace(/lwùp/g,'뢮')
-				.replace(/lwùb/g,'뢥')
-				.replace(/lwùc/g,'뢯')
-				.replace(/lwùf/g,'뢢')
-				.replace(/lwùv/g,'뢦')
-				.replace(/syed/g,'쪧')
-				.replace(/syet/g,'쪹')
-				.replace(/lwùk/g,'뢬')
-				.replace(/lwùg/g,'뢕')
-				.replace(/lwùq/g,'뢩')
-				.replace(/lyas/g,'럇')
-				.replace(/lyaz/g,'럈')
-				.replace(/lyal/g,'랼')
-				.replace(/lyan/g,'랸')
-				.replace(/rèdj/g,'렃')
-				.replace(/rèch/g,'렂')
-				.replace(/lyat/g,'럍')
-				.replace(/lyad/g,'랻')
-				.replace(/lyam/g,'럄')
-				.replace(/lyap/g,'럎')
-				.replace(/lyab/g,'럅')
-				.replace(/lyac/g,'럏')
-				.replace(/lyaf/g,'럂')
-				.replace(/lyav/g,'럆')
-				.replace(/syen/g,'쪤')
-				.replace(/syel/g,'쪨')
-				.replace(/lyak/g,'럌')
-				.replace(/lyag/g,'략')
-				.replace(/lyaq/g,'량')
-				.replace(/lwas/g,'뢋')
-				.replace(/lwaz/g,'뢌')
-				.replace(/lwal/g,'뢀')
-				.replace(/rùdj/g,'랯')
-				.replace(/rùch/g,'랮')
-				.replace(/lwan/g,'롼')
-				.replace(/lwat/g,'뢑')
-				.replace(/lwad/g,'롿')
-				.replace(/lwam/g,'뢈')
-				.replace(/lwap/g,'뢒')
-				.replace(/lwab/g,'뢉')
-				.replace(/lwac/g,'뢓')
-				.replace(/lwaf/g,'뢆')
-				.replace(/lwav/g,'뢊')
-				.replace(/syez/g,'쪴')
-				.replace(/wèch/g,'웢')
-				.replace(/lwak/g,'뢐')
-				.replace(/lwag/g,'롹')
-				.replace(/lwaq/g,'뢍')
-				.replace(/nuch/g,'늦')
-				.replace(/nudj/g,'늧')
-				.replace(/ridj/g,'맃')
-				.replace(/rich/g,'맂')
-				.replace(/nich/g,'닞')
-				.replace(/nidj/g,'닟')
-				.replace(/nùch/g,'냊')
-				.replace(/nùdj/g,'냋')
-				.replace(/nèch/g,'넞')
-				.replace(/nèdj/g,'넟')
-				.replace(/noch/g,'놎')
-				.replace(/nodj/g,'놏')
-				.replace(/nech/g,'넺')
-				.replace(/nedj/g,'넻')
-				.replace(/nach/g,'낮')
-				.replace(/nadj/g,'낯')
-				.replace(/nyis/g,'늿')
-				.replace(/nyiz/g,'닀')
-				.replace(/nyil/g,'늴')
-				.replace(/nyin/g,'늰')
-				.replace(/rudj/g,'릋')
-				.replace(/ruch/g,'릊')
-				.replace(/nyit/g,'닅')
-				.replace(/nyid/g,'늳')
-				.replace(/nyim/g,'늼')
-				.replace(/nyip/g,'닆')
-				.replace(/nyib/g,'늽')
-				.replace(/nyic/g,'닇')
-				.replace(/nyif/g,'늺')
-				.replace(/nyiv/g,'늾')
-				.replace(/wèdj/g,'웣')
-				.replace(/syes/g,'쪳')
-				.replace(/nyik/g,'닄')
-				.replace(/nyig/g,'늭')
-				.replace(/dwaq/g,'돵')
-				.replace(/nyiq/g,'닁')
-				.replace(/dwag/g,'돡')
-				.replace(/dwak/g,'돸')
-				.replace(/swuq/g,'쯍')
-				.replace(/swug/g,'쮹')
-				.replace(/dwav/g,'돲')
-				.replace(/dwaf/g,'돮')
-				.replace(/dwac/g,'돻')
-				.replace(/dwab/g,'돱')
-				.replace(/dwap/g,'돺')
-				.replace(/dwam/g,'돰')
-				.replace(/dwad/g,'돧')
-				.replace(/dwat/g,'돹')
-				.replace(/dwan/g,'돤')
-				.replace(/dwal/g,'돨')
-				.replace(/dwaz/g,'돴')
-				.replace(/dwas/g,'돳')
-				.replace(/dyaq/g,'댱')
-				.replace(/nwis/g,'뉫')
-				.replace(/dyag/g,'댝')
-				.replace(/dyak/g,'댴')
-				.replace(/swuk/g,'쯐')
-				.replace(/swuv/g,'쯊')
-				.replace(/dyav/g,'댮')
-				.replace(/dyaf/g,'댪')
-				.replace(/dyac/g,'댷')
-				.replace(/dyab/g,'댭')
-				.replace(/dyap/g,'댶')
-				.replace(/dyam/g,'댬')
-				.replace(/dyad/g,'댣')
-				.replace(/dyat/g,'댵')
-				.replace(/dyan/g,'댠')
-				.replace(/dyal/g,'댤')
-				.replace(/dyaz/g,'댰')
-				.replace(/dyas/g,'댯')
-				.replace(/dwùq/g,'됑')
-				.replace(/nwiz/g,'뉬')
-				.replace(/dwùg/g,'돽')
-				.replace(/dwùk/g,'됔')
-				.replace(/swuf/g,'쯆')
-				.replace(/swuc/g,'쯓')
-				.replace(/dwùv/g,'됎')
-				.replace(/dwùf/g,'됊')
-				.replace(/dwùc/g,'됗')
-				.replace(/dwùb/g,'됍')
-				.replace(/dwùp/g,'됖')
-				.replace(/dwùm/g,'됌')
-				.replace(/dwùd/g,'됃')
-				.replace(/dwùt/g,'됕')
-				.replace(/dwùn/g,'됀')
-				.replace(/dwùl/g,'됄')
-				.replace(/dwùz/g,'됐')
-				.replace(/dwùs/g,'됏')
-				.replace(/dyùq/g,'덍')
-				.replace(/nwil/g,'뉠')
-				.replace(/dyùg/g,'댹')
-				.replace(/dyùk/g,'덐')
-				.replace(/swub/g,'쯉')
-				.replace(/swup/g,'쯒')
-				.replace(/dyùv/g,'덊')
-				.replace(/dyùf/g,'덆')
-				.replace(/dyùc/g,'덓')
-				.replace(/dyùb/g,'덉')
-				.replace(/dyùp/g,'덒')
-				.replace(/dyùm/g,'덈')
-				.replace(/dyùd/g,'댿')
-				.replace(/dyùt/g,'덑')
-				.replace(/dyùn/g,'댼')
-				.replace(/dyùl/g,'덀')
-				.replace(/dyùz/g,'덌')
-				.replace(/dyùs/g,'덋')
-				.replace(/dwèq/g,'뒁')
-				.replace(/nwin/g,'뉜')
-				.replace(/dwèg/g,'둭')
-				.replace(/dwèk/g,'뒄')
-				.replace(/swum/g,'쯈')
-				.replace(/swud/g,'쮿')
-				.replace(/dwèv/g,'둾')
-				.replace(/dwèf/g,'둺')
-				.replace(/dwèc/g,'뒇')
-				.replace(/dwèb/g,'둽')
-				.replace(/dwèp/g,'뒆')
-				.replace(/dwèm/g,'둼')
-				.replace(/dwèd/g,'둳')
-				.replace(/dwèt/g,'뒅')
-				.replace(/dwèn/g,'둰')
-				.replace(/dwèl/g,'둴')
-				.replace(/dwèz/g,'뒀')
-				.replace(/dwès/g,'둿')
-				.replace(/dyèq/g,'뎡')
-				.replace(/nwit/g,'뉱')
-				.replace(/dyèg/g,'뎍')
-				.replace(/dyèk/g,'뎤')
-				.replace(/swut/g,'쯑')
-				.replace(/swun/g,'쮼')
-				.replace(/dyèv/g,'뎞')
-				.replace(/dyèf/g,'뎚')
-				.replace(/dyèc/g,'뎧')
-				.replace(/dyèb/g,'뎝')
-				.replace(/dyèp/g,'뎦')
-				.replace(/dyèm/g,'뎜')
-				.replace(/dyèd/g,'뎓')
-				.replace(/dyèt/g,'뎥')
-				.replace(/dyèn/g,'뎐')
-				.replace(/dyèl/g,'뎔')
-				.replace(/dyèz/g,'뎠')
-				.replace(/dyès/g,'뎟')
-				.replace(/dwoq/g,'됭')
-				.replace(/nwid/g,'뉟')
-				.replace(/dwog/g,'됙')
-				.replace(/dwok/g,'됰')
-				.replace(/swul/g,'쯀')
-				.replace(/yùch/g,'얮')
-				.replace(/dwov/g,'됪')
-				.replace(/dwof/g,'됦')
-				.replace(/dwoc/g,'됳')
-				.replace(/dwob/g,'됩')
-				.replace(/dwop/g,'됲')
-				.replace(/dwom/g,'됨')
-				.replace(/dwod/g,'됟')
-				.replace(/dwot/g,'됱')
-				.replace(/dwon/g,'된')
-				.replace(/dwol/g,'될')
-				.replace(/dwoz/g,'됬')
-				.replace(/dwos/g,'됫')
-				.replace(/dyoq/g,'둉')
-				.replace(/nwim/g,'뉨')
-				.replace(/dyog/g,'됵')
-				.replace(/dyok/g,'둌')
-				.replace(/yùdj/g,'얯')
-				.replace(/swuz/g,'쯌')
-				.replace(/dyov/g,'둆')
-				.replace(/dyof/g,'둂')
-				.replace(/dyoc/g,'둏')
-				.replace(/dyob/g,'둅')
-				.replace(/dyop/g,'둎')
-				.replace(/dyom/g,'둄')
-				.replace(/dyod/g,'됻')
-				.replace(/dyot/g,'둍')
-				.replace(/dyon/g,'됸')
-				.replace(/dyol/g,'됼')
-				.replace(/dyoz/g,'둈')
-				.replace(/dyos/g,'둇')
-				.replace(/dweq/g,'뒝')
-				.replace(/nwip/g,'뉲')
-				.replace(/dweg/g,'뒉')
-				.replace(/dwek/g,'뒠')
-				.replace(/swus/g,'쯋')
-				.replace(/syuq/g,'쭝')
-				.replace(/dwev/g,'뒚')
-				.replace(/dwef/g,'뒖')
-				.replace(/dwec/g,'뒣')
-				.replace(/dweb/g,'뒙')
-				.replace(/dwep/g,'뒢')
-				.replace(/dwem/g,'뒘')
-				.replace(/dwed/g,'뒏')
-				.replace(/dwet/g,'뒡')
-				.replace(/dwen/g,'뒌')
-				.replace(/dwel/g,'뒐')
-				.replace(/dwez/g,'뒜')
-				.replace(/dwes/g,'뒛')
-				.replace(/dyeq/g,'뎽')
-				.replace(/nwib/g,'뉩')
-				.replace(/dyeg/g,'뎩')
-				.replace(/dyek/g,'돀')
-				.replace(/syug/g,'쭉')
-				.replace(/syuk/g,'쭠')
-				.replace(/dyev/g,'뎺')
-				.replace(/dyef/g,'뎶')
-				.replace(/dyec/g,'돃')
-				.replace(/dyeb/g,'뎹')
-				.replace(/dyep/g,'돂')
-				.replace(/dyem/g,'뎸')
-				.replace(/dyed/g,'뎯')
-				.replace(/dyet/g,'돁')
-				.replace(/dyen/g,'뎬')
-				.replace(/dyel/g,'뎰')
-				.replace(/dyez/g,'뎼')
-				.replace(/dyes/g,'뎻')
-				.replace(/dwuq/g,'듕')
-				.replace(/nwic/g,'뉳')
-				.replace(/dwug/g,'듁')
-				.replace(/dwuk/g,'듘')
-				.replace(/syuv/g,'쭚')
-				.replace(/syuf/g,'쭖')
-				.replace(/dwuv/g,'듒')
-				.replace(/dwuf/g,'듎')
-				.replace(/dwuc/g,'듛')
-				.replace(/dwub/g,'듑')
-				.replace(/dwup/g,'듚')
-				.replace(/dwum/g,'듐')
-				.replace(/dwud/g,'듇')
-				.replace(/dwut/g,'듙')
-				.replace(/dwun/g,'듄')
-				.replace(/dwul/g,'듈')
-				.replace(/dwuz/g,'듔')
-				.replace(/dwus/g,'듓')
-				.replace(/dyuq/g,'둥')
-				.replace(/nwif/g,'뉦')
-				.replace(/dyug/g,'둑')
-				.replace(/dyuk/g,'둨')
-				.replace(/syuc/g,'쭣')
-				.replace(/syub/g,'쭙')
-				.replace(/dyuv/g,'둢')
-				.replace(/dyuf/g,'둞')
-				.replace(/dyuc/g,'둫')
-				.replace(/dyub/g,'둡')
-				.replace(/dyup/g,'둪')
-				.replace(/dyum/g,'둠')
-				.replace(/dyud/g,'둗')
-				.replace(/dyut/g,'둩')
-				.replace(/dyun/g,'둔')
-				.replace(/dyul/g,'둘')
-				.replace(/dyuz/g,'둤')
-				.replace(/dyus/g,'둣')
-				.replace(/dwiq/g,'뒹')
-				.replace(/nwiv/g,'뉪')
-				.replace(/dwig/g,'뒥')
-				.replace(/dwik/g,'뒼')
-				.replace(/syup/g,'쭢')
-				.replace(/syum/g,'쭘')
-				.replace(/dwiv/g,'뒶')
-				.replace(/dwif/g,'뒲')
-				.replace(/dwic/g,'뒿')
-				.replace(/dwib/g,'뒵')
-				.replace(/dwip/g,'뒾')
-				.replace(/dwim/g,'뒴')
-				.replace(/dwid/g,'뒫')
-				.replace(/dwit/g,'뒽')
-				.replace(/dwin/g,'뒨')
-				.replace(/dwil/g,'뒬')
-				.replace(/dwiz/g,'뒸')
-				.replace(/dwis/g,'뒷')
-				.replace(/dyiq/g,'딍')
-				.replace(/syud/g,'쭏')
-				.replace(/dyig/g,'듹')
-				.replace(/dyik/g,'딐')
-				.replace(/syut/g,'쭡')
-				.replace(/syun/g,'쭌')
-				.replace(/dyiv/g,'딊')
-				.replace(/dyif/g,'딆')
-				.replace(/dyic/g,'딓')
-				.replace(/dyib/g,'딉')
-				.replace(/dyip/g,'딒')
-				.replace(/dyim/g,'딈')
-				.replace(/dyid/g,'듿')
-				.replace(/dyit/g,'딑')
-				.replace(/dyin/g,'듼')
-				.replace(/dyil/g,'딀')
-				.replace(/dyiz/g,'딌')
-				.replace(/dyis/g,'딋')
-				.replace(/wùch/g,'왲')
-				.replace(/nwik/g,'뉰')
-				.replace(/nwig/g,'뉙')
-				.replace(/nwiq/g,'뉭')
-				.replace(/dadj/g,'닻')
-				.replace(/dach/g,'닺')
-				.replace(/nyus/g,'눗')
-				.replace(/nyuz/g,'눘')
-				.replace(/nyul/g,'눌')
-				.replace(/nyun/g,'눈')
-				.replace(/nyut/g,'눝')
-				.replace(/nyud/g,'눋')
-				.replace(/nyum/g,'눔')
-				.replace(/nyup/g,'눞')
-				.replace(/nyub/g,'눕')
-				.replace(/nyuc/g,'눟')
-				.replace(/nyuf/g,'눒')
-				.replace(/nyuv/g,'눖')
-				.replace(/wùdj/g,'왳')
-				.replace(/syul/g,'쭐')
-				.replace(/nyuk/g,'눜')
-				.replace(/nyug/g,'눅')
-				.replace(/dedj/g,'뎇')
-				.replace(/dech/g,'뎆')
-				.replace(/nyuq/g,'눙')
-				.replace(/nwus/g,'늇')
-				.replace(/nwuz/g,'늈')
-				.replace(/nwul/g,'뉼')
-				.replace(/nwun/g,'뉸')
-				.replace(/nwut/g,'늍')
-				.replace(/nwud/g,'뉻')
-				.replace(/nwum/g,'늄')
-				.replace(/nwup/g,'늎')
-				.replace(/nwub/g,'늅')
-				.replace(/nwuc/g,'늏')
-				.replace(/nwuf/g,'늂')
-				.replace(/nwuv/g,'늆')
-				.replace(/syuz/g,'쭜')
-				.replace(/syus/g,'쭛')
-				.replace(/nwuk/g,'늌')
-				.replace(/dodj/g,'돛')
-				.replace(/doch/g,'돚')
-				.replace(/nwug/g,'뉵')
-				.replace(/nwuq/g,'늉')
-				.replace(/nyes/g,'녯')
-				.replace(/nyez/g,'녰')
-				.replace(/nyel/g,'녤')
-				.replace(/nyen/g,'녠')
-				.replace(/nyet/g,'녵')
-				.replace(/nyed/g,'녣')
-				.replace(/nyem/g,'녬')
-				.replace(/nyep/g,'녶')
-				.replace(/nyeb/g,'녭')
-				.replace(/nyec/g,'녷')
-				.replace(/nyef/g,'녪')
-				.replace(/nyev/g,'녮')
-				.replace(/swiq/g,'쮱')
-				.replace(/swig/g,'쮝')
-				.replace(/dèdj/g,'덫')
-				.replace(/dèch/g,'덪')
-				.replace(/nyek/g,'녴')
-				.replace(/nyeg/g,'녝')
-				.replace(/nyeq/g,'녱')
-				.replace(/nwes/g,'뉏')
-				.replace(/nwez/g,'뉐')
-				.replace(/nwel/g,'뉄')
-				.replace(/nwen/g,'뉀')
-				.replace(/nwet/g,'뉕')
-				.replace(/nwed/g,'뉃')
-				.replace(/nwem/g,'뉌')
-				.replace(/nwep/g,'뉖')
-				.replace(/nweb/g,'뉍')
-				.replace(/nwec/g,'뉗')
-				.replace(/nwef/g,'뉊')
-				.replace(/nwev/g,'뉎')
-				.replace(/swik/g,'쮴')
-				.replace(/dùdj/g,'댗')
-				.replace(/dùch/g,'댖')
-				.replace(/swiv/g,'쮮')
-				.replace(/nwek/g,'뉔')
-				.replace(/nweg/g,'눽')
-				.replace(/nweq/g,'뉑')
-				.replace(/nyos/g,'뇻')
-				.replace(/nyoz/g,'뇼')
-				.replace(/nyol/g,'뇰')
-				.replace(/nyon/g,'뇬')
-				.replace(/nyot/g,'눁')
-				.replace(/nyod/g,'뇯')
-				.replace(/nyom/g,'뇸')
-				.replace(/nyop/g,'눂')
-				.replace(/nyob/g,'뇹')
-				.replace(/nyoc/g,'눃')
-				.replace(/nyof/g,'뇶')
-				.replace(/nyov/g,'뇺')
-				.replace(/didj/g,'딫')
-				.replace(/dich/g,'딪')
-				.replace(/swif/g,'쮪')
-				.replace(/swic/g,'쮷')
-				.replace(/nyok/g,'눀')
-				.replace(/nyog/g,'뇩')
-				.replace(/nyoq/g,'뇽')
-				.replace(/nwos/g,'뇟')
-				.replace(/nwoz/g,'뇠')
-				.replace(/nwol/g,'뇔')
-				.replace(/nwon/g,'뇐')
-				.replace(/nwot/g,'뇥')
-				.replace(/nwod/g,'뇓')
-				.replace(/nwom/g,'뇜')
-				.replace(/nwop/g,'뇦')
-				.replace(/nwob/g,'뇝')
-				.replace(/nwoc/g,'뇧')
-				.replace(/nwof/g,'뇚')
-				.replace(/dudj/g,'듳')
-				.replace(/duch/g,'듲')
-				.replace(/nwov/g,'뇞')
-				.replace(/swib/g,'쮭')
-				.replace(/swip/g,'쮶')
-				.replace(/nwok/g,'뇤')
-				.replace(/nwog/g,'뇍')
-				.replace(/nwoq/g,'뇡')
-				.replace(/nyès/g,'녓')
-				.replace(/nyèz/g,'녔')
-				.replace(/nyèl/g,'녈')
-				.replace(/nyèn/g,'년')
-				.replace(/nyèt/g,'녙')
-				.replace(/nyèd/g,'녇')
-				.replace(/twaq/g,'퇑')
-				.replace(/nyèm/g,'념')
-				.replace(/twag/g,'톽')
-				.replace(/twak/g,'퇔')
-				.replace(/swim/g,'쮬')
-				.replace(/swid/g,'쮣')
-				.replace(/twav/g,'퇎')
-				.replace(/twaf/g,'퇊')
-				.replace(/twac/g,'퇗')
-				.replace(/twab/g,'퇍')
-				.replace(/twap/g,'퇖')
-				.replace(/twam/g,'퇌')
-				.replace(/twad/g,'퇃')
-				.replace(/twat/g,'퇕')
-				.replace(/twan/g,'퇀')
-				.replace(/twal/g,'퇄')
-				.replace(/twaz/g,'퇐')
-				.replace(/twas/g,'퇏')
-				.replace(/tyaq/g,'턍')
-				.replace(/nyèp/g,'녚')
-				.replace(/tyag/g,'탹')
-				.replace(/tyak/g,'턐')
-				.replace(/swit/g,'쮵')
-				.replace(/yach/g,'얒')
-				.replace(/tyav/g,'턊')
-				.replace(/tyaf/g,'턆')
-				.replace(/tyac/g,'턓')
-				.replace(/tyab/g,'턉')
-				.replace(/tyap/g,'턒')
-				.replace(/tyam/g,'턈')
-				.replace(/tyad/g,'탿')
-				.replace(/tyat/g,'턑')
-				.replace(/tyan/g,'탼')
-				.replace(/tyal/g,'턀')
-				.replace(/tyaz/g,'턌')
-				.replace(/tyas/g,'턋')
-				.replace(/twùq/g,'퇭')
-				.replace(/nyèb/g,'녑')
-				.replace(/twùg/g,'퇙')
-				.replace(/twùk/g,'퇰')
-				.replace(/yadj/g,'얓')
-				.replace(/swin/g,'쮠')
-				.replace(/twùv/g,'퇪')
-				.replace(/twùf/g,'퇦')
-				.replace(/twùc/g,'퇳')
-				.replace(/twùb/g,'퇩')
-				.replace(/twùp/g,'퇲')
-				.replace(/twùm/g,'퇨')
-				.replace(/twùd/g,'퇟')
-				.replace(/twùt/g,'퇱')
-				.replace(/twùn/g,'퇜')
-				.replace(/twùl/g,'퇠')
-				.replace(/twùz/g,'퇬')
-				.replace(/twùs/g,'퇫')
-				.replace(/tyùq/g,'턩')
-				.replace(/nyèc/g,'녛')
-				.replace(/tyùg/g,'턕')
-				.replace(/tyùk/g,'턬')
-				.replace(/swil/g,'쮤')
-				.replace(/swiz/g,'쮰')
-				.replace(/tyùv/g,'턦')
-				.replace(/tyùf/g,'턢')
-				.replace(/tyùc/g,'턯')
-				.replace(/tyùb/g,'턥')
-				.replace(/tyùp/g,'턮')
-				.replace(/tyùm/g,'턤')
-				.replace(/tyùd/g,'턛')
-				.replace(/tyùt/g,'턭')
-				.replace(/tyùn/g,'턘')
-				.replace(/tyùl/g,'턜')
-				.replace(/tyùz/g,'턨')
-				.replace(/tyùs/g,'턧')
-				.replace(/twèq/g,'퉝')
-				.replace(/nyèf/g,'녎')
-				.replace(/twèg/g,'퉉')
-				.replace(/twèk/g,'퉠')
-				.replace(/swis/g,'쮯')
-				.replace(/syiq/g,'찅')
-				.replace(/twèv/g,'퉚')
-				.replace(/twèf/g,'퉖')
-				.replace(/twèc/g,'퉣')
-				.replace(/twèb/g,'퉙')
-				.replace(/twèp/g,'퉢')
-				.replace(/twèm/g,'퉘')
-				.replace(/twèd/g,'퉏')
-				.replace(/twèt/g,'퉡')
-				.replace(/twèn/g,'퉌')
-				.replace(/twèl/g,'퉐')
-				.replace(/twèz/g,'퉜')
-				.replace(/twès/g,'퉛')
-				.replace(/tyèq/g,'텽')
-				.replace(/nyèv/g,'녒')
-				.replace(/tyèg/g,'텩')
-				.replace(/tyèk/g,'톀')
-				.replace(/syig/g,'쯱')
-				.replace(/syik/g,'찈')
-				.replace(/tyèv/g,'텺')
-				.replace(/tyèf/g,'텶')
-				.replace(/tyèc/g,'톃')
-				.replace(/tyèb/g,'텹')
-				.replace(/tyèp/g,'톂')
-				.replace(/tyèm/g,'텸')
-				.replace(/tyèd/g,'텯')
-				.replace(/tyèt/g,'톁')
-				.replace(/tyèn/g,'텬')
-				.replace(/tyèl/g,'텰')
-				.replace(/tyèz/g,'텼')
-				.replace(/tyès/g,'텻')
-				.replace(/twoq/g,'툉')
-				.replace(/syiv/g,'찂')
-				.replace(/twog/g,'퇵')
-				.replace(/twok/g,'툌')
-				.replace(/syif/g,'쯾')
-				.replace(/syic/g,'찋')
-				.replace(/twov/g,'툆')
-				.replace(/twof/g,'툂')
-				.replace(/twoc/g,'툏')
-				.replace(/twob/g,'툅')
-				.replace(/twop/g,'툎')
-				.replace(/twom/g,'툄')
-				.replace(/twod/g,'퇻')
-				.replace(/twot/g,'툍')
-				.replace(/twon/g,'퇸')
-				.replace(/twol/g,'퇼')
-				.replace(/twoz/g,'툈')
-				.replace(/twos/g,'툇')
-				.replace(/tyoq/g,'툥')
-				.replace(/syib/g,'찁')
-				.replace(/tyog/g,'툑')
-				.replace(/tyok/g,'툨')
-				.replace(/syip/g,'찊')
-				.replace(/syim/g,'찀')
-				.replace(/tyov/g,'툢')
-				.replace(/tyof/g,'툞')
-				.replace(/tyoc/g,'툫')
-				.replace(/tyob/g,'툡')
-				.replace(/tyop/g,'툪')
-				.replace(/tyom/g,'툠')
-				.replace(/tyod/g,'툗')
-				.replace(/tyot/g,'툩')
-				.replace(/tyon/g,'툔')
-				.replace(/tyol/g,'툘')
-				.replace(/tyoz/g,'툤')
-				.replace(/tyos/g,'툣')
-				.replace(/tidj/g,'팇')
-				.replace(/nyèk/g,'녘')
-				.replace(/tweg/g,'퉥')
-				.replace(/twek/g,'퉼')
-				.replace(/syid/g,'쯷')
-				.replace(/wach/g,'왖')
-				.replace(/twev/g,'퉶')
-				.replace(/twef/g,'퉲')
-				.replace(/twec/g,'퉿')
-				.replace(/tweb/g,'퉵')
-				.replace(/twep/g,'퉾')
-				.replace(/twem/g,'퉴')
-				.replace(/twed/g,'퉫')
-				.replace(/twet/g,'퉽')
-				.replace(/twen/g,'퉨')
-				.replace(/twel/g,'퉬')
-				.replace(/twez/g,'퉸')
-				.replace(/twes/g,'퉷')
-				.replace(/tyeq/g,'톙')
-				.replace(/nyèg/g,'녁')
-				.replace(/tyeg/g,'톅')
-				.replace(/tyek/g,'톜')
-				.replace(/wadj/g,'왗')
-				.replace(/syit/g,'찉')
-				.replace(/tyev/g,'톖')
-				.replace(/tyef/g,'톒')
-				.replace(/tyec/g,'톟')
-				.replace(/tyeb/g,'톕')
-				.replace(/tyep/g,'톞')
-				.replace(/tyem/g,'톔')
-				.replace(/tyed/g,'톋')
-				.replace(/tyet/g,'톝')
-				.replace(/tyen/g,'톈')
-				.replace(/tyel/g,'톌')
-				.replace(/tyez/g,'톘')
-				.replace(/tyes/g,'톗')
-				.replace(/twuq/g,'튱')
-				.replace(/nyèq/g,'녕')
-				.replace(/twug/g,'튝')
-				.replace(/twuk/g,'튴')
-				.replace(/syin/g,'쯴')
-				.replace(/syil/g,'쯸')
-				.replace(/twuv/g,'튮')
-				.replace(/twuf/g,'튪')
-				.replace(/twuc/g,'튷')
-				.replace(/twub/g,'튭')
-				.replace(/twup/g,'튶')
-				.replace(/twum/g,'튬')
-				.replace(/twud/g,'튣')
-				.replace(/twut/g,'튵')
-				.replace(/twun/g,'튠')
-				.replace(/twul/g,'튤')
-				.replace(/twuz/g,'튰')
-				.replace(/twus/g,'튯')
-				.replace(/tyuq/g,'퉁')
-				.replace(/nwès/g,'눳')
-				.replace(/tyug/g,'툭')
-				.replace(/tyuk/g,'퉄')
-				.replace(/syiz/g,'찄')
-				.replace(/syis/g,'찃')
-				.replace(/tyuv/g,'툾')
-				.replace(/tyuf/g,'툺')
-				.replace(/tyuc/g,'퉇')
-				.replace(/tyub/g,'툽')
-				.replace(/tyup/g,'퉆')
-				.replace(/tyum/g,'툼')
-				.replace(/tyud/g,'툳')
-				.replace(/tyut/g,'퉅')
-				.replace(/tyun/g,'툰')
-				.replace(/tyul/g,'툴')
-				.replace(/tyuz/g,'퉀')
-				.replace(/tyus/g,'툿')
-				.replace(/twiq/g,'튕')
-				.replace(/nwèz/g,'눴')
-				.replace(/twig/g,'튁')
-				.replace(/twik/g,'튘')
-				.replace(/sadj/g,'짳')
-				.replace(/sach/g,'짲')
-				.replace(/twiv/g,'튒')
-				.replace(/twif/g,'튎')
-				.replace(/twic/g,'튛')
-				.replace(/twib/g,'튑')
-				.replace(/twip/g,'튚')
-				.replace(/twim/g,'튐')
-				.replace(/twid/g,'튇')
-				.replace(/twit/g,'튙')
-				.replace(/twin/g,'튄')
-				.replace(/twil/g,'튈')
-				.replace(/twiz/g,'튔')
-				.replace(/twis/g,'튓')
-				.replace(/tyiq/g,'틩')
-				.replace(/nwèl/g,'눨')
-				.replace(/tyig/g,'틕')
-				.replace(/tyik/g,'틬')
-				.replace(/sedj/g,'쩿')
-				.replace(/sech/g,'쩾')
-				.replace(/tyiv/g,'틦')
-				.replace(/tyif/g,'틢')
-				.replace(/tyic/g,'틯')
-				.replace(/tyib/g,'틥')
-				.replace(/tyip/g,'틮')
-				.replace(/tyim/g,'틤')
-				.replace(/tyid/g,'틛')
-				.replace(/tyit/g,'틭')
-				.replace(/tyin/g,'틘')
-				.replace(/tyil/g,'틜')
-				.replace(/tyiz/g,'틨')
-				.replace(/tyis/g,'틧')
-				.replace(/nwèn/g,'눤')
-				.replace(/nwèt/g,'눹')
-				.replace(/nwèd/g,'눧')
-				.replace(/nwèm/g,'눰')
-				.replace(/tadj/g,'탗')
-				.replace(/tach/g,'탖')
-				.replace(/nwèp/g,'눺')
-				.replace(/nwèb/g,'눱')
-				.replace(/nwèc/g,'눻')
-				.replace(/nwèf/g,'눮')
-				.replace(/nwèv/g,'눲')
-				.replace(/sodj/g,'쫓')
-				.replace(/soch/g,'쫒')
-				.replace(/nwèk/g,'눸')
-				.replace(/nwèg/g,'눡')
-				.replace(/nwèq/g,'눵')
-				.replace(/nyùs/g,'냿')
-				.replace(/nyùz/g,'넀')
-				.replace(/nyùl/g,'냴')
-				.replace(/nyùn/g,'냰')
-				.replace(/nyùt/g,'넅')
-				.replace(/nyùd/g,'냳')
-				.replace(/tedj/g,'텣')
-				.replace(/tech/g,'텢')
-				.replace(/nyùm/g,'냼')
-				.replace(/nyùp/g,'넆')
-				.replace(/nyùb/g,'냽')
-				.replace(/nyùc/g,'넇')
-				.replace(/nyùf/g,'냺')
-				.replace(/nyùv/g,'냾')
-				.replace(/sèdj/g,'쩣')
-				.replace(/sèch/g,'쩢')
-				.replace(/nyùk/g,'넄')
-				.replace(/nyùg/g,'냭')
-				.replace(/nyùq/g,'넁')
-				.replace(/nwùs/g,'뇃')
-				.replace(/nwùz/g,'뇄')
-				.replace(/nwùl/g,'놸')
-				.replace(/nwùn/g,'놴')
-				.replace(/nwùt/g,'뇉')
-				.replace(/todj/g,'톷')
-				.replace(/toch/g,'톶')
-				.replace(/nwùd/g,'놷')
-				.replace(/nwùm/g,'뇀')
-				.replace(/nwùp/g,'뇊')
-				.replace(/nwùb/g,'뇁')
-				.replace(/nwùc/g,'뇋')
-				.replace(/nwùf/g,'놾')
-				.replace(/nwùv/g,'뇂')
-				.replace(/sùdj/g,'쨏')
-				.replace(/sùch/g,'쨎')
-				.replace(/nwùk/g,'뇈')
-				.replace(/nwùg/g,'놱')
-				.replace(/nwùq/g,'뇅')
-				.replace(/nyas/g,'냣')
-				.replace(/nyaz/g,'냤')
-				.replace(/nyal/g,'냘')
-				.replace(/nyan/g,'냔')
-				.replace(/tèdj/g,'텇')
-				.replace(/tèch/g,'텆')
-				.replace(/nyat/g,'냩')
-				.replace(/nyad/g,'냗')
-				.replace(/nyam/g,'냠')
-				.replace(/nyap/g,'냪')
-				.replace(/nyab/g,'냡')
-				.replace(/nyac/g,'냫')
-				.replace(/nyaf/g,'냞')
-				.replace(/nyav/g,'냢')
-				.replace(/sidj/g,'찣')
-				.replace(/sich/g,'찢')
-				.replace(/nyak/g,'냨')
-				.replace(/nyag/g,'냑')
-				.replace(/nyaq/g,'냥')
-				.replace(/nwas/g,'놧')
-				.replace(/nwaz/g,'놨')
-				.replace(/nwal/g,'놜')
-				.replace(/tùdj/g,'탳')
-				.replace(/tùch/g,'탲')
-				.replace(/nwan/g,'놘')
-				.replace(/nwat/g,'놭')
-				.replace(/nwad/g,'놛')
-				.replace(/nwam/g,'놤')
-				.replace(/nwap/g,'놮')
-				.replace(/nwab/g,'놥')
-				.replace(/nwac/g,'놯')
-				.replace(/nwaf/g,'놢')
-				.replace(/nwav/g,'놦')
-				.replace(/sudj/g,'쯫')
-				.replace(/such/g,'쯪')
-				.replace(/nwak/g,'놬')
-				.replace(/nwag/g,'놕')
-				.replace(/nwaq/g,'놩')
-				.replace(/tuch/g,'틎')
-				.replace(/tudj/g,'틏')
-				.replace(/tich/g,'팆')
-				.replace(/tweq/g,'퉹')
-				.replace(/tiv/g,'팂')
-				.replace(/tif/g,'틾')
-				.replace(/tic/g,'팋')
-				.replace(/tib/g,'팁')
-				.replace(/tip/g,'팊')
-				.replace(/tim/g,'팀')
-				.replace(/tid/g,'틷')
-				.replace(/tit/g,'팉')
-				.replace(/tin/g,'틴')
-				.replace(/til/g,'틸')
-				.replace(/tiz/g,'팄')
-				.replace(/tis/g,'팃')
-				.replace(/tuq/g,'틍')
-				.replace(/woz/g,'욌')
-				.replace(/tug/g,'특')
-				.replace(/tuk/g,'틐')
-				.replace(/tik/g,'팈')
-				.replace(/tig/g,'틱')
-				.replace(/tuv/g,'틊')
-				.replace(/tuf/g,'틆')
-				.replace(/tuc/g,'틓')
-				.replace(/tub/g,'틉')
-				.replace(/tup/g,'틒')
-				.replace(/tum/g,'틈')
-				.replace(/tud/g,'튿')
-				.replace(/tut/g,'틑')
-				.replace(/tun/g,'튼')
-				.replace(/tul/g,'틀')
-				.replace(/tuz/g,'틌')
-				.replace(/tus/g,'틋')
-				.replace(/wol/g,'욀')
-				.replace(/nwa/g,'놔')
-				.replace(/tiq/g,'팅')
-				.replace(/tùs/g,'탯')
-				.replace(/tùz/g,'탰')
-				.replace(/tùl/g,'탤')
-				.replace(/tùn/g,'탠')
-				.replace(/tùt/g,'탵')
-				.replace(/tùd/g,'탣')
-				.replace(/tùm/g,'탬')
-				.replace(/tùp/g,'탶')
-				.replace(/tùb/g,'탭')
-				.replace(/tùc/g,'탷')
-				.replace(/tùf/g,'탪')
-				.replace(/tùv/g,'탮')
-				.replace(/tùk/g,'탴')
-				.replace(/tùg/g,'택')
-				.replace(/won/g,'왼')
-				.replace(/tùq/g,'탱')
-				.replace(/nya/g,'냐')
-				.replace(/tès/g,'텃')
-				.replace(/tèz/g,'텄')
-				.replace(/tèl/g,'털')
-				.replace(/tèn/g,'턴')
-				.replace(/tèt/g,'텉')
-				.replace(/tèd/g,'턷')
-				.replace(/tèm/g,'텀')
-				.replace(/tèp/g,'텊')
-				.replace(/tèb/g,'텁')
-				.replace(/tèc/g,'텋')
-				.replace(/tèf/g,'턾')
-				.replace(/tèv/g,'텂')
-				.replace(/tèk/g,'텈')
-				.replace(/tèg/g,'턱')
-				.replace(/wot/g,'욑')
-				.replace(/tèq/g,'텅')
-				.replace(/tos/g,'톳')
-				.replace(/nwù/g,'놰')
-				.replace(/toz/g,'톴')
-				.replace(/tol/g,'톨')
-				.replace(/ton/g,'톤')
-				.replace(/tot/g,'톹')
-				.replace(/tod/g,'톧')
-				.replace(/tom/g,'톰')
-				.replace(/top/g,'톺')
-				.replace(/tob/g,'톱')
-				.replace(/toc/g,'톻')
-				.replace(/tof/g,'톮')
-				.replace(/tov/g,'톲')
-				.replace(/tok/g,'톸')
-				.replace(/tog/g,'톡')
-				.replace(/wod/g,'왿')
-				.replace(/toq/g,'통')
-				.replace(/tes/g,'텟')
-				.replace(/tez/g,'텠')
-				.replace(/nyù/g,'냬')
-				.replace(/tel/g,'텔')
-				.replace(/ten/g,'텐')
-				.replace(/tet/g,'텥')
-				.replace(/ted/g,'텓')
-				.replace(/tem/g,'템')
-				.replace(/tep/g,'텦')
-				.replace(/teb/g,'텝')
-				.replace(/tec/g,'텧')
-				.replace(/tef/g,'텚')
-				.replace(/tev/g,'텞')
-				.replace(/tek/g,'텤')
-				.replace(/teg/g,'텍')
-				.replace(/wom/g,'욈')
-				.replace(/teq/g,'텡')
-				.replace(/tas/g,'탓')
-				.replace(/taz/g,'탔')
-				.replace(/tal/g,'탈')
-				.replace(/nwè/g,'눠')
-				.replace(/tan/g,'탄')
-				.replace(/tat/g,'탙')
-				.replace(/tad/g,'탇')
-				.replace(/tam/g,'탐')
-				.replace(/tap/g,'탚')
-				.replace(/tab/g,'탑')
-				.replace(/tac/g,'탛')
-				.replace(/taf/g,'탎')
-				.replace(/tav/g,'탒')
-				.replace(/tak/g,'탘')
-				.replace(/tag/g,'탁')
-				.replace(/wop/g,'욒')
-				.replace(/taq/g,'탕')
-				.replace(/tyi/g,'틔')
-				.replace(/twi/g,'튀')
-				.replace(/tyu/g,'투')
-				.replace(/twu/g,'튜')
-				.replace(/nyè/g,'녀')
-				.replace(/tye/g,'톄')
-				.replace(/twe/g,'퉤')
-				.replace(/tyo/g,'툐')
-				.replace(/two/g,'퇴')
-				.replace(/tyè/g,'텨')
-				.replace(/twè/g,'퉈')
-				.replace(/tyù/g,'턔')
-				.replace(/twù/g,'퇘')
-				.replace(/tya/g,'탸')
-				.replace(/twa/g,'톼')
-				.replace(/dus/g,'듯')
-				.replace(/duz/g,'듰')
-				.replace(/dul/g,'들')
-				.replace(/dun/g,'든')
-				.replace(/dut/g,'듵')
-				.replace(/dud/g,'듣')
-				.replace(/dum/g,'듬')
-				.replace(/nwo/g,'뇌')
-				.replace(/dup/g,'듶')
-				.replace(/dub/g,'듭')
-				.replace(/duc/g,'듷')
-				.replace(/duf/g,'듪')
-				.replace(/duv/g,'듮')
-				.replace(/duk/g,'듴')
-				.replace(/dug/g,'득')
-				.replace(/wob/g,'욉')
-				.replace(/duq/g,'등')
-				.replace(/dis/g,'딧')
-				.replace(/diz/g,'딨')
-				.replace(/dil/g,'딜')
-				.replace(/din/g,'딘')
-				.replace(/dit/g,'딭')
-				.replace(/did/g,'딛')
-				.replace(/dim/g,'딤')
-				.replace(/dip/g,'딮')
-				.replace(/nyo/g,'뇨')
-				.replace(/dib/g,'딥')
-				.replace(/dic/g,'딯')
-				.replace(/dif/g,'딢')
-				.replace(/div/g,'딦')
-				.replace(/dik/g,'딬')
-				.replace(/dig/g,'딕')
-				.replace(/woc/g,'욓')
-				.replace(/diq/g,'딩')
-				.replace(/dùs/g,'댓')
-				.replace(/dùz/g,'댔')
-				.replace(/dùl/g,'댈')
-				.replace(/dùn/g,'댄')
-				.replace(/dùt/g,'댙')
-				.replace(/dùd/g,'댇')
-				.replace(/dùm/g,'댐')
-				.replace(/dùp/g,'댚')
-				.replace(/dùb/g,'댑')
-				.replace(/nwe/g,'눼')
-				.replace(/dùc/g,'댛')
-				.replace(/dùf/g,'댎')
-				.replace(/dùv/g,'댒')
-				.replace(/dùk/g,'댘')
-				.replace(/dùg/g,'댁')
-				.replace(/wof/g,'욆')
-				.replace(/dùq/g,'댕')
-				.replace(/dès/g,'덧')
-				.replace(/dèz/g,'덨')
-				.replace(/dèl/g,'덜')
-				.replace(/dèn/g,'던')
-				.replace(/dèt/g,'덭')
-				.replace(/dèd/g,'덛')
-				.replace(/dèm/g,'덤')
-				.replace(/dèp/g,'덮')
-				.replace(/dèb/g,'덥')
-				.replace(/dèc/g,'덯')
-				.replace(/nye/g,'녜')
-				.replace(/dèf/g,'덢')
-				.replace(/dèv/g,'덦')
-				.replace(/dèk/g,'덬')
-				.replace(/dèg/g,'덕')
-				.replace(/wov/g,'욊')
-				.replace(/dèq/g,'덩')
-				.replace(/dos/g,'돗')
-				.replace(/doz/g,'돘')
-				.replace(/dol/g,'돌')
-				.replace(/don/g,'돈')
-				.replace(/dot/g,'돝')
-				.replace(/dod/g,'돋')
-				.replace(/dom/g,'돔')
-				.replace(/dop/g,'돞')
-				.replace(/dob/g,'돕')
-				.replace(/doc/g,'돟')
-				.replace(/dof/g,'돒')
-				.replace(/nwu/g,'뉴')
-				.replace(/dov/g,'돖')
-				.replace(/dok/g,'돜')
-				.replace(/dog/g,'독')
-				.replace(/wok/g,'욐')
-				.replace(/doq/g,'동')
-				.replace(/des/g,'뎃')
-				.replace(/dez/g,'뎄')
-				.replace(/del/g,'델')
-				.replace(/den/g,'덴')
-				.replace(/det/g,'뎉')
-				.replace(/ded/g,'덷')
-				.replace(/dem/g,'뎀')
-				.replace(/dep/g,'뎊')
-				.replace(/deb/g,'뎁')
-				.replace(/dec/g,'뎋')
-				.replace(/def/g,'덾')
-				.replace(/dev/g,'뎂')
-				.replace(/nyu/g,'누')
-				.replace(/dek/g,'뎈')
-				.replace(/deg/g,'덱')
-				.replace(/swe/g,'쮀')
-				.replace(/deq/g,'뎅')
-				.replace(/das/g,'닷')
-				.replace(/daz/g,'닸')
-				.replace(/dal/g,'달')
-				.replace(/dan/g,'단')
-				.replace(/dat/g,'닽')
-				.replace(/dad/g,'닫')
-				.replace(/dam/g,'담')
-				.replace(/dap/g,'닾')
-				.replace(/dab/g,'답')
-				.replace(/dac/g,'닿')
-				.replace(/daf/g,'닲')
-				.replace(/dav/g,'닶')
-				.replace(/dak/g,'닼')
-				.replace(/nwi/g,'뉘')
-				.replace(/dag/g,'닥')
-				.replace(/wog/g,'왹')
-				.replace(/daq/g,'당')
-				.replace(/dyi/g,'듸')
-				.replace(/dwi/g,'뒤')
-				.replace(/dyu/g,'두')
-				.replace(/dwu/g,'듀')
-				.replace(/dye/g,'뎨')
-				.replace(/dwe/g,'뒈')
-				.replace(/dyo/g,'됴')
-				.replace(/dwo/g,'되')
-				.replace(/dyè/g,'뎌')
-				.replace(/dwè/g,'둬')
-				.replace(/dyù/g,'댸')
-				.replace(/dwù/g,'돼')
-				.replace(/dya/g,'댜')
-				.replace(/dwa/g,'돠')
-				.replace(/nyi/g,'늬')
-				.replace(/rus/g,'릇')
-				.replace(/ruz/g,'릈')
-				.replace(/rul/g,'를')
-				.replace(/run/g,'른')
-				.replace(/rut/g,'릍')
-				.replace(/rud/g,'륻')
-				.replace(/rum/g,'름')
-				.replace(/rup/g,'릎')
-				.replace(/rub/g,'릅')
-				.replace(/ruc/g,'릏')
-				.replace(/ruf/g,'릂')
-				.replace(/ruv/g,'릆')
-				.replace(/ruk/g,'릌')
-				.replace(/rug/g,'륵')
-				.replace(/sic/g,'찧')
-				.replace(/ruq/g,'릉')
-				.replace(/naq/g,'낭')
-				.replace(/woq/g,'욍')
-				.replace(/nag/g,'낙')
-				.replace(/nak/g,'낰')
-				.replace(/ris/g,'릿')
-				.replace(/riz/g,'맀')
-				.replace(/nav/g,'낪')
-				.replace(/naf/g,'낦')
-				.replace(/nac/g,'낳')
-				.replace(/nab/g,'납')
-				.replace(/nap/g,'낲')
-				.replace(/nam/g,'남')
-				.replace(/nad/g,'낟')
-				.replace(/nat/g,'낱')
-				.replace(/nan/g,'난')
-				.replace(/nal/g,'날')
-				.replace(/naz/g,'났')
-				.replace(/nas/g,'낫')
-				.replace(/neq/g,'넹')
-				.replace(/yès/g,'엿')
-				.replace(/neg/g,'넥')
-				.replace(/nek/g,'넼')
-				.replace(/ril/g,'릴')
-				.replace(/rin/g,'린')
-				.replace(/nev/g,'넶')
-				.replace(/nef/g,'넲')
-				.replace(/nec/g,'넿')
-				.replace(/neb/g,'넵')
-				.replace(/nep/g,'넾')
-				.replace(/nem/g,'넴')
-				.replace(/ned/g,'넫')
-				.replace(/net/g,'넽')
-				.replace(/nen/g,'넨')
-				.replace(/nel/g,'넬')
-				.replace(/nez/g,'넸')
-				.replace(/nes/g,'넷')
-				.replace(/noq/g,'농')
-				.replace(/yèz/g,'였')
-				.replace(/nog/g,'녹')
-				.replace(/nok/g,'놐')
-				.replace(/rit/g,'맅')
-				.replace(/rid/g,'릳')
-				.replace(/nov/g,'놊')
-				.replace(/nof/g,'놆')
-				.replace(/noc/g,'놓')
-				.replace(/nob/g,'놉')
-				.replace(/nop/g,'높')
-				.replace(/nom/g,'놈')
-				.replace(/nod/g,'녿')
-				.replace(/not/g,'놑')
-				.replace(/non/g,'논')
-				.replace(/nol/g,'놀')
-				.replace(/noz/g,'놌')
-				.replace(/nos/g,'놋')
-				.replace(/nèq/g,'넝')
-				.replace(/yèl/g,'열')
-				.replace(/nèg/g,'넉')
-				.replace(/nèk/g,'넠')
-				.replace(/rim/g,'림')
-				.replace(/rip/g,'맆')
-				.replace(/nèv/g,'넚')
-				.replace(/nèf/g,'넖')
-				.replace(/nèc/g,'넣')
-				.replace(/nèb/g,'넙')
-				.replace(/nèp/g,'넢')
-				.replace(/nèm/g,'넘')
-				.replace(/nèd/g,'넏')
-				.replace(/nèt/g,'넡')
-				.replace(/nèn/g,'넌')
-				.replace(/nèl/g,'널')
-				.replace(/nèz/g,'넜')
-				.replace(/nès/g,'넛')
-				.replace(/nùq/g,'냉')
-				.replace(/yèn/g,'연')
-				.replace(/nùg/g,'낵')
-				.replace(/nùk/g,'냌')
-				.replace(/rib/g,'립')
-				.replace(/ric/g,'맇')
-				.replace(/nùv/g,'냆')
-				.replace(/nùf/g,'냂')
-				.replace(/nùc/g,'냏')
-				.replace(/nùb/g,'냅')
-				.replace(/nùp/g,'냎')
-				.replace(/nùm/g,'냄')
-				.replace(/nùd/g,'낻')
-				.replace(/nùt/g,'냍')
-				.replace(/nùn/g,'낸')
-				.replace(/nùl/g,'낼')
-				.replace(/nùz/g,'냈')
-				.replace(/nùs/g,'냇')
-				.replace(/niq/g,'닝')
-				.replace(/yèt/g,'옅')
-				.replace(/nig/g,'닉')
-				.replace(/nik/g,'닠')
-				.replace(/rif/g,'릺')
-				.replace(/riv/g,'릾')
-				.replace(/niv/g,'닚')
-				.replace(/nif/g,'닖')
-				.replace(/nic/g,'닣')
-				.replace(/nib/g,'닙')
-				.replace(/nip/g,'닢')
-				.replace(/nim/g,'님')
-				.replace(/nid/g,'닏')
-				.replace(/nit/g,'닡')
-				.replace(/nin/g,'닌')
-				.replace(/nil/g,'닐')
-				.replace(/niz/g,'닜')
-				.replace(/nis/g,'닛')
-				.replace(/nuq/g,'능')
-				.replace(/yèd/g,'엳')
-				.replace(/nug/g,'늑')
-				.replace(/nuk/g,'늨')
-				.replace(/rik/g,'맄')
-				.replace(/rig/g,'릭')
-				.replace(/nuv/g,'늢')
-				.replace(/nuf/g,'늞')
-				.replace(/nuc/g,'늫')
-				.replace(/nub/g,'늡')
-				.replace(/nup/g,'늪')
-				.replace(/num/g,'늠')
-				.replace(/nud/g,'늗')
-				.replace(/nut/g,'늩')
-				.replace(/nun/g,'는')
-				.replace(/nul/g,'늘')
-				.replace(/nuz/g,'늤')
-				.replace(/nus/g,'늣')
-				.replace(/yèm/g,'염')
-				.replace(/lwa/g,'롸')
-				.replace(/riq/g,'링')
-				.replace(/rùs/g,'랫')
-				.replace(/rùz/g,'랬')
-				.replace(/rùl/g,'랠')
-				.replace(/rùn/g,'랜')
-				.replace(/rùt/g,'랱')
-				.replace(/rùd/g,'랟')
-				.replace(/rùm/g,'램')
-				.replace(/rùp/g,'랲')
-				.replace(/rùb/g,'랩')
-				.replace(/rùc/g,'랳')
-				.replace(/rùf/g,'랦')
-				.replace(/rùv/g,'랪')
-				.replace(/rùk/g,'랰')
-				.replace(/rùg/g,'랙')
-				.replace(/yèp/g,'옆')
-				.replace(/rùq/g,'랭')
-				.replace(/lya/g,'랴')
-				.replace(/rès/g,'럿')
-				.replace(/rèz/g,'렀')
-				.replace(/rèl/g,'럴')
-				.replace(/rèn/g,'런')
-				.replace(/rèt/g,'렅')
-				.replace(/rèd/g,'럳')
-				.replace(/rèm/g,'럼')
-				.replace(/rèp/g,'렆')
-				.replace(/rèb/g,'럽')
-				.replace(/rèc/g,'렇')
-				.replace(/rèf/g,'럺')
-				.replace(/rèv/g,'럾')
-				.replace(/rèk/g,'렄')
-				.replace(/règ/g,'럭')
-				.replace(/yèb/g,'엽')
-				.replace(/rèq/g,'렁')
-				.replace(/ros/g,'롯')
-				.replace(/lwù/g,'뢔')
-				.replace(/roz/g,'롰')
-				.replace(/rol/g,'롤')
-				.replace(/ron/g,'론')
-				.replace(/rot/g,'롵')
-				.replace(/rod/g,'롣')
-				.replace(/rom/g,'롬')
-				.replace(/rop/g,'롶')
-				.replace(/rob/g,'롭')
-				.replace(/roc/g,'롷')
-				.replace(/rof/g,'롪')
-				.replace(/rov/g,'롮')
-				.replace(/rok/g,'롴')
-				.replace(/rog/g,'록')
-				.replace(/yèc/g,'옇')
-				.replace(/roq/g,'롱')
-				.replace(/res/g,'렛')
-				.replace(/rez/g,'렜')
-				.replace(/lyù/g,'럐')
-				.replace(/rel/g,'렐')
-				.replace(/ren/g,'렌')
-				.replace(/ret/g,'렡')
-				.replace(/red/g,'렏')
-				.replace(/rem/g,'렘')
-				.replace(/rep/g,'렢')
-				.replace(/reb/g,'렙')
-				.replace(/rec/g,'렣')
-				.replace(/ref/g,'렖')
-				.replace(/rev/g,'렚')
-				.replace(/rek/g,'렠')
-				.replace(/reg/g,'렉')
-				.replace(/yèf/g,'엺')
-				.replace(/req/g,'렝')
-				.replace(/ras/g,'랏')
-				.replace(/raz/g,'랐')
-				.replace(/ral/g,'랄')
-				.replace(/lwè/g,'뤄')
-				.replace(/ran/g,'란')
-				.replace(/rat/g,'랕')
-				.replace(/rad/g,'랃')
-				.replace(/ram/g,'람')
-				.replace(/rap/g,'랖')
-				.replace(/rab/g,'랍')
-				.replace(/rac/g,'랗')
-				.replace(/raf/g,'랊')
-				.replace(/rav/g,'랎')
-				.replace(/rak/g,'랔')
-				.replace(/rag/g,'락')
-				.replace(/yèv/g,'엾')
-				.replace(/raq/g,'랑')
-				.replace(/ryi/g,'릐')
-				.replace(/rwi/g,'뤼')
-				.replace(/ryu/g,'루')
-				.replace(/rwu/g,'류')
-				.replace(/lyè/g,'려')
-				.replace(/rye/g,'례')
-				.replace(/rwe/g,'뤠')
-				.replace(/ryo/g,'료')
-				.replace(/rwo/g,'뢰')
-				.replace(/ryè/g,'려')
-				.replace(/rwè/g,'뤄')
-				.replace(/ryù/g,'럐')
-				.replace(/rwù/g,'뢔')
-				.replace(/rya/g,'랴')
-				.replace(/rwa/g,'롸')
-				.replace(/mus/g,'믓')
-				.replace(/muz/g,'믔')
-				.replace(/mul/g,'믈')
-				.replace(/mun/g,'믄')
-				.replace(/mut/g,'믙')
-				.replace(/mud/g,'믇')
-				.replace(/mum/g,'믐')
-				.replace(/lwo/g,'뢰')
-				.replace(/mup/g,'믚')
-				.replace(/mub/g,'믑')
-				.replace(/muc/g,'믛')
-				.replace(/muf/g,'믎')
-				.replace(/muv/g,'믒')
-				.replace(/muk/g,'믘')
-				.replace(/mug/g,'믁')
-				.replace(/yèk/g,'옄')
-				.replace(/muq/g,'믕')
-				.replace(/mis/g,'밋')
-				.replace(/miz/g,'밌')
-				.replace(/mil/g,'밀')
-				.replace(/min/g,'민')
-				.replace(/mit/g,'밑')
-				.replace(/mid/g,'믿')
-				.replace(/mim/g,'밈')
-				.replace(/mip/g,'밒')
-				.replace(/lyo/g,'료')
-				.replace(/mib/g,'밉')
-				.replace(/mic/g,'밓')
-				.replace(/mif/g,'밆')
-				.replace(/miv/g,'밊')
-				.replace(/mik/g,'밐')
-				.replace(/mig/g,'믹')
-				.replace(/yèg/g,'역')
-				.replace(/miq/g,'밍')
-				.replace(/mùs/g,'맷')
-				.replace(/mùz/g,'맸')
-				.replace(/mùl/g,'맬')
-				.replace(/mùn/g,'맨')
-				.replace(/mùt/g,'맽')
-				.replace(/mùd/g,'맫')
-				.replace(/mùm/g,'맴')
-				.replace(/mùp/g,'맾')
-				.replace(/mùb/g,'맵')
-				.replace(/lwe/g,'뤠')
-				.replace(/mùc/g,'맿')
-				.replace(/mùf/g,'맲')
-				.replace(/mùv/g,'맶')
-				.replace(/mùk/g,'맼')
-				.replace(/mùg/g,'맥')
-				.replace(/sye/g,'쪠')
-				.replace(/mùq/g,'맹')
-				.replace(/mès/g,'멋')
-				.replace(/mèz/g,'멌')
-				.replace(/mèl/g,'멀')
-				.replace(/mèn/g,'먼')
-				.replace(/mèt/g,'멑')
-				.replace(/mèd/g,'먿')
-				.replace(/mèm/g,'멈')
-				.replace(/mèp/g,'멒')
-				.replace(/mèb/g,'멉')
-				.replace(/mèc/g,'멓')
-				.replace(/lye/g,'례')
-				.replace(/mèf/g,'멆')
-				.replace(/mèv/g,'멊')
-				.replace(/mèk/g,'멐')
-				.replace(/mèg/g,'먹')
-				.replace(/suz/g,'쯨')
-				.replace(/mèq/g,'멍')
-				.replace(/mos/g,'못')
-				.replace(/moz/g,'몼')
-				.replace(/mol/g,'몰')
-				.replace(/mon/g,'몬')
-				.replace(/mot/g,'뫁')
-				.replace(/mod/g,'몯')
-				.replace(/mom/g,'몸')
-				.replace(/mop/g,'뫂')
-				.replace(/mob/g,'몹')
-				.replace(/moc/g,'뫃')
-				.replace(/mof/g,'몶')
-				.replace(/lwu/g,'류')
-				.replace(/mov/g,'몺')
-				.replace(/mok/g,'뫀')
-				.replace(/mog/g,'목')
-				.replace(/sib/g,'찝')
-				.replace(/moq/g,'몽')
-				.replace(/mes/g,'멧')
-				.replace(/mez/g,'멨')
-				.replace(/mel/g,'멜')
-				.replace(/men/g,'멘')
-				.replace(/met/g,'멭')
-				.replace(/med/g,'멛')
-				.replace(/mem/g,'멤')
-				.replace(/mep/g,'멮')
-				.replace(/meb/g,'멥')
-				.replace(/mec/g,'멯')
-				.replace(/mef/g,'멢')
-				.replace(/mev/g,'멦')
-				.replace(/lyu/g,'루')
-				.replace(/mek/g,'멬')
-				.replace(/meg/g,'멕')
-				.replace(/yèq/g,'영')
-				.replace(/meq/g,'멩')
-				.replace(/mas/g,'맛')
-				.replace(/maz/g,'맜')
-				.replace(/mal/g,'말')
-				.replace(/man/g,'만')
-				.replace(/mat/g,'맡')
-				.replace(/mad/g,'맏')
-				.replace(/mam/g,'맘')
-				.replace(/map/g,'맢')
-				.replace(/mab/g,'맙')
-				.replace(/mac/g,'맣')
-				.replace(/maf/g,'맖')
-				.replace(/mav/g,'맚')
-				.replace(/mak/g,'맠')
-				.replace(/lwi/g,'뤼')
-				.replace(/mag/g,'막')
-				.replace(/wès/g,'웟')
-				.replace(/maq/g,'망')
-				.replace(/myi/g,'믜')
-				.replace(/mwi/g,'뮈')
-				.replace(/myu/g,'무')
-				.replace(/mwu/g,'뮤')
-				.replace(/mye/g,'몌')
-				.replace(/mwe/g,'뭬')
-				.replace(/myo/g,'묘')
-				.replace(/mwo/g,'뫼')
-				.replace(/myè/g,'며')
-				.replace(/mwè/g,'뭐')
-				.replace(/myù/g,'먜')
-				.replace(/mwù/g,'뫠')
-				.replace(/mya/g,'먀')
-				.replace(/mwa/g,'뫄')
-				.replace(/lyi/g,'릐')
-				.replace(/pus/g,'픗')
-				.replace(/puz/g,'픘')
-				.replace(/pul/g,'플')
-				.replace(/pun/g,'픈')
-				.replace(/put/g,'픝')
-				.replace(/pud/g,'픋')
-				.replace(/pum/g,'픔')
-				.replace(/pup/g,'픞')
-				.replace(/pub/g,'픕')
-				.replace(/puc/g,'픟')
-				.replace(/puf/g,'픒')
-				.replace(/puv/g,'픖')
-				.replace(/puk/g,'픜')
-				.replace(/pug/g,'픅')
-				.replace(/wèz/g,'웠')
-				.replace(/puq/g,'픙')
-				.replace(/laq/g,'랑')
-				.replace(/wèl/g,'월')
-				.replace(/lag/g,'락')
-				.replace(/lak/g,'랔')
-				.replace(/pis/g,'핏')
-				.replace(/piz/g,'핐')
-				.replace(/lav/g,'랎')
-				.replace(/laf/g,'랊')
-				.replace(/lac/g,'랗')
-				.replace(/lab/g,'랍')
-				.replace(/lap/g,'랖')
-				.replace(/lam/g,'람')
-				.replace(/lad/g,'랃')
-				.replace(/lat/g,'랕')
-				.replace(/lan/g,'란')
-				.replace(/lal/g,'랄')
-				.replace(/laz/g,'랐')
-				.replace(/las/g,'랏')
-				.replace(/leq/g,'렝')
-				.replace(/wèn/g,'원')
-				.replace(/leg/g,'렉')
-				.replace(/lek/g,'렠')
-				.replace(/pil/g,'필')
-				.replace(/pin/g,'핀')
-				.replace(/lev/g,'렚')
-				.replace(/lef/g,'렖')
-				.replace(/lec/g,'렣')
-				.replace(/leb/g,'렙')
-				.replace(/lep/g,'렢')
-				.replace(/lem/g,'렘')
-				.replace(/led/g,'렏')
-				.replace(/let/g,'렡')
-				.replace(/len/g,'렌')
-				.replace(/lel/g,'렐')
-				.replace(/lez/g,'렜')
-				.replace(/les/g,'렛')
-				.replace(/loq/g,'롱')
-				.replace(/wèt/g,'웥')
-				.replace(/log/g,'록')
-				.replace(/lok/g,'롴')
-				.replace(/pit/g,'핕')
-				.replace(/pid/g,'핃')
-				.replace(/lov/g,'롮')
-				.replace(/lof/g,'롪')
-				.replace(/loc/g,'롷')
-				.replace(/lob/g,'롭')
-				.replace(/lop/g,'롶')
-				.replace(/lom/g,'롬')
-				.replace(/lod/g,'롣')
-				.replace(/lot/g,'롵')
-				.replace(/lon/g,'론')
-				.replace(/lol/g,'롤')
-				.replace(/loz/g,'롰')
-				.replace(/los/g,'롯')
-				.replace(/lèq/g,'렁')
-				.replace(/wèd/g,'웓')
-				.replace(/lèg/g,'럭')
-				.replace(/lèk/g,'렄')
-				.replace(/pim/g,'핌')
-				.replace(/pip/g,'핖')
-				.replace(/lèv/g,'럾')
-				.replace(/lèf/g,'럺')
-				.replace(/lèc/g,'렇')
-				.replace(/lèb/g,'럽')
-				.replace(/lèp/g,'렆')
-				.replace(/lèm/g,'럼')
-				.replace(/lèd/g,'럳')
-				.replace(/lèt/g,'렅')
-				.replace(/lèn/g,'런')
-				.replace(/lèl/g,'럴')
-				.replace(/lèz/g,'렀')
-				.replace(/lès/g,'럿')
-				.replace(/lùq/g,'랭')
-				.replace(/wèm/g,'웜')
-				.replace(/lùg/g,'랙')
-				.replace(/lùk/g,'랰')
-				.replace(/pib/g,'핍')
-				.replace(/pic/g,'핗')
-				.replace(/lùv/g,'랪')
-				.replace(/lùf/g,'랦')
-				.replace(/lùc/g,'랳')
-				.replace(/lùb/g,'랩')
-				.replace(/lùp/g,'랲')
-				.replace(/lùm/g,'램')
-				.replace(/lùd/g,'랟')
-				.replace(/lùt/g,'랱')
-				.replace(/lùn/g,'랜')
-				.replace(/lùl/g,'랠')
-				.replace(/lùz/g,'랬')
-				.replace(/lùs/g,'랫')
-				.replace(/liq/g,'링')
-				.replace(/wèp/g,'웦')
-				.replace(/lig/g,'릭')
-				.replace(/lik/g,'맄')
-				.replace(/pif/g,'핊')
-				.replace(/piv/g,'핎')
-				.replace(/liv/g,'릾')
-				.replace(/lif/g,'릺')
-				.replace(/lic/g,'맇')
-				.replace(/lib/g,'립')
-				.replace(/lip/g,'맆')
-				.replace(/lim/g,'림')
-				.replace(/lid/g,'릳')
-				.replace(/lit/g,'맅')
-				.replace(/lin/g,'린')
-				.replace(/lil/g,'릴')
-				.replace(/liz/g,'맀')
-				.replace(/lis/g,'릿')
-				.replace(/luq/g,'릉')
-				.replace(/wèb/g,'웝')
-				.replace(/lug/g,'륵')
-				.replace(/luk/g,'릌')
-				.replace(/pik/g,'핔')
-				.replace(/pig/g,'픽')
-				.replace(/luv/g,'릆')
-				.replace(/luf/g,'릂')
-				.replace(/luc/g,'릏')
-				.replace(/lub/g,'릅')
-				.replace(/lup/g,'릎')
-				.replace(/lum/g,'름')
-				.replace(/lud/g,'륻')
-				.replace(/lut/g,'릍')
-				.replace(/lun/g,'른')
-				.replace(/lul/g,'를')
-				.replace(/luz/g,'릈')
-				.replace(/lus/g,'릇')
-				.replace(/wèc/g,'웧')
-				.replace(/piq/g,'핑')
-				.replace(/pùs/g,'팻')
-				.replace(/pùz/g,'팼')
-				.replace(/pùl/g,'팰')
-				.replace(/pùn/g,'팬')
-				.replace(/pùt/g,'퍁')
-				.replace(/pùd/g,'팯')
-				.replace(/pùm/g,'팸')
-				.replace(/pùp/g,'퍂')
-				.replace(/pùb/g,'팹')
-				.replace(/pùc/g,'퍃')
-				.replace(/pùf/g,'팶')
-				.replace(/pùv/g,'팺')
-				.replace(/pùk/g,'퍀')
-				.replace(/pùg/g,'팩')
-				.replace(/wèf/g,'웚')
-				.replace(/pùq/g,'팽')
-				.replace(/pès/g,'펏')
-				.replace(/pèz/g,'펐')
-				.replace(/pèl/g,'펄')
-				.replace(/pèn/g,'펀')
-				.replace(/pèt/g,'펕')
-				.replace(/pèd/g,'펃')
-				.replace(/pèm/g,'펌')
-				.replace(/pèp/g,'펖')
-				.replace(/pèb/g,'펍')
-				.replace(/pèc/g,'펗')
-				.replace(/pèf/g,'펊')
-				.replace(/pèv/g,'펎')
-				.replace(/pèk/g,'펔')
-				.replace(/pèg/g,'퍽')
-				.replace(/wèv/g,'웞')
-				.replace(/pèq/g,'펑')
-				.replace(/pos/g,'폿')
-				.replace(/poz/g,'퐀')
-				.replace(/pol/g,'폴')
-				.replace(/pon/g,'폰')
-				.replace(/pot/g,'퐅')
-				.replace(/pod/g,'폳')
-				.replace(/pom/g,'폼')
-				.replace(/pop/g,'퐆')
-				.replace(/pob/g,'폽')
-				.replace(/poc/g,'퐇')
-				.replace(/pof/g,'폺')
-				.replace(/pov/g,'폾')
-				.replace(/pok/g,'퐄')
-				.replace(/pog/g,'폭')
-				.replace(/wèk/g,'웤')
-				.replace(/poq/g,'퐁')
-				.replace(/pes/g,'펫')
-				.replace(/pez/g,'펬')
-				.replace(/pel/g,'펠')
-				.replace(/pen/g,'펜')
-				.replace(/pet/g,'펱')
-				.replace(/ped/g,'펟')
-				.replace(/pem/g,'펨')
-				.replace(/pep/g,'펲')
-				.replace(/peb/g,'펩')
-				.replace(/pec/g,'펳')
-				.replace(/pef/g,'펦')
-				.replace(/pev/g,'펪')
-				.replace(/pek/g,'펰')
-				.replace(/peg/g,'펙')
-				.replace(/wèg/g,'웍')
-				.replace(/peq/g,'펭')
-				.replace(/pas/g,'팟')
-				.replace(/paz/g,'팠')
-				.replace(/pal/g,'팔')
-				.replace(/pan/g,'판')
-				.replace(/pat/g,'팥')
-				.replace(/pad/g,'팓')
-				.replace(/pam/g,'팜')
-				.replace(/pap/g,'팦')
-				.replace(/pab/g,'팝')
-				.replace(/pac/g,'팧')
-				.replace(/paf/g,'팚')
-				.replace(/pav/g,'팞')
-				.replace(/pak/g,'팤')
-				.replace(/pag/g,'팍')
-				.replace(/swu/g,'쮸')
-				.replace(/paq/g,'팡')
-				.replace(/pyi/g,'픠')
-				.replace(/pwi/g,'퓌')
-				.replace(/pyu/g,'푸')
-				.replace(/pwu/g,'퓨')
-				.replace(/pye/g,'폐')
-				.replace(/pwe/g,'풰')
-				.replace(/pyo/g,'표')
-				.replace(/pwo/g,'푀')
-				.replace(/pyè/g,'펴')
-				.replace(/pwè/g,'풔')
-				.replace(/pyù/g,'퍠')
-				.replace(/pwù/g,'퐤')
-				.replace(/pya/g,'퍄')
-				.replace(/pwa/g,'퐈')
-				.replace(/bus/g,'븟')
-				.replace(/buz/g,'븠')
-				.replace(/bul/g,'블')
-				.replace(/bun/g,'븐')
-				.replace(/but/g,'븥')
-				.replace(/bud/g,'븓')
-				.replace(/bum/g,'븜')
-				.replace(/bup/g,'븦')
-				.replace(/bub/g,'븝')
-				.replace(/buc/g,'븧')
-				.replace(/buf/g,'븚')
-				.replace(/buv/g,'븞')
-				.replace(/buk/g,'븤')
-				.replace(/bug/g,'븍')
-				.replace(/sip/g,'찦')
-				.replace(/buq/g,'븡')
-				.replace(/bis/g,'빗')
-				.replace(/biz/g,'빘')
-				.replace(/bil/g,'빌')
-				.replace(/bin/g,'빈')
-				.replace(/bit/g,'빝')
-				.replace(/bid/g,'빋')
-				.replace(/bim/g,'빔')
-				.replace(/bip/g,'빞')
-				.replace(/bib/g,'빕')
-				.replace(/bic/g,'빟')
-				.replace(/bif/g,'빒')
-				.replace(/biv/g,'빖')
-				.replace(/bik/g,'빜')
-				.replace(/big/g,'빅')
-				.replace(/wèq/g,'웡')
-				.replace(/biq/g,'빙')
-				.replace(/bùs/g,'뱃')
-				.replace(/bùz/g,'뱄')
-				.replace(/bùl/g,'밸')
-				.replace(/bùn/g,'밴')
-				.replace(/bùt/g,'뱉')
-				.replace(/bùd/g,'밷')
-				.replace(/bùm/g,'뱀')
-				.replace(/bùp/g,'뱊')
-				.replace(/bùb/g,'뱁')
-				.replace(/bùc/g,'뱋')
-				.replace(/bùf/g,'밾')
-				.replace(/bùv/g,'뱂')
-				.replace(/bùk/g,'뱈')
-				.replace(/bùg/g,'백')
-				.replace(/yùs/g,'얫')
-				.replace(/bùq/g,'뱅')
-				.replace(/bès/g,'벗')
-				.replace(/bèz/g,'벘')
-				.replace(/bèl/g,'벌')
-				.replace(/bèn/g,'번')
-				.replace(/bèt/g,'벝')
-				.replace(/bèd/g,'벋')
-				.replace(/bèm/g,'범')
-				.replace(/bèp/g,'벞')
-				.replace(/bèb/g,'법')
-				.replace(/bèc/g,'벟')
-				.replace(/bèf/g,'벒')
-				.replace(/bèv/g,'벖')
-				.replace(/bèk/g,'벜')
-				.replace(/bèg/g,'벅')
-				.replace(/yùz/g,'얬')
-				.replace(/bèq/g,'벙')
-				.replace(/bos/g,'봇')
-				.replace(/boz/g,'봈')
-				.replace(/bol/g,'볼')
-				.replace(/bon/g,'본')
-				.replace(/bot/g,'봍')
-				.replace(/bod/g,'볻')
-				.replace(/bom/g,'봄')
-				.replace(/bop/g,'봎')
-				.replace(/bob/g,'봅')
-				.replace(/boc/g,'봏')
-				.replace(/bof/g,'봂')
-				.replace(/bov/g,'봆')
-				.replace(/bok/g,'봌')
-				.replace(/bog/g,'복')
-				.replace(/yùl/g,'얠')
-				.replace(/boq/g,'봉')
-				.replace(/bes/g,'벳')
-				.replace(/bez/g,'벴')
-				.replace(/bel/g,'벨')
-				.replace(/ben/g,'벤')
-				.replace(/bet/g,'벹')
-				.replace(/bed/g,'벧')
-				.replace(/bem/g,'벰')
-				.replace(/bep/g,'벺')
-				.replace(/beb/g,'벱')
-				.replace(/bec/g,'벻')
-				.replace(/bef/g,'벮')
-				.replace(/bev/g,'벲')
-				.replace(/bek/g,'벸')
-				.replace(/beg/g,'벡')
-				.replace(/yùn/g,'얜')
-				.replace(/beq/g,'벵')
-				.replace(/bas/g,'밧')
-				.replace(/baz/g,'밨')
-				.replace(/bal/g,'발')
-				.replace(/ban/g,'반')
-				.replace(/bat/g,'밭')
-				.replace(/bad/g,'받')
-				.replace(/bam/g,'밤')
-				.replace(/bap/g,'밮')
-				.replace(/bab/g,'밥')
-				.replace(/bac/g,'밯')
-				.replace(/baf/g,'밢')
-				.replace(/bav/g,'밦')
-				.replace(/bak/g,'밬')
-				.replace(/bag/g,'박')
-				.replace(/yùt/g,'얱')
-				.replace(/baq/g,'방')
-				.replace(/byi/g,'븨')
-				.replace(/bwi/g,'뷔')
-				.replace(/byu/g,'부')
-				.replace(/bwu/g,'뷰')
-				.replace(/bye/g,'볘')
-				.replace(/bwe/g,'붸')
-				.replace(/byo/g,'뵤')
-				.replace(/bwo/g,'뵈')
-				.replace(/byè/g,'벼')
-				.replace(/bwè/g,'붜')
-				.replace(/byù/g,'뱨')
-				.replace(/bwù/g,'봬')
-				.replace(/bya/g,'뱌')
-				.replace(/bwa/g,'봐')
-				.replace(/cus/g,'흣')
-				.replace(/cuz/g,'흤')
-				.replace(/cul/g,'흘')
-				.replace(/cun/g,'흔')
-				.replace(/cut/g,'흩')
-				.replace(/cud/g,'흗')
-				.replace(/cum/g,'흠')
-				.replace(/cup/g,'흪')
-				.replace(/cub/g,'흡')
-				.replace(/cuc/g,'흫')
-				.replace(/cuf/g,'흞')
-				.replace(/cuv/g,'흢')
-				.replace(/cuk/g,'흨')
-				.replace(/cug/g,'흑')
-				.replace(/yùd/g,'얟')
-				.replace(/cuq/g,'흥')
-				.replace(/cis/g,'힛')
-				.replace(/ciz/g,'힜')
-				.replace(/cil/g,'힐')
-				.replace(/cin/g,'힌')
-				.replace(/cit/g,'힡')
-				.replace(/cid/g,'힏')
-				.replace(/cim/g,'힘')
-				.replace(/cip/g,'힢')
-				.replace(/cib/g,'힙')
-				.replace(/cic/g,'힣')
-				.replace(/cif/g,'힖')
-				.replace(/civ/g,'힚')
-				.replace(/cik/g,'힠')
-				.replace(/cig/g,'힉')
-				.replace(/yùm/g,'얨')
-				.replace(/dza/g,'빠')
-				.replace(/ciq/g,'힝')
-				.replace(/cùs/g,'햇')
-				.replace(/cùz/g,'했')
-				.replace(/cùl/g,'핼')
-				.replace(/cùn/g,'핸')
-				.replace(/cùt/g,'햍')
-				.replace(/cùd/g,'핻')
-				.replace(/cùm/g,'햄')
-				.replace(/cùp/g,'햎')
-				.replace(/cùb/g,'햅')
-				.replace(/cùc/g,'햏')
-				.replace(/cùf/g,'햂')
-				.replace(/cùv/g,'햆')
-				.replace(/cùk/g,'햌')
-				.replace(/cùg/g,'핵')
-				.replace(/yùp/g,'얲')
-				.replace(/cùq/g,'행')
-				.replace(/dze/g,'뻬')
-				.replace(/cès/g,'헛')
-				.replace(/cèz/g,'헜')
-				.replace(/cèl/g,'헐')
-				.replace(/cèn/g,'헌')
-				.replace(/cèt/g,'헡')
-				.replace(/cèd/g,'헏')
-				.replace(/cèm/g,'험')
-				.replace(/cèp/g,'헢')
-				.replace(/cèb/g,'헙')
-				.replace(/cèc/g,'헣')
-				.replace(/cèf/g,'헖')
-				.replace(/cèv/g,'헚')
-				.replace(/cèk/g,'헠')
-				.replace(/cèg/g,'헉')
-				.replace(/yùb/g,'얩')
-				.replace(/cèq/g,'헝')
-				.replace(/cos/g,'홋')
-				.replace(/dzo/g,'뽀')
-				.replace(/coz/g,'홌')
-				.replace(/col/g,'홀')
-				.replace(/con/g,'혼')
-				.replace(/cot/g,'홑')
-				.replace(/cod/g,'혿')
-				.replace(/com/g,'홈')
-				.replace(/cop/g,'홒')
-				.replace(/cob/g,'홉')
-				.replace(/coc/g,'홓')
-				.replace(/cof/g,'홆')
-				.replace(/cov/g,'홊')
-				.replace(/cok/g,'홐')
-				.replace(/cog/g,'혹')
-				.replace(/yùc/g,'얳')
-				.replace(/coq/g,'홍')
-				.replace(/ces/g,'헷')
-				.replace(/cez/g,'헸')
-				.replace(/dzè/g,'뻐')
-				.replace(/cel/g,'헬')
-				.replace(/cen/g,'헨')
-				.replace(/cet/g,'헽')
-				.replace(/ced/g,'헫')
-				.replace(/cem/g,'헴')
-				.replace(/cep/g,'헾')
-				.replace(/ceb/g,'헵')
-				.replace(/cec/g,'헿')
-				.replace(/cef/g,'헲')
-				.replace(/cev/g,'헶')
-				.replace(/cek/g,'헼')
-				.replace(/ceg/g,'헥')
-				.replace(/yùf/g,'얦')
-				.replace(/ceq/g,'헹')
-				.replace(/cas/g,'핫')
-				.replace(/caz/g,'핬')
-				.replace(/cal/g,'할')
-				.replace(/dzù/g,'빼')
-				.replace(/can/g,'한')
-				.replace(/cat/g,'핱')
-				.replace(/cad/g,'핟')
-				.replace(/cam/g,'함')
-				.replace(/cap/g,'핲')
-				.replace(/cab/g,'합')
-				.replace(/cac/g,'핳')
-				.replace(/caf/g,'핦')
-				.replace(/cav/g,'핪')
-				.replace(/cak/g,'핰')
-				.replace(/cag/g,'학')
-				.replace(/yùv/g,'얪')
-				.replace(/caq/g,'항')
-				.replace(/cyi/g,'희')
-				.replace(/cwi/g,'휘')
-				.replace(/cyu/g,'후')
-				.replace(/cwu/g,'휴')
-				.replace(/dzi/g,'삐')
-				.replace(/cye/g,'혜')
-				.replace(/cwe/g,'훼')
-				.replace(/cyo/g,'효')
-				.replace(/cwo/g,'회')
-				.replace(/cyè/g,'혀')
-				.replace(/cwè/g,'훠')
-				.replace(/cyù/g,'햬')
-				.replace(/cwù/g,'홰')
-				.replace(/cya/g,'햐')
-				.replace(/cwa/g,'화')
-				.replace(/fus/g,'픗')
-				.replace(/fuz/g,'픘')
-				.replace(/ful/g,'플')
-				.replace(/fun/g,'픈')
-				.replace(/fut/g,'픝')
-				.replace(/fud/g,'픋')
-				.replace(/fum/g,'픔')
-				.replace(/dzu/g,'쁘')
-				.replace(/fup/g,'픞')
-				.replace(/fub/g,'픕')
-				.replace(/fuc/g,'픟')
-				.replace(/fuf/g,'픒')
-				.replace(/fuv/g,'픖')
-				.replace(/fuk/g,'픜')
-				.replace(/fug/g,'픅')
-				.replace(/yùk/g,'얰')
-				.replace(/fuq/g,'픙')
-				.replace(/fis/g,'핏')
-				.replace(/fiz/g,'핐')
-				.replace(/fil/g,'필')
-				.replace(/fin/g,'핀')
-				.replace(/fit/g,'핕')
-				.replace(/fid/g,'핃')
-				.replace(/fim/g,'핌')
-				.replace(/fip/g,'핖')
-				.replace(/fib/g,'핍')
-				.replace(/fic/g,'핗')
-				.replace(/fif/g,'핊')
-				.replace(/fiv/g,'핎')
-				.replace(/fik/g,'핔')
-				.replace(/fig/g,'픽')
-				.replace(/yùg/g,'얙')
-				.replace(/fiq/g,'핑')
-				.replace(/fùs/g,'팻')
-				.replace(/fùz/g,'팼')
-				.replace(/fùl/g,'팰')
-				.replace(/fùn/g,'팬')
-				.replace(/fùt/g,'퍁')
-				.replace(/fùd/g,'팯')
-				.replace(/fùm/g,'팸')
-				.replace(/fùp/g,'퍂')
-				.replace(/fùb/g,'팹')
-				.replace(/fùc/g,'퍃')
-				.replace(/fùf/g,'팶')
-				.replace(/fùv/g,'팺')
-				.replace(/fùk/g,'퍀')
-				.replace(/fùg/g,'팩')
-				.replace(/sim/g,'찜')
-				.replace(/fùq/g,'팽')
-				.replace(/fès/g,'펏')
-				.replace(/fèz/g,'펐')
-				.replace(/fèl/g,'펄')
-				.replace(/fèn/g,'펀')
-				.replace(/fèt/g,'펕')
-				.replace(/fèd/g,'펃')
-				.replace(/fèm/g,'펌')
-				.replace(/fèp/g,'펖')
-				.replace(/fèb/g,'펍')
-				.replace(/fèc/g,'펗')
-				.replace(/fèf/g,'펊')
-				.replace(/fèv/g,'펎')
-				.replace(/fèk/g,'펔')
-				.replace(/fèg/g,'퍽')
-				.replace(/syu/g,'쭈')
-				.replace(/fèq/g,'펑')
-				.replace(/fos/g,'폿')
-				.replace(/foz/g,'퐀')
-				.replace(/fol/g,'폴')
-				.replace(/fon/g,'폰')
-				.replace(/fot/g,'퐅')
-				.replace(/fod/g,'폳')
-				.replace(/fom/g,'폼')
-				.replace(/fop/g,'퐆')
-				.replace(/fob/g,'폽')
-				.replace(/foc/g,'퐇')
-				.replace(/fof/g,'폺')
-				.replace(/fov/g,'폾')
-				.replace(/fok/g,'퐄')
-				.replace(/fog/g,'폭')
-				.replace(/yùq/g,'얭')
-				.replace(/foq/g,'퐁')
-				.replace(/fes/g,'펫')
-				.replace(/fez/g,'펬')
-				.replace(/fel/g,'펠')
-				.replace(/fen/g,'펜')
-				.replace(/fet/g,'펱')
-				.replace(/fed/g,'펟')
-				.replace(/fem/g,'펨')
-				.replace(/fep/g,'펲')
-				.replace(/feb/g,'펩')
-				.replace(/fec/g,'펳')
-				.replace(/fef/g,'펦')
-				.replace(/fev/g,'펪')
-				.replace(/fek/g,'펰')
-				.replace(/feg/g,'펙')
-				.replace(/wùs/g,'왯')
-				.replace(/feq/g,'펭')
-				.replace(/fas/g,'팟')
-				.replace(/faz/g,'팠')
-				.replace(/fal/g,'팔')
-				.replace(/fan/g,'판')
-				.replace(/fat/g,'팥')
-				.replace(/fad/g,'팓')
-				.replace(/fam/g,'팜')
-				.replace(/fap/g,'팦')
-				.replace(/fab/g,'팝')
-				.replace(/fac/g,'팧')
-				.replace(/faf/g,'팚')
-				.replace(/fav/g,'팞')
-				.replace(/fak/g,'팤')
-				.replace(/fag/g,'팍')
-				.replace(/wùz/g,'왰')
-				.replace(/faq/g,'팡')
-				.replace(/fyi/g,'픠')
-				.replace(/fwi/g,'퓌')
-				.replace(/fyu/g,'푸')
-				.replace(/fwu/g,'퓨')
-				.replace(/fye/g,'폐')
-				.replace(/fwe/g,'풰')
-				.replace(/fyo/g,'표')
-				.replace(/fwo/g,'푀')
-				.replace(/fyè/g,'펴')
-				.replace(/fwè/g,'풔')
-				.replace(/fyù/g,'퍠')
-				.replace(/fwù/g,'퐤')
-				.replace(/fya/g,'퍄')
-				.replace(/fwa/g,'퐈')
-				.replace(/vus/g,'븟')
-				.replace(/vuz/g,'븠')
-				.replace(/vul/g,'블')
-				.replace(/vun/g,'븐')
-				.replace(/vut/g,'븥')
-				.replace(/vud/g,'븓')
-				.replace(/vum/g,'븜')
-				.replace(/vup/g,'븦')
-				.replace(/vub/g,'븝')
-				.replace(/vuc/g,'븧')
-				.replace(/vuf/g,'븚')
-				.replace(/vuv/g,'븞')
-				.replace(/vuk/g,'븤')
-				.replace(/vug/g,'븍')
-				.replace(/wùl/g,'왤')
-				.replace(/vuq/g,'븡')
-				.replace(/vis/g,'빗')
-				.replace(/viz/g,'빘')
-				.replace(/vil/g,'빌')
-				.replace(/vin/g,'빈')
-				.replace(/vit/g,'빝')
-				.replace(/vid/g,'빋')
-				.replace(/vim/g,'빔')
-				.replace(/vip/g,'빞')
-				.replace(/vib/g,'빕')
-				.replace(/vic/g,'빟')
-				.replace(/vif/g,'빒')
-				.replace(/viv/g,'빖')
-				.replace(/vik/g,'빜')
-				.replace(/vig/g,'빅')
-				.replace(/wùn/g,'왠')
-				.replace(/viq/g,'빙')
-				.replace(/vùs/g,'뱃')
-				.replace(/vùz/g,'뱄')
-				.replace(/vùl/g,'밸')
-				.replace(/vùn/g,'밴')
-				.replace(/vùt/g,'뱉')
-				.replace(/vùd/g,'밷')
-				.replace(/vùm/g,'뱀')
-				.replace(/vùp/g,'뱊')
-				.replace(/vùb/g,'뱁')
-				.replace(/vùc/g,'뱋')
-				.replace(/vùf/g,'밾')
-				.replace(/vùv/g,'뱂')
-				.replace(/vùk/g,'뱈')
-				.replace(/vùg/g,'백')
-				.replace(/wùt/g,'왵')
-				.replace(/vùq/g,'뱅')
-				.replace(/vès/g,'벗')
-				.replace(/vèz/g,'벘')
-				.replace(/vèl/g,'벌')
-				.replace(/vèn/g,'번')
-				.replace(/vèt/g,'벝')
-				.replace(/vèd/g,'벋')
-				.replace(/vèm/g,'범')
-				.replace(/vèp/g,'벞')
-				.replace(/vèb/g,'법')
-				.replace(/vèc/g,'벟')
-				.replace(/vèf/g,'벒')
-				.replace(/vèv/g,'벖')
-				.replace(/vèk/g,'벜')
-				.replace(/vèg/g,'벅')
-				.replace(/wùd/g,'왣')
-				.replace(/vèq/g,'벙')
-				.replace(/vos/g,'봇')
-				.replace(/voz/g,'봈')
-				.replace(/vol/g,'볼')
-				.replace(/von/g,'본')
-				.replace(/vot/g,'봍')
-				.replace(/vod/g,'볻')
-				.replace(/vom/g,'봄')
-				.replace(/vop/g,'봎')
-				.replace(/vob/g,'봅')
-				.replace(/voc/g,'봏')
-				.replace(/vof/g,'봂')
-				.replace(/vov/g,'봆')
-				.replace(/vok/g,'봌')
-				.replace(/vog/g,'복')
-				.replace(/wùm/g,'왬')
-				.replace(/voq/g,'봉')
-				.replace(/ves/g,'벳')
-				.replace(/vez/g,'벴')
-				.replace(/vel/g,'벨')
-				.replace(/ven/g,'벤')
-				.replace(/vet/g,'벹')
-				.replace(/ved/g,'벧')
-				.replace(/vem/g,'벰')
-				.replace(/vep/g,'벺')
-				.replace(/veb/g,'벱')
-				.replace(/vec/g,'벻')
-				.replace(/vef/g,'벮')
-				.replace(/vev/g,'벲')
-				.replace(/vek/g,'벸')
-				.replace(/veg/g,'벡')
-				.replace(/wùp/g,'왶')
-				.replace(/veq/g,'벵')
-				.replace(/vas/g,'밧')
-				.replace(/vaz/g,'밨')
-				.replace(/val/g,'발')
-				.replace(/van/g,'반')
-				.replace(/vat/g,'밭')
-				.replace(/vad/g,'받')
-				.replace(/vam/g,'밤')
-				.replace(/vap/g,'밮')
-				.replace(/vab/g,'밥')
-				.replace(/vac/g,'밯')
-				.replace(/vaf/g,'밢')
-				.replace(/vav/g,'밦')
-				.replace(/vak/g,'밬')
-				.replace(/vag/g,'박')
-				.replace(/wùb/g,'왭')
-				.replace(/vaq/g,'방')
-				.replace(/vyi/g,'븨')
-				.replace(/vwi/g,'뷔')
-				.replace(/vyu/g,'부')
-				.replace(/vwu/g,'뷰')
-				.replace(/vye/g,'볘')
-				.replace(/vwe/g,'붸')
-				.replace(/vyo/g,'뵤')
-				.replace(/vwo/g,'뵈')
-				.replace(/vyè/g,'벼')
-				.replace(/vwè/g,'붜')
-				.replace(/vyù/g,'뱨')
-				.replace(/vwù/g,'봬')
-				.replace(/vya/g,'뱌')
-				.replace(/vwa/g,'봐')
-				.replace(/shu/g,'스')
-				.replace(/shi/g,'시')
-				.replace(/shù/g,'새')
-				.replace(/shè/g,'서')
-				.replace(/sho/g,'소')
-				.replace(/she/g,'세')
-				.replace(/sha/g,'사')
-				.replace(/zhu/g,'스')
-				.replace(/zhi/g,'시')
-				.replace(/zhù/g,'새')
-				.replace(/zhè/g,'서')
-				.replace(/zho/g,'소')
-				.replace(/zhe/g,'세')
-				.replace(/zha/g,'사')
-				.replace(/chu/g,'즈')
-				.replace(/chi/g,'지')
-				.replace(/chù/g,'재')
-				.replace(/chè/g,'저')
-				.replace(/cho/g,'조')
-				.replace(/che/g,'제')
-				.replace(/cha/g,'자')
-				.replace(/dju/g,'츠')
-				.replace(/dji/g,'치')
-				.replace(/djù/g,'채')
-				.replace(/tsa/g,'따')
-				.replace(/djè/g,'처')
-				.replace(/djo/g,'초')
-				.replace(/dje/g,'체')
-				.replace(/dja/g,'차')
-				.replace(/kus/g,'큿')
-				.replace(/kuz/g,'킀')
-				.replace(/kul/g,'클')
-				.replace(/kun/g,'큰')
-				.replace(/kut/g,'킅')
-				.replace(/kud/g,'큳')
-				.replace(/kum/g,'큼')
-				.replace(/kup/g,'킆')
-				.replace(/kub/g,'큽')
-				.replace(/kuc/g,'킇')
-				.replace(/kuf/g,'큺')
-				.replace(/kuv/g,'큾')
-				.replace(/kuk/g,'킄')
-				.replace(/tse/g,'떼')
-				.replace(/kug/g,'큭')
-				.replace(/wùc/g,'왷')
-				.replace(/kuq/g,'킁')
-				.replace(/kis/g,'킷')
-				.replace(/kiz/g,'킸')
-				.replace(/kil/g,'킬')
-				.replace(/kin/g,'킨')
-				.replace(/kit/g,'킽')
-				.replace(/kid/g,'킫')
-				.replace(/kim/g,'킴')
-				.replace(/kip/g,'킾')
-				.replace(/kib/g,'킵')
-				.replace(/kic/g,'킿')
-				.replace(/kif/g,'킲')
-				.replace(/kiv/g,'킶')
-				.replace(/kik/g,'킼')
-				.replace(/kig/g,'킥')
-				.replace(/tso/g,'또')
-				.replace(/wùf/g,'왪')
-				.replace(/kiq/g,'킹')
-				.replace(/kùs/g,'캣')
-				.replace(/kùz/g,'캤')
-				.replace(/kùl/g,'캘')
-				.replace(/kùn/g,'캔')
-				.replace(/kùt/g,'캩')
-				.replace(/kùd/g,'캗')
-				.replace(/kùm/g,'캠')
-				.replace(/kùp/g,'캪')
-				.replace(/kùb/g,'캡')
-				.replace(/kùc/g,'캫')
-				.replace(/kùf/g,'캞')
-				.replace(/kùv/g,'캢')
-				.replace(/kùk/g,'캨')
-				.replace(/kùg/g,'캑')
-				.replace(/wùv/g,'왮')
-				.replace(/tsè/g,'떠')
-				.replace(/kùq/g,'캥')
-				.replace(/kès/g,'컷')
-				.replace(/kèz/g,'컸')
-				.replace(/kèl/g,'컬')
-				.replace(/kèn/g,'컨')
-				.replace(/kèt/g,'컽')
-				.replace(/kèd/g,'컫')
-				.replace(/kèm/g,'컴')
-				.replace(/kèp/g,'컾')
-				.replace(/kèb/g,'컵')
-				.replace(/kèc/g,'컿')
-				.replace(/kèf/g,'컲')
-				.replace(/kèv/g,'컶')
-				.replace(/kèk/g,'컼')
-				.replace(/kèg/g,'컥')
-				.replace(/wùk/g,'왴')
-				.replace(/kèq/g,'컹')
-				.replace(/tsù/g,'때')
-				.replace(/kos/g,'콧')
-				.replace(/koz/g,'콨')
-				.replace(/kol/g,'콜')
-				.replace(/kon/g,'콘')
-				.replace(/kot/g,'콭')
-				.replace(/kod/g,'콛')
-				.replace(/kom/g,'콤')
-				.replace(/kop/g,'콮')
-				.replace(/kob/g,'콥')
-				.replace(/koc/g,'콯')
-				.replace(/kof/g,'콢')
-				.replace(/kov/g,'콦')
-				.replace(/kok/g,'콬')
-				.replace(/kog/g,'콕')
-				.replace(/wùg/g,'왝')
-				.replace(/koq/g,'콩')
-				.replace(/kes/g,'켓')
-				.replace(/tsi/g,'띠')
-				.replace(/kez/g,'켔')
-				.replace(/kel/g,'켈')
-				.replace(/ken/g,'켄')
-				.replace(/ket/g,'켙')
-				.replace(/ked/g,'켇')
-				.replace(/kem/g,'켐')
-				.replace(/kep/g,'켚')
-				.replace(/keb/g,'켑')
-				.replace(/kec/g,'켛')
-				.replace(/kef/g,'켎')
-				.replace(/kev/g,'켒')
-				.replace(/kek/g,'켘')
-				.replace(/keg/g,'켁')
-				.replace(/sid/g,'찓')
-				.replace(/keq/g,'켕')
-				.replace(/kas/g,'캇')
-				.replace(/kaz/g,'캈')
-				.replace(/tsu/g,'뜨')
-				.replace(/kal/g,'칼')
-				.replace(/kan/g,'칸')
-				.replace(/kat/g,'캍')
-				.replace(/kad/g,'칻')
-				.replace(/kam/g,'캄')
-				.replace(/kap/g,'캎')
-				.replace(/kab/g,'캅')
-				.replace(/kac/g,'캏')
-				.replace(/kaf/g,'캂')
-				.replace(/kav/g,'캆')
-				.replace(/kak/g,'캌')
-				.replace(/kag/g,'칵')
-				.replace(/wùq/g,'왱')
-				.replace(/kaq/g,'캉')
-				.replace(/kyi/g,'킈')
-				.replace(/kwi/g,'퀴')
-				.replace(/kyu/g,'쿠')
-				.replace(/zwa/g,'쏴')
-				.replace(/kwu/g,'큐')
-				.replace(/kye/g,'켸')
-				.replace(/kwe/g,'퀘')
-				.replace(/kyo/g,'쿄')
-				.replace(/kwo/g,'쾨')
-				.replace(/kyè/g,'켜')
-				.replace(/kwè/g,'쿼')
-				.replace(/kyù/g,'컈')
-				.replace(/kwù/g,'쾌')
-				.replace(/kya/g,'캬')
-				.replace(/kwa/g,'콰')
-				.replace(/gus/g,'긋')
-				.replace(/guz/g,'긌')
-				.replace(/gul/g,'글')
-				.replace(/gun/g,'근')
-				.replace(/gut/g,'긑')
-				.replace(/gud/g,'귿')
-				.replace(/zya/g,'쌰')
-				.replace(/gum/g,'금')
-				.replace(/gup/g,'긒')
-				.replace(/gub/g,'급')
-				.replace(/guc/g,'긓')
-				.replace(/guf/g,'긆')
-				.replace(/guv/g,'긊')
-				.replace(/guk/g,'긐')
-				.replace(/gug/g,'극')
-				.replace(/swi/g,'쮜')
-				.replace(/guq/g,'긍')
-				.replace(/gis/g,'깃')
-				.replace(/giz/g,'깄')
-				.replace(/gil/g,'길')
-				.replace(/gin/g,'긴')
-				.replace(/git/g,'깉')
-				.replace(/gid/g,'긷')
-				.replace(/gim/g,'김')
-				.replace(/zwù/g,'쐐')
-				.replace(/gip/g,'깊')
-				.replace(/gib/g,'깁')
-				.replace(/gic/g,'깋')
-				.replace(/gif/g,'긾')
-				.replace(/giv/g,'깂')
-				.replace(/gik/g,'깈')
-				.replace(/gig/g,'긱')
-				.replace(/yas/g,'얏')
-				.replace(/giq/g,'깅')
-				.replace(/gùs/g,'갯')
-				.replace(/gùz/g,'갰')
-				.replace(/gùl/g,'갤')
-				.replace(/gùn/g,'갠')
-				.replace(/gùt/g,'갵')
-				.replace(/gùd/g,'갣')
-				.replace(/gùm/g,'갬')
-				.replace(/gùp/g,'갶')
-				.replace(/zyù/g,'썌')
-				.replace(/gùb/g,'갭')
-				.replace(/gùc/g,'갷')
-				.replace(/gùf/g,'갪')
-				.replace(/gùv/g,'갮')
-				.replace(/gùk/g,'갴')
-				.replace(/gùg/g,'객')
-				.replace(/yaz/g,'얐')
-				.replace(/gùq/g,'갱')
-				.replace(/gès/g,'것')
-				.replace(/gèz/g,'겄')
-				.replace(/gèl/g,'걸')
-				.replace(/gèn/g,'건')
-				.replace(/gèt/g,'겉')
-				.replace(/gèd/g,'걷')
-				.replace(/gèm/g,'검')
-				.replace(/gèp/g,'겊')
-				.replace(/gèb/g,'겁')
-				.replace(/zwè/g,'쒀')
-				.replace(/gèc/g,'겋')
-				.replace(/gèf/g,'걾')
-				.replace(/gèv/g,'겂')
-				.replace(/gèk/g,'겈')
-				.replace(/gèg/g,'걱')
-				.replace(/yal/g,'얄')
-				.replace(/gèq/g,'겅')
-				.replace(/gos/g,'곳')
-				.replace(/goz/g,'곴')
-				.replace(/gol/g,'골')
-				.replace(/gon/g,'곤')
-				.replace(/got/g,'곹')
-				.replace(/god/g,'곧')
-				.replace(/gom/g,'곰')
-				.replace(/gop/g,'곺')
-				.replace(/gob/g,'곱')
-				.replace(/goc/g,'곻')
-				.replace(/zyè/g,'쎠')
-				.replace(/gof/g,'곮')
-				.replace(/gov/g,'곲')
-				.replace(/gok/g,'곸')
-				.replace(/gog/g,'곡')
-				.replace(/yan/g,'얀')
-				.replace(/goq/g,'공')
-				.replace(/ges/g,'겟')
-				.replace(/gez/g,'겠')
-				.replace(/gel/g,'겔')
-				.replace(/gen/g,'겐')
-				.replace(/get/g,'겥')
-				.replace(/ged/g,'겓')
-				.replace(/gem/g,'겜')
-				.replace(/gep/g,'겦')
-				.replace(/geb/g,'겝')
-				.replace(/gec/g,'겧')
-				.replace(/gef/g,'겚')
-				.replace(/zwo/g,'쐬')
-				.replace(/gev/g,'겞')
-				.replace(/gek/g,'겤')
-				.replace(/geg/g,'겍')
-				.replace(/yat/g,'얕')
-				.replace(/geq/g,'겡')
-				.replace(/gas/g,'갓')
-				.replace(/gaz/g,'갔')
-				.replace(/gal/g,'갈')
-				.replace(/gan/g,'간')
-				.replace(/gat/g,'같')
-				.replace(/gad/g,'갇')
-				.replace(/gam/g,'감')
-				.replace(/gap/g,'갚')
-				.replace(/gab/g,'갑')
-				.replace(/gac/g,'갛')
-				.replace(/gaf/g,'갎')
-				.replace(/gav/g,'값')
-				.replace(/zyo/g,'쑈')
-				.replace(/gak/g,'갘')
-				.replace(/gag/g,'각')
-				.replace(/yad/g,'얃')
-				.replace(/gaq/g,'강')
-				.replace(/gyi/g,'긔')
-				.replace(/gwi/g,'귀')
-				.replace(/gyu/g,'구')
-				.replace(/gwu/g,'규')
-				.replace(/gye/g,'계')
-				.replace(/gwe/g,'궤')
-				.replace(/gyo/g,'교')
-				.replace(/gwo/g,'괴')
-				.replace(/gyè/g,'겨')
-				.replace(/gwè/g,'궈')
-				.replace(/gyù/g,'걔')
-				.replace(/gwù/g,'괘')
-				.replace(/gya/g,'갸')
-				.replace(/zwe/g,'쒜')
-				.replace(/gwa/g,'과')
-				.replace(/yam/g,'얌')
-				.replace(/yap/g,'얖')
-				.replace(/yab/g,'얍')
-				.replace(/yac/g,'얗')
-				.replace(/yaf/g,'얊')
-				.replace(/yav/g,'얎')
-				.replace(/yak/g,'얔')
-				.replace(/yag/g,'약')
-				.replace(/sit/g,'찥')
-				.replace(/yaq/g,'양')
-				.replace(/was/g,'왓')
-				.replace(/syi/g,'쯰')
-				.replace(/uch/g,'읒')
-				.replace(/udj/g,'읓')
-				.replace(/waz/g,'왔')
-				.replace(/wal/g,'왈')
-				.replace(/zye/g,'쎼')
-				.replace(/wan/g,'완')
-				.replace(/wat/g,'왙')
-				.replace(/wad/g,'왇')
-				.replace(/wam/g,'왐')
-				.replace(/wap/g,'왚')
-				.replace(/wab/g,'왑')
-				.replace(/wac/g,'왛')
-				.replace(/waf/g,'왎')
-				.replace(/wav/g,'왒')
-				.replace(/wak/g,'왘')
-				.replace(/wag/g,'왁')
-				.replace(/sin/g,'찐')
-				.replace(/waq/g,'왕')
-				.replace(/sil/g,'찔')
-				.replace(/ich/g,'잊')
-				.replace(/idj/g,'잋')
-				.replace(/saq/g,'짱')
-				.replace(/zwu/g,'쓔')
-				.replace(/siz/g,'찠')
-				.replace(/sag/g,'짝')
-				.replace(/sak/g,'짴')
-				.replace(/sis/g,'찟')
-				.replace(/suq/g,'쯩')
-				.replace(/sav/g,'짮')
-				.replace(/saf/g,'짪')
-				.replace(/sac/g,'짷')
-				.replace(/sab/g,'짭')
-				.replace(/sap/g,'짶')
-				.replace(/sam/g,'짬')
-				.replace(/sad/g,'짣')
-				.replace(/sat/g,'짵')
-				.replace(/san/g,'짠')
-				.replace(/sal/g,'짤')
-				.replace(/ùch/g,'앶')
-				.replace(/ùdj/g,'앷')
-				.replace(/zyu/g,'쑤')
-				.replace(/saz/g,'짰')
-				.replace(/sas/g,'짯')
-				.replace(/seq/g,'쩽')
-				.replace(/sus/g,'쯧')
-				.replace(/seg/g,'쩩')
-				.replace(/sek/g,'쪀')
-				.replace(/sug/g,'쯕')
-				.replace(/suk/g,'쯬')
-				.replace(/sev/g,'쩺')
-				.replace(/sef/g,'쩶')
-				.replace(/sec/g,'쪃')
-				.replace(/seb/g,'쩹')
-				.replace(/sep/g,'쪂')
-				.replace(/sem/g,'쩸')
-				.replace(/sed/g,'쩯')
-				.replace(/set/g,'쪁')
-				.replace(/èch/g,'엊')
-				.replace(/zwi/g,'쒸')
-				.replace(/èdj/g,'엋')
-				.replace(/sen/g,'쩬')
-				.replace(/sel/g,'쩰')
-				.replace(/sez/g,'쩼')
-				.replace(/ses/g,'쩻')
-				.replace(/soq/g,'쫑')
-				.replace(/-ch/g,'ㅈ')
-				.replace(/sog/g,'쪽')
-				.replace(/sok/g,'쫔')
-				.replace(/-dj/g,'ㅊ')
-				.replace(/suv/g,'쯦')
-				.replace(/sov/g,'쫎')
-				.replace(/sof/g,'쫊')
-				.replace(/soc/g,'쫗')
-				.replace(/sob/g,'쫍')
-				.replace(/sop/g,'쫖')
-				.replace(/som/g,'쫌')
-				.replace(/zyi/g,'씌')
-				.replace(/och/g,'옺')
-				.replace(/odj/g,'옻')
-				.replace(/sod/g,'쫃')
-				.replace(/sot/g,'쫕')
-				.replace(/son/g,'쫀')
-				.replace(/sol/g,'쫄')
-				.replace(/soz/g,'쫐')
-				.replace(/sos/g,'쫏')
-				.replace(/sèq/g,'쩡')
-				.replace(/suf/g,'쯢')
-				.replace(/sèg/g,'쩍')
-				.replace(/sèk/g,'쩤')
-				.replace(/suc/g,'쯯')
-				.replace(/sub/g,'쯥')
-				.replace(/sèv/g,'쩞')
-				.replace(/sèf/g,'쩚')
-				.replace(/zaq/g,'쌍')
-				.replace(/sèc/g,'쩧')
-				.replace(/zag/g,'싹')
-				.replace(/zak/g,'쌐')
-				.replace(/sèb/g,'쩝')
-				.replace(/sèp/g,'쩦')
-				.replace(/zav/g,'쌊')
-				.replace(/zaf/g,'쌆')
-				.replace(/zac/g,'쌓')
-				.replace(/zab/g,'쌉')
-				.replace(/zap/g,'쌒')
-				.replace(/zam/g,'쌈')
-				.replace(/zad/g,'싿')
-				.replace(/zat/g,'쌑')
-				.replace(/zan/g,'싼')
-				.replace(/zal/g,'쌀')
-				.replace(/zaz/g,'쌌')
-				.replace(/zas/g,'쌋')
-				.replace(/zeq/g,'쎙')
-				.replace(/sèm/g,'쩜')
-				.replace(/zeg/g,'쎅')
-				.replace(/zek/g,'쎜')
-				.replace(/ech/g,'엦')
-				.replace(/edj/g,'엧')
-				.replace(/zev/g,'쎖')
-				.replace(/zef/g,'쎒')
-				.replace(/zec/g,'쎟')
-				.replace(/zeb/g,'쎕')
-				.replace(/zep/g,'쎞')
-				.replace(/zem/g,'쎔')
-				.replace(/zed/g,'쎋')
-				.replace(/zet/g,'쎝')
-				.replace(/zen/g,'쎈')
-				.replace(/zel/g,'쎌')
-				.replace(/zez/g,'쎘')
-				.replace(/zes/g,'쎗')
-				.replace(/zoq/g,'쏭')
-				.replace(/sèd/g,'쩓')
-				.replace(/zog/g,'쏙')
-				.replace(/zok/g,'쏰')
-				.replace(/sèt/g,'쩥')
-				.replace(/sèn/g,'쩐')
-				.replace(/zov/g,'쏪')
-				.replace(/zof/g,'쏦')
-				.replace(/zoc/g,'쏳')
-				.replace(/zob/g,'쏩')
-				.replace(/zop/g,'쏲')
-				.replace(/zom/g,'쏨')
-				.replace(/zod/g,'쏟')
-				.replace(/zot/g,'쏱')
-				.replace(/zon/g,'쏜')
-				.replace(/zol/g,'쏠')
-				.replace(/zoz/g,'쏬')
-				.replace(/zos/g,'쏫')
-				.replace(/zèq/g,'썽')
-				.replace(/sèl/g,'쩔')
-				.replace(/zèg/g,'썩')
-				.replace(/zèk/g,'쎀')
-				.replace(/sèz/g,'쩠')
-				.replace(/sès/g,'쩟')
-				.replace(/zèv/g,'썺')
-				.replace(/zèf/g,'썶')
-				.replace(/zèc/g,'쎃')
-				.replace(/zèb/g,'썹')
-				.replace(/zèp/g,'쎂')
-				.replace(/zèm/g,'썸')
-				.replace(/zèd/g,'썯')
-				.replace(/zèt/g,'쎁')
-				.replace(/zèn/g,'썬')
-				.replace(/zèl/g,'썰')
-				.replace(/zèz/g,'썼')
-				.replace(/zès/g,'썻')
-				.replace(/zùq/g,'쌩')
-				.replace(/sùq/g,'쨍')
-				.replace(/zùg/g,'쌕')
-				.replace(/zùk/g,'쌬')
-				.replace(/sup/g,'쯮')
-				.replace(/sùg/g,'짹')
-				.replace(/zùv/g,'쌦')
-				.replace(/zùf/g,'쌢')
-				.replace(/zùc/g,'쌯')
-				.replace(/zùb/g,'쌥')
-				.replace(/zùp/g,'쌮')
-				.replace(/zùm/g,'쌤')
-				.replace(/zùd/g,'쌛')
-				.replace(/zùt/g,'쌭')
-				.replace(/zùn/g,'쌘')
-				.replace(/zùl/g,'쌜')
-				.replace(/zùz/g,'쌨')
-				.replace(/zùs/g,'쌧')
-				.replace(/ziq/g,'씽')
-				.replace(/sùk/g,'쨐')
-				.replace(/zig/g,'씩')
-				.replace(/zik/g,'앀')
-				.replace(/sum/g,'쯤')
-				.replace(/sud/g,'쯛')
-				.replace(/ziv/g,'씺')
-				.replace(/zif/g,'씶')
-				.replace(/zic/g,'앃')
-				.replace(/zib/g,'씹')
-				.replace(/zip/g,'앂')
-				.replace(/zim/g,'씸')
-				.replace(/zid/g,'씯')
-				.replace(/zit/g,'앁')
-				.replace(/zin/g,'씬')
-				.replace(/zil/g,'씰')
-				.replace(/ziz/g,'씼')
-				.replace(/zis/g,'씻')
-				.replace(/zuq/g,'씅')
-				.replace(/sùv/g,'쨊')
-				.replace(/zug/g,'쓱')
-				.replace(/zuk/g,'씈')
-				.replace(/sùf/g,'쨆')
-				.replace(/sùc/g,'쨓')
-				.replace(/zuv/g,'씂')
-				.replace(/zuf/g,'쓾')
-				.replace(/zuc/g,'씋')
-				.replace(/zub/g,'씁')
-				.replace(/zup/g,'씊')
-				.replace(/zum/g,'씀')
-				.replace(/zud/g,'쓷')
-				.replace(/zut/g,'씉')
-				.replace(/zun/g,'쓴')
-				.replace(/zul/g,'쓸')
-				.replace(/zuz/g,'씄')
-				.replace(/zus/g,'씃')
-				.replace(/sùb/g,'쨉')
-				.replace(/swa/g,'쫘')
-				.replace(/sùp/g,'쨒')
-				.replace(/sùm/g,'쨈')
-				.replace(/sùd/g,'짿')
-				.replace(/sùt/g,'쨑')
-				.replace(/sùn/g,'짼')
-				.replace(/ach/g,'앚')
-				.replace(/adj/g,'앛')
-				.replace(/sùl/g,'쨀')
-				.replace(/sùz/g,'쨌')
-				.replace(/sùs/g,'쨋')
-				.replace(/siq/g,'찡')
-				.replace(/yis/g,'읫')
-				.replace(/yiz/g,'읬')
-				.replace(/yil/g,'읠')
-				.replace(/yin/g,'읜')
-				.replace(/yit/g,'읱')
-				.replace(/yid/g,'읟')
-				.replace(/sya/g,'쨔')
-				.replace(/yim/g,'읨')
-				.replace(/yip/g,'읲')
-				.replace(/yib/g,'읩')
-				.replace(/yic/g,'읳')
-				.replace(/yif/g,'읦')
-				.replace(/yiv/g,'읪')
-				.replace(/yik/g,'읰')
-				.replace(/yig/g,'읙')
-				.replace(/sut/g,'쯭')
-				.replace(/yiq/g,'읭')
-				.replace(/wis/g,'윗')
-				.replace(/wiz/g,'윘')
-				.replace(/wil/g,'윌')
-				.replace(/win/g,'윈')
-				.replace(/wit/g,'윝')
-				.replace(/wid/g,'윋')
-				.replace(/wim/g,'윔')
-				.replace(/swù/g,'쫴')
-				.replace(/wip/g,'윞')
-				.replace(/wib/g,'윕')
-				.replace(/wic/g,'윟')
-				.replace(/wif/g,'윒')
-				.replace(/wiv/g,'윖')
-				.replace(/wik/g,'윜')
-				.replace(/wig/g,'윅')
-				.replace(/sig/g,'찍')
-				.replace(/wiq/g,'윙')
-				.replace(/yus/g,'웃')
-				.replace(/yuz/g,'웄')
-				.replace(/yul/g,'울')
-				.replace(/yun/g,'운')
-				.replace(/yut/g,'웉')
-				.replace(/yud/g,'욷')
-				.replace(/yum/g,'움')
-				.replace(/yup/g,'웊')
-				.replace(/syù/g,'쨰')
-				.replace(/yub/g,'웁')
-				.replace(/yuc/g,'웋')
-				.replace(/yuf/g,'욾')
-				.replace(/yuv/g,'웂')
-				.replace(/yuk/g,'웈')
-				.replace(/yug/g,'욱')
-				.replace(/sik/g,'찤')
-				.replace(/yuq/g,'웅')
-				.replace(/wus/g,'윳')
-				.replace(/wuz/g,'윴')
-				.replace(/wul/g,'율')
-				.replace(/wun/g,'윤')
-				.replace(/wut/g,'윹')
-				.replace(/wud/g,'윧')
-				.replace(/wum/g,'윰')
-				.replace(/wup/g,'윺')
-				.replace(/wub/g,'윱')
-				.replace(/swè/g,'쭤')
-				.replace(/wuc/g,'윻')
-				.replace(/wuf/g,'윮')
-				.replace(/wuv/g,'윲')
-				.replace(/wuk/g,'윸')
-				.replace(/wug/g,'육')
-				.replace(/sun/g,'쯘')
-				.replace(/wuq/g,'융')
-				.replace(/yes/g,'옛')
-				.replace(/yez/g,'옜')
-				.replace(/yel/g,'옐')
-				.replace(/yen/g,'옌')
-				.replace(/yet/g,'옡')
-				.replace(/yed/g,'옏')
-				.replace(/yem/g,'옘')
-				.replace(/yep/g,'옢')
-				.replace(/yeb/g,'옙')
-				.replace(/yec/g,'옣')
-				.replace(/syè/g,'쪄')
-				.replace(/yef/g,'옖')
-				.replace(/yev/g,'옚')
-				.replace(/yek/g,'옠')
-				.replace(/yeg/g,'옉')
-				.replace(/sul/g,'쯜')
-				.replace(/yeq/g,'옝')
-				.replace(/wes/g,'웻')
-				.replace(/wez/g,'웼')
-				.replace(/wel/g,'웰')
-				.replace(/wen/g,'웬')
-				.replace(/wet/g,'윁')
-				.replace(/wed/g,'웯')
-				.replace(/wem/g,'웸')
-				.replace(/wep/g,'윂')
-				.replace(/web/g,'웹')
-				.replace(/wec/g,'윃')
-				.replace(/wef/g,'웶')
-				.replace(/swo/g,'쬐')
-				.replace(/wev/g,'웺')
-				.replace(/wek/g,'윀')
-				.replace(/weg/g,'웩')
-				.replace(/siv/g,'찞')
-				.replace(/weq/g,'웽')
-				.replace(/yos/g,'욧')
-				.replace(/yoz/g,'욨')
-				.replace(/yol/g,'욜')
-				.replace(/yon/g,'욘')
-				.replace(/yot/g,'욭')
-				.replace(/yod/g,'욛')
-				.replace(/yom/g,'욤')
-				.replace(/yop/g,'욮')
-				.replace(/yob/g,'욥')
-				.replace(/yoc/g,'욯')
-				.replace(/yof/g,'욢')
-				.replace(/yov/g,'욦')
-				.replace(/syo/g,'쬬')
-				.replace(/yok/g,'욬')
-				.replace(/yog/g,'욕')
-				.replace(/sif/g,'찚')
-				.replace(/yoq/g,'용')
-				.replace(/wos/g,'욋')
-				.replace(/tu/g,'트')
-				.replace(/ti/g,'티')
-				.replace(/tù/g,'태')
-				.replace(/tè/g,'터')
-				.replace(/to/g,'토')
-				.replace(/te/g,'테')
-				.replace(/ta/g,'타')
-				.replace(/du/g,'드')
-				.replace(/di/g,'디')
-				.replace(/dù/g,'대')
-				.replace(/dè/g,'더')
-				.replace(/do/g,'도')
-				.replace(/de/g,'데')
-				.replace(/da/g,'다')
-				.replace(/ru/g,'르')
-				.replace(/na/g,'나')
-				.replace(/ne/g,'네')
-				.replace(/no/g,'노')
-				.replace(/nè/g,'너')
-				.replace(/nù/g,'내')
-				.replace(/ni/g,'니')
-				.replace(/nu/g,'느')
-				.replace(/ri/g,'리')
-				.replace(/rù/g,'래')
-				.replace(/rè/g,'러')
-				.replace(/ro/g,'로')
-				.replace(/re/g,'레')
-				.replace(/ra/g,'라')
-				.replace(/mu/g,'므')
-				.replace(/mi/g,'미')
-				.replace(/mù/g,'매')
-				.replace(/mè/g,'머')
-				.replace(/mo/g,'모')
-				.replace(/me/g,'메')
-				.replace(/ma/g,'마')
-				.replace(/pu/g,'프')
-				.replace(/la/g,'라')
-				.replace(/le/g,'레')
-				.replace(/lo/g,'로')
-				.replace(/lè/g,'러')
-				.replace(/lù/g,'래')
-				.replace(/li/g,'리')
-				.replace(/lu/g,'르')
-				.replace(/pi/g,'피')
-				.replace(/pù/g,'패')
-				.replace(/pè/g,'퍼')
-				.replace(/po/g,'포')
-				.replace(/pe/g,'페')
-				.replace(/pa/g,'파')
-				.replace(/bu/g,'브')
-				.replace(/bi/g,'비')
-				.replace(/bù/g,'배')
-				.replace(/bè/g,'버')
-				.replace(/bo/g,'보')
-				.replace(/be/g,'베')
-				.replace(/ba/g,'바')
-				.replace(/cu/g,'흐')
-				.replace(/ci/g,'히')
-				.replace(/cù/g,'해')
-				.replace(/cè/g,'허')
-				.replace(/co/g,'호')
-				.replace(/ce/g,'헤')
-				.replace(/ca/g,'하')
-				.replace(/fu/g,'프')
-				.replace(/fi/g,'피')
-				.replace(/fù/g,'패')
-				.replace(/fè/g,'퍼')
-				.replace(/fo/g,'포')
-				.replace(/fe/g,'페')
-				.replace(/fa/g,'파')
-				.replace(/vu/g,'브')
-				.replace(/vi/g,'비')
-				.replace(/vù/g,'배')
-				.replace(/vè/g,'버')
-				.replace(/vo/g,'보')
-				.replace(/ve/g,'베')
-				.replace(/va/g,'바')
-				.replace(/ku/g,'크')
-				.replace(/ki/g,'키')
-				.replace(/kù/g,'캐')
-				.replace(/kè/g,'커')
-				.replace(/ko/g,'코')
-				.replace(/ke/g,'케')
-				.replace(/ka/g,'카')
-				.replace(/gu/g,'그')
-				.replace(/gi/g,'기')
-				.replace(/gù/g,'개')
-				.replace(/gè/g,'거')
-				.replace(/go/g,'고')
-				.replace(/ge/g,'게')
-				.replace(/ga/g,'가')
-				.replace(/us/g,'읏')
-				.replace(/uz/g,'읐')
-				.replace(/ul/g,'을')
-				.replace(/un/g,'은')
-				.replace(/ut/g,'읕')
-				.replace(/ud/g,'읃')
-				.replace(/um/g,'음')
-				.replace(/up/g,'읖')
-				.replace(/ub/g,'읍')
-				.replace(/uc/g,'읗')
-				.replace(/uf/g,'읊')
-				.replace(/uv/g,'읎')
-				.replace(/uk/g,'읔')
-				.replace(/ug/g,'윽')
-				.replace(/sù/g,'째')
-				.replace(/uq/g,'응')
-				.replace(/is/g,'잇')
-				.replace(/iz/g,'있')
-				.replace(/il/g,'일')
-				.replace(/in/g,'인')
-				.replace(/it/g,'잍')
-				.replace(/id/g,'읻')
-				.replace(/im/g,'임')
-				.replace(/ip/g,'잎')
-				.replace(/ib/g,'입')
-				.replace(/ic/g,'잏')
-				.replace(/if/g,'잂')
-				.replace(/iv/g,'잆')
-				.replace(/ik/g,'잌')
-				.replace(/ig/g,'익')
-				.replace(/-g/g,'ㄱ')
-				.replace(/su/g,'쯔')
-				.replace(/ùs/g,'앳')
-				.replace(/ùz/g,'앴')
-				.replace(/ùl/g,'앨')
-				.replace(/ùn/g,'앤')
-				.replace(/ùt/g,'앹')
-				.replace(/ùd/g,'앧')
-				.replace(/ùm/g,'앰')
-				.replace(/ùp/g,'앺')
-				.replace(/ùb/g,'앱')
-				.replace(/ùc/g,'앻')
-				.replace(/ùf/g,'앮')
-				.replace(/ùv/g,'앲')
-				.replace(/ùk/g,'앸')
-				.replace(/ùg/g,'액')
-				.replace(/-s/g,'ㅅ')
-				.replace(/ùq/g,'앵')
-				.replace(/ès/g,'엇')
-				.replace(/èz/g,'었')
-				.replace(/èl/g,'얼')
-				.replace(/èn/g,'언')
-				.replace(/èt/g,'엍')
-				.replace(/èd/g,'얻')
-				.replace(/èm/g,'엄')
-				.replace(/èp/g,'엎')
-				.replace(/èb/g,'업')
-				.replace(/èc/g,'엏')
-				.replace(/èf/g,'엂')
-				.replace(/èv/g,'없')
-				.replace(/èk/g,'엌')
-				.replace(/èg/g,'억')
-				.replace(/si/g,'찌')
-				.replace(/èq/g,'엉')
-				.replace(/os/g,'옷')
-				.replace(/oz/g,'옸')
-				.replace(/ol/g,'올')
-				.replace(/on/g,'온')
-				.replace(/ot/g,'옽')
-				.replace(/od/g,'옫')
-				.replace(/om/g,'옴')
-				.replace(/op/g,'옾')
-				.replace(/ob/g,'옵')
-				.replace(/oc/g,'옿')
-				.replace(/of/g,'옲')
-				.replace(/ov/g,'옶')
-				.replace(/ok/g,'옼')
-				.replace(/og/g,'옥')
-				.replace(/-z/g,'ㅆ')
-				.replace(/oq/g,'옹')
-				.replace(/es/g,'엣')
-				.replace(/ez/g,'엤')
-				.replace(/el/g,'엘')
-				.replace(/en/g,'엔')
-				.replace(/et/g,'엩')
-				.replace(/ed/g,'엗')
-				.replace(/em/g,'엠')
-				.replace(/ep/g,'엪')
-				.replace(/eb/g,'엡')
-				.replace(/ec/g,'엫')
-				.replace(/za/g,'싸')
-				.replace(/ef/g,'엞')
-				.replace(/ev/g,'엢')
-				.replace(/ze/g,'쎄')
-				.replace(/zo/g,'쏘')
-				.replace(/ek/g,'엨')
-				.replace(/eg/g,'엑')
-				.replace(/zè/g,'써')
-				.replace(/-l/g,'ㅉ')
-				.replace(/eq/g,'엥')
-				.replace(/zù/g,'쌔')
-				.replace(/as/g,'앗')
-				.replace(/az/g,'았')
-				.replace(/zi/g,'씨')
-				.replace(/al/g,'알')
-				.replace(/an/g,'안')
-				.replace(/zu/g,'쓰')
-				.replace(/at/g,'앝')
-				.replace(/ad/g,'앋')
-				.replace(/am/g,'암')
-				.replace(/ap/g,'앞')
-				.replace(/ab/g,'압')
-				.replace(/ac/g,'앟')
-				.replace(/af/g,'앒')
-				.replace(/av/g,'앖')
-				.replace(/ak/g,'앜')
-				.replace(/ag/g,'악')
-				.replace(/-c/g,'ㅎ')
-				.replace(/aq/g,'앙')
-				.replace(/yi/g,'의')
-				.replace(/wi/g,'위')
-				.replace(/yu/g,'우')
-				.replace(/wu/g,'유')
-				.replace(/ye/g,'예')
-				.replace(/we/g,'웨')
-				.replace(/yo/g,'요')
-				.replace(/wo/g,'외')
-				.replace(/yè/g,'여')
-				.replace(/wè/g,'워')
-				.replace(/yù/g,'얘')
-				.replace(/wù/g,'왜')
-				.replace(/ya/g,'야')
-				.replace(/wa/g,'와')
-				.replace(/-m/g,'ㅁ')
-				.replace(/sa/g,'짜')
-				.replace(/-n/g,'ㄴ')
-				.replace(/-p/g,'ㅍ')
-				.replace(/se/g,'쩨')
-				.replace(/-f/g,'ㄿ')
-				.replace(/-b/g,'ㅂ')
-				.replace(/so/g,'쪼')
-				.replace(/-v/g,'ㅄ')
-				.replace(/-t/g,'ㅌ')
-				.replace(/sè/g,'쩌')
-				.replace(/-d/g,'ㄷ')
-				.replace(/-k/g,'ㅋ')
-				.replace(/iq/g,'잉')
-				.replace(/u/g,'으')
-				.replace(/i/g,'이')
-				.replace(/ù/g,'애')
-				.replace(/è/g,'어')
-				.replace(/o/g,'오')
-				.replace(/e/g,'에')
-				.replace(/a/g,'아');
+	val = val.replace(/tswaq/g,'뙁');
+	val = val.replace(/tswag/g,'똭');
+	val = val.replace(/tswak/g,'뙄');
+	val = val.replace(/lyoch/g,'룢');
+	val = val.replace(/lyodj/g,'룣');
+	val = val.replace(/tswav/g,'똾');
+	val = val.replace(/tswaf/g,'똺');
+	val = val.replace(/tswac/g,'뙇');
+	val = val.replace(/tswab/g,'똽');
+	val = val.replace(/tswap/g,'뙆');
+	val = val.replace(/tswam/g,'똼');
+	val = val.replace(/tswad/g,'똳');
+	val = val.replace(/tswat/g,'뙅');
+	val = val.replace(/gwudj/g,'귳');
+	val = val.replace(/gwuch/g,'귲');
+	val = val.replace(/tswan/g,'똰');
+	val = val.replace(/tswal/g,'똴');
+	val = val.replace(/tswaz/g,'뙀');
+	val = val.replace(/tswas/g,'똿');
+	val = val.replace(/tsyaq/g,'땽');
+	val = val.replace(/tsyag/g,'땩');
+	val = val.replace(/tsyak/g,'떀');
+	val = val.replace(/lwoch/g,'룆');
+	val = val.replace(/lwodj/g,'룇');
+	val = val.replace(/tsyav/g,'땺');
+	val = val.replace(/tsyaf/g,'땶');
+	val = val.replace(/tsyac/g,'떃');
+	val = val.replace(/tsyab/g,'땹');
+	val = val.replace(/tsyap/g,'떂');
+	val = val.replace(/tsyam/g,'땸');
+	val = val.replace(/tsyad/g,'땯');
+	val = val.replace(/gyudj/g,'궃');
+	val = val.replace(/gyuch/g,'궂');
+	val = val.replace(/tsyat/g,'떁');
+	val = val.replace(/tsyan/g,'땬');
+	val = val.replace(/tsyal/g,'땰');
+	val = val.replace(/tsyaz/g,'땼');
+	val = val.replace(/tsyas/g,'땻');
+	val = val.replace(/tswùq/g,'뙝');
+	val = val.replace(/tswùg/g,'뙉');
+	val = val.replace(/tswùk/g,'뙠');
+	val = val.replace(/rwadj/g,'뢏');
+	val = val.replace(/rwach/g,'뢎');
+	val = val.replace(/tswùv/g,'뙚');
+	val = val.replace(/tswùf/g,'뙖');
+	val = val.replace(/tswùc/g,'뙣');
+	val = val.replace(/tswùb/g,'뙙');
+	val = val.replace(/tswùp/g,'뙢');
+	val = val.replace(/tswùm/g,'뙘');
+	val = val.replace(/gwidj/g,'귗');
+	val = val.replace(/gwich/g,'귖');
+	val = val.replace(/tswùd/g,'뙏');
+	val = val.replace(/tswùt/g,'뙡');
+	val = val.replace(/tswùn/g,'뙌');
+	val = val.replace(/tswùl/g,'뙐');
+	val = val.replace(/tswùz/g,'뙜');
+	val = val.replace(/tswùs/g,'뙛');
+	val = val.replace(/tsyùq/g,'떙');
+	val = val.replace(/tsyùg/g,'떅');
+	val = val.replace(/tsyùk/g,'떜');
+	val = val.replace(/ryadj/g,'럋');
+	val = val.replace(/ryach/g,'럊');
+	val = val.replace(/tsyùv/g,'떖');
+	val = val.replace(/tsyùf/g,'떒');
+	val = val.replace(/tsyùc/g,'떟');
+	val = val.replace(/tsyùb/g,'떕');
+	val = val.replace(/tsyùp/g,'떞');
+	val = val.replace(/gyidj/g,'긫');
+	val = val.replace(/gyich/g,'긪');
+	val = val.replace(/tsyùm/g,'떔');
+	val = val.replace(/tsyùd/g,'떋');
+	val = val.replace(/tsyùt/g,'떝');
+	val = val.replace(/tsyùn/g,'떈');
+	val = val.replace(/tsyùl/g,'떌');
+	val = val.replace(/tsyùz/g,'떘');
+	val = val.replace(/tsyùs/g,'떗');
+	val = val.replace(/tswèq/g,'뛍');
+	val = val.replace(/tswèg/g,'뚹');
+	val = val.replace(/tswèk/g,'뛐');
+	val = val.replace(/rwùdj/g,'뢫');
+	val = val.replace(/rwùch/g,'뢪');
+	val = val.replace(/zyoch/g,'쑞');
+	val = val.replace(/zyodj/g,'쑟');
+	val = val.replace(/tswèv/g,'뛊');
+	val = val.replace(/tswèf/g,'뛆');
+	val = val.replace(/tswèc/g,'뛓');
+	val = val.replace(/tswèb/g,'뛉');
+	val = val.replace(/tswèp/g,'뛒');
+	val = val.replace(/tswèm/g,'뛈');
+	val = val.replace(/tswèd/g,'뚿');
+	val = val.replace(/tswèt/g,'뛑');
+	val = val.replace(/tswèn/g,'뚼');
+	val = val.replace(/tswèl/g,'뛀');
+	val = val.replace(/tswèz/g,'뛌');
+	val = val.replace(/fyich/g,'픶');
+	val = val.replace(/fyidj/g,'픷');
+	val = val.replace(/tswès/g,'뛋');
+	val = val.replace(/fwich/g,'퓢');
+	val = val.replace(/fwidj/g,'퓣');
+	val = val.replace(/tsyèq/g,'뗭');
+	val = val.replace(/zwoch/g,'쑂');
+	val = val.replace(/zwodj/g,'쑃');
+	val = val.replace(/fyuch/g,'풎');
+	val = val.replace(/fyudj/g,'풏');
+	val = val.replace(/fwuch/g,'퓾');
+	val = val.replace(/fwudj/g,'퓿');
+	val = val.replace(/tsyèg/g,'뗙');
+	val = val.replace(/fyech/g,'폦');
+	val = val.replace(/fyedj/g,'폧');
+	val = val.replace(/tsyèk/g,'뗰');
+	val = val.replace(/fwech/g,'퓆');
+	val = val.replace(/fwedj/g,'퓇');
+	val = val.replace(/ryùdj/g,'럧');
+	val = val.replace(/fyoch/g,'푲');
+	val = val.replace(/fyodj/g,'푳');
+	val = val.replace(/ryùch/g,'럦');
+	val = val.replace(/fwoch/g,'푖');
+	val = val.replace(/fwodj/g,'푗');
+	val = val.replace(/tsyèv/g,'뗪');
+	val = val.replace(/zyèch/g,'쎶');
+	val = val.replace(/zyèdj/g,'쎷');
+	val = val.replace(/fyèch/g,'폊');
+	val = val.replace(/fyèdj/g,'폋');
+	val = val.replace(/tsyèf/g,'뗦');
+	val = val.replace(/fwèch/g,'풪');
+	val = val.replace(/fwèdj/g,'풫');
+	val = val.replace(/tsyèc/g,'뗳');
+	val = val.replace(/fyùch/g,'퍶');
+	val = val.replace(/fyùdj/g,'퍷');
+	val = val.replace(/tsyèb/g,'뗩');
+	val = val.replace(/fwùch/g,'퐺');
+	val = val.replace(/fwùdj/g,'퐻');
+	val = val.replace(/tsyèp/g,'뗲');
+	val = val.replace(/fyach/g,'퍚');
+	val = val.replace(/fyadj/g,'퍛');
+	val = val.replace(/tsyèm/g,'뗨');
+	val = val.replace(/fwach/g,'퐞');
+	val = val.replace(/fwadj/g,'퐟');
+	val = val.replace(/zwèch/g,'쒖');
+	val = val.replace(/tsyèd/g,'뗟');
+	val = val.replace(/tsyèt/g,'뗱');
+	val = val.replace(/zwèdj/g,'쒗');
+	val = val.replace(/tsyèn/g,'뗜');
+	val = val.replace(/tsyèl/g,'뗠');
+	val = val.replace(/tsyèz/g,'뗬');
+	val = val.replace(/tsyès/g,'뗫');
+	val = val.replace(/tswoq/g,'뙹');
+	val = val.replace(/tswog/g,'뙥');
+	val = val.replace(/tswok/g,'뙼');
+	val = val.replace(/rwèdj/g,'뤛');
+	val = val.replace(/rwèch/g,'뤚');
+	val = val.replace(/tswov/g,'뙶');
+	val = val.replace(/tswof/g,'뙲');
+	val = val.replace(/tswoc/g,'뙿');
+	val = val.replace(/tswob/g,'뙵');
+	val = val.replace(/tswop/g,'뙾');
+	val = val.replace(/tswom/g,'뙴');
+	val = val.replace(/tswod/g,'뙫');
+	val = val.replace(/tswot/g,'뙽');
+	val = val.replace(/zyùch/g,'썢');
+	val = val.replace(/zyùdj/g,'썣');
+	val = val.replace(/tswon/g,'뙨');
+	val = val.replace(/tswol/g,'뙬');
+	val = val.replace(/tswoz/g,'뙸');
+	val = val.replace(/tswos/g,'뙷');
+	val = val.replace(/tsyoq/g,'뚕');
+	val = val.replace(/tsyog/g,'뚁');
+	val = val.replace(/tsyok/g,'뚘');
+	val = val.replace(/ryèdj/g,'렻');
+	val = val.replace(/ryèch/g,'렺');
+	val = val.replace(/tsyov/g,'뚒');
+	val = val.replace(/tsyof/g,'뚎');
+	val = val.replace(/tsyoc/g,'뚛');
+	val = val.replace(/tsyob/g,'뚑');
+	val = val.replace(/tsyop/g,'뚚');
+	val = val.replace(/tsyom/g,'뚐');
+	val = val.replace(/tsyod/g,'뚇');
+	val = val.replace(/tsyot/g,'뚙');
+	val = val.replace(/zwùch/g,'쐦');
+	val = val.replace(/zwùdj/g,'쐧');
+	val = val.replace(/tsyon/g,'뚄');
+	val = val.replace(/tsyol/g,'뚈');
+	val = val.replace(/tsyoz/g,'뚔');
+	val = val.replace(/tsyos/g,'뚓');
+	val = val.replace(/tsweq/g,'뛩');
+	val = val.replace(/tsweg/g,'뛕');
+	val = val.replace(/tswek/g,'뛬');
+	val = val.replace(/swedj/g,'쮗');
+	val = val.replace(/swech/g,'쮖');
+	val = val.replace(/tswev/g,'뛦');
+	val = val.replace(/tswef/g,'뛢');
+	val = val.replace(/tswec/g,'뛯');
+	val = val.replace(/tsweb/g,'뛥');
+	val = val.replace(/tswep/g,'뛮');
+	val = val.replace(/tswem/g,'뛤');
+	val = val.replace(/tswed/g,'뛛');
+	val = val.replace(/tswet/g,'뛭');
+	val = val.replace(/zyach/g,'썆');
+	val = val.replace(/zyadj/g,'썇');
+	val = val.replace(/tswen/g,'뛘');
+	val = val.replace(/tswel/g,'뛜');
+	val = val.replace(/tswez/g,'뛨');
+	val = val.replace(/tswes/g,'뛧');
+	val = val.replace(/tsyeq/g,'똉');
+	val = val.replace(/tsyeg/g,'뗵');
+	val = val.replace(/tsyek/g,'똌');
+	val = val.replace(/lyèch/g,'렺');
+	val = val.replace(/rwodj/g,'룇');
+	val = val.replace(/tsyev/g,'똆');
+	val = val.replace(/tsyef/g,'똂');
+	val = val.replace(/tsyec/g,'똏');
+	val = val.replace(/kwadj/g,'쾇');
+	val = val.replace(/kwach/g,'쾆');
+	val = val.replace(/tsyeb/g,'똅');
+	val = val.replace(/tsyep/g,'똎');
+	val = val.replace(/tsyem/g,'똄');
+	val = val.replace(/tsyed/g,'뗻');
+	val = val.replace(/tsyet/g,'똍');
+	val = val.replace(/tsyen/g,'뗸');
+	val = val.replace(/tsyel/g,'뗼');
+	val = val.replace(/tsyez/g,'똈');
+	val = val.replace(/tsyes/g,'똇');
+	val = val.replace(/tswuq/g,'뜡');
+	val = val.replace(/tswug/g,'뜍');
+	val = val.replace(/tswuk/g,'뜤');
+	val = val.replace(/rwoch/g,'룆');
+	val = val.replace(/lyèdj/g,'렻');
+	val = val.replace(/tswuv/g,'뜞');
+	val = val.replace(/tswuf/g,'뜚');
+	val = val.replace(/kyadj/g,'컃');
+	val = val.replace(/kyach/g,'컂');
+	val = val.replace(/tswuc/g,'뜧');
+	val = val.replace(/tswub/g,'뜝');
+	val = val.replace(/tswup/g,'뜦');
+	val = val.replace(/tswum/g,'뜜');
+	val = val.replace(/tswud/g,'뜓');
+	val = val.replace(/tswut/g,'뜥');
+	val = val.replace(/tswun/g,'뜐');
+	val = val.replace(/tswul/g,'뜔');
+	val = val.replace(/tswuz/g,'뜠');
+	val = val.replace(/tswus/g,'뜟');
+	val = val.replace(/tsyuq/g,'뚱');
+	val = val.replace(/tsyug/g,'뚝');
+	val = val.replace(/tsyuk/g,'뚴');
+	val = val.replace(/ryodj/g,'룣');
+	val = val.replace(/ryoch/g,'룢');
+	val = val.replace(/tsyuv/g,'뚮');
+	val = val.replace(/kwùdj/g,'쾣');
+	val = val.replace(/kwùch/g,'쾢');
+	val = val.replace(/tsyuf/g,'뚪');
+	val = val.replace(/tsyuc/g,'뚷');
+	val = val.replace(/tsyub/g,'뚭');
+	val = val.replace(/tsyup/g,'뚶');
+	val = val.replace(/tsyum/g,'뚬');
+	val = val.replace(/tsyud/g,'뚣');
+	val = val.replace(/tsyut/g,'뚵');
+	val = val.replace(/tsyun/g,'뚠');
+	val = val.replace(/tsyul/g,'뚤');
+	val = val.replace(/tsyuz/g,'뚰');
+	val = val.replace(/vyich/g,'븾');
+	val = val.replace(/vyidj/g,'븿');
+	val = val.replace(/tsyus/g,'뚯');
+	val = val.replace(/vwich/g,'뷪');
+	val = val.replace(/vwidj/g,'뷫');
+	val = val.replace(/tswiq/g,'뜅');
+	val = val.replace(/kyùdj/g,'컟');
+	val = val.replace(/kyùch/g,'컞');
+	val = val.replace(/vyuch/g,'붖');
+	val = val.replace(/vyudj/g,'붗');
+	val = val.replace(/vwuch/g,'븆');
+	val = val.replace(/vwudj/g,'븇');
+	val = val.replace(/tswig/g,'뛱');
+	val = val.replace(/vyech/g,'볮');
+	val = val.replace(/vyedj/g,'볯');
+	val = val.replace(/tswik/g,'뜈');
+	val = val.replace(/vwech/g,'뷎');
+	val = val.replace(/vwedj/g,'뷏');
+	val = val.replace(/rwedj/g,'뤷');
+	val = val.replace(/vyoch/g,'뵺');
+	val = val.replace(/vyodj/g,'뵻');
+	val = val.replace(/rwech/g,'뤶');
+	val = val.replace(/vwoch/g,'뵞');
+	val = val.replace(/vwodj/g,'뵟');
+	val = val.replace(/kwèdj/g,'퀓');
+	val = val.replace(/kwèch/g,'퀒');
+	val = val.replace(/tswiv/g,'뜂');
+	val = val.replace(/vyèch/g,'볒');
+	val = val.replace(/vyèdj/g,'볓');
+	val = val.replace(/tswif/g,'뛾');
+	val = val.replace(/vwèch/g,'붲');
+	val = val.replace(/vwèdj/g,'붳');
+	val = val.replace(/tswic/g,'뜋');
+	val = val.replace(/vyùch/g,'뱾');
+	val = val.replace(/vyùdj/g,'뱿');
+	val = val.replace(/tswib/g,'뜁');
+	val = val.replace(/vwùch/g,'뵂');
+	val = val.replace(/vwùdj/g,'뵃');
+	val = val.replace(/tswip/g,'뜊');
+	val = val.replace(/vyach/g,'뱢');
+	val = val.replace(/vyadj/g,'뱣');
+	val = val.replace(/tswim/g,'뜀');
+	val = val.replace(/zhyaf/g,'샲');
+	val = val.replace(/kyèch/g,'켲');
+	val = val.replace(/vwach/g,'봦');
+	val = val.replace(/vwadj/g,'봧');
+	val = val.replace(/tswid/g,'뛷');
+	val = val.replace(/shuch/g,'슺');
+	val = val.replace(/shudj/g,'슻');
+	val = val.replace(/tswit/g,'뜉');
+	val = val.replace(/shich/g,'싲');
+	val = val.replace(/shidj/g,'싳');
+	val = val.replace(/tswin/g,'뛴');
+	val = val.replace(/shùch/g,'샞');
+	val = val.replace(/shùdj/g,'샟');
+	val = val.replace(/tswil/g,'뛸');
+	val = val.replace(/shèch/g,'섲');
+	val = val.replace(/shèdj/g,'섳');
+	val = val.replace(/tswiz/g,'뜄');
+	val = val.replace(/shoch/g,'솢');
+	val = val.replace(/kwodj/g,'쾿');
+	val = val.replace(/kwoch/g,'쾾');
+	val = val.replace(/shodj/g,'솣');
+	val = val.replace(/tswis/g,'뜃');
+	val = val.replace(/shech/g,'셎');
+	val = val.replace(/shedj/g,'셏');
+	val = val.replace(/tsyiq/g,'띙');
+	val = val.replace(/shach/g,'샂');
+	val = val.replace(/shadj/g,'샃');
+	val = val.replace(/shyis/g,'싓');
+	val = val.replace(/shyiz/g,'싔');
+	val = val.replace(/shyil/g,'싈');
+	val = val.replace(/shyin/g,'싄');
+	val = val.replace(/shyit/g,'싙');
+	val = val.replace(/shyid/g,'싇');
+	val = val.replace(/zwach/g,'쐊');
+	val = val.replace(/shyim/g,'싐');
+	val = val.replace(/shyip/g,'싚');
+	val = val.replace(/kyodj/g,'쿛');
+	val = val.replace(/kyoch/g,'쿚');
+	val = val.replace(/shyib/g,'싑');
+	val = val.replace(/shyic/g,'싛');
+	val = val.replace(/shyif/g,'싎');
+	val = val.replace(/shyiv/g,'싒');
+	val = val.replace(/ryedj/g,'롗');
+	val = val.replace(/ryech/g,'롖');
+	val = val.replace(/shyik/g,'싘');
+	val = val.replace(/shyig/g,'싁');
+	val = val.replace(/shyiq/g,'싕');
+	val = val.replace(/shwis/g,'쉿');
+	val = val.replace(/shwiz/g,'슀');
+	val = val.replace(/shwil/g,'쉴');
+	val = val.replace(/shwin/g,'쉰');
+	val = val.replace(/zwadj/g,'쐋');
+	val = val.replace(/shwit/g,'슅');
+	val = val.replace(/shwid/g,'쉳');
+	val = val.replace(/kwedj/g,'퀯');
+	val = val.replace(/kwech/g,'퀮');
+	val = val.replace(/shwim/g,'쉼');
+	val = val.replace(/shwip/g,'슆');
+	val = val.replace(/shwib/g,'쉽');
+	val = val.replace(/shwic/g,'슇');
+	val = val.replace(/shwif/g,'쉺');
+	val = val.replace(/shwiv/g,'쉾');
+	val = val.replace(/rwudj/g,'륯');
+	val = val.replace(/rwuch/g,'륮');
+	val = val.replace(/shwik/g,'슄');
+	val = val.replace(/shwig/g,'쉭');
+	val = val.replace(/shwiq/g,'슁');
+	val = val.replace(/shyus/g,'숫');
+	val = val.replace(/shyuz/g,'숬');
+	val = val.replace(/shyul/g,'술');
+	val = val.replace(/shyun/g,'순');
+	val = val.replace(/shyut/g,'숱');
+	val = val.replace(/kyedj/g,'콏');
+	val = val.replace(/kyech/g,'콎');
+	val = val.replace(/shyud/g,'숟');
+	val = val.replace(/shyum/g,'숨');
+	val = val.replace(/shyup/g,'숲');
+	val = val.replace(/shyub/g,'숩');
+	val = val.replace(/shyuc/g,'숳');
+	val = val.replace(/shyuf/g,'숦');
+	val = val.replace(/shyuv/g,'숪');
+	val = val.replace(/ryudj/g,'룿');
+	val = val.replace(/ryuch/g,'룾');
+	val = val.replace(/shyuk/g,'숰');
+	val = val.replace(/shyug/g,'숙');
+	val = val.replace(/shyuq/g,'숭');
+	val = val.replace(/shwus/g,'슛');
+	val = val.replace(/shwuz/g,'슜');
+	val = val.replace(/shwul/g,'슐');
+	val = val.replace(/shwun/g,'슌');
+	val = val.replace(/kwudj/g,'큧');
+	val = val.replace(/kwuch/g,'큦');
+	val = val.replace(/shwut/g,'슡');
+	val = val.replace(/shwud/g,'슏');
+	val = val.replace(/shwum/g,'슘');
+	val = val.replace(/shwup/g,'슢');
+	val = val.replace(/shwub/g,'슙');
+	val = val.replace(/shwuc/g,'슣');
+	val = val.replace(/shwuf/g,'슖');
+	val = val.replace(/shwuv/g,'슚');
+	val = val.replace(/rwidj/g,'륓');
+	val = val.replace(/rwich/g,'륒');
+	val = val.replace(/shwuk/g,'슠');
+	val = val.replace(/shwug/g,'슉');
+	val = val.replace(/shwuq/g,'슝');
+	val = val.replace(/shyes/g,'솃');
+	val = val.replace(/shyez/g,'솄');
+	val = val.replace(/shyel/g,'셸');
+	val = val.replace(/kyudj/g,'쿷');
+	val = val.replace(/kyuch/g,'쿶');
+	val = val.replace(/shyen/g,'셴');
+	val = val.replace(/shyet/g,'솉');
+	val = val.replace(/shyed/g,'셷');
+	val = val.replace(/shyem/g,'솀');
+	val = val.replace(/shyep/g,'솊');
+	val = val.replace(/shyeb/g,'솁');
+	val = val.replace(/shyec/g,'솋');
+	val = val.replace(/shyef/g,'셾');
+	val = val.replace(/shyev/g,'솂');
+	val = val.replace(/syedj/g,'쪷');
+	val = val.replace(/syech/g,'쪶');
+	val = val.replace(/shyek/g,'솈');
+	val = val.replace(/shyeg/g,'셱');
+	val = val.replace(/shyeq/g,'솅');
+	val = val.replace(/shwes/g,'쉣');
+	val = val.replace(/shwez/g,'쉤');
+	val = val.replace(/kwidj/g,'큋');
+	val = val.replace(/kwich/g,'큊');
+	val = val.replace(/shwel/g,'쉘');
+	val = val.replace(/shwen/g,'쉔');
+	val = val.replace(/shwet/g,'쉩');
+	val = val.replace(/shwed/g,'쉗');
+	val = val.replace(/shwem/g,'쉠');
+	val = val.replace(/shwep/g,'쉪');
+	val = val.replace(/shweb/g,'쉡');
+	val = val.replace(/shwec/g,'쉫');
+	val = val.replace(/shwef/g,'쉞');
+	val = val.replace(/shwev/g,'쉢');
+	val = val.replace(/ryidj/g,'릧');
+	val = val.replace(/ryich/g,'릦');
+	val = val.replace(/shwek/g,'쉨');
+	val = val.replace(/shweg/g,'쉑');
+	val = val.replace(/shweq/g,'쉥');
+	val = val.replace(/shyos/g,'숏');
+	val = val.replace(/kyidj/g,'킟');
+	val = val.replace(/kyich/g,'킞');
+	val = val.replace(/shyoz/g,'숐');
+	val = val.replace(/shyol/g,'숄');
+	val = val.replace(/shyon/g,'숀');
+	val = val.replace(/shyot/g,'숕');
+	val = val.replace(/shyod/g,'숃');
+	val = val.replace(/shyom/g,'숌');
+	val = val.replace(/shyop/g,'숖');
+	val = val.replace(/shyob/g,'숍');
+	val = val.replace(/shyoc/g,'숗');
+	val = val.replace(/shyof/g,'숊');
+	val = val.replace(/shyov/g,'숎');
+	val = val.replace(/lwèch/g,'뤚');
+	val = val.replace(/lwèdj/g,'뤛');
+	val = val.replace(/shyok/g,'숔');
+	val = val.replace(/shyog/g,'쇽');
+	val = val.replace(/shyoq/g,'숑');
+	val = val.replace(/shwos/g,'쇳');
+	val = val.replace(/shwoz/g,'쇴');
+	val = val.replace(/shwol/g,'쇨');
+	val = val.replace(/shwon/g,'쇤');
+	val = val.replace(/shwot/g,'쇹');
+	val = val.replace(/shwod/g,'쇧');
+	val = val.replace(/shwom/g,'쇰');
+	val = val.replace(/shwop/g,'쇺');
+	val = val.replace(/tsuch/g,'뜾');
+	val = val.replace(/tsudj/g,'뜿');
+	val = val.replace(/shwob/g,'쇱');
+	val = val.replace(/shwoc/g,'쇻');
+	val = val.replace(/shwof/g,'쇮');
+	val = val.replace(/shwov/g,'쇲');
+	val = val.replace(/lyùch/g,'럦');
+	val = val.replace(/lyùdj/g,'럧');
+	val = val.replace(/shwok/g,'쇸');
+	val = val.replace(/shwog/g,'쇡');
+	val = val.replace(/shwoq/g,'쇵');
+	val = val.replace(/shyès/g,'셧');
+	val = val.replace(/shyèz/g,'셨');
+	val = val.replace(/shyèl/g,'셜');
+	val = val.replace(/shyèn/g,'션');
+	val = val.replace(/shyèt/g,'셭');
+	val = val.replace(/shyèd/g,'셛');
+	val = val.replace(/shyèm/g,'셤');
+	val = val.replace(/shyèp/g,'셮');
+	val = val.replace(/tsich/g,'띶');
+	val = val.replace(/tsidj/g,'띷');
+	val = val.replace(/shyèb/g,'셥');
+	val = val.replace(/shyèc/g,'셯');
+	val = val.replace(/shyèf/g,'셢');
+	val = val.replace(/shyèv/g,'셦');
+	val = val.replace(/lwùch/g,'뢪');
+	val = val.replace(/lwùdj/g,'뢫');
+	val = val.replace(/shyèk/g,'셬');
+	val = val.replace(/shyèg/g,'셕');
+	val = val.replace(/shyèq/g,'셩');
+	val = val.replace(/shwès/g,'쉇');
+	val = val.replace(/shwèz/g,'쉈');
+	val = val.replace(/shwèl/g,'숼');
+	val = val.replace(/shwèn/g,'숸');
+	val = val.replace(/shwèt/g,'쉍');
+	val = val.replace(/shwèd/g,'숻');
+	val = val.replace(/shwèm/g,'쉄');
+	val = val.replace(/shwèp/g,'쉎');
+	val = val.replace(/tsùch/g,'땢');
+	val = val.replace(/tsùdj/g,'땣');
+	val = val.replace(/shwèb/g,'쉅');
+	val = val.replace(/shwèc/g,'쉏');
+	val = val.replace(/shwèf/g,'쉂');
+	val = val.replace(/shwèv/g,'쉆');
+	val = val.replace(/lyach/g,'럊');
+	val = val.replace(/lyadj/g,'럋');
+	val = val.replace(/shwèk/g,'쉌');
+	val = val.replace(/shwèg/g,'숵');
+	val = val.replace(/shwèq/g,'쉉');
+	val = val.replace(/shyùs/g,'섓');
+	val = val.replace(/shyùz/g,'섔');
+	val = val.replace(/shyùl/g,'섈');
+	val = val.replace(/shyùn/g,'섄');
+	val = val.replace(/shyùt/g,'섙');
+	val = val.replace(/shyùd/g,'섇');
+	val = val.replace(/shyùm/g,'섐');
+	val = val.replace(/shyùp/g,'섚');
+	val = val.replace(/tsèch/g,'떶');
+	val = val.replace(/tsèdj/g,'떷');
+	val = val.replace(/shyùb/g,'섑');
+	val = val.replace(/shyùc/g,'섛');
+	val = val.replace(/shyùf/g,'섎');
+	val = val.replace(/shyùv/g,'섒');
+	val = val.replace(/lwach/g,'뢎');
+	val = val.replace(/lwadj/g,'뢏');
+	val = val.replace(/shyùk/g,'섘');
+	val = val.replace(/shyùg/g,'섁');
+	val = val.replace(/shyùq/g,'섕');
+	val = val.replace(/shwùs/g,'쇗');
+	val = val.replace(/shwùz/g,'쇘');
+	val = val.replace(/shwùl/g,'쇌');
+	val = val.replace(/shwùn/g,'쇈');
+	val = val.replace(/shwùt/g,'쇝');
+	val = val.replace(/shwùd/g,'쇋');
+	val = val.replace(/shwùm/g,'쇔');
+	val = val.replace(/shwùp/g,'쇞');
+	val = val.replace(/tsoch/g,'똦');
+	val = val.replace(/tsodj/g,'똧');
+	val = val.replace(/shwùb/g,'쇕');
+	val = val.replace(/shwùc/g,'쇟');
+	val = val.replace(/shwùf/g,'쇒');
+	val = val.replace(/shwùv/g,'쇖');
+	val = val.replace(/nyich/g,'닂');
+	val = val.replace(/nyidj/g,'닃');
+	val = val.replace(/shwùk/g,'쇜');
+	val = val.replace(/shwùg/g,'쇅');
+	val = val.replace(/shwùq/g,'쇙');
+	val = val.replace(/shyas/g,'샷');
+	val = val.replace(/shyaz/g,'샸');
+	val = val.replace(/shyal/g,'샬');
+	val = val.replace(/shyan/g,'샨');
+	val = val.replace(/shyat/g,'샽');
+	val = val.replace(/shyad/g,'샫');
+	val = val.replace(/shyam/g,'샴');
+	val = val.replace(/shyap/g,'샾');
+	val = val.replace(/tsech/g,'뗒');
+	val = val.replace(/tsedj/g,'뗓');
+	val = val.replace(/shyab/g,'샵');
+	val = val.replace(/shyac/g,'샿');
+	val = val.replace(/shyaf/g,'샲');
+	val = val.replace(/shyav/g,'샶');
+	val = val.replace(/dwadj/g,'돷');
+	val = val.replace(/dwach/g,'돶');
+	val = val.replace(/shyak/g,'샼');
+	val = val.replace(/shyag/g,'샥');
+	val = val.replace(/shyaq/g,'샹');
+	val = val.replace(/shwas/g,'솻');
+	val = val.replace(/shwaz/g,'솼');
+	val = val.replace(/shwal/g,'솰');
+	val = val.replace(/shwan/g,'솬');
+	val = val.replace(/shwat/g,'쇁');
+	val = val.replace(/shwad/g,'솯');
+	val = val.replace(/shwam/g,'솸');
+	val = val.replace(/shwap/g,'쇂');
+	val = val.replace(/djwaq/g,'촹');
+	val = val.replace(/shwab/g,'솹');
+	val = val.replace(/djwag/g,'촥');
+	val = val.replace(/djwak/g,'촼');
+	val = val.replace(/dyadj/g,'댳');
+	val = val.replace(/swudj/g,'쯏');
+	val = val.replace(/djwav/g,'촶');
+	val = val.replace(/djwaf/g,'촲');
+	val = val.replace(/djwac/g,'촿');
+	val = val.replace(/djwab/g,'촵');
+	val = val.replace(/djwap/g,'촾');
+	val = val.replace(/djwam/g,'촴');
+	val = val.replace(/djwad/g,'촫');
+	val = val.replace(/djwat/g,'촽');
+	val = val.replace(/djwan/g,'촨');
+	val = val.replace(/djwal/g,'촬');
+	val = val.replace(/djwaz/g,'촸');
+	val = val.replace(/djwas/g,'촷');
+	val = val.replace(/djyaq/g,'챵');
+	val = val.replace(/shwac/g,'쇃');
+	val = val.replace(/djyag/g,'챡');
+	val = val.replace(/djyak/g,'챸');
+	val = val.replace(/swuch/g,'쯎');
+	val = val.replace(/dyach/g,'댲');
+	val = val.replace(/djyav/g,'챲');
+	val = val.replace(/djyaf/g,'챮');
+	val = val.replace(/djyac/g,'챻');
+	val = val.replace(/djyab/g,'챱');
+	val = val.replace(/djyap/g,'챺');
+	val = val.replace(/djyam/g,'챰');
+	val = val.replace(/djyad/g,'챧');
+	val = val.replace(/djyat/g,'챹');
+	val = val.replace(/djyan/g,'챤');
+	val = val.replace(/djyal/g,'챨');
+	val = val.replace(/djyaz/g,'챴');
+	val = val.replace(/djyas/g,'챳');
+	val = val.replace(/djwùq/g,'쵕');
+	val = val.replace(/shwaf/g,'솶');
+	val = val.replace(/djwùg/g,'쵁');
+	val = val.replace(/djwùk/g,'쵘');
+	val = val.replace(/dwùdj/g,'됓');
+	val = val.replace(/dwùch/g,'됒');
+	val = val.replace(/djwùv/g,'쵒');
+	val = val.replace(/djwùf/g,'쵎');
+	val = val.replace(/djwùc/g,'쵛');
+	val = val.replace(/djwùb/g,'쵑');
+	val = val.replace(/djwùp/g,'쵚');
+	val = val.replace(/djwùm/g,'쵐');
+	val = val.replace(/djwùd/g,'쵇');
+	val = val.replace(/djwùt/g,'쵙');
+	val = val.replace(/djwùn/g,'쵄');
+	val = val.replace(/djwùl/g,'쵈');
+	val = val.replace(/djwùz/g,'쵔');
+	val = val.replace(/djwùs/g,'쵓');
+	val = val.replace(/djyùq/g,'첑');
+	val = val.replace(/shwav/g,'솺');
+	val = val.replace(/djyùg/g,'챽');
+	val = val.replace(/djyùk/g,'첔');
+	val = val.replace(/dyùdj/g,'덏');
+	val = val.replace(/dyùch/g,'덎');
+	val = val.replace(/djyùv/g,'첎');
+	val = val.replace(/djyùf/g,'첊');
+	val = val.replace(/djyùc/g,'첗');
+	val = val.replace(/djyùb/g,'첍');
+	val = val.replace(/djyùp/g,'첖');
+	val = val.replace(/djyùm/g,'첌');
+	val = val.replace(/djyùd/g,'첃');
+	val = val.replace(/djyùt/g,'첕');
+	val = val.replace(/djyùn/g,'첀');
+	val = val.replace(/djyùl/g,'첄');
+	val = val.replace(/djyùz/g,'첐');
+	val = val.replace(/djyùs/g,'첏');
+	val = val.replace(/djwèq/g,'췅');
+	val = val.replace(/dwèdj/g,'뒃');
+	val = val.replace(/djwèg/g,'춱');
+	val = val.replace(/djwèk/g,'췈');
+	val = val.replace(/dwèch/g,'뒂');
+	val = val.replace(/dyèdj/g,'뎣');
+	val = val.replace(/djwèv/g,'췂');
+	val = val.replace(/djwèf/g,'춾');
+	val = val.replace(/djwèc/g,'췋');
+	val = val.replace(/djwèb/g,'췁');
+	val = val.replace(/djwèp/g,'췊');
+	val = val.replace(/djwèm/g,'췀');
+	val = val.replace(/djwèd/g,'춷');
+	val = val.replace(/djwèt/g,'췉');
+	val = val.replace(/djwèn/g,'춴');
+	val = val.replace(/djwèl/g,'춸');
+	val = val.replace(/djwèz/g,'췄');
+	val = val.replace(/djwès/g,'췃');
+	val = val.replace(/djyèq/g,'쳥');
+	val = val.replace(/dyèch/g,'뎢');
+	val = val.replace(/djyèg/g,'쳑');
+	val = val.replace(/djyèk/g,'쳨');
+	val = val.replace(/dwodj/g,'됯');
+	val = val.replace(/dwoch/g,'됮');
+	val = val.replace(/djyèv/g,'쳢');
+	val = val.replace(/djyèf/g,'쳞');
+	val = val.replace(/djyèc/g,'쳫');
+	val = val.replace(/djyèb/g,'쳡');
+	val = val.replace(/djyèp/g,'쳪');
+	val = val.replace(/djyèm/g,'쳠');
+	val = val.replace(/djyèd/g,'쳗');
+	val = val.replace(/djyèt/g,'쳩');
+	val = val.replace(/djyèn/g,'쳔');
+	val = val.replace(/djyèl/g,'쳘');
+	val = val.replace(/djyèz/g,'쳤');
+	val = val.replace(/djyès/g,'쳣');
+	val = val.replace(/djwoq/g,'쵱');
+	val = val.replace(/shwak/g,'쇀');
+	val = val.replace(/djwog/g,'쵝');
+	val = val.replace(/djwok/g,'쵴');
+	val = val.replace(/dyodj/g,'둋');
+	val = val.replace(/dyoch/g,'둊');
+	val = val.replace(/djwov/g,'쵮');
+	val = val.replace(/djwof/g,'쵪');
+	val = val.replace(/djwoc/g,'쵷');
+	val = val.replace(/djwob/g,'쵭');
+	val = val.replace(/djwop/g,'쵶');
+	val = val.replace(/djwom/g,'쵬');
+	val = val.replace(/djwod/g,'쵣');
+	val = val.replace(/djwot/g,'쵵');
+	val = val.replace(/djwon/g,'쵠');
+	val = val.replace(/djwol/g,'쵤');
+	val = val.replace(/djwoz/g,'쵰');
+	val = val.replace(/djwos/g,'쵯');
+	val = val.replace(/djyoq/g,'춍');
+	val = val.replace(/shwag/g,'솩');
+	val = val.replace(/djyog/g,'쵹');
+	val = val.replace(/djyok/g,'춐');
+	val = val.replace(/dwedj/g,'뒟');
+	val = val.replace(/dwech/g,'뒞');
+	val = val.replace(/djyov/g,'춊');
+	val = val.replace(/djyof/g,'춆');
+	val = val.replace(/djyoc/g,'춓');
+	val = val.replace(/djyob/g,'춉');
+	val = val.replace(/djyop/g,'춒');
+	val = val.replace(/djyom/g,'춈');
+	val = val.replace(/djyod/g,'쵿');
+	val = val.replace(/djyot/g,'춑');
+	val = val.replace(/djyon/g,'쵼');
+	val = val.replace(/djyol/g,'춀');
+	val = val.replace(/djyoz/g,'춌');
+	val = val.replace(/djyos/g,'춋');
+	val = val.replace(/djweq/g,'췡');
+	val = val.replace(/shwaq/g,'솽');
+	val = val.replace(/djweg/g,'췍');
+	val = val.replace(/djwek/g,'췤');
+	val = val.replace(/dyedj/g,'뎿');
+	val = val.replace(/dyech/g,'뎾');
+	val = val.replace(/djwev/g,'췞');
+	val = val.replace(/djwef/g,'췚');
+	val = val.replace(/djwec/g,'췧');
+	val = val.replace(/djweb/g,'췝');
+	val = val.replace(/djwep/g,'췦');
+	val = val.replace(/djwem/g,'췜');
+	val = val.replace(/djwed/g,'췓');
+	val = val.replace(/djwet/g,'췥');
+	val = val.replace(/djwen/g,'췐');
+	val = val.replace(/djwel/g,'췔');
+	val = val.replace(/djwez/g,'췠');
+	val = val.replace(/djwes/g,'췟');
+	val = val.replace(/djyeq/g,'촁');
+	val = val.replace(/zhuch/g,'슺');
+	val = val.replace(/djyeg/g,'쳭');
+	val = val.replace(/djyek/g,'촄');
+	val = val.replace(/syudj/g,'쭟');
+	val = val.replace(/syuch/g,'쭞');
+	val = val.replace(/djyev/g,'쳾');
+	val = val.replace(/djyef/g,'쳺');
+	val = val.replace(/djyec/g,'촇');
+	val = val.replace(/djyeb/g,'쳽');
+	val = val.replace(/djyep/g,'촆');
+	val = val.replace(/djyem/g,'쳼');
+	val = val.replace(/djyed/g,'쳳');
+	val = val.replace(/djyet/g,'촅');
+	val = val.replace(/djyen/g,'쳰');
+	val = val.replace(/djyel/g,'쳴');
+	val = val.replace(/djyez/g,'촀');
+	val = val.replace(/djyes/g,'쳿');
+	val = val.replace(/djwuq/g,'츙');
+	val = val.replace(/zhudj/g,'슻');
+	val = val.replace(/djwug/g,'츅');
+	val = val.replace(/djwuk/g,'츜');
+	val = val.replace(/dwudj/g,'듗');
+	val = val.replace(/dwuch/g,'듖');
+	val = val.replace(/djwuv/g,'츖');
+	val = val.replace(/djwuf/g,'츒');
+	val = val.replace(/djwuc/g,'츟');
+	val = val.replace(/djwub/g,'츕');
+	val = val.replace(/djwup/g,'츞');
+	val = val.replace(/djwum/g,'츔');
+	val = val.replace(/djwud/g,'츋');
+	val = val.replace(/djwut/g,'츝');
+	val = val.replace(/djwun/g,'츈');
+	val = val.replace(/djwul/g,'츌');
+	val = val.replace(/djwuz/g,'츘');
+	val = val.replace(/djwus/g,'츗');
+	val = val.replace(/djyuq/g,'충');
+	val = val.replace(/tsyig/g,'띅');
+	val = val.replace(/djyug/g,'축');
+	val = val.replace(/djyuk/g,'춬');
+	val = val.replace(/dyudj/g,'둧');
+	val = val.replace(/dyuch/g,'둦');
+	val = val.replace(/djyuv/g,'춦');
+	val = val.replace(/djyuf/g,'춢');
+	val = val.replace(/djyuc/g,'춯');
+	val = val.replace(/djyub/g,'춥');
+	val = val.replace(/djyup/g,'춮');
+	val = val.replace(/djyum/g,'춤');
+	val = val.replace(/djyud/g,'춛');
+	val = val.replace(/djyut/g,'춭');
+	val = val.replace(/djyun/g,'춘');
+	val = val.replace(/djyul/g,'출');
+	val = val.replace(/djyuz/g,'춨');
+	val = val.replace(/djyus/g,'춧');
+	val = val.replace(/djwiq/g,'췽');
+	val = val.replace(/zhich/g,'싲');
+	val = val.replace(/djwig/g,'췩');
+	val = val.replace(/djwik/g,'츀');
+	val = val.replace(/dwidj/g,'뒻');
+	val = val.replace(/dwich/g,'뒺');
+	val = val.replace(/djwiv/g,'췺');
+	val = val.replace(/djwif/g,'췶');
+	val = val.replace(/djwic/g,'츃');
+	val = val.replace(/djwib/g,'췹');
+	val = val.replace(/djwip/g,'츂');
+	val = val.replace(/djwim/g,'췸');
+	val = val.replace(/djwid/g,'췯');
+	val = val.replace(/djwit/g,'츁');
+	val = val.replace(/djwin/g,'췬');
+	val = val.replace(/djwil/g,'췰');
+	val = val.replace(/djwiz/g,'췼');
+	val = val.replace(/djwis/g,'췻');
+	val = val.replace(/djyiq/g,'칑');
+	val = val.replace(/zhidj/g,'싳');
+	val = val.replace(/djyig/g,'츽');
+	val = val.replace(/djyik/g,'칔');
+	val = val.replace(/nwich/g,'뉮');
+	val = val.replace(/dyidj/g,'딏');
+	val = val.replace(/djyiv/g,'칎');
+	val = val.replace(/djyif/g,'칊');
+	val = val.replace(/djyic/g,'칗');
+	val = val.replace(/djyib/g,'칍');
+	val = val.replace(/djyip/g,'칖');
+	val = val.replace(/djyim/g,'칌');
+	val = val.replace(/djyid/g,'칃');
+	val = val.replace(/djyit/g,'칕');
+	val = val.replace(/djyin/g,'칀');
+	val = val.replace(/djyil/g,'칄');
+	val = val.replace(/djyiz/g,'칐');
+	val = val.replace(/djyis/g,'칏');
+	val = val.replace(/tsyik/g,'띜');
+	val = val.replace(/tsach/g,'땆');
+	val = val.replace(/zhùch/g,'샞');
+	val = val.replace(/zhùdj/g,'샟');
+	val = val.replace(/djadj/g,'찿');
+	val = val.replace(/djach/g,'찾');
+	val = val.replace(/dyich/g,'딎');
+	val = val.replace(/zhèch/g,'섲');
+	val = val.replace(/zhèdj/g,'섳');
+	val = val.replace(/nwidj/g,'뉯');
+	val = val.replace(/zhoch/g,'솢');
+	val = val.replace(/zhodj/g,'솣');
+	val = val.replace(/tsyiv/g,'띖');
+	val = val.replace(/zhech/g,'셎');
+	val = val.replace(/zhedj/g,'셏');
+	val = val.replace(/tsyif/g,'띒');
+	val = val.replace(/zhach/g,'샂');
+	val = val.replace(/zhadj/g,'샃');
+	val = val.replace(/tsyic/g,'띟');
+	val = val.replace(/tsadj/g,'땇');
+	val = val.replace(/zhyis/g,'싓');
+	val = val.replace(/zhyiz/g,'싔');
+	val = val.replace(/djedj/g,'쳋');
+	val = val.replace(/djech/g,'쳊');
+	val = val.replace(/zhyil/g,'싈');
+	val = val.replace(/zhyin/g,'싄');
+	val = val.replace(/zhyit/g,'싙');
+	val = val.replace(/zhyid/g,'싇');
+	val = val.replace(/zhyim/g,'싐');
+	val = val.replace(/zhyip/g,'싚');
+	val = val.replace(/zhyib/g,'싑');
+	val = val.replace(/zhyic/g,'싛');
+	val = val.replace(/zhyif/g,'싎');
+	val = val.replace(/zhyiv/g,'싒');
+	val = val.replace(/nyuch/g,'눚');
+	val = val.replace(/nyudj/g,'눛');
+	val = val.replace(/zhyik/g,'싘');
+	val = val.replace(/zhyig/g,'싁');
+	val = val.replace(/zhyiq/g,'싕');
+	val = val.replace(/zhwis/g,'쉿');
+	val = val.replace(/djodj/g,'촟');
+	val = val.replace(/djoch/g,'촞');
+	val = val.replace(/zhwiz/g,'슀');
+	val = val.replace(/zhwil/g,'쉴');
+	val = val.replace(/zhwin/g,'쉰');
+	val = val.replace(/zhwit/g,'슅');
+	val = val.replace(/zhwid/g,'쉳');
+	val = val.replace(/zhwim/g,'쉼');
+	val = val.replace(/zhwip/g,'슆');
+	val = val.replace(/zhwib/g,'쉽');
+	val = val.replace(/zhwic/g,'슇');
+	val = val.replace(/zhwif/g,'쉺');
+	val = val.replace(/zhwiv/g,'쉾');
+	val = val.replace(/nwuch/g,'늊');
+	val = val.replace(/nwudj/g,'늋');
+	val = val.replace(/zhwik/g,'슄');
+	val = val.replace(/zhwig/g,'쉭');
+	val = val.replace(/zhwiq/g,'슁');
+	val = val.replace(/djèdj/g,'첯');
+	val = val.replace(/djèch/g,'첮');
+	val = val.replace(/zhyus/g,'숫');
+	val = val.replace(/zhyuz/g,'숬');
+	val = val.replace(/zhyul/g,'술');
+	val = val.replace(/zhyun/g,'순');
+	val = val.replace(/zhyut/g,'숱');
+	val = val.replace(/zhyud/g,'숟');
+	val = val.replace(/zhyum/g,'숨');
+	val = val.replace(/zhyup/g,'숲');
+	val = val.replace(/zhyub/g,'숩');
+	val = val.replace(/zhyuc/g,'숳');
+	val = val.replace(/zhyuf/g,'숦');
+	val = val.replace(/zhyuv/g,'숪');
+	val = val.replace(/nyech/g,'녲');
+	val = val.replace(/nyedj/g,'녳');
+	val = val.replace(/zhyuk/g,'숰');
+	val = val.replace(/zhyug/g,'숙');
+	val = val.replace(/djùdj/g,'챛');
+	val = val.replace(/djùch/g,'챚');
+	val = val.replace(/zhyuq/g,'숭');
+	val = val.replace(/zhwus/g,'슛');
+	val = val.replace(/zhwuz/g,'슜');
+	val = val.replace(/zhwul/g,'슐');
+	val = val.replace(/zhwun/g,'슌');
+	val = val.replace(/zhwut/g,'슡');
+	val = val.replace(/zhwud/g,'슏');
+	val = val.replace(/zhwum/g,'슘');
+	val = val.replace(/zhwup/g,'슢');
+	val = val.replace(/zhwub/g,'슙');
+	val = val.replace(/zhwuc/g,'슣');
+	val = val.replace(/zhwuf/g,'슖');
+	val = val.replace(/zhwuv/g,'슚');
+	val = val.replace(/tsyis/g,'띗');
+	val = val.replace(/nwech/g,'뉒');
+	val = val.replace(/swidj/g,'쮳');
+	val = val.replace(/djidj/g,'칯');
+	val = val.replace(/djich/g,'칮');
+	val = val.replace(/zhwuk/g,'슠');
+	val = val.replace(/zhwug/g,'슉');
+	val = val.replace(/zhwuq/g,'슝');
+	val = val.replace(/zhyes/g,'솃');
+	val = val.replace(/zhyez/g,'솄');
+	val = val.replace(/zhyel/g,'셸');
+	val = val.replace(/zhyen/g,'셴');
+	val = val.replace(/zhyet/g,'솉');
+	val = val.replace(/zhyed/g,'셷');
+	val = val.replace(/zhyem/g,'솀');
+	val = val.replace(/zhyep/g,'솊');
+	val = val.replace(/zhyeb/g,'솁');
+	val = val.replace(/zhyec/g,'솋');
+	val = val.replace(/tsyiz/g,'띘');
+	val = val.replace(/zhyef/g,'셾');
+	val = val.replace(/zhyev/g,'솂');
+	val = val.replace(/djudj/g,'츷');
+	val = val.replace(/djuch/g,'츶');
+	val = val.replace(/swich/g,'쮲');
+	val = val.replace(/nwedj/g,'뉓');
+	val = val.replace(/zhyek/g,'솈');
+	val = val.replace(/zhyeg/g,'셱');
+	val = val.replace(/zhyeq/g,'솅');
+	val = val.replace(/zhwes/g,'쉣');
+	val = val.replace(/zhwez/g,'쉤');
+	val = val.replace(/zhwel/g,'쉘');
+	val = val.replace(/zhwen/g,'쉔');
+	val = val.replace(/zhwet/g,'쉩');
+	val = val.replace(/zhwed/g,'쉗');
+	val = val.replace(/zhwem/g,'쉠');
+	val = val.replace(/chwaq/g,'좡');
+	val = val.replace(/zhwep/g,'쉪');
+	val = val.replace(/chwag/g,'좍');
+	val = val.replace(/chwak/g,'좤');
+	val = val.replace(/nyoch/g,'뇾');
+	val = val.replace(/nyodj/g,'뇿');
+	val = val.replace(/chwav/g,'좞');
+	val = val.replace(/chwaf/g,'좚');
+	val = val.replace(/chwac/g,'좧');
+	val = val.replace(/chwab/g,'좝');
+	val = val.replace(/chwap/g,'좦');
+	val = val.replace(/chwam/g,'좜');
+	val = val.replace(/chwad/g,'좓');
+	val = val.replace(/chwat/g,'좥');
+	val = val.replace(/chwan/g,'좐');
+	val = val.replace(/chwal/g,'좔');
+	val = val.replace(/chwaz/g,'좠');
+	val = val.replace(/chwas/g,'좟');
+	val = val.replace(/chyaq/g,'쟝');
+	val = val.replace(/zhweb/g,'쉡');
+	val = val.replace(/chyag/g,'쟉');
+	val = val.replace(/chyak/g,'쟠');
+	val = val.replace(/nwoch/g,'뇢');
+	val = val.replace(/nwodj/g,'뇣');
+	val = val.replace(/chyav/g,'쟚');
+	val = val.replace(/chyaf/g,'쟖');
+	val = val.replace(/chyac/g,'쟣');
+	val = val.replace(/chyab/g,'쟙');
+	val = val.replace(/chyap/g,'쟢');
+	val = val.replace(/chyam/g,'쟘');
+	val = val.replace(/chyad/g,'쟏');
+	val = val.replace(/chyat/g,'쟡');
+	val = val.replace(/chyan/g,'쟌');
+	val = val.replace(/chyal/g,'쟐');
+	val = val.replace(/chyaz/g,'쟜');
+	val = val.replace(/chyas/g,'쟛');
+	val = val.replace(/chwùq/g,'좽');
+	val = val.replace(/zhwec/g,'쉫');
+	val = val.replace(/chwùg/g,'좩');
+	val = val.replace(/chwùk/g,'죀');
+	val = val.replace(/twadj/g,'퇓');
+	val = val.replace(/twach/g,'퇒');
+	val = val.replace(/chwùv/g,'좺');
+	val = val.replace(/chwùf/g,'좶');
+	val = val.replace(/chwùc/g,'죃');
+	val = val.replace(/chwùb/g,'좹');
+	val = val.replace(/chwùp/g,'죂');
+	val = val.replace(/chwùm/g,'좸');
+	val = val.replace(/chwùd/g,'좯');
+	val = val.replace(/chwùt/g,'죁');
+	val = val.replace(/chwùn/g,'좬');
+	val = val.replace(/chwùl/g,'좰');
+	val = val.replace(/chwùz/g,'좼');
+	val = val.replace(/chwùs/g,'좻');
+	val = val.replace(/chyùq/g,'쟹');
+	val = val.replace(/zhwef/g,'쉞');
+	val = val.replace(/chyùg/g,'쟥');
+	val = val.replace(/chyùk/g,'쟼');
+	val = val.replace(/tyadj/g,'턏');
+	val = val.replace(/tyach/g,'턎');
+	val = val.replace(/chyùv/g,'쟶');
+	val = val.replace(/chyùf/g,'쟲');
+	val = val.replace(/chyùc/g,'쟿');
+	val = val.replace(/chyùb/g,'쟵');
+	val = val.replace(/chyùp/g,'쟾');
+	val = val.replace(/chyùm/g,'쟴');
+	val = val.replace(/chyùd/g,'쟫');
+	val = val.replace(/chyùt/g,'쟽');
+	val = val.replace(/chyùn/g,'쟨');
+	val = val.replace(/chyùl/g,'쟬');
+	val = val.replace(/chyùz/g,'쟸');
+	val = val.replace(/chyùs/g,'쟷');
+	val = val.replace(/chwèq/g,'줭');
+	val = val.replace(/zhwev/g,'쉢');
+	val = val.replace(/chwèg/g,'줙');
+	val = val.replace(/chwèk/g,'줰');
+	val = val.replace(/twùdj/g,'퇯');
+	val = val.replace(/twùch/g,'퇮');
+	val = val.replace(/chwèv/g,'줪');
+	val = val.replace(/chwèf/g,'줦');
+	val = val.replace(/chwèc/g,'줳');
+	val = val.replace(/chwèb/g,'줩');
+	val = val.replace(/chwèp/g,'줲');
+	val = val.replace(/chwèm/g,'줨');
+	val = val.replace(/chwèd/g,'줟');
+	val = val.replace(/chwèt/g,'줱');
+	val = val.replace(/chwèn/g,'줜');
+	val = val.replace(/chwèl/g,'줠');
+	val = val.replace(/chwèz/g,'줬');
+	val = val.replace(/chwès/g,'줫');
+	val = val.replace(/chyèq/g,'졍');
+	val = val.replace(/tyùdj/g,'턫');
+	val = val.replace(/chyèg/g,'젹');
+	val = val.replace(/chyèk/g,'졐');
+	val = val.replace(/tyùch/g,'턪');
+	val = val.replace(/twèdj/g,'퉟');
+	val = val.replace(/chyèv/g,'졊');
+	val = val.replace(/chyèf/g,'졆');
+	val = val.replace(/chyèc/g,'졓');
+	val = val.replace(/chyèb/g,'졉');
+	val = val.replace(/chyèp/g,'졒');
+	val = val.replace(/chyèm/g,'졈');
+	val = val.replace(/chyèd/g,'젿');
+	val = val.replace(/chyèt/g,'졑');
+	val = val.replace(/chyèn/g,'젼');
+	val = val.replace(/chyèl/g,'졀');
+	val = val.replace(/chyèz/g,'졌');
+	val = val.replace(/chyès/g,'졋');
+	val = val.replace(/chwoq/g,'죙');
+	val = val.replace(/twèch/g,'퉞');
+	val = val.replace(/chwog/g,'죅');
+	val = val.replace(/chwok/g,'죜');
+	val = val.replace(/tyèdj/g,'텿');
+	val = val.replace(/tyèch/g,'텾');
+	val = val.replace(/chwov/g,'죖');
+	val = val.replace(/chwof/g,'죒');
+	val = val.replace(/chwoc/g,'죟');
+	val = val.replace(/chwob/g,'죕');
+	val = val.replace(/chwop/g,'죞');
+	val = val.replace(/chwom/g,'죔');
+	val = val.replace(/chwod/g,'죋');
+	val = val.replace(/chwot/g,'죝');
+	val = val.replace(/chwon/g,'죈');
+	val = val.replace(/chwol/g,'죌');
+	val = val.replace(/chwoz/g,'죘');
+	val = val.replace(/chwos/g,'죗');
+	val = val.replace(/chyoq/g,'죵');
+	val = val.replace(/zhwek/g,'쉨');
+	val = val.replace(/chyog/g,'죡');
+	val = val.replace(/chyok/g,'죸');
+	val = val.replace(/syidj/g,'찇');
+	val = val.replace(/syich/g,'찆');
+	val = val.replace(/chyov/g,'죲');
+	val = val.replace(/chyof/g,'죮');
+	val = val.replace(/chyoc/g,'죻');
+	val = val.replace(/chyob/g,'죱');
+	val = val.replace(/chyop/g,'죺');
+	val = val.replace(/chyom/g,'죰');
+	val = val.replace(/chyod/g,'죧');
+	val = val.replace(/chyot/g,'죹');
+	val = val.replace(/chyon/g,'죤');
+	val = val.replace(/chyol/g,'죨');
+	val = val.replace(/chyoz/g,'죴');
+	val = val.replace(/chyos/g,'죳');
+	val = val.replace(/chweq/g,'쥉');
+	val = val.replace(/zhweg/g,'쉑');
+	val = val.replace(/chweg/g,'줵');
+	val = val.replace(/chwek/g,'쥌');
+	val = val.replace(/nyèch/g,'녖');
+	val = val.replace(/twodj/g,'툋');
+	val = val.replace(/chwev/g,'쥆');
+	val = val.replace(/chwef/g,'쥂');
+	val = val.replace(/chwec/g,'쥏');
+	val = val.replace(/chweb/g,'쥅');
+	val = val.replace(/chwep/g,'쥎');
+	val = val.replace(/chwem/g,'쥄');
+	val = val.replace(/chwed/g,'줻');
+	val = val.replace(/chwet/g,'쥍');
+	val = val.replace(/chwen/g,'줸');
+	val = val.replace(/chwel/g,'줼');
+	val = val.replace(/chwez/g,'쥈');
+	val = val.replace(/chwes/g,'쥇');
+	val = val.replace(/chyeq/g,'졩');
+	val = val.replace(/zhweq/g,'쉥');
+	val = val.replace(/chyeg/g,'졕');
+	val = val.replace(/chyek/g,'졬');
+	val = val.replace(/twoch/g,'툊');
+	val = val.replace(/nyèdj/g,'녗');
+	val = val.replace(/chyev/g,'졦');
+	val = val.replace(/chyef/g,'졢');
+	val = val.replace(/chyec/g,'졯');
+	val = val.replace(/chyeb/g,'졥');
+	val = val.replace(/chyep/g,'졮');
+	val = val.replace(/chyem/g,'졤');
+	val = val.replace(/chyed/g,'졛');
+	val = val.replace(/chyet/g,'졭');
+	val = val.replace(/chyen/g,'졘');
+	val = val.replace(/chyel/g,'졜');
+	val = val.replace(/chyez/g,'졨');
+	val = val.replace(/chyes/g,'졧');
+	val = val.replace(/chwuq/g,'즁');
+	val = val.replace(/zhyos/g,'숏');
+	val = val.replace(/chwug/g,'쥭');
+	val = val.replace(/chwuk/g,'즄');
+	val = val.replace(/tyodj/g,'툧');
+	val = val.replace(/tyoch/g,'툦');
+	val = val.replace(/chwuv/g,'쥾');
+	val = val.replace(/chwuf/g,'쥺');
+	val = val.replace(/chwuc/g,'즇');
+	val = val.replace(/chwub/g,'쥽');
+	val = val.replace(/chwup/g,'즆');
+	val = val.replace(/chwum/g,'쥼');
+	val = val.replace(/chwud/g,'쥳');
+	val = val.replace(/chwut/g,'즅');
+	val = val.replace(/chwun/g,'쥰');
+	val = val.replace(/chwul/g,'쥴');
+	val = val.replace(/chwuz/g,'즀');
+	val = val.replace(/chwus/g,'쥿');
+	val = val.replace(/chyuq/g,'중');
+	val = val.replace(/zhyoz/g,'숐');
+	val = val.replace(/chyug/g,'죽');
+	val = val.replace(/chyuk/g,'줔');
+	val = val.replace(/twedj/g,'퉻');
+	val = val.replace(/twech/g,'퉺');
+	val = val.replace(/chyuv/g,'줎');
+	val = val.replace(/chyuf/g,'줊');
+	val = val.replace(/chyuc/g,'줗');
+	val = val.replace(/chyub/g,'줍');
+	val = val.replace(/chyup/g,'줖');
+	val = val.replace(/chyum/g,'줌');
+	val = val.replace(/chyud/g,'줃');
+	val = val.replace(/chyut/g,'줕');
+	val = val.replace(/chyun/g,'준');
+	val = val.replace(/chyul/g,'줄');
+	val = val.replace(/chyuz/g,'줐');
+	val = val.replace(/chyus/g,'줏');
+	val = val.replace(/chwiq/g,'쥥');
+	val = val.replace(/zhyol/g,'숄');
+	val = val.replace(/chwig/g,'쥑');
+	val = val.replace(/chwik/g,'쥨');
+	val = val.replace(/tyedj/g,'톛');
+	val = val.replace(/tyech/g,'톚');
+	val = val.replace(/chwiv/g,'쥢');
+	val = val.replace(/chwif/g,'쥞');
+	val = val.replace(/chwic/g,'쥫');
+	val = val.replace(/chwib/g,'쥡');
+	val = val.replace(/chwip/g,'쥪');
+	val = val.replace(/chwim/g,'쥠');
+	val = val.replace(/chwid/g,'쥗');
+	val = val.replace(/chwit/g,'쥩');
+	val = val.replace(/chwin/g,'쥔');
+	val = val.replace(/chwil/g,'쥘');
+	val = val.replace(/chwiz/g,'쥤');
+	val = val.replace(/chwis/g,'쥣');
+	val = val.replace(/chyiq/g,'즹');
+	val = val.replace(/zhyon/g,'숀');
+	val = val.replace(/chyig/g,'즥');
+	val = val.replace(/chyik/g,'즼');
+	val = val.replace(/twudj/g,'튳');
+	val = val.replace(/twuch/g,'튲');
+	val = val.replace(/chyiv/g,'즶');
+	val = val.replace(/chyif/g,'즲');
+	val = val.replace(/chyic/g,'즿');
+	val = val.replace(/chyib/g,'즵');
+	val = val.replace(/chyip/g,'즾');
+	val = val.replace(/chyim/g,'즴');
+	val = val.replace(/chyid/g,'즫');
+	val = val.replace(/chyit/g,'즽');
+	val = val.replace(/chyin/g,'즨');
+	val = val.replace(/chyil/g,'즬');
+	val = val.replace(/chyiz/g,'즸');
+	val = val.replace(/chyis/g,'즷');
+	val = val.replace(/zhyot/g,'숕');
+	val = val.replace(/tsyil/g,'띌');
+	val = val.replace(/zhyod/g,'숃');
+	val = val.replace(/zhyom/g,'숌');
+	val = val.replace(/chadj/g,'잧');
+	val = val.replace(/chach/g,'잦');
+	val = val.replace(/zhyop/g,'숖');
+	val = val.replace(/zhyob/g,'숍');
+	val = val.replace(/zhyoc/g,'숗');
+	val = val.replace(/zhyof/g,'숊');
+	val = val.replace(/zhyov/g,'숎');
+	val = val.replace(/tyudj/g,'퉃');
+	val = val.replace(/tyuch/g,'퉂');
+	val = val.replace(/zhyok/g,'숔');
+	val = val.replace(/zhyog/g,'쇽');
+	val = val.replace(/zhyoq/g,'숑');
+	val = val.replace(/zhwos/g,'쇳');
+	val = val.replace(/zhwoz/g,'쇴');
+	val = val.replace(/zhwol/g,'쇨');
+	val = val.replace(/tsyin/g,'띈');
+	val = val.replace(/zhwon/g,'쇤');
+	val = val.replace(/zhwot/g,'쇹');
+	val = val.replace(/chedj/g,'젳');
+	val = val.replace(/chech/g,'젲');
+	val = val.replace(/zhwod/g,'쇧');
+	val = val.replace(/zhwom/g,'쇰');
+	val = val.replace(/zhwop/g,'쇺');
+	val = val.replace(/zhwob/g,'쇱');
+	val = val.replace(/zhwoc/g,'쇻');
+	val = val.replace(/zhwof/g,'쇮');
+	val = val.replace(/zhwov/g,'쇲');
+	val = val.replace(/twidj/g,'튗');
+	val = val.replace(/twich/g,'튖');
+	val = val.replace(/zhwok/g,'쇸');
+	val = val.replace(/zhwog/g,'쇡');
+	val = val.replace(/zhwoq/g,'쇵');
+	val = val.replace(/zhyès/g,'셧');
+	val = val.replace(/tsyit/g,'띝');
+	val = val.replace(/zhyèz/g,'셨');
+	val = val.replace(/zhyèl/g,'셜');
+	val = val.replace(/chodj/g,'좇');
+	val = val.replace(/choch/g,'좆');
+	val = val.replace(/zhyèn/g,'션');
+	val = val.replace(/zhyèt/g,'셭');
+	val = val.replace(/zhyèd/g,'셛');
+	val = val.replace(/zhyèm/g,'셤');
+	val = val.replace(/zhyèp/g,'셮');
+	val = val.replace(/zhyèb/g,'셥');
+	val = val.replace(/zhyèc/g,'셯');
+	val = val.replace(/zhyèf/g,'셢');
+	val = val.replace(/zhyèv/g,'셦');
+	val = val.replace(/tyidj/g,'틫');
+	val = val.replace(/tyich/g,'틪');
+	val = val.replace(/zhyèk/g,'셬');
+	val = val.replace(/zhyèg/g,'셕');
+	val = val.replace(/tsyid/g,'띋');
+	val = val.replace(/zhyèq/g,'셩');
+	val = val.replace(/zhwès/g,'쉇');
+	val = val.replace(/chèdj/g,'젗');
+	val = val.replace(/chèch/g,'젖');
+	val = val.replace(/zhwèz/g,'쉈');
+	val = val.replace(/zhwèl/g,'숼');
+	val = val.replace(/zhwèn/g,'숸');
+	val = val.replace(/zhwèt/g,'쉍');
+	val = val.replace(/zhwèd/g,'숻');
+	val = val.replace(/zhwèm/g,'쉄');
+	val = val.replace(/zhwèp/g,'쉎');
+	val = val.replace(/zhwèb/g,'쉅');
+	val = val.replace(/zhwèc/g,'쉏');
+	val = val.replace(/zhwèf/g,'쉂');
+	val = val.replace(/zhwèv/g,'쉆');
+	val = val.replace(/nwèch/g,'눶');
+	val = val.replace(/nwèdj/g,'눷');
+	val = val.replace(/tsyim/g,'띔');
+	val = val.replace(/zhwèk/g,'쉌');
+	val = val.replace(/zhwèg/g,'숵');
+	val = val.replace(/chùdj/g,'쟃');
+	val = val.replace(/chùch/g,'쟂');
+	val = val.replace(/zhwèq/g,'쉉');
+	val = val.replace(/zhyùs/g,'섓');
+	val = val.replace(/zhyùz/g,'섔');
+	val = val.replace(/zhyùl/g,'섈');
+	val = val.replace(/zhyùn/g,'섄');
+	val = val.replace(/zhyùt/g,'섙');
+	val = val.replace(/zhyùd/g,'섇');
+	val = val.replace(/zhyùm/g,'섐');
+	val = val.replace(/zhyùp/g,'섚');
+	val = val.replace(/zhyùb/g,'섑');
+	val = val.replace(/zhyùc/g,'섛');
+	val = val.replace(/zhyùf/g,'섎');
+	val = val.replace(/zhyùv/g,'섒');
+	val = val.replace(/tsyip/g,'띞');
+	val = val.replace(/nyùch/g,'넂');
+	val = val.replace(/nyùdj/g,'넃');
+	val = val.replace(/chidj/g,'짗');
+	val = val.replace(/chich/g,'짖');
+	val = val.replace(/zhyùk/g,'섘');
+	val = val.replace(/zhyùg/g,'섁');
+	val = val.replace(/zhyùq/g,'섕');
+	val = val.replace(/zhwùs/g,'쇗');
+	val = val.replace(/zhwùz/g,'쇘');
+	val = val.replace(/zhwùl/g,'쇌');
+	val = val.replace(/zhwùn/g,'쇈');
+	val = val.replace(/zhwùt/g,'쇝');
+	val = val.replace(/zhwùd/g,'쇋');
+	val = val.replace(/zhwùm/g,'쇔');
+	val = val.replace(/zhwùp/g,'쇞');
+	val = val.replace(/zhwùb/g,'쇕');
+	val = val.replace(/zhwùc/g,'쇟');
+	val = val.replace(/tsyib/g,'띕');
+	val = val.replace(/zhwùf/g,'쇒');
+	val = val.replace(/zhwùv/g,'쇖');
+	val = val.replace(/chudj/g,'즟');
+	val = val.replace(/chuch/g,'즞');
+	val = val.replace(/nwùch/g,'뇆');
+	val = val.replace(/nwùdj/g,'뇇');
+	val = val.replace(/zhwùk/g,'쇜');
+	val = val.replace(/zhwùg/g,'쇅');
+	val = val.replace(/zhwùq/g,'쇙');
+	val = val.replace(/zhyas/g,'샷');
+	val = val.replace(/zhyaz/g,'샸');
+	val = val.replace(/zhyal/g,'샬');
+	val = val.replace(/zhyan/g,'샨');
+	val = val.replace(/zhyat/g,'샽');
+	val = val.replace(/zhyad/g,'샫');
+	val = val.replace(/zhyam/g,'샴');
+	val = val.replace(/zhwaq/g,'솽');
+	val = val.replace(/zhyap/g,'샾');
+	val = val.replace(/zhwag/g,'솩');
+	val = val.replace(/zhwak/g,'쇀');
+	val = val.replace(/nyach/g,'냦');
+	val = val.replace(/nyadj/g,'냧');
+	val = val.replace(/zhwav/g,'솺');
+	val = val.replace(/zhwaf/g,'솶');
+	val = val.replace(/zhwac/g,'쇃');
+	val = val.replace(/zhwab/g,'솹');
+	val = val.replace(/zhwap/g,'쇂');
+	val = val.replace(/zhwam/g,'솸');
+	val = val.replace(/zhwad/g,'솯');
+	val = val.replace(/zhwat/g,'쇁');
+	val = val.replace(/zhwan/g,'솬');
+	val = val.replace(/zhwal/g,'솰');
+	val = val.replace(/zhwaz/g,'솼');
+	val = val.replace(/zhwas/g,'솻');
+	val = val.replace(/zhyaq/g,'샹');
+	val = val.replace(/zhyab/g,'샵');
+	val = val.replace(/zhyag/g,'샥');
+	val = val.replace(/zhyak/g,'샼');
+	val = val.replace(/nwach/g,'놪');
+	val = val.replace(/nwadj/g,'놫');
+	val = val.replace(/zhyav/g,'샶');
+	val = val.replace(/zhyac/g,'샿');
+	val = val.replace(/syeg/g,'쪡');
+	val = val.replace(/zhya/g,'샤');
+	val = val.replace(/zhwa/g,'솨');
+	val = val.replace(/chus/g,'즛');
+	val = val.replace(/chuz/g,'즜');
+	val = val.replace(/chul/g,'즐');
+	val = val.replace(/chun/g,'즌');
+	val = val.replace(/chut/g,'즡');
+	val = val.replace(/chud/g,'즏');
+	val = val.replace(/chum/g,'즘');
+	val = val.replace(/chup/g,'즢');
+	val = val.replace(/zhwù/g,'쇄');
+	val = val.replace(/chub/g,'즙');
+	val = val.replace(/chuc/g,'즣');
+	val = val.replace(/chuf/g,'즖');
+	val = val.replace(/chuv/g,'즚');
+	val = val.replace(/chuk/g,'즠');
+	val = val.replace(/chug/g,'즉');
+	val = val.replace(/chuq/g,'증');
+	val = val.replace(/chis/g,'짓');
+	val = val.replace(/chiz/g,'짔');
+	val = val.replace(/chil/g,'질');
+	val = val.replace(/chin/g,'진');
+	val = val.replace(/chit/g,'짙');
+	val = val.replace(/chid/g,'짇');
+	val = val.replace(/chim/g,'짐');
+	val = val.replace(/chip/g,'짚');
+	val = val.replace(/chib/g,'집');
+	val = val.replace(/chic/g,'짛');
+	val = val.replace(/zhyù/g,'섀');
+	val = val.replace(/chif/g,'짎');
+	val = val.replace(/chiv/g,'짒');
+	val = val.replace(/chik/g,'짘');
+	val = val.replace(/chig/g,'직');
+	val = val.replace(/chiq/g,'징');
+	val = val.replace(/chùs/g,'잿');
+	val = val.replace(/chùz/g,'쟀');
+	val = val.replace(/chùl/g,'잴');
+	val = val.replace(/chùn/g,'잰');
+	val = val.replace(/chùt/g,'쟅');
+	val = val.replace(/chùd/g,'잳');
+	val = val.replace(/chùm/g,'잼');
+	val = val.replace(/chùp/g,'쟆');
+	val = val.replace(/chùb/g,'잽');
+	val = val.replace(/chùc/g,'쟇');
+	val = val.replace(/chùf/g,'잺');
+	val = val.replace(/chùv/g,'잾');
+	val = val.replace(/zhwè/g,'숴');
+	val = val.replace(/chùk/g,'쟄');
+	val = val.replace(/chùg/g,'잭');
+	val = val.replace(/chùq/g,'쟁');
+	val = val.replace(/chès/g,'젓');
+	val = val.replace(/chèz/g,'젔');
+	val = val.replace(/chèl/g,'절');
+	val = val.replace(/chèn/g,'전');
+	val = val.replace(/chèt/g,'젙');
+	val = val.replace(/chèd/g,'젇');
+	val = val.replace(/chèm/g,'점');
+	val = val.replace(/chèp/g,'젚');
+	val = val.replace(/chèb/g,'접');
+	val = val.replace(/chèc/g,'젛');
+	val = val.replace(/chèf/g,'젎');
+	val = val.replace(/chèv/g,'젒');
+	val = val.replace(/chèk/g,'젘');
+	val = val.replace(/chèg/g,'적');
+	val = val.replace(/zhyè/g,'셔');
+	val = val.replace(/chèq/g,'정');
+	val = val.replace(/chos/g,'좃');
+	val = val.replace(/choz/g,'좄');
+	val = val.replace(/chol/g,'졸');
+	val = val.replace(/chon/g,'존');
+	val = val.replace(/chot/g,'좉');
+	val = val.replace(/chod/g,'졷');
+	val = val.replace(/chom/g,'좀');
+	val = val.replace(/chop/g,'좊');
+	val = val.replace(/chob/g,'좁');
+	val = val.replace(/choc/g,'좋');
+	val = val.replace(/chof/g,'졾');
+	val = val.replace(/chov/g,'좂');
+	val = val.replace(/chok/g,'좈');
+	val = val.replace(/chog/g,'족');
+	val = val.replace(/choq/g,'종');
+	val = val.replace(/ches/g,'젯');
+	val = val.replace(/zhwo/g,'쇠');
+	val = val.replace(/chez/g,'젰');
+	val = val.replace(/chel/g,'젤');
+	val = val.replace(/chen/g,'젠');
+	val = val.replace(/chet/g,'젵');
+	val = val.replace(/ched/g,'젣');
+	val = val.replace(/chem/g,'젬');
+	val = val.replace(/chep/g,'젶');
+	val = val.replace(/cheb/g,'젭');
+	val = val.replace(/chec/g,'젷');
+	val = val.replace(/chef/g,'젪');
+	val = val.replace(/chev/g,'젮');
+	val = val.replace(/chek/g,'젴');
+	val = val.replace(/cheg/g,'젝');
+	val = val.replace(/cheq/g,'젱');
+	val = val.replace(/chas/g,'잣');
+	val = val.replace(/chaz/g,'잤');
+	val = val.replace(/chal/g,'잘');
+	val = val.replace(/zhyo/g,'쇼');
+	val = val.replace(/chan/g,'잔');
+	val = val.replace(/chat/g,'잩');
+	val = val.replace(/chad/g,'잗');
+	val = val.replace(/cham/g,'잠');
+	val = val.replace(/chap/g,'잪');
+	val = val.replace(/chab/g,'잡');
+	val = val.replace(/chac/g,'잫');
+	val = val.replace(/chaf/g,'잞');
+	val = val.replace(/chav/g,'잢');
+	val = val.replace(/chak/g,'잨');
+	val = val.replace(/chag/g,'작');
+	val = val.replace(/chaq/g,'장');
+	val = val.replace(/chyi/g,'즤');
+	val = val.replace(/chwi/g,'쥐');
+	val = val.replace(/chyu/g,'주');
+	val = val.replace(/chwu/g,'쥬');
+	val = val.replace(/chye/g,'졔');
+	val = val.replace(/zhwe/g,'쉐');
+	val = val.replace(/chwe/g,'줴');
+	val = val.replace(/chyo/g,'죠');
+	val = val.replace(/chwo/g,'죄');
+	val = val.replace(/chyè/g,'져');
+	val = val.replace(/chwè/g,'줘');
+	val = val.replace(/chyù/g,'쟤');
+	val = val.replace(/chwù/g,'좨');
+	val = val.replace(/chya/g,'쟈');
+	val = val.replace(/chwa/g,'좌');
+	val = val.replace(/djus/g,'츳');
+	val = val.replace(/djuz/g,'츴');
+	val = val.replace(/djul/g,'츨');
+	val = val.replace(/djun/g,'츤');
+	val = val.replace(/djut/g,'츹');
+	val = val.replace(/djud/g,'츧');
+	val = val.replace(/djum/g,'츰');
+	val = val.replace(/djup/g,'츺');
+	val = val.replace(/zhye/g,'셰');
+	val = val.replace(/djub/g,'츱');
+	val = val.replace(/djuc/g,'츻');
+	val = val.replace(/djuf/g,'츮');
+	val = val.replace(/djuv/g,'츲');
+	val = val.replace(/djuk/g,'츸');
+	val = val.replace(/djug/g,'측');
+	val = val.replace(/djuq/g,'층');
+	val = val.replace(/djis/g,'칫');
+	val = val.replace(/djiz/g,'칬');
+	val = val.replace(/djil/g,'칠');
+	val = val.replace(/djin/g,'친');
+	val = val.replace(/djit/g,'칱');
+	val = val.replace(/djid/g,'칟');
+	val = val.replace(/djim/g,'침');
+	val = val.replace(/djip/g,'칲');
+	val = val.replace(/djib/g,'칩');
+	val = val.replace(/djic/g,'칳');
+	val = val.replace(/zhwu/g,'슈');
+	val = val.replace(/djif/g,'칦');
+	val = val.replace(/djiv/g,'칪');
+	val = val.replace(/djik/g,'칰');
+	val = val.replace(/djig/g,'칙');
+	val = val.replace(/djiq/g,'칭');
+	val = val.replace(/djùs/g,'챗');
+	val = val.replace(/djùz/g,'챘');
+	val = val.replace(/djùl/g,'챌');
+	val = val.replace(/djùn/g,'챈');
+	val = val.replace(/djùt/g,'챝');
+	val = val.replace(/djùd/g,'챋');
+	val = val.replace(/djùm/g,'챔');
+	val = val.replace(/djùp/g,'챞');
+	val = val.replace(/djùb/g,'챕');
+	val = val.replace(/djùc/g,'챟');
+	val = val.replace(/djùf/g,'챒');
+	val = val.replace(/djùv/g,'챖');
+	val = val.replace(/zhyu/g,'수');
+	val = val.replace(/djùk/g,'챜');
+	val = val.replace(/djùg/g,'책');
+	val = val.replace(/tsaq/g,'땅');
+	val = val.replace(/djùq/g,'챙');
+	val = val.replace(/djès/g,'첫');
+	val = val.replace(/djèz/g,'첬');
+	val = val.replace(/djèl/g,'철');
+	val = val.replace(/djèn/g,'천');
+	val = val.replace(/djèt/g,'첱');
+	val = val.replace(/djèd/g,'첟');
+	val = val.replace(/djèm/g,'첨');
+	val = val.replace(/djèp/g,'첲');
+	val = val.replace(/djèb/g,'첩');
+	val = val.replace(/djèc/g,'첳');
+	val = val.replace(/djèf/g,'첦');
+	val = val.replace(/djèv/g,'첪');
+	val = val.replace(/djèk/g,'첰');
+	val = val.replace(/zhwi/g,'쉬');
+	val = val.replace(/djèg/g,'척');
+	val = val.replace(/tsag/g,'딱');
+	val = val.replace(/djèq/g,'청');
+	val = val.replace(/djos/g,'촛');
+	val = val.replace(/djoz/g,'촜');
+	val = val.replace(/djol/g,'촐');
+	val = val.replace(/djon/g,'촌');
+	val = val.replace(/djot/g,'촡');
+	val = val.replace(/djod/g,'촏');
+	val = val.replace(/djom/g,'촘');
+	val = val.replace(/djop/g,'촢');
+	val = val.replace(/djob/g,'촙');
+	val = val.replace(/djoc/g,'촣');
+	val = val.replace(/djof/g,'촖');
+	val = val.replace(/djov/g,'촚');
+	val = val.replace(/djok/g,'촠');
+	val = val.replace(/djog/g,'촉');
+	val = val.replace(/zhyi/g,'싀');
+	val = val.replace(/tsak/g,'땈');
+	val = val.replace(/djoq/g,'총');
+	val = val.replace(/djes/g,'쳇');
+	val = val.replace(/djez/g,'쳈');
+	val = val.replace(/djel/g,'첼');
+	val = val.replace(/djen/g,'첸');
+	val = val.replace(/djet/g,'쳍');
+	val = val.replace(/djed/g,'첻');
+	val = val.replace(/djem/g,'쳄');
+	val = val.replace(/djep/g,'쳎');
+	val = val.replace(/djeb/g,'쳅');
+	val = val.replace(/djec/g,'쳏');
+	val = val.replace(/djef/g,'쳂');
+	val = val.replace(/djev/g,'쳆');
+	val = val.replace(/djek/g,'쳌');
+	val = val.replace(/djeg/g,'첵');
+	val = val.replace(/zhaq/g,'상');
+	val = val.replace(/djeq/g,'쳉');
+	val = val.replace(/zhag/g,'삭');
+	val = val.replace(/zhak/g,'샄');
+	val = val.replace(/djas/g,'찻');
+	val = val.replace(/djaz/g,'찼');
+	val = val.replace(/zhav/g,'삾');
+	val = val.replace(/zhaf/g,'삺');
+	val = val.replace(/zhac/g,'샇');
+	val = val.replace(/zhab/g,'삽');
+	val = val.replace(/zhap/g,'샆');
+	val = val.replace(/zham/g,'삼');
+	val = val.replace(/zhad/g,'삳');
+	val = val.replace(/zhat/g,'샅');
+	val = val.replace(/zhan/g,'산');
+	val = val.replace(/zhal/g,'살');
+	val = val.replace(/zhaz/g,'샀');
+	val = val.replace(/zhas/g,'삿');
+	val = val.replace(/zheq/g,'셍');
+	val = val.replace(/djal/g,'찰');
+	val = val.replace(/zheg/g,'섹');
+	val = val.replace(/zhek/g,'셐');
+	val = val.replace(/djan/g,'찬');
+	val = val.replace(/djat/g,'챁');
+	val = val.replace(/zhev/g,'셊');
+	val = val.replace(/zhef/g,'셆');
+	val = val.replace(/zhec/g,'셓');
+	val = val.replace(/zheb/g,'셉');
+	val = val.replace(/zhep/g,'셒');
+	val = val.replace(/zhem/g,'셈');
+	val = val.replace(/zhed/g,'섿');
+	val = val.replace(/zhet/g,'셑');
+	val = val.replace(/zhen/g,'센');
+	val = val.replace(/zhel/g,'셀');
+	val = val.replace(/zhez/g,'셌');
+	val = val.replace(/zhes/g,'셋');
+	val = val.replace(/zhoq/g,'송');
+	val = val.replace(/djad/g,'찯');
+	val = val.replace(/zhog/g,'속');
+	val = val.replace(/zhok/g,'솤');
+	val = val.replace(/djam/g,'참');
+	val = val.replace(/djap/g,'챂');
+	val = val.replace(/zhov/g,'솞');
+	val = val.replace(/zhof/g,'솚');
+	val = val.replace(/zhoc/g,'솧');
+	val = val.replace(/zhob/g,'솝');
+	val = val.replace(/zhop/g,'솦');
+	val = val.replace(/zhom/g,'솜');
+	val = val.replace(/zhod/g,'솓');
+	val = val.replace(/zhot/g,'솥');
+	val = val.replace(/zhon/g,'손');
+	val = val.replace(/zhol/g,'솔');
+	val = val.replace(/zhoz/g,'솠');
+	val = val.replace(/zhos/g,'솟');
+	val = val.replace(/zhèq/g,'성');
+	val = val.replace(/djab/g,'찹');
+	val = val.replace(/zhèg/g,'석');
+	val = val.replace(/zhèk/g,'섴');
+	val = val.replace(/djac/g,'챃');
+	val = val.replace(/djaf/g,'찶');
+	val = val.replace(/zhèv/g,'섮');
+	val = val.replace(/zhèf/g,'섪');
+	val = val.replace(/zhèc/g,'섷');
+	val = val.replace(/zhèb/g,'섭');
+	val = val.replace(/zhèp/g,'섶');
+	val = val.replace(/zhèm/g,'섬');
+	val = val.replace(/zhèd/g,'섣');
+	val = val.replace(/zhèt/g,'섵');
+	val = val.replace(/zhèn/g,'선');
+	val = val.replace(/zhèl/g,'설');
+	val = val.replace(/zhèz/g,'섰');
+	val = val.replace(/zhès/g,'섯');
+	val = val.replace(/zhùq/g,'생');
+	val = val.replace(/djav/g,'찺');
+	val = val.replace(/zhùg/g,'색');
+	val = val.replace(/zhùk/g,'샠');
+	val = val.replace(/djak/g,'챀');
+	val = val.replace(/djag/g,'착');
+	val = val.replace(/zhùv/g,'샚');
+	val = val.replace(/zhùf/g,'샖');
+	val = val.replace(/zhùc/g,'샣');
+	val = val.replace(/zhùb/g,'샙');
+	val = val.replace(/zhùp/g,'샢');
+	val = val.replace(/zhùm/g,'샘');
+	val = val.replace(/zhùd/g,'샏');
+	val = val.replace(/zhùt/g,'샡');
+	val = val.replace(/zhùn/g,'샌');
+	val = val.replace(/zhùl/g,'샐');
+	val = val.replace(/zhùz/g,'샜');
+	val = val.replace(/zhùs/g,'샛');
+	val = val.replace(/zhiq/g,'싱');
+	val = val.replace(/djaq/g,'창');
+	val = val.replace(/zhig/g,'식');
+	val = val.replace(/zhik/g,'싴');
+	val = val.replace(/djyi/g,'츼');
+	val = val.replace(/djwi/g,'취');
+	val = val.replace(/zhiv/g,'싮');
+	val = val.replace(/zhif/g,'싪');
+	val = val.replace(/zhic/g,'싷');
+	val = val.replace(/zhib/g,'십');
+	val = val.replace(/zhip/g,'싶');
+	val = val.replace(/zhim/g,'심');
+	val = val.replace(/zhid/g,'싣');
+	val = val.replace(/zhit/g,'싵');
+	val = val.replace(/zhin/g,'신');
+	val = val.replace(/zhil/g,'실');
+	val = val.replace(/zhiz/g,'싰');
+	val = val.replace(/zhis/g,'싯');
+	val = val.replace(/zhuq/g,'승');
+	val = val.replace(/djyu/g,'추');
+	val = val.replace(/zhug/g,'슥');
+	val = val.replace(/zhuk/g,'슼');
+	val = val.replace(/djwu/g,'츄');
+	val = val.replace(/djye/g,'쳬');
+	val = val.replace(/zhuv/g,'슶');
+	val = val.replace(/zhuf/g,'슲');
+	val = val.replace(/zhuc/g,'슿');
+	val = val.replace(/zhub/g,'습');
+	val = val.replace(/zhup/g,'슾');
+	val = val.replace(/zhum/g,'슴');
+	val = val.replace(/zhud/g,'슫');
+	val = val.replace(/zhut/g,'슽');
+	val = val.replace(/zhun/g,'슨');
+	val = val.replace(/zhul/g,'슬');
+	val = val.replace(/zhuz/g,'슸');
+	val = val.replace(/zhus/g,'슷');
+	val = val.replace(/djwe/g,'췌');
+	val = val.replace(/shwa/g,'솨');
+	val = val.replace(/djyo/g,'쵸');
+	val = val.replace(/djwo/g,'최');
+	val = val.replace(/djyè/g,'쳐');
+	val = val.replace(/djwè/g,'춰');
+	val = val.replace(/djyù/g,'챼');
+	val = val.replace(/djwù/g,'쵀');
+	val = val.replace(/djya/g,'챠');
+	val = val.replace(/djwa/g,'촤');
+	val = val.replace(/tsav/g,'땂');
+	val = val.replace(/tsaf/g,'딾');
+	val = val.replace(/tsac/g,'땋');
+	val = val.replace(/tsab/g,'땁');
+	val = val.replace(/tsap/g,'땊');
+	val = val.replace(/tsam/g,'땀');
+	val = val.replace(/tsad/g,'딷');
+	val = val.replace(/tsat/g,'땉');
+	val = val.replace(/tsan/g,'딴');
+	val = val.replace(/shya/g,'샤');
+	val = val.replace(/tsal/g,'딸');
+	val = val.replace(/tsaz/g,'땄');
+	val = val.replace(/tsas/g,'땃');
+	val = val.replace(/kuch/g,'킂');
+	val = val.replace(/kudj/g,'킃');
+	val = val.replace(/tseq/g,'뗑');
+	val = val.replace(/tseg/g,'떽');
+	val = val.replace(/tsek/g,'뗔');
+	val = val.replace(/tsev/g,'뗎');
+	val = val.replace(/tsef/g,'뗊');
+	val = val.replace(/tsec/g,'뗗');
+	val = val.replace(/tseb/g,'뗍');
+	val = val.replace(/tsep/g,'뗖');
+	val = val.replace(/tsem/g,'뗌');
+	val = val.replace(/tsed/g,'뗃');
+	val = val.replace(/tset/g,'뗕');
+	val = val.replace(/tsen/g,'뗀');
+	val = val.replace(/shwù/g,'쇄');
+	val = val.replace(/tsel/g,'뗄');
+	val = val.replace(/tsez/g,'뗐');
+	val = val.replace(/kich/g,'킺');
+	val = val.replace(/kidj/g,'킻');
+	val = val.replace(/tses/g,'뗏');
+	val = val.replace(/tsoq/g,'똥');
+	val = val.replace(/tsog/g,'똑');
+	val = val.replace(/tsok/g,'똨');
+	val = val.replace(/tsov/g,'똢');
+	val = val.replace(/tsof/g,'똞');
+	val = val.replace(/tsoc/g,'똫');
+	val = val.replace(/tsob/g,'똡');
+	val = val.replace(/tsop/g,'똪');
+	val = val.replace(/tsom/g,'똠');
+	val = val.replace(/tsod/g,'똗');
+	val = val.replace(/tsot/g,'똩');
+	val = val.replace(/tson/g,'똔');
+	val = val.replace(/shyù/g,'섀');
+	val = val.replace(/tsol/g,'똘');
+	val = val.replace(/kùch/g,'캦');
+	val = val.replace(/kùdj/g,'캧');
+	val = val.replace(/tsoz/g,'똤');
+	val = val.replace(/tsos/g,'똣');
+	val = val.replace(/tsèq/g,'떵');
+	val = val.replace(/tsèg/g,'떡');
+	val = val.replace(/tsèk/g,'떸');
+	val = val.replace(/tsèv/g,'떲');
+	val = val.replace(/tsèf/g,'떮');
+	val = val.replace(/tsèc/g,'떻');
+	val = val.replace(/tsèb/g,'떱');
+	val = val.replace(/tsèp/g,'떺');
+	val = val.replace(/tsèm/g,'떰');
+	val = val.replace(/tsèd/g,'떧');
+	val = val.replace(/tsèt/g,'떹');
+	val = val.replace(/tsèn/g,'떤');
+	val = val.replace(/shwè/g,'숴');
+	val = val.replace(/kèch/g,'컺');
+	val = val.replace(/kèdj/g,'컻');
+	val = val.replace(/tsèl/g,'떨');
+	val = val.replace(/tsèz/g,'떴');
+	val = val.replace(/tsès/g,'떳');
+	val = val.replace(/tsùq/g,'땡');
+	val = val.replace(/tsùg/g,'땍');
+	val = val.replace(/tsùk/g,'땤');
+	val = val.replace(/tsùv/g,'땞');
+	val = val.replace(/tsùf/g,'땚');
+	val = val.replace(/tsùc/g,'땧');
+	val = val.replace(/tsùb/g,'땝');
+	val = val.replace(/tsùp/g,'땦');
+	val = val.replace(/tsùm/g,'땜');
+	val = val.replace(/tsùd/g,'땓');
+	val = val.replace(/tsùt/g,'땥');
+	val = val.replace(/koch/g,'콪');
+	val = val.replace(/shyè/g,'셔');
+	val = val.replace(/kodj/g,'콫');
+	val = val.replace(/tsùn/g,'땐');
+	val = val.replace(/tsùl/g,'땔');
+	val = val.replace(/tsùz/g,'땠');
+	val = val.replace(/tsùs/g,'땟');
+	val = val.replace(/tsiq/g,'띵');
+	val = val.replace(/tsig/g,'띡');
+	val = val.replace(/tsik/g,'띸');
+	val = val.replace(/tsiv/g,'띲');
+	val = val.replace(/tsif/g,'띮');
+	val = val.replace(/tsic/g,'띻');
+	val = val.replace(/tsib/g,'띱');
+	val = val.replace(/tsip/g,'띺');
+	val = val.replace(/tsim/g,'띰');
+	val = val.replace(/tsid/g,'띧');
+	val = val.replace(/kech/g,'켖');
+	val = val.replace(/kedj/g,'켗');
+	val = val.replace(/shwo/g,'쇠');
+	val = val.replace(/tsit/g,'띹');
+	val = val.replace(/tsin/g,'띤');
+	val = val.replace(/tsil/g,'띨');
+	val = val.replace(/tsiz/g,'띴');
+	val = val.replace(/tsis/g,'띳');
+	val = val.replace(/tsuq/g,'뜽');
+	val = val.replace(/tsug/g,'뜩');
+	val = val.replace(/tsuk/g,'띀');
+	val = val.replace(/tsuv/g,'뜺');
+	val = val.replace(/tsuf/g,'뜶');
+	val = val.replace(/tsuc/g,'띃');
+	val = val.replace(/tsub/g,'뜹');
+	val = val.replace(/tsup/g,'띂');
+	val = val.replace(/tsum/g,'뜸');
+	val = val.replace(/kach/g,'캊');
+	val = val.replace(/kadj/g,'캋');
+	val = val.replace(/tsud/g,'뜯');
+	val = val.replace(/shyo/g,'쇼');
+	val = val.replace(/tsut/g,'띁');
+	val = val.replace(/tsun/g,'뜬');
+	val = val.replace(/tsul/g,'뜰');
+	val = val.replace(/kyis/g,'킛');
+	val = val.replace(/kyiz/g,'킜');
+	val = val.replace(/kyil/g,'킐');
+	val = val.replace(/kyin/g,'킌');
+	val = val.replace(/kyit/g,'킡');
+	val = val.replace(/kyid/g,'킏');
+	val = val.replace(/kyim/g,'킘');
+	val = val.replace(/kyip/g,'킢');
+	val = val.replace(/kyib/g,'킙');
+	val = val.replace(/kyic/g,'킣');
+	val = val.replace(/kyif/g,'킖');
+	val = val.replace(/kyiv/g,'킚');
+	val = val.replace(/kyik/g,'킠');
+	val = val.replace(/kyig/g,'킉');
+	val = val.replace(/shwe/g,'쉐');
+	val = val.replace(/tsuz/g,'뜼');
+	val = val.replace(/kyiq/g,'킝');
+	val = val.replace(/kwis/g,'큇');
+	val = val.replace(/kwiz/g,'큈');
+	val = val.replace(/kwil/g,'퀼');
+	val = val.replace(/kwin/g,'퀸');
+	val = val.replace(/kwit/g,'큍');
+	val = val.replace(/kwid/g,'퀻');
+	val = val.replace(/kwim/g,'큄');
+	val = val.replace(/kwip/g,'큎');
+	val = val.replace(/kwib/g,'큅');
+	val = val.replace(/kwic/g,'큏');
+	val = val.replace(/kwif/g,'큂');
+	val = val.replace(/kwiv/g,'큆');
+	val = val.replace(/kwik/g,'큌');
+	val = val.replace(/kwig/g,'퀵');
+	val = val.replace(/tsus/g,'뜻');
+	val = val.replace(/shye/g,'셰');
+	val = val.replace(/kwiq/g,'큉');
+	val = val.replace(/kyus/g,'쿳');
+	val = val.replace(/kyuz/g,'쿴');
+	val = val.replace(/kyul/g,'쿨');
+	val = val.replace(/kyun/g,'쿤');
+	val = val.replace(/kyut/g,'쿹');
+	val = val.replace(/kyud/g,'쿧');
+	val = val.replace(/kyum/g,'쿰');
+	val = val.replace(/kyup/g,'쿺');
+	val = val.replace(/kyub/g,'쿱');
+	val = val.replace(/kyuc/g,'쿻');
+	val = val.replace(/kyuf/g,'쿮');
+	val = val.replace(/kyuv/g,'쿲');
+	val = val.replace(/kyuk/g,'쿸');
+	val = val.replace(/kyug/g,'쿡');
+	val = val.replace(/zwaq/g,'쐉');
+	val = val.replace(/kyuq/g,'쿵');
+	val = val.replace(/shwu/g,'슈');
+	val = val.replace(/kwus/g,'큣');
+	val = val.replace(/kwuz/g,'큤');
+	val = val.replace(/kwul/g,'큘');
+	val = val.replace(/kwun/g,'큔');
+	val = val.replace(/kwut/g,'큩');
+	val = val.replace(/kwud/g,'큗');
+	val = val.replace(/kwum/g,'큠');
+	val = val.replace(/kwup/g,'큪');
+	val = val.replace(/kwub/g,'큡');
+	val = val.replace(/kwuc/g,'큫');
+	val = val.replace(/kwuf/g,'큞');
+	val = val.replace(/kwuv/g,'큢');
+	val = val.replace(/kwuk/g,'큨');
+	val = val.replace(/kwug/g,'큑');
+	val = val.replace(/zwag/g,'쏵');
+	val = val.replace(/kwuq/g,'큥');
+	val = val.replace(/kyes/g,'콋');
+	val = val.replace(/shyu/g,'수');
+	val = val.replace(/kyez/g,'콌');
+	val = val.replace(/kyel/g,'콀');
+	val = val.replace(/kyen/g,'켼');
+	val = val.replace(/kyet/g,'콑');
+	val = val.replace(/kyed/g,'켿');
+	val = val.replace(/kyem/g,'콈');
+	val = val.replace(/kyep/g,'콒');
+	val = val.replace(/kyeb/g,'콉');
+	val = val.replace(/kyec/g,'콓');
+	val = val.replace(/kyef/g,'콆');
+	val = val.replace(/kyev/g,'콊');
+	val = val.replace(/kyek/g,'콐');
+	val = val.replace(/kyeg/g,'켹');
+	val = val.replace(/zwak/g,'쐌');
+	val = val.replace(/kyeq/g,'콍');
+	val = val.replace(/kwes/g,'퀫');
+	val = val.replace(/kwez/g,'퀬');
+	val = val.replace(/shwi/g,'쉬');
+	val = val.replace(/kwel/g,'퀠');
+	val = val.replace(/kwen/g,'퀜');
+	val = val.replace(/kwet/g,'퀱');
+	val = val.replace(/kwed/g,'퀟');
+	val = val.replace(/kwem/g,'퀨');
+	val = val.replace(/kwep/g,'퀲');
+	val = val.replace(/kweb/g,'퀩');
+	val = val.replace(/kwec/g,'퀳');
+	val = val.replace(/kwef/g,'퀦');
+	val = val.replace(/kwev/g,'퀪');
+	val = val.replace(/kwek/g,'퀰');
+	val = val.replace(/kweg/g,'퀙');
+	val = val.replace(/kweq/g,'퀭');
+	val = val.replace(/kyos/g,'쿗');
+	val = val.replace(/kyoz/g,'쿘');
+	val = val.replace(/kyol/g,'쿌');
+	val = val.replace(/kyon/g,'쿈');
+	val = val.replace(/shyi/g,'싀');
+	val = val.replace(/kyot/g,'쿝');
+	val = val.replace(/kyod/g,'쿋');
+	val = val.replace(/kyom/g,'쿔');
+	val = val.replace(/kyop/g,'쿞');
+	val = val.replace(/kyob/g,'쿕');
+	val = val.replace(/kyoc/g,'쿟');
+	val = val.replace(/kyof/g,'쿒');
+	val = val.replace(/kyov/g,'쿖');
+	val = val.replace(/kyok/g,'쿜');
+	val = val.replace(/kyog/g,'쿅');
+	val = val.replace(/kyoq/g,'쿙');
+	val = val.replace(/kwos/g,'쾻');
+	val = val.replace(/kwoz/g,'쾼');
+	val = val.replace(/kwol/g,'쾰');
+	val = val.replace(/kwon/g,'쾬');
+	val = val.replace(/kwot/g,'쿁');
+	val = val.replace(/shaq/g,'상');
+	val = val.replace(/tsyi/g,'띄');
+	val = val.replace(/shag/g,'삭');
+	val = val.replace(/shak/g,'샄');
+	val = val.replace(/kwod/g,'쾯');
+	val = val.replace(/kwom/g,'쾸');
+	val = val.replace(/shav/g,'삾');
+	val = val.replace(/shaf/g,'삺');
+	val = val.replace(/shac/g,'샇');
+	val = val.replace(/shab/g,'삽');
+	val = val.replace(/shap/g,'샆');
+	val = val.replace(/sham/g,'삼');
+	val = val.replace(/shad/g,'삳');
+	val = val.replace(/shat/g,'샅');
+	val = val.replace(/shan/g,'산');
+	val = val.replace(/shal/g,'살');
+	val = val.replace(/shaz/g,'샀');
+	val = val.replace(/shas/g,'삿');
+	val = val.replace(/sheq/g,'셍');
+	val = val.replace(/kwop/g,'쿂');
+	val = val.replace(/sheg/g,'섹');
+	val = val.replace(/shek/g,'셐');
+	val = val.replace(/kwob/g,'쾹');
+	val = val.replace(/kwoc/g,'쿃');
+	val = val.replace(/shev/g,'셊');
+	val = val.replace(/shef/g,'셆');
+	val = val.replace(/shec/g,'셓');
+	val = val.replace(/sheb/g,'셉');
+	val = val.replace(/shep/g,'셒');
+	val = val.replace(/shem/g,'셈');
+	val = val.replace(/shed/g,'섿');
+	val = val.replace(/shet/g,'셑');
+	val = val.replace(/shen/g,'센');
+	val = val.replace(/shel/g,'셀');
+	val = val.replace(/shez/g,'셌');
+	val = val.replace(/shes/g,'셋');
+	val = val.replace(/shoq/g,'송');
+	val = val.replace(/kwof/g,'쾶');
+	val = val.replace(/shog/g,'속');
+	val = val.replace(/shok/g,'솤');
+	val = val.replace(/kwov/g,'쾺');
+	val = val.replace(/kwok/g,'쿀');
+	val = val.replace(/shov/g,'솞');
+	val = val.replace(/shof/g,'솚');
+	val = val.replace(/shoc/g,'솧');
+	val = val.replace(/shob/g,'솝');
+	val = val.replace(/shop/g,'솦');
+	val = val.replace(/shom/g,'솜');
+	val = val.replace(/shod/g,'솓');
+	val = val.replace(/shot/g,'솥');
+	val = val.replace(/shon/g,'손');
+	val = val.replace(/shol/g,'솔');
+	val = val.replace(/shoz/g,'솠');
+	val = val.replace(/shos/g,'솟');
+	val = val.replace(/shèq/g,'성');
+	val = val.replace(/kwog/g,'쾩');
+	val = val.replace(/shèg/g,'석');
+	val = val.replace(/shèk/g,'섴');
+	val = val.replace(/zwav/g,'쐆');
+	val = val.replace(/kwoq/g,'쾽');
+	val = val.replace(/shèv/g,'섮');
+	val = val.replace(/shèf/g,'섪');
+	val = val.replace(/shèc/g,'섷');
+	val = val.replace(/shèb/g,'섭');
+	val = val.replace(/shèp/g,'섶');
+	val = val.replace(/shèm/g,'섬');
+	val = val.replace(/shèd/g,'섣');
+	val = val.replace(/shèt/g,'섵');
+	val = val.replace(/shèn/g,'선');
+	val = val.replace(/shèl/g,'설');
+	val = val.replace(/shèz/g,'섰');
+	val = val.replace(/shès/g,'섯');
+	val = val.replace(/shùq/g,'생');
+	val = val.replace(/kyès/g,'켯');
+	val = val.replace(/shùg/g,'색');
+	val = val.replace(/shùk/g,'샠');
+	val = val.replace(/kyèz/g,'켰');
+	val = val.replace(/kyèl/g,'켤');
+	val = val.replace(/shùv/g,'샚');
+	val = val.replace(/shùf/g,'샖');
+	val = val.replace(/shùc/g,'샣');
+	val = val.replace(/shùb/g,'샙');
+	val = val.replace(/shùp/g,'샢');
+	val = val.replace(/shùm/g,'샘');
+	val = val.replace(/shùd/g,'샏');
+	val = val.replace(/shùt/g,'샡');
+	val = val.replace(/shùn/g,'샌');
+	val = val.replace(/shùl/g,'샐');
+	val = val.replace(/shùz/g,'샜');
+	val = val.replace(/shùs/g,'샛');
+	val = val.replace(/shiq/g,'싱');
+	val = val.replace(/kyèn/g,'켠');
+	val = val.replace(/shig/g,'식');
+	val = val.replace(/shik/g,'싴');
+	val = val.replace(/kyèt/g,'켵');
+	val = val.replace(/kyèd/g,'켣');
+	val = val.replace(/shiv/g,'싮');
+	val = val.replace(/shif/g,'싪');
+	val = val.replace(/shic/g,'싷');
+	val = val.replace(/shib/g,'십');
+	val = val.replace(/ship/g,'싶');
+	val = val.replace(/shim/g,'심');
+	val = val.replace(/shid/g,'싣');
+	val = val.replace(/shit/g,'싵');
+	val = val.replace(/shin/g,'신');
+	val = val.replace(/shil/g,'실');
+	val = val.replace(/shiz/g,'싰');
+	val = val.replace(/shis/g,'싯');
+	val = val.replace(/shuq/g,'승');
+	val = val.replace(/kyèm/g,'켬');
+	val = val.replace(/shug/g,'슥');
+	val = val.replace(/shuk/g,'슼');
+	val = val.replace(/kyèp/g,'켶');
+	val = val.replace(/kyèb/g,'켭');
+	val = val.replace(/shuv/g,'슶');
+	val = val.replace(/shuf/g,'슲');
+	val = val.replace(/shuc/g,'슿');
+	val = val.replace(/shub/g,'습');
+	val = val.replace(/shup/g,'슾');
+	val = val.replace(/shum/g,'슴');
+	val = val.replace(/shud/g,'슫');
+	val = val.replace(/shut/g,'슽');
+	val = val.replace(/shun/g,'슨');
+	val = val.replace(/shul/g,'슬');
+	val = val.replace(/shuz/g,'슸');
+	val = val.replace(/shus/g,'슷');
+	val = val.replace(/vwaq/g,'봥');
+	val = val.replace(/kyèc/g,'켷');
+	val = val.replace(/vwag/g,'봑');
+	val = val.replace(/vwak/g,'봨');
+	val = val.replace(/kyèf/g,'켪');
+	val = val.replace(/kyèv/g,'켮');
+	val = val.replace(/vwav/g,'봢');
+	val = val.replace(/vwaf/g,'봞');
+	val = val.replace(/vwac/g,'봫');
+	val = val.replace(/vwab/g,'봡');
+	val = val.replace(/vwap/g,'봪');
+	val = val.replace(/vwam/g,'봠');
+	val = val.replace(/vwad/g,'봗');
+	val = val.replace(/vwat/g,'봩');
+	val = val.replace(/vwan/g,'봔');
+	val = val.replace(/vwal/g,'봘');
+	val = val.replace(/vwaz/g,'봤');
+	val = val.replace(/vwas/g,'봣');
+	val = val.replace(/vyaq/g,'뱡');
+	val = val.replace(/kyèk/g,'켴');
+	val = val.replace(/vyag/g,'뱍');
+	val = val.replace(/vyak/g,'뱤');
+	val = val.replace(/kyèg/g,'켝');
+	val = val.replace(/zwaf/g,'쐂');
+	val = val.replace(/vyav/g,'뱞');
+	val = val.replace(/vyaf/g,'뱚');
+	val = val.replace(/vyac/g,'뱧');
+	val = val.replace(/vyab/g,'뱝');
+	val = val.replace(/vyap/g,'뱦');
+	val = val.replace(/vyam/g,'뱜');
+	val = val.replace(/vyad/g,'뱓');
+	val = val.replace(/vyat/g,'뱥');
+	val = val.replace(/vyan/g,'뱐');
+	val = val.replace(/vyal/g,'뱔');
+	val = val.replace(/vyaz/g,'뱠');
+	val = val.replace(/vyas/g,'뱟');
+	val = val.replace(/vwùq/g,'뵁');
+	val = val.replace(/kyèq/g,'켱');
+	val = val.replace(/vwùg/g,'봭');
+	val = val.replace(/vwùk/g,'뵄');
+	val = val.replace(/kwès/g,'퀏');
+	val = val.replace(/kwèz/g,'퀐');
+	val = val.replace(/vwùv/g,'봾');
+	val = val.replace(/vwùf/g,'봺');
+	val = val.replace(/vwùc/g,'뵇');
+	val = val.replace(/vwùb/g,'봽');
+	val = val.replace(/vwùp/g,'뵆');
+	val = val.replace(/vwùm/g,'봼');
+	val = val.replace(/vwùd/g,'봳');
+	val = val.replace(/vwùt/g,'뵅');
+	val = val.replace(/vwùn/g,'봰');
+	val = val.replace(/vwùl/g,'봴');
+	val = val.replace(/vwùz/g,'뵀');
+	val = val.replace(/vwùs/g,'봿');
+	val = val.replace(/vyùq/g,'뱽');
+	val = val.replace(/kwèl/g,'퀄');
+	val = val.replace(/vyùg/g,'뱩');
+	val = val.replace(/vyùk/g,'벀');
+	val = val.replace(/kwèn/g,'퀀');
+	val = val.replace(/kwèt/g,'퀕');
+	val = val.replace(/vyùv/g,'뱺');
+	val = val.replace(/vyùf/g,'뱶');
+	val = val.replace(/vyùc/g,'벃');
+	val = val.replace(/vyùb/g,'뱹');
+	val = val.replace(/vyùp/g,'벂');
+	val = val.replace(/vyùm/g,'뱸');
+	val = val.replace(/vyùd/g,'뱯');
+	val = val.replace(/vyùt/g,'벁');
+	val = val.replace(/vyùn/g,'뱬');
+	val = val.replace(/vyùl/g,'뱰');
+	val = val.replace(/vyùz/g,'뱼');
+	val = val.replace(/vyùs/g,'뱻');
+	val = val.replace(/vwèq/g,'붱');
+	val = val.replace(/kwèd/g,'퀃');
+	val = val.replace(/vwèg/g,'붝');
+	val = val.replace(/vwèk/g,'붴');
+	val = val.replace(/kwèm/g,'퀌');
+	val = val.replace(/kwèp/g,'퀖');
+	val = val.replace(/vwèv/g,'붮');
+	val = val.replace(/vwèf/g,'붪');
+	val = val.replace(/vwèc/g,'붷');
+	val = val.replace(/vwèb/g,'붭');
+	val = val.replace(/vwèp/g,'붶');
+	val = val.replace(/vwèm/g,'붬');
+	val = val.replace(/vwèd/g,'붣');
+	val = val.replace(/vwèt/g,'붵');
+	val = val.replace(/vwèn/g,'붠');
+	val = val.replace(/vwèl/g,'붤');
+	val = val.replace(/vwèz/g,'붰');
+	val = val.replace(/vwès/g,'붯');
+	val = val.replace(/vyèq/g,'병');
+	val = val.replace(/kwèb/g,'퀍');
+	val = val.replace(/vyèg/g,'벽');
+	val = val.replace(/vyèk/g,'볔');
+	val = val.replace(/kwèc/g,'퀗');
+	val = val.replace(/kwèf/g,'퀊');
+	val = val.replace(/vyèv/g,'볎');
+	val = val.replace(/vyèf/g,'볊');
+	val = val.replace(/vyèc/g,'볗');
+	val = val.replace(/vyèb/g,'볍');
+	val = val.replace(/vyèp/g,'볖');
+	val = val.replace(/vyèm/g,'볌');
+	val = val.replace(/vyèd/g,'볃');
+	val = val.replace(/vyèt/g,'볕');
+	val = val.replace(/vyèn/g,'변');
+	val = val.replace(/vyèl/g,'별');
+	val = val.replace(/vyèz/g,'볐');
+	val = val.replace(/vyès/g,'볏');
+	val = val.replace(/vwoq/g,'뵝');
+	val = val.replace(/kwèv/g,'퀎');
+	val = val.replace(/vwog/g,'뵉');
+	val = val.replace(/vwok/g,'뵠');
+	val = val.replace(/kwèk/g,'퀔');
+	val = val.replace(/kwèg/g,'쿽');
+	val = val.replace(/vwov/g,'뵚');
+	val = val.replace(/vwof/g,'뵖');
+	val = val.replace(/vwoc/g,'뵣');
+	val = val.replace(/vwob/g,'뵙');
+	val = val.replace(/vwop/g,'뵢');
+	val = val.replace(/vwom/g,'뵘');
+	val = val.replace(/vwod/g,'뵏');
+	val = val.replace(/vwot/g,'뵡');
+	val = val.replace(/vwon/g,'뵌');
+	val = val.replace(/vwol/g,'뵐');
+	val = val.replace(/vwoz/g,'뵜');
+	val = val.replace(/vwos/g,'뵛');
+	val = val.replace(/vyoq/g,'뵹');
+	val = val.replace(/zwac/g,'쐏');
+	val = val.replace(/vyog/g,'뵥');
+	val = val.replace(/vyok/g,'뵼');
+	val = val.replace(/kwèq/g,'퀑');
+	val = val.replace(/kyùs/g,'컛');
+	val = val.replace(/vyov/g,'뵶');
+	val = val.replace(/vyof/g,'뵲');
+	val = val.replace(/vyoc/g,'뵿');
+	val = val.replace(/vyob/g,'뵵');
+	val = val.replace(/vyop/g,'뵾');
+	val = val.replace(/vyom/g,'뵴');
+	val = val.replace(/vyod/g,'뵫');
+	val = val.replace(/vyot/g,'뵽');
+	val = val.replace(/vyon/g,'뵨');
+	val = val.replace(/vyol/g,'뵬');
+	val = val.replace(/vyoz/g,'뵸');
+	val = val.replace(/vyos/g,'뵷');
+	val = val.replace(/vweq/g,'뷍');
+	val = val.replace(/kyùz/g,'컜');
+	val = val.replace(/vweg/g,'붹');
+	val = val.replace(/vwek/g,'뷐');
+	val = val.replace(/kyùl/g,'컐');
+	val = val.replace(/kyùn/g,'컌');
+	val = val.replace(/vwev/g,'뷊');
+	val = val.replace(/vwef/g,'뷆');
+	val = val.replace(/vwec/g,'뷓');
+	val = val.replace(/vweb/g,'뷉');
+	val = val.replace(/vwep/g,'뷒');
+	val = val.replace(/vwem/g,'뷈');
+	val = val.replace(/vwed/g,'붿');
+	val = val.replace(/vwet/g,'뷑');
+	val = val.replace(/vwen/g,'붼');
+	val = val.replace(/vwel/g,'뷀');
+	val = val.replace(/vwez/g,'뷌');
+	val = val.replace(/vwes/g,'뷋');
+	val = val.replace(/vyeq/g,'볭');
+	val = val.replace(/kyùt/g,'컡');
+	val = val.replace(/vyeg/g,'볙');
+	val = val.replace(/vyek/g,'볰');
+	val = val.replace(/kyùd/g,'컏');
+	val = val.replace(/kyùm/g,'컘');
+	val = val.replace(/vyev/g,'볪');
+	val = val.replace(/vyef/g,'볦');
+	val = val.replace(/vyec/g,'볳');
+	val = val.replace(/vyeb/g,'볩');
+	val = val.replace(/vyep/g,'볲');
+	val = val.replace(/vyem/g,'볨');
+	val = val.replace(/vyed/g,'볟');
+	val = val.replace(/vyet/g,'볱');
+	val = val.replace(/vyen/g,'볜');
+	val = val.replace(/vyel/g,'볠');
+	val = val.replace(/vyez/g,'볬');
+	val = val.replace(/vyes/g,'볫');
+	val = val.replace(/vwuq/g,'븅');
+	val = val.replace(/kyùp/g,'컢');
+	val = val.replace(/vwug/g,'뷱');
+	val = val.replace(/vwuk/g,'븈');
+	val = val.replace(/kyùb/g,'컙');
+	val = val.replace(/kyùc/g,'컣');
+	val = val.replace(/vwuv/g,'븂');
+	val = val.replace(/vwuf/g,'뷾');
+	val = val.replace(/vwuc/g,'븋');
+	val = val.replace(/vwub/g,'븁');
+	val = val.replace(/vwup/g,'븊');
+	val = val.replace(/vwum/g,'븀');
+	val = val.replace(/vwud/g,'뷷');
+	val = val.replace(/vwut/g,'븉');
+	val = val.replace(/vwun/g,'뷴');
+	val = val.replace(/vwul/g,'뷸');
+	val = val.replace(/vwuz/g,'븄');
+	val = val.replace(/vwus/g,'븃');
+	val = val.replace(/vyuq/g,'붕');
+	val = val.replace(/tswi/g,'뛰');
+	val = val.replace(/vyug/g,'북');
+	val = val.replace(/vyuk/g,'붘');
+	val = val.replace(/kyùf/g,'컖');
+	val = val.replace(/kyùv/g,'컚');
+	val = val.replace(/vyuv/g,'붒');
+	val = val.replace(/vyuf/g,'붎');
+	val = val.replace(/vyuc/g,'붛');
+	val = val.replace(/vyub/g,'붑');
+	val = val.replace(/vyup/g,'붚');
+	val = val.replace(/vyum/g,'붐');
+	val = val.replace(/vyud/g,'붇');
+	val = val.replace(/vyut/g,'붙');
+	val = val.replace(/vyun/g,'분');
+	val = val.replace(/vyul/g,'불');
+	val = val.replace(/vyuz/g,'붔');
+	val = val.replace(/vyus/g,'붓');
+	val = val.replace(/vwiq/g,'뷩');
+	val = val.replace(/kyùk/g,'컠');
+	val = val.replace(/vwig/g,'뷕');
+	val = val.replace(/vwik/g,'뷬');
+	val = val.replace(/kyùg/g,'컉');
+	val = val.replace(/zwab/g,'쐅');
+	val = val.replace(/vwiv/g,'뷦');
+	val = val.replace(/vwif/g,'뷢');
+	val = val.replace(/vwic/g,'뷯');
+	val = val.replace(/vwib/g,'뷥');
+	val = val.replace(/vwip/g,'뷮');
+	val = val.replace(/vwim/g,'뷤');
+	val = val.replace(/vwid/g,'뷛');
+	val = val.replace(/vwit/g,'뷭');
+	val = val.replace(/vwin/g,'뷘');
+	val = val.replace(/vwil/g,'뷜');
+	val = val.replace(/vwiz/g,'뷨');
+	val = val.replace(/vwis/g,'뷧');
+	val = val.replace(/vyiq/g,'븽');
+	val = val.replace(/kyùq/g,'컝');
+	val = val.replace(/vyig/g,'븩');
+	val = val.replace(/vyik/g,'빀');
+	val = val.replace(/kwùs/g,'쾟');
+	val = val.replace(/kwùz/g,'쾠');
+	val = val.replace(/vyiv/g,'븺');
+	val = val.replace(/vyif/g,'븶');
+	val = val.replace(/vyic/g,'빃');
+	val = val.replace(/vyib/g,'븹');
+	val = val.replace(/vyip/g,'빂');
+	val = val.replace(/vyim/g,'븸');
+	val = val.replace(/vyid/g,'븯');
+	val = val.replace(/vyit/g,'빁');
+	val = val.replace(/vyin/g,'븬');
+	val = val.replace(/vyil/g,'븰');
+	val = val.replace(/vyiz/g,'븼');
+	val = val.replace(/vyis/g,'븻');
+	val = val.replace(/kwùl/g,'쾔');
+	val = val.replace(/kwùn/g,'쾐');
+	val = val.replace(/kwùt/g,'쾥');
+	val = val.replace(/kwùd/g,'쾓');
+	val = val.replace(/vadj/g,'밫');
+	val = val.replace(/vach/g,'밪');
+	val = val.replace(/kwùm/g,'쾜');
+	val = val.replace(/kwùp/g,'쾦');
+	val = val.replace(/kwùb/g,'쾝');
+	val = val.replace(/kwùc/g,'쾧');
+	val = val.replace(/kwùf/g,'쾚');
+	val = val.replace(/kwùv/g,'쾞');
+	val = val.replace(/kwùk/g,'쾤');
+	val = val.replace(/kwùg/g,'쾍');
+	val = val.replace(/zwap/g,'쐎');
+	val = val.replace(/kwùq/g,'쾡');
+	val = val.replace(/kyas/g,'캿');
+	val = val.replace(/tsyu/g,'뚜');
+	val = val.replace(/kyaz/g,'컀');
+	val = val.replace(/kyal/g,'캴');
+	val = val.replace(/kyan/g,'캰');
+	val = val.replace(/kyat/g,'컅');
+	val = val.replace(/vedj/g,'벷');
+	val = val.replace(/vech/g,'벶');
+	val = val.replace(/kyad/g,'캳');
+	val = val.replace(/kyam/g,'캼');
+	val = val.replace(/kyap/g,'컆');
+	val = val.replace(/kyab/g,'캽');
+	val = val.replace(/kyac/g,'컇');
+	val = val.replace(/kyaf/g,'캺');
+	val = val.replace(/kyav/g,'캾');
+	val = val.replace(/kyak/g,'컄');
+	val = val.replace(/kyag/g,'캭');
+	val = val.replace(/zwam/g,'쐄');
+	val = val.replace(/kyaq/g,'컁');
+	val = val.replace(/kwas/g,'쾃');
+	val = val.replace(/kwaz/g,'쾄');
+	val = val.replace(/tswu/g,'뜌');
+	val = val.replace(/kwal/g,'콸');
+	val = val.replace(/kwan/g,'콴');
+	val = val.replace(/vodj/g,'봋');
+	val = val.replace(/voch/g,'봊');
+	val = val.replace(/kwat/g,'쾉');
+	val = val.replace(/kwad/g,'콷');
+	val = val.replace(/kwam/g,'쾀');
+	val = val.replace(/kwap/g,'쾊');
+	val = val.replace(/kwab/g,'쾁');
+	val = val.replace(/kwac/g,'쾋');
+	val = val.replace(/kwaf/g,'콾');
+	val = val.replace(/kwav/g,'쾂');
+	val = val.replace(/kwak/g,'쾈');
+	val = val.replace(/kwag/g,'콱');
+	val = val.replace(/zwad/g,'쏻');
+	val = val.replace(/kwaq/g,'쾅');
+	val = val.replace(/zwat/g,'쐍');
+	val = val.replace(/zwan/g,'쏸');
+	val = val.replace(/zwal/g,'쏼');
+	val = val.replace(/tsye/g,'뗴');
+	val = val.replace(/vèdj/g,'벛');
+	val = val.replace(/vèch/g,'벚');
+	val = val.replace(/zwaz/g,'쐈');
+	val = val.replace(/zwas/g,'쐇');
+	val = val.replace(/zyaq/g,'썅');
+	val = val.replace(/zyag/g,'쌱');
+	val = val.replace(/zyak/g,'썈');
+	val = val.replace(/zyav/g,'썂');
+	val = val.replace(/zyaf/g,'쌾');
+	val = val.replace(/guch/g,'긎');
+	val = val.replace(/gudj/g,'긏');
+	val = val.replace(/zyac/g,'썋');
+	val = val.replace(/zyab/g,'썁');
+	val = val.replace(/zyap/g,'썊');
+	val = val.replace(/zyam/g,'썀');
+	val = val.replace(/zyad/g,'쌷');
+	val = val.replace(/zyat/g,'썉');
+	val = val.replace(/zyan/g,'쌴');
+	val = val.replace(/vùdj/g,'뱇');
+	val = val.replace(/vùch/g,'뱆');
+	val = val.replace(/zyal/g,'쌸');
+	val = val.replace(/tswe/g,'뛔');
+	val = val.replace(/zyaz/g,'썄');
+	val = val.replace(/zyas/g,'썃');
+	val = val.replace(/zwùq/g,'쐥');
+	val = val.replace(/zwùg/g,'쐑');
+	val = val.replace(/zwùk/g,'쐨');
+	val = val.replace(/zwùv/g,'쐢');
+	val = val.replace(/gich/g,'깆');
+	val = val.replace(/gidj/g,'깇');
+	val = val.replace(/zwùf/g,'쐞');
+	val = val.replace(/zwùc/g,'쐫');
+	val = val.replace(/zwùb/g,'쐡');
+	val = val.replace(/zwùp/g,'쐪');
+	val = val.replace(/zwùm/g,'쐠');
+	val = val.replace(/zwùd/g,'쐗');
+	val = val.replace(/vidj/g,'빛');
+	val = val.replace(/vich/g,'빚');
+	val = val.replace(/zwùt/g,'쐩');
+	val = val.replace(/zwùn/g,'쐔');
+	val = val.replace(/zwùl/g,'쐘');
+	val = val.replace(/tsyo/g,'뚀');
+	val = val.replace(/zwùz/g,'쐤');
+	val = val.replace(/zwùs/g,'쐣');
+	val = val.replace(/zyùq/g,'썡');
+	val = val.replace(/zyùg/g,'썍');
+	val = val.replace(/zyùk/g,'썤');
+	val = val.replace(/gùch/g,'갲');
+	val = val.replace(/gùdj/g,'갳');
+	val = val.replace(/zyùv/g,'썞');
+	val = val.replace(/zyùf/g,'썚');
+	val = val.replace(/zyùc/g,'썧');
+	val = val.replace(/zyùb/g,'썝');
+	val = val.replace(/zyùp/g,'썦');
+	val = val.replace(/vudj/g,'븣');
+	val = val.replace(/vuch/g,'븢');
+	val = val.replace(/zyùm/g,'썜');
+	val = val.replace(/zyùd/g,'썓');
+	val = val.replace(/zyùt/g,'썥');
+	val = val.replace(/zyùn/g,'썐');
+	val = val.replace(/zyùl/g,'썔');
+	val = val.replace(/tswo/g,'뙤');
+	val = val.replace(/zyùz/g,'썠');
+	val = val.replace(/zyùs/g,'썟');
+	val = val.replace(/zwèq/g,'쒕');
+	val = val.replace(/zwèg/g,'쒁');
+	val = val.replace(/zwèk/g,'쒘');
+	val = val.replace(/gèch/g,'겆');
+	val = val.replace(/fwaq/g,'퐝');
+	val = val.replace(/gèdj/g,'겇');
+	val = val.replace(/fwag/g,'퐉');
+	val = val.replace(/fwak/g,'퐠');
+	val = val.replace(/zwèv/g,'쒒');
+	val = val.replace(/zwèf/g,'쒎');
+	val = val.replace(/fwav/g,'퐚');
+	val = val.replace(/fwaf/g,'퐖');
+	val = val.replace(/fwac/g,'퐣');
+	val = val.replace(/fwab/g,'퐙');
+	val = val.replace(/fwap/g,'퐢');
+	val = val.replace(/fwam/g,'퐘');
+	val = val.replace(/fwad/g,'퐏');
+	val = val.replace(/fwat/g,'퐡');
+	val = val.replace(/fwan/g,'퐌');
+	val = val.replace(/fwal/g,'퐐');
+	val = val.replace(/fwaz/g,'퐜');
+	val = val.replace(/fwas/g,'퐛');
+	val = val.replace(/fyaq/g,'퍙');
+	val = val.replace(/zwèc/g,'쒛');
+	val = val.replace(/fyag/g,'퍅');
+	val = val.replace(/fyak/g,'퍜');
+	val = val.replace(/zwèb/g,'쒑');
+	val = val.replace(/zwèp/g,'쒚');
+	val = val.replace(/fyav/g,'퍖');
+	val = val.replace(/fyaf/g,'퍒');
+	val = val.replace(/fyac/g,'퍟');
+	val = val.replace(/fyab/g,'퍕');
+	val = val.replace(/fyap/g,'퍞');
+	val = val.replace(/fyam/g,'퍔');
+	val = val.replace(/fyad/g,'퍋');
+	val = val.replace(/fyat/g,'퍝');
+	val = val.replace(/fyan/g,'퍈');
+	val = val.replace(/fyal/g,'퍌');
+	val = val.replace(/fyaz/g,'퍘');
+	val = val.replace(/fyas/g,'퍗');
+	val = val.replace(/fwùq/g,'퐹');
+	val = val.replace(/zwèm/g,'쒐');
+	val = val.replace(/fwùg/g,'퐥');
+	val = val.replace(/fwùk/g,'퐼');
+	val = val.replace(/zwèd/g,'쒇');
+	val = val.replace(/zwèt/g,'쒙');
+	val = val.replace(/fwùv/g,'퐶');
+	val = val.replace(/fwùf/g,'퐲');
+	val = val.replace(/fwùc/g,'퐿');
+	val = val.replace(/fwùb/g,'퐵');
+	val = val.replace(/fwùp/g,'퐾');
+	val = val.replace(/fwùm/g,'퐴');
+	val = val.replace(/fwùd/g,'퐫');
+	val = val.replace(/fwùt/g,'퐽');
+	val = val.replace(/fwùn/g,'퐨');
+	val = val.replace(/fwùl/g,'퐬');
+	val = val.replace(/fwùz/g,'퐸');
+	val = val.replace(/fwùs/g,'퐷');
+	val = val.replace(/fyùq/g,'퍵');
+	val = val.replace(/zwèn/g,'쒄');
+	val = val.replace(/fyùg/g,'퍡');
+	val = val.replace(/fyùk/g,'퍸');
+	val = val.replace(/zwèl/g,'쒈');
+	val = val.replace(/zwèz/g,'쒔');
+	val = val.replace(/fyùv/g,'퍲');
+	val = val.replace(/fyùf/g,'퍮');
+	val = val.replace(/fyùc/g,'퍻');
+	val = val.replace(/fyùb/g,'퍱');
+	val = val.replace(/fyùp/g,'퍺');
+	val = val.replace(/fyùm/g,'퍰');
+	val = val.replace(/fyùd/g,'퍧');
+	val = val.replace(/fyùt/g,'퍹');
+	val = val.replace(/fyùn/g,'퍤');
+	val = val.replace(/fyùl/g,'퍨');
+	val = val.replace(/fyùz/g,'퍴');
+	val = val.replace(/fyùs/g,'퍳');
+	val = val.replace(/fwèq/g,'풩');
+	val = val.replace(/zwès/g,'쒓');
+	val = val.replace(/fwèg/g,'풕');
+	val = val.replace(/fwèk/g,'풬');
+	val = val.replace(/zyèq/g,'쎵');
+	val = val.replace(/zyèg/g,'쎡');
+	val = val.replace(/fwèv/g,'풦');
+	val = val.replace(/fwèf/g,'풢');
+	val = val.replace(/fwèc/g,'풯');
+	val = val.replace(/fwèb/g,'풥');
+	val = val.replace(/fwèp/g,'풮');
+	val = val.replace(/fwèm/g,'풤');
+	val = val.replace(/fwèd/g,'풛');
+	val = val.replace(/fwèt/g,'풭');
+	val = val.replace(/fwèn/g,'풘');
+	val = val.replace(/fwèl/g,'풜');
+	val = val.replace(/fwèz/g,'풨');
+	val = val.replace(/fwès/g,'풧');
+	val = val.replace(/fyèq/g,'평');
+	val = val.replace(/zyèk/g,'쎸');
+	val = val.replace(/fyèg/g,'펵');
+	val = val.replace(/fyèk/g,'폌');
+	val = val.replace(/goch/g,'곶');
+	val = val.replace(/godj/g,'곷');
+	val = val.replace(/fyèv/g,'폆');
+	val = val.replace(/fyèf/g,'폂');
+	val = val.replace(/fyèc/g,'폏');
+	val = val.replace(/fyèb/g,'폅');
+	val = val.replace(/fyèp/g,'폎');
+	val = val.replace(/fyèm/g,'폄');
+	val = val.replace(/fyèd/g,'펻');
+	val = val.replace(/fyèt/g,'폍');
+	val = val.replace(/fyèn/g,'편');
+	val = val.replace(/fyèl/g,'펼');
+	val = val.replace(/fyèz/g,'폈');
+	val = val.replace(/fyès/g,'폇');
+	val = val.replace(/fwoq/g,'푕');
+	val = val.replace(/zyèv/g,'쎲');
+	val = val.replace(/fwog/g,'푁');
+	val = val.replace(/fwok/g,'푘');
+	val = val.replace(/zyèf/g,'쎮');
+	val = val.replace(/zyèc/g,'쎻');
+	val = val.replace(/fwov/g,'푒');
+	val = val.replace(/fwof/g,'푎');
+	val = val.replace(/fwoc/g,'푛');
+	val = val.replace(/fwob/g,'푑');
+	val = val.replace(/fwop/g,'푚');
+	val = val.replace(/fwom/g,'푐');
+	val = val.replace(/fwod/g,'푇');
+	val = val.replace(/fwot/g,'푙');
+	val = val.replace(/fwon/g,'푄');
+	val = val.replace(/fwol/g,'푈');
+	val = val.replace(/fwoz/g,'푔');
+	val = val.replace(/fwos/g,'푓');
+	val = val.replace(/fyoq/g,'푱');
+	val = val.replace(/zyèb/g,'쎱');
+	val = val.replace(/fyog/g,'푝');
+	val = val.replace(/fyok/g,'푴');
+	val = val.replace(/zyèp/g,'쎺');
+	val = val.replace(/zyèm/g,'쎰');
+	val = val.replace(/fyov/g,'푮');
+	val = val.replace(/fyof/g,'푪');
+	val = val.replace(/fyoc/g,'푷');
+	val = val.replace(/fyob/g,'푭');
+	val = val.replace(/fyop/g,'푶');
+	val = val.replace(/fyom/g,'푬');
+	val = val.replace(/fyod/g,'푣');
+	val = val.replace(/fyot/g,'푵');
+	val = val.replace(/fyon/g,'푠');
+	val = val.replace(/fyol/g,'푤');
+	val = val.replace(/fyoz/g,'푰');
+	val = val.replace(/fyos/g,'푯');
+	val = val.replace(/fweq/g,'퓅');
+	val = val.replace(/zyèd/g,'쎧');
+	val = val.replace(/fweg/g,'풱');
+	val = val.replace(/fwek/g,'퓈');
+	val = val.replace(/zyèt/g,'쎹');
+	val = val.replace(/zyèn/g,'쎤');
+	val = val.replace(/fwev/g,'퓂');
+	val = val.replace(/fwef/g,'풾');
+	val = val.replace(/fwec/g,'퓋');
+	val = val.replace(/fweb/g,'퓁');
+	val = val.replace(/fwep/g,'퓊');
+	val = val.replace(/fwem/g,'퓀');
+	val = val.replace(/fwed/g,'풷');
+	val = val.replace(/fwet/g,'퓉');
+	val = val.replace(/fwen/g,'풴');
+	val = val.replace(/fwel/g,'풸');
+	val = val.replace(/fwez/g,'퓄');
+	val = val.replace(/fwes/g,'퓃');
+	val = val.replace(/fyeq/g,'폥');
+	val = val.replace(/zyèl/g,'쎨');
+	val = val.replace(/fyeg/g,'폑');
+	val = val.replace(/fyek/g,'폨');
+	val = val.replace(/zyèz/g,'쎴');
+	val = val.replace(/zyès/g,'쎳');
+	val = val.replace(/fyev/g,'폢');
+	val = val.replace(/fyef/g,'폞');
+	val = val.replace(/fyec/g,'폫');
+	val = val.replace(/fyeb/g,'폡');
+	val = val.replace(/fyep/g,'폪');
+	val = val.replace(/fyem/g,'폠');
+	val = val.replace(/fyed/g,'폗');
+	val = val.replace(/fyet/g,'폩');
+	val = val.replace(/fyen/g,'폔');
+	val = val.replace(/fyel/g,'폘');
+	val = val.replace(/fyez/g,'폤');
+	val = val.replace(/fyes/g,'폣');
+	val = val.replace(/fwuq/g,'퓽');
+	val = val.replace(/zwoq/g,'쑁');
+	val = val.replace(/fwug/g,'퓩');
+	val = val.replace(/fwuk/g,'픀');
+	val = val.replace(/zwog/g,'쐭');
+	val = val.replace(/gech/g,'겢');
+	val = val.replace(/fwuv/g,'퓺');
+	val = val.replace(/fwuf/g,'퓶');
+	val = val.replace(/fwuc/g,'픃');
+	val = val.replace(/fwub/g,'퓹');
+	val = val.replace(/fwup/g,'픂');
+	val = val.replace(/fwum/g,'퓸');
+	val = val.replace(/fwud/g,'퓯');
+	val = val.replace(/fwut/g,'픁');
+	val = val.replace(/fwun/g,'퓬');
+	val = val.replace(/fwul/g,'퓰');
+	val = val.replace(/fwuz/g,'퓼');
+	val = val.replace(/fwus/g,'퓻');
+	val = val.replace(/fyuq/g,'풍');
+	val = val.replace(/tsyè/g,'뗘');
+	val = val.replace(/fyug/g,'푹');
+	val = val.replace(/fyuk/g,'풐');
+	val = val.replace(/gedj/g,'겣');
+	val = val.replace(/zwok/g,'쑄');
+	val = val.replace(/fyuv/g,'풊');
+	val = val.replace(/fyuf/g,'풆');
+	val = val.replace(/fyuc/g,'풓');
+	val = val.replace(/fyub/g,'풉');
+	val = val.replace(/fyup/g,'풒');
+	val = val.replace(/fyum/g,'품');
+	val = val.replace(/fyud/g,'푿');
+	val = val.replace(/fyut/g,'풑');
+	val = val.replace(/fyun/g,'푼');
+	val = val.replace(/fyul/g,'풀');
+	val = val.replace(/fyuz/g,'풌');
+	val = val.replace(/fyus/g,'풋');
+	val = val.replace(/fwiq/g,'퓡');
+	val = val.replace(/zwov/g,'쐾');
+	val = val.replace(/fwig/g,'퓍');
+	val = val.replace(/fwik/g,'퓤');
+	val = val.replace(/zwof/g,'쐺');
+	val = val.replace(/zwoc/g,'쑇');
+	val = val.replace(/fwiv/g,'퓞');
+	val = val.replace(/fwif/g,'퓚');
+	val = val.replace(/fwic/g,'퓧');
+	val = val.replace(/fwib/g,'퓝');
+	val = val.replace(/fwip/g,'퓦');
+	val = val.replace(/fwim/g,'퓜');
+	val = val.replace(/fwid/g,'퓓');
+	val = val.replace(/fwit/g,'퓥');
+	val = val.replace(/fwin/g,'퓐');
+	val = val.replace(/fwil/g,'퓔');
+	val = val.replace(/fwiz/g,'퓠');
+	val = val.replace(/fwis/g,'퓟');
+	val = val.replace(/fyiq/g,'픵');
+	val = val.replace(/zwob/g,'쐽');
+	val = val.replace(/fyig/g,'픡');
+	val = val.replace(/fyik/g,'픸');
+	val = val.replace(/zwop/g,'쑆');
+	val = val.replace(/zwom/g,'쐼');
+	val = val.replace(/fyiv/g,'픲');
+	val = val.replace(/fyif/g,'픮');
+	val = val.replace(/fyic/g,'픻');
+	val = val.replace(/fyib/g,'픱');
+	val = val.replace(/fyip/g,'픺');
+	val = val.replace(/fyim/g,'픰');
+	val = val.replace(/fyid/g,'픧');
+	val = val.replace(/fyit/g,'픹');
+	val = val.replace(/fyin/g,'픤');
+	val = val.replace(/fyil/g,'픨');
+	val = val.replace(/fyiz/g,'픴');
+	val = val.replace(/fyis/g,'픳');
+	val = val.replace(/zwod/g,'쐳');
+	val = val.replace(/zwot/g,'쑅');
+	val = val.replace(/zwon/g,'쐰');
+	val = val.replace(/zwol/g,'쐴');
+	val = val.replace(/fadj/g,'팣');
+	val = val.replace(/fach/g,'팢');
+	val = val.replace(/zwoz/g,'쑀');
+	val = val.replace(/zwos/g,'쐿');
+	val = val.replace(/zyoq/g,'쑝');
+	val = val.replace(/gach/g,'갖');
+	val = val.replace(/gadj/g,'갗');
+	val = val.replace(/zyog/g,'쑉');
+	val = val.replace(/zyok/g,'쑠');
+	val = val.replace(/gyis/g,'긧');
+	val = val.replace(/gyiz/g,'긨');
+	val = val.replace(/gyil/g,'긜');
+	val = val.replace(/gyin/g,'긘');
+	val = val.replace(/tswè/g,'뚸');
+	val = val.replace(/gyit/g,'긭');
+	val = val.replace(/gyid/g,'긛');
+	val = val.replace(/gyim/g,'긤');
+	val = val.replace(/gyip/g,'긮');
+	val = val.replace(/fedj/g,'펯');
+	val = val.replace(/fech/g,'펮');
+	val = val.replace(/gyib/g,'긥');
+	val = val.replace(/gyic/g,'긯');
+	val = val.replace(/gyif/g,'긢');
+	val = val.replace(/gyiv/g,'긦');
+	val = val.replace(/gyik/g,'긬');
+	val = val.replace(/gyig/g,'긕');
+	val = val.replace(/zyov/g,'쑚');
+	val = val.replace(/gyiq/g,'긩');
+	val = val.replace(/gwis/g,'귓');
+	val = val.replace(/gwiz/g,'귔');
+	val = val.replace(/gwil/g,'귈');
+	val = val.replace(/gwin/g,'귄');
+	val = val.replace(/gwit/g,'귙');
+	val = val.replace(/tsyù/g,'떄');
+	val = val.replace(/gwid/g,'귇');
+	val = val.replace(/gwim/g,'귐');
+	val = val.replace(/fodj/g,'퐃');
+	val = val.replace(/foch/g,'퐂');
+	val = val.replace(/gwip/g,'귚');
+	val = val.replace(/gwib/g,'귑');
+	val = val.replace(/gwic/g,'귛');
+	val = val.replace(/gwif/g,'귎');
+	val = val.replace(/gwiv/g,'귒');
+	val = val.replace(/gwik/g,'귘');
+	val = val.replace(/gwig/g,'귁');
+	val = val.replace(/zyof/g,'쑖');
+	val = val.replace(/gwiq/g,'귕');
+	val = val.replace(/gyus/g,'굿');
+	val = val.replace(/gyuz/g,'궀');
+	val = val.replace(/gyul/g,'굴');
+	val = val.replace(/gyun/g,'군');
+	val = val.replace(/gyut/g,'궅');
+	val = val.replace(/gyud/g,'굳');
+	val = val.replace(/tswù/g,'뙈');
+	val = val.replace(/fèdj/g,'펓');
+	val = val.replace(/fèch/g,'펒');
+	val = val.replace(/gyum/g,'굼');
+	val = val.replace(/gyup/g,'궆');
+	val = val.replace(/gyub/g,'굽');
+	val = val.replace(/gyuc/g,'궇');
+	val = val.replace(/gyuf/g,'굺');
+	val = val.replace(/gyuv/g,'굾');
+	val = val.replace(/gyuk/g,'궄');
+	val = val.replace(/gyug/g,'국');
+	val = val.replace(/zyoc/g,'쑣');
+	val = val.replace(/gyuq/g,'궁');
+	val = val.replace(/gwus/g,'귯');
+	val = val.replace(/gwuz/g,'귰');
+	val = val.replace(/gwul/g,'귤');
+	val = val.replace(/gwun/g,'균');
+	val = val.replace(/gwut/g,'귵');
+	val = val.replace(/gwud/g,'귣');
+	val = val.replace(/fùdj/g,'팿');
+	val = val.replace(/fùch/g,'팾');
+	val = val.replace(/gwum/g,'귬');
+	val = val.replace(/tsya/g,'땨');
+	val = val.replace(/gwup/g,'귶');
+	val = val.replace(/gwub/g,'귭');
+	val = val.replace(/gwuc/g,'귷');
+	val = val.replace(/gwuf/g,'귪');
+	val = val.replace(/gwuv/g,'귮');
+	val = val.replace(/gwuk/g,'귴');
+	val = val.replace(/gwug/g,'귝');
+	val = val.replace(/zyob/g,'쑙');
+	val = val.replace(/gwuq/g,'귱');
+	val = val.replace(/gyes/g,'곗');
+	val = val.replace(/gyez/g,'곘');
+	val = val.replace(/gyel/g,'곌');
+	val = val.replace(/gyen/g,'곈');
+	val = val.replace(/gyet/g,'곝');
+	val = val.replace(/fidj/g,'핓');
+	val = val.replace(/fich/g,'핒');
+	val = val.replace(/gyed/g,'곋');
+	val = val.replace(/gyem/g,'곔');
+	val = val.replace(/gyep/g,'곞');
+	val = val.replace(/tswa/g,'똬');
+	val = val.replace(/gyeb/g,'곕');
+	val = val.replace(/dzus/g,'쁫');
+	val = val.replace(/dzuz/g,'쁬');
+	val = val.replace(/dzul/g,'쁠');
+	val = val.replace(/dzun/g,'쁜');
+	val = val.replace(/dzut/g,'쁱');
+	val = val.replace(/dzud/g,'쁟');
+	val = val.replace(/dzum/g,'쁨');
+	val = val.replace(/dzup/g,'쁲');
+	val = val.replace(/dzub/g,'쁩');
+	val = val.replace(/dzuc/g,'쁳');
+	val = val.replace(/dzuf/g,'쁦');
+	val = val.replace(/fudj/g,'픛');
+	val = val.replace(/fuch/g,'픚');
+	val = val.replace(/dzuv/g,'쁪');
+	val = val.replace(/gyec/g,'곟');
+	val = val.replace(/gyef/g,'곒');
+	val = val.replace(/dzuk/g,'쁰');
+	val = val.replace(/dzug/g,'쁙');
+	val = val.replace(/dzuq/g,'쁭');
+	val = val.replace(/dzis/g,'삣');
+	val = val.replace(/dziz/g,'삤');
+	val = val.replace(/dzil/g,'삘');
+	val = val.replace(/dzin/g,'삔');
+	val = val.replace(/dzit/g,'삩');
+	val = val.replace(/dzid/g,'삗');
+	val = val.replace(/cwaq/g,'황');
+	val = val.replace(/dzim/g,'삠');
+	val = val.replace(/cwag/g,'확');
+	val = val.replace(/cwak/g,'홬');
+	val = val.replace(/gyev/g,'곖');
+	val = val.replace(/gyek/g,'곜');
+	val = val.replace(/cwav/g,'홦');
+	val = val.replace(/cwaf/g,'홢');
+	val = val.replace(/cwac/g,'홯');
+	val = val.replace(/cwab/g,'홥');
+	val = val.replace(/cwap/g,'홮');
+	val = val.replace(/cwam/g,'홤');
+	val = val.replace(/cwad/g,'홛');
+	val = val.replace(/cwat/g,'홭');
+	val = val.replace(/cwan/g,'환');
+	val = val.replace(/cwal/g,'활');
+	val = val.replace(/cwaz/g,'홨');
+	val = val.replace(/cwas/g,'홧');
+	val = val.replace(/cyaq/g,'향');
+	val = val.replace(/dzip/g,'삪');
+	val = val.replace(/cyag/g,'햑');
+	val = val.replace(/cyak/g,'햨');
+	val = val.replace(/gyeg/g,'곅');
+	val = val.replace(/zyop/g,'쑢');
+	val = val.replace(/cyav/g,'햢');
+	val = val.replace(/cyaf/g,'햞');
+	val = val.replace(/cyac/g,'햫');
+	val = val.replace(/cyab/g,'햡');
+	val = val.replace(/cyap/g,'햪');
+	val = val.replace(/cyam/g,'햠');
+	val = val.replace(/cyad/g,'햗');
+	val = val.replace(/cyat/g,'햩');
+	val = val.replace(/cyan/g,'햔');
+	val = val.replace(/cyal/g,'햘');
+	val = val.replace(/cyaz/g,'햤');
+	val = val.replace(/cyas/g,'햣');
+	val = val.replace(/cwùq/g,'횅');
+	val = val.replace(/dzib/g,'삡');
+	val = val.replace(/cwùg/g,'홱');
+	val = val.replace(/cwùk/g,'횈');
+	val = val.replace(/gyeq/g,'곙');
+	val = val.replace(/gwes/g,'궷');
+	val = val.replace(/cwùv/g,'횂');
+	val = val.replace(/cwùf/g,'홾');
+	val = val.replace(/cwùc/g,'횋');
+	val = val.replace(/cwùb/g,'횁');
+	val = val.replace(/cwùp/g,'횊');
+	val = val.replace(/cwùm/g,'횀');
+	val = val.replace(/cwùd/g,'홷');
+	val = val.replace(/cwùt/g,'횉');
+	val = val.replace(/cwùn/g,'홴');
+	val = val.replace(/cwùl/g,'홸');
+	val = val.replace(/cwùz/g,'횄');
+	val = val.replace(/cwùs/g,'횃');
+	val = val.replace(/cyùq/g,'헁');
+	val = val.replace(/dzic/g,'삫');
+	val = val.replace(/cyùg/g,'햭');
+	val = val.replace(/cyùk/g,'헄');
+	val = val.replace(/gwez/g,'궸');
+	val = val.replace(/gwel/g,'궬');
+	val = val.replace(/cyùv/g,'햾');
+	val = val.replace(/cyùf/g,'햺');
+	val = val.replace(/cyùc/g,'헇');
+	val = val.replace(/cyùb/g,'햽');
+	val = val.replace(/cyùp/g,'헆');
+	val = val.replace(/cyùm/g,'햼');
+	val = val.replace(/cyùd/g,'햳');
+	val = val.replace(/cyùt/g,'헅');
+	val = val.replace(/cyùn/g,'햰');
+	val = val.replace(/cyùl/g,'햴');
+	val = val.replace(/cyùz/g,'헀');
+	val = val.replace(/cyùs/g,'햿');
+	val = val.replace(/cwèq/g,'훵');
+	val = val.replace(/dzif/g,'삞');
+	val = val.replace(/cwèg/g,'훡');
+	val = val.replace(/cwèk/g,'훸');
+	val = val.replace(/gwen/g,'궨');
+	val = val.replace(/gwet/g,'궽');
+	val = val.replace(/cwèv/g,'훲');
+	val = val.replace(/cwèf/g,'훮');
+	val = val.replace(/cwèc/g,'훻');
+	val = val.replace(/cwèb/g,'훱');
+	val = val.replace(/cwèp/g,'훺');
+	val = val.replace(/cwèm/g,'훰');
+	val = val.replace(/cwèd/g,'훧');
+	val = val.replace(/cwèt/g,'훹');
+	val = val.replace(/cwèn/g,'훤');
+	val = val.replace(/cwèl/g,'훨');
+	val = val.replace(/cwèz/g,'훴');
+	val = val.replace(/cwès/g,'훳');
+	val = val.replace(/cyèq/g,'형');
+	val = val.replace(/dziv/g,'삢');
+	val = val.replace(/cyèg/g,'혁');
+	val = val.replace(/cyèk/g,'혘');
+	val = val.replace(/gwed/g,'궫');
+	val = val.replace(/gwem/g,'궴');
+	val = val.replace(/cyèv/g,'혒');
+	val = val.replace(/cyèf/g,'혎');
+	val = val.replace(/cyèc/g,'혛');
+	val = val.replace(/cyèb/g,'협');
+	val = val.replace(/cyèp/g,'혚');
+	val = val.replace(/cyèm/g,'혐');
+	val = val.replace(/cyèd/g,'혇');
+	val = val.replace(/cyèt/g,'혙');
+	val = val.replace(/cyèn/g,'현');
+	val = val.replace(/cyèl/g,'혈');
+	val = val.replace(/cyèz/g,'혔');
+	val = val.replace(/cyès/g,'혓');
+	val = val.replace(/cwoq/g,'횡');
+	val = val.replace(/gwep/g,'궾');
+	val = val.replace(/cwog/g,'획');
+	val = val.replace(/cwok/g,'횤');
+	val = val.replace(/gweb/g,'궵');
+	val = val.replace(/gwec/g,'궿');
+	val = val.replace(/cwov/g,'횞');
+	val = val.replace(/cwof/g,'횚');
+	val = val.replace(/cwoc/g,'횧');
+	val = val.replace(/cwob/g,'횝');
+	val = val.replace(/cwop/g,'횦');
+	val = val.replace(/cwom/g,'횜');
+	val = val.replace(/cwod/g,'횓');
+	val = val.replace(/cwot/g,'횥');
+	val = val.replace(/cwon/g,'횐');
+	val = val.replace(/cwol/g,'횔');
+	val = val.replace(/cwoz/g,'횠');
+	val = val.replace(/cwos/g,'횟');
+	val = val.replace(/cyoq/g,'횽');
+	val = val.replace(/gwef/g,'궲');
+	val = val.replace(/cyog/g,'횩');
+	val = val.replace(/cyok/g,'훀');
+	val = val.replace(/gwev/g,'궶');
+	val = val.replace(/gwek/g,'궼');
+	val = val.replace(/cyov/g,'횺');
+	val = val.replace(/cyof/g,'횶');
+	val = val.replace(/cyoc/g,'훃');
+	val = val.replace(/cyob/g,'횹');
+	val = val.replace(/cyop/g,'훂');
+	val = val.replace(/cyom/g,'횸');
+	val = val.replace(/cyod/g,'횯');
+	val = val.replace(/cyot/g,'훁');
+	val = val.replace(/cyon/g,'횬');
+	val = val.replace(/cyol/g,'횰');
+	val = val.replace(/cyoz/g,'횼');
+	val = val.replace(/cyos/g,'횻');
+	val = val.replace(/cweq/g,'휑');
+	val = val.replace(/dzik/g,'삨');
+	val = val.replace(/cweg/g,'훽');
+	val = val.replace(/cwek/g,'휔');
+	val = val.replace(/gweg/g,'궥');
+	val = val.replace(/zyom/g,'쑘');
+	val = val.replace(/cwev/g,'휎');
+	val = val.replace(/cwef/g,'휊');
+	val = val.replace(/cwec/g,'휗');
+	val = val.replace(/cweb/g,'휍');
+	val = val.replace(/cwep/g,'휖');
+	val = val.replace(/cwem/g,'휌');
+	val = val.replace(/cwed/g,'휃');
+	val = val.replace(/cwet/g,'휕');
+	val = val.replace(/cwen/g,'휀');
+	val = val.replace(/cwel/g,'휄');
+	val = val.replace(/cwez/g,'휐');
+	val = val.replace(/cwes/g,'휏');
+	val = val.replace(/cyeq/g,'혱');
+	val = val.replace(/dzig/g,'삑');
+	val = val.replace(/cyeg/g,'혝');
+	val = val.replace(/cyek/g,'혴');
+	val = val.replace(/gweq/g,'궹');
+	val = val.replace(/gyos/g,'굣');
+	val = val.replace(/cyev/g,'혮');
+	val = val.replace(/cyef/g,'혪');
+	val = val.replace(/cyec/g,'혷');
+	val = val.replace(/cyeb/g,'혭');
+	val = val.replace(/cyep/g,'혶');
+	val = val.replace(/cyem/g,'혬');
+	val = val.replace(/cyed/g,'혣');
+	val = val.replace(/cyet/g,'혵');
+	val = val.replace(/cyen/g,'혠');
+	val = val.replace(/cyel/g,'혤');
+	val = val.replace(/cyez/g,'혰');
+	val = val.replace(/cyes/g,'혯');
+	val = val.replace(/cwuq/g,'흉');
+	val = val.replace(/dziq/g,'삥');
+	val = val.replace(/cwug/g,'휵');
+	val = val.replace(/cwuk/g,'흌');
+	val = val.replace(/gyoz/g,'굤');
+	val = val.replace(/gyol/g,'굘');
+	val = val.replace(/cwuv/g,'흆');
+	val = val.replace(/cwuf/g,'흂');
+	val = val.replace(/cwuc/g,'흏');
+	val = val.replace(/cwub/g,'흅');
+	val = val.replace(/cwup/g,'흎');
+	val = val.replace(/cwum/g,'흄');
+	val = val.replace(/cwud/g,'휻');
+	val = val.replace(/cwut/g,'흍');
+	val = val.replace(/cwun/g,'휸');
+	val = val.replace(/cwul/g,'휼');
+	val = val.replace(/cwuz/g,'흈');
+	val = val.replace(/cwus/g,'흇');
+	val = val.replace(/cyuq/g,'훙');
+	val = val.replace(/dzùs/g,'뺏');
+	val = val.replace(/cyug/g,'훅');
+	val = val.replace(/cyuk/g,'훜');
+	val = val.replace(/gyon/g,'굔');
+	val = val.replace(/gyot/g,'굩');
+	val = val.replace(/cyuv/g,'훖');
+	val = val.replace(/cyuf/g,'훒');
+	val = val.replace(/cyuc/g,'훟');
+	val = val.replace(/cyub/g,'훕');
+	val = val.replace(/cyup/g,'훞');
+	val = val.replace(/cyum/g,'훔');
+	val = val.replace(/cyud/g,'훋');
+	val = val.replace(/cyut/g,'훝');
+	val = val.replace(/cyun/g,'훈');
+	val = val.replace(/cyul/g,'훌');
+	val = val.replace(/cyuz/g,'훘');
+	val = val.replace(/cyus/g,'훗');
+	val = val.replace(/cwiq/g,'휭');
+	val = val.replace(/dzùz/g,'뺐');
+	val = val.replace(/cwig/g,'휙');
+	val = val.replace(/cwik/g,'휰');
+	val = val.replace(/gyod/g,'굗');
+	val = val.replace(/gyom/g,'굠');
+	val = val.replace(/cwiv/g,'휪');
+	val = val.replace(/cwif/g,'휦');
+	val = val.replace(/cwic/g,'휳');
+	val = val.replace(/cwib/g,'휩');
+	val = val.replace(/cwip/g,'휲');
+	val = val.replace(/cwim/g,'휨');
+	val = val.replace(/cwid/g,'휟');
+	val = val.replace(/cwit/g,'휱');
+	val = val.replace(/cwin/g,'휜');
+	val = val.replace(/cwil/g,'휠');
+	val = val.replace(/cwiz/g,'휬');
+	val = val.replace(/cwis/g,'휫');
+	val = val.replace(/cyiq/g,'힁');
+	val = val.replace(/dzùl/g,'뺄');
+	val = val.replace(/cyig/g,'흭');
+	val = val.replace(/cyik/g,'힄');
+	val = val.replace(/gyop/g,'굪');
+	val = val.replace(/gyob/g,'굡');
+	val = val.replace(/cyiv/g,'흾');
+	val = val.replace(/cyif/g,'흺');
+	val = val.replace(/cyic/g,'힇');
+	val = val.replace(/cyib/g,'흽');
+	val = val.replace(/cyip/g,'힆');
+	val = val.replace(/cyim/g,'흼');
+	val = val.replace(/cyid/g,'흳');
+	val = val.replace(/cyit/g,'힅');
+	val = val.replace(/cyin/g,'흰');
+	val = val.replace(/cyil/g,'흴');
+	val = val.replace(/cyiz/g,'힀');
+	val = val.replace(/cyis/g,'흿');
+	val = val.replace(/dzùn/g,'뺀');
+	val = val.replace(/dzùt/g,'뺕');
+	val = val.replace(/dzùd/g,'뺃');
+	val = val.replace(/dzùm/g,'뺌');
+	val = val.replace(/cadj/g,'핯');
+	val = val.replace(/cach/g,'핮');
+	val = val.replace(/dzùp/g,'뺖');
+	val = val.replace(/dzùb/g,'뺍');
+	val = val.replace(/dzùc/g,'뺗');
+	val = val.replace(/dzùf/g,'뺊');
+	val = val.replace(/dzùv/g,'뺎');
+	val = val.replace(/gyoc/g,'굫');
+	val = val.replace(/gyof/g,'굞');
+	val = val.replace(/dzùk/g,'뺔');
+	val = val.replace(/dzùg/g,'빽');
+	val = val.replace(/dzùq/g,'뺑');
+	val = val.replace(/dzès/g,'뻣');
+	val = val.replace(/dzèz/g,'뻤');
+	val = val.replace(/dzèl/g,'뻘');
+	val = val.replace(/dzèn/g,'뻔');
+	val = val.replace(/dzèt/g,'뻩');
+	val = val.replace(/dzèd/g,'뻗');
+	val = val.replace(/cedj/g,'헻');
+	val = val.replace(/cech/g,'헺');
+	val = val.replace(/dzèm/g,'뻠');
+	val = val.replace(/dzèp/g,'뻪');
+	val = val.replace(/dzèb/g,'뻡');
+	val = val.replace(/dzèc/g,'뻫');
+	val = val.replace(/dzèf/g,'뻞');
+	val = val.replace(/dzèv/g,'뻢');
+	val = val.replace(/gyov/g,'굢');
+	val = val.replace(/gyok/g,'굨');
+	val = val.replace(/dzèk/g,'뻨');
+	val = val.replace(/dzèg/g,'뻑');
+	val = val.replace(/dzèq/g,'뻥');
+	val = val.replace(/dzos/g,'뽓');
+	val = val.replace(/dzoz/g,'뽔');
+	val = val.replace(/dzol/g,'뽈');
+	val = val.replace(/dzon/g,'뽄');
+	val = val.replace(/dzot/g,'뽙');
+	val = val.replace(/codj/g,'홏');
+	val = val.replace(/coch/g,'홎');
+	val = val.replace(/dzod/g,'뽇');
+	val = val.replace(/dzom/g,'뽐');
+	val = val.replace(/dzop/g,'뽚');
+	val = val.replace(/dzob/g,'뽑');
+	val = val.replace(/dzoc/g,'뽛');
+	val = val.replace(/dzof/g,'뽎');
+	val = val.replace(/dzov/g,'뽒');
+	val = val.replace(/gyog/g,'굑');
+	val = val.replace(/zyod/g,'쑏');
+	val = val.replace(/dzok/g,'뽘');
+	val = val.replace(/dzog/g,'뽁');
+	val = val.replace(/dzoq/g,'뽕');
+	val = val.replace(/dzes/g,'뻿');
+	val = val.replace(/dzez/g,'뼀');
+	val = val.replace(/dzel/g,'뻴');
+	val = val.replace(/dzen/g,'뻰');
+	val = val.replace(/cèdj/g,'헟');
+	val = val.replace(/cèch/g,'헞');
+	val = val.replace(/dzet/g,'뼅');
+	val = val.replace(/dzed/g,'뻳');
+	val = val.replace(/dzem/g,'뻼');
+	val = val.replace(/dzep/g,'뼆');
+	val = val.replace(/dzeb/g,'뻽');
+	val = val.replace(/dzec/g,'뼇');
+	val = val.replace(/dzef/g,'뻺');
+	val = val.replace(/dzev/g,'뻾');
+	val = val.replace(/gyoq/g,'굥');
+	val = val.replace(/gwos/g,'굇');
+	val = val.replace(/dzek/g,'뼄');
+	val = val.replace(/dzeg/g,'뻭');
+	val = val.replace(/dzeq/g,'뼁');
+	val = val.replace(/dzas/g,'빳');
+	val = val.replace(/dzaz/g,'빴');
+	val = val.replace(/dzal/g,'빨');
+	val = val.replace(/cùdj/g,'햋');
+	val = val.replace(/cùch/g,'햊');
+	val = val.replace(/dzan/g,'빤');
+	val = val.replace(/dzat/g,'빹');
+	val = val.replace(/dzad/g,'빧');
+	val = val.replace(/dzam/g,'빰');
+	val = val.replace(/dzap/g,'빺');
+	val = val.replace(/dzab/g,'빱');
+	val = val.replace(/dzac/g,'빻');
+	val = val.replace(/dzaf/g,'빮');
+	val = val.replace(/dzav/g,'빲');
+	val = val.replace(/gwoz/g,'굈');
+	val = val.replace(/gwol/g,'괼');
+	val = val.replace(/dzak/g,'빸');
+	val = val.replace(/dzag/g,'빡');
+	val = val.replace(/dzaq/g,'빵');
+	val = val.replace(/gwon/g,'괸');
+	val = val.replace(/gwot/g,'굍');
+	val = val.replace(/cidj/g,'힟');
+	val = val.replace(/cich/g,'힞');
+	val = val.replace(/gwod/g,'괻');
+	val = val.replace(/gwom/g,'굄');
+	val = val.replace(/gwop/g,'굎');
+	val = val.replace(/gwob/g,'굅');
+	val = val.replace(/gwoc/g,'굏');
+	val = val.replace(/gwof/g,'굂');
+	val = val.replace(/gwov/g,'굆');
+	val = val.replace(/gwok/g,'굌');
+	val = val.replace(/gwog/g,'괵');
+	val = val.replace(/zyot/g,'쑡');
+	val = val.replace(/gwoq/g,'굉');
+	val = val.replace(/gyès/g,'겻');
+	val = val.replace(/gyèz/g,'겼');
+	val = val.replace(/gyèl/g,'결');
+	val = val.replace(/dzyi/g,'쁴');
+	val = val.replace(/gyèn/g,'견');
+	val = val.replace(/cudj/g,'흧');
+	val = val.replace(/cuch/g,'흦');
+	val = val.replace(/gyèt/g,'곁');
+	val = val.replace(/gyèd/g,'겯');
+	val = val.replace(/gyèm/g,'겸');
+	val = val.replace(/gyèp/g,'곂');
+	val = val.replace(/gyèb/g,'겹');
+	val = val.replace(/gyèc/g,'곃');
+	val = val.replace(/gyèf/g,'겶');
+	val = val.replace(/gyèv/g,'겺');
+	val = val.replace(/gyèk/g,'곀');
+	val = val.replace(/gyèg/g,'격');
+	val = val.replace(/zyon/g,'쑌');
+	val = val.replace(/gyèq/g,'경');
+	val = val.replace(/bwaq/g,'봥');
+	val = val.replace(/gwès/g,'궛');
+	val = val.replace(/bwag/g,'봑');
+	val = val.replace(/bwak/g,'봨');
+	val = val.replace(/gwèz/g,'궜');
+	val = val.replace(/gwèl/g,'궐');
+	val = val.replace(/bwav/g,'봢');
+	val = val.replace(/bwaf/g,'봞');
+	val = val.replace(/bwac/g,'봫');
+	val = val.replace(/bwab/g,'봡');
+	val = val.replace(/bwap/g,'봪');
+	val = val.replace(/bwam/g,'봠');
+	val = val.replace(/bwad/g,'봗');
+	val = val.replace(/bwat/g,'봩');
+	val = val.replace(/bwan/g,'봔');
+	val = val.replace(/bwal/g,'봘');
+	val = val.replace(/bwaz/g,'봤');
+	val = val.replace(/bwas/g,'봣');
+	val = val.replace(/byaq/g,'뱡');
+	val = val.replace(/gwèn/g,'권');
+	val = val.replace(/byag/g,'뱍');
+	val = val.replace(/byak/g,'뱤');
+	val = val.replace(/gwèt/g,'궡');
+	val = val.replace(/gwèd/g,'궏');
+	val = val.replace(/byav/g,'뱞');
+	val = val.replace(/byaf/g,'뱚');
+	val = val.replace(/byac/g,'뱧');
+	val = val.replace(/byab/g,'뱝');
+	val = val.replace(/byap/g,'뱦');
+	val = val.replace(/byam/g,'뱜');
+	val = val.replace(/byad/g,'뱓');
+	val = val.replace(/byat/g,'뱥');
+	val = val.replace(/byan/g,'뱐');
+	val = val.replace(/byal/g,'뱔');
+	val = val.replace(/byaz/g,'뱠');
+	val = val.replace(/byas/g,'뱟');
+	val = val.replace(/bwùq/g,'뵁');
+	val = val.replace(/gwèm/g,'궘');
+	val = val.replace(/bwùg/g,'봭');
+	val = val.replace(/bwùk/g,'뵄');
+	val = val.replace(/gwèp/g,'궢');
+	val = val.replace(/gwèb/g,'궙');
+	val = val.replace(/bwùv/g,'봾');
+	val = val.replace(/bwùf/g,'봺');
+	val = val.replace(/bwùc/g,'뵇');
+	val = val.replace(/bwùb/g,'봽');
+	val = val.replace(/bwùp/g,'뵆');
+	val = val.replace(/bwùm/g,'봼');
+	val = val.replace(/bwùd/g,'봳');
+	val = val.replace(/bwùt/g,'뵅');
+	val = val.replace(/bwùn/g,'봰');
+	val = val.replace(/bwùl/g,'봴');
+	val = val.replace(/bwùz/g,'뵀');
+	val = val.replace(/bwùs/g,'봿');
+	val = val.replace(/byùq/g,'뱽');
+	val = val.replace(/gwèc/g,'궣');
+	val = val.replace(/byùg/g,'뱩');
+	val = val.replace(/byùk/g,'벀');
+	val = val.replace(/gwèf/g,'궖');
+	val = val.replace(/gwèv/g,'궚');
+	val = val.replace(/byùv/g,'뱺');
+	val = val.replace(/byùf/g,'뱶');
+	val = val.replace(/byùc/g,'벃');
+	val = val.replace(/byùb/g,'뱹');
+	val = val.replace(/byùp/g,'벂');
+	val = val.replace(/byùm/g,'뱸');
+	val = val.replace(/byùd/g,'뱯');
+	val = val.replace(/byùt/g,'벁');
+	val = val.replace(/byùn/g,'뱬');
+	val = val.replace(/byùl/g,'뱰');
+	val = val.replace(/byùz/g,'뱼');
+	val = val.replace(/byùs/g,'뱻');
+	val = val.replace(/bwèq/g,'붱');
+	val = val.replace(/dzwi/g,'쀠');
+	val = val.replace(/bwèg/g,'붝');
+	val = val.replace(/bwèk/g,'붴');
+	val = val.replace(/gwèk/g,'궠');
+	val = val.replace(/gwèg/g,'궉');
+	val = val.replace(/bwèv/g,'붮');
+	val = val.replace(/bwèf/g,'붪');
+	val = val.replace(/bwèc/g,'붷');
+	val = val.replace(/bwèb/g,'붭');
+	val = val.replace(/bwèp/g,'붶');
+	val = val.replace(/bwèm/g,'붬');
+	val = val.replace(/bwèd/g,'붣');
+	val = val.replace(/bwèt/g,'붵');
+	val = val.replace(/bwèn/g,'붠');
+	val = val.replace(/bwèl/g,'붤');
+	val = val.replace(/bwèz/g,'붰');
+	val = val.replace(/bwès/g,'붯');
+	val = val.replace(/byèq/g,'병');
+	val = val.replace(/zyol/g,'쑐');
+	val = val.replace(/byèg/g,'벽');
+	val = val.replace(/byèk/g,'볔');
+	val = val.replace(/gwèq/g,'궝');
+	val = val.replace(/gyùs/g,'걧');
+	val = val.replace(/byèv/g,'볎');
+	val = val.replace(/byèf/g,'볊');
+	val = val.replace(/byèc/g,'볗');
+	val = val.replace(/byèb/g,'볍');
+	val = val.replace(/byèp/g,'볖');
+	val = val.replace(/byèm/g,'볌');
+	val = val.replace(/byèd/g,'볃');
+	val = val.replace(/byèt/g,'볕');
+	val = val.replace(/byèn/g,'변');
+	val = val.replace(/byèl/g,'별');
+	val = val.replace(/byèz/g,'볐');
+	val = val.replace(/byès/g,'볏');
+	val = val.replace(/bwoq/g,'뵝');
+	val = val.replace(/gyùz/g,'걨');
+	val = val.replace(/bwog/g,'뵉');
+	val = val.replace(/bwok/g,'뵠');
+	val = val.replace(/gyùl/g,'걜');
+	val = val.replace(/gyùn/g,'걘');
+	val = val.replace(/bwov/g,'뵚');
+	val = val.replace(/bwof/g,'뵖');
+	val = val.replace(/bwoc/g,'뵣');
+	val = val.replace(/bwob/g,'뵙');
+	val = val.replace(/bwop/g,'뵢');
+	val = val.replace(/bwom/g,'뵘');
+	val = val.replace(/bwod/g,'뵏');
+	val = val.replace(/bwot/g,'뵡');
+	val = val.replace(/bwon/g,'뵌');
+	val = val.replace(/bwol/g,'뵐');
+	val = val.replace(/bwoz/g,'뵜');
+	val = val.replace(/bwos/g,'뵛');
+	val = val.replace(/byoq/g,'뵹');
+	val = val.replace(/gyùt/g,'걭');
+	val = val.replace(/byog/g,'뵥');
+	val = val.replace(/byok/g,'뵼');
+	val = val.replace(/gyùd/g,'걛');
+	val = val.replace(/gyùm/g,'걤');
+	val = val.replace(/byov/g,'뵶');
+	val = val.replace(/byof/g,'뵲');
+	val = val.replace(/byoc/g,'뵿');
+	val = val.replace(/byob/g,'뵵');
+	val = val.replace(/byop/g,'뵾');
+	val = val.replace(/byom/g,'뵴');
+	val = val.replace(/byod/g,'뵫');
+	val = val.replace(/byot/g,'뵽');
+	val = val.replace(/byon/g,'뵨');
+	val = val.replace(/byol/g,'뵬');
+	val = val.replace(/byoz/g,'뵸');
+	val = val.replace(/byos/g,'뵷');
+	val = val.replace(/bweq/g,'뷍');
+	val = val.replace(/gyùp/g,'걮');
+	val = val.replace(/bweg/g,'붹');
+	val = val.replace(/bwek/g,'뷐');
+	val = val.replace(/gyùb/g,'걥');
+	val = val.replace(/gyùc/g,'걯');
+	val = val.replace(/bwev/g,'뷊');
+	val = val.replace(/bwef/g,'뷆');
+	val = val.replace(/bwec/g,'뷓');
+	val = val.replace(/bweb/g,'뷉');
+	val = val.replace(/bwep/g,'뷒');
+	val = val.replace(/bwem/g,'뷈');
+	val = val.replace(/bwed/g,'붿');
+	val = val.replace(/bwet/g,'뷑');
+	val = val.replace(/bwen/g,'붼');
+	val = val.replace(/bwel/g,'뷀');
+	val = val.replace(/bwez/g,'뷌');
+	val = val.replace(/bwes/g,'뷋');
+	val = val.replace(/byeq/g,'볭');
+	val = val.replace(/gyùf/g,'걢');
+	val = val.replace(/byeg/g,'볙');
+	val = val.replace(/byek/g,'볰');
+	val = val.replace(/gyùv/g,'걦');
+	val = val.replace(/gyùk/g,'걬');
+	val = val.replace(/byev/g,'볪');
+	val = val.replace(/byef/g,'볦');
+	val = val.replace(/byec/g,'볳');
+	val = val.replace(/byeb/g,'볩');
+	val = val.replace(/byep/g,'볲');
+	val = val.replace(/byem/g,'볨');
+	val = val.replace(/byed/g,'볟');
+	val = val.replace(/byet/g,'볱');
+	val = val.replace(/byen/g,'볜');
+	val = val.replace(/byel/g,'볠');
+	val = val.replace(/byez/g,'볬');
+	val = val.replace(/byes/g,'볫');
+	val = val.replace(/bwuq/g,'븅');
+	val = val.replace(/gyùg/g,'걕');
+	val = val.replace(/bwug/g,'뷱');
+	val = val.replace(/bwuk/g,'븈');
+	val = val.replace(/zyoz/g,'쑜');
+	val = val.replace(/gyùq/g,'걩');
+	val = val.replace(/bwuv/g,'븂');
+	val = val.replace(/bwuf/g,'뷾');
+	val = val.replace(/bwuc/g,'븋');
+	val = val.replace(/bwub/g,'븁');
+	val = val.replace(/bwup/g,'븊');
+	val = val.replace(/bwum/g,'븀');
+	val = val.replace(/bwud/g,'뷷');
+	val = val.replace(/bwut/g,'븉');
+	val = val.replace(/bwun/g,'뷴');
+	val = val.replace(/bwul/g,'뷸');
+	val = val.replace(/bwuz/g,'븄');
+	val = val.replace(/bwus/g,'븃');
+	val = val.replace(/byuq/g,'붕');
+	val = val.replace(/gwùs/g,'괫');
+	val = val.replace(/byug/g,'북');
+	val = val.replace(/byuk/g,'붘');
+	val = val.replace(/gwùz/g,'괬');
+	val = val.replace(/gwùl/g,'괠');
+	val = val.replace(/byuv/g,'붒');
+	val = val.replace(/byuf/g,'붎');
+	val = val.replace(/byuc/g,'붛');
+	val = val.replace(/byub/g,'붑');
+	val = val.replace(/byup/g,'붚');
+	val = val.replace(/byum/g,'붐');
+	val = val.replace(/byud/g,'붇');
+	val = val.replace(/byut/g,'붙');
+	val = val.replace(/byun/g,'분');
+	val = val.replace(/byul/g,'불');
+	val = val.replace(/byuz/g,'붔');
+	val = val.replace(/byus/g,'붓');
+	val = val.replace(/bwiq/g,'뷩');
+	val = val.replace(/gwùn/g,'괜');
+	val = val.replace(/bwig/g,'뷕');
+	val = val.replace(/bwik/g,'뷬');
+	val = val.replace(/gwùt/g,'괱');
+	val = val.replace(/gwùd/g,'괟');
+	val = val.replace(/bwiv/g,'뷦');
+	val = val.replace(/bwif/g,'뷢');
+	val = val.replace(/bwic/g,'뷯');
+	val = val.replace(/bwib/g,'뷥');
+	val = val.replace(/bwip/g,'뷮');
+	val = val.replace(/bwim/g,'뷤');
+	val = val.replace(/bwid/g,'뷛');
+	val = val.replace(/bwit/g,'뷭');
+	val = val.replace(/bwin/g,'뷘');
+	val = val.replace(/bwil/g,'뷜');
+	val = val.replace(/bwiz/g,'뷨');
+	val = val.replace(/bwis/g,'뷧');
+	val = val.replace(/byiq/g,'븽');
+	val = val.replace(/gwùm/g,'괨');
+	val = val.replace(/byig/g,'븩');
+	val = val.replace(/byik/g,'빀');
+	val = val.replace(/gwùp/g,'괲');
+	val = val.replace(/gwùb/g,'괩');
+	val = val.replace(/byiv/g,'븺');
+	val = val.replace(/byif/g,'븶');
+	val = val.replace(/byic/g,'빃');
+	val = val.replace(/byib/g,'븹');
+	val = val.replace(/byip/g,'빂');
+	val = val.replace(/byim/g,'븸');
+	val = val.replace(/byid/g,'븯');
+	val = val.replace(/byit/g,'빁');
+	val = val.replace(/byin/g,'븬');
+	val = val.replace(/byil/g,'븰');
+	val = val.replace(/byiz/g,'븼');
+	val = val.replace(/byis/g,'븻');
+	val = val.replace(/gwùc/g,'괳');
+	val = val.replace(/gwùf/g,'괦');
+	val = val.replace(/gwùv/g,'괪');
+	val = val.replace(/gwùk/g,'괰');
+	val = val.replace(/badj/g,'밫');
+	val = val.replace(/bach/g,'밪');
+	val = val.replace(/gwùg/g,'괙');
+	val = val.replace(/zyos/g,'쑛');
+	val = val.replace(/gwùq/g,'괭');
+	val = val.replace(/gyas/g,'걋');
+	val = val.replace(/dzyu/g,'뿌');
+	val = val.replace(/gyaz/g,'걌');
+	val = val.replace(/gyal/g,'걀');
+	val = val.replace(/gyan/g,'갼');
+	val = val.replace(/gyat/g,'걑');
+	val = val.replace(/gyad/g,'갿');
+	val = val.replace(/gyam/g,'걈');
+	val = val.replace(/gyap/g,'걒');
+	val = val.replace(/gyab/g,'걉');
+	val = val.replace(/gyac/g,'걓');
+	val = val.replace(/gyaf/g,'걆');
+	val = val.replace(/gyav/g,'걊');
+	val = val.replace(/bedj/g,'벷');
+	val = val.replace(/bech/g,'벶');
+	val = val.replace(/gyak/g,'걐');
+	val = val.replace(/gyag/g,'갹');
+	val = val.replace(/zweq/g,'쒱');
+	val = val.replace(/gyaq/g,'걍');
+	val = val.replace(/gwas/g,'괏');
+	val = val.replace(/gwaz/g,'괐');
+	val = val.replace(/dzwu/g,'쀼');
+	val = val.replace(/gwal/g,'괄');
+	val = val.replace(/gwan/g,'관');
+	val = val.replace(/gwat/g,'괕');
+	val = val.replace(/gwad/g,'괃');
+	val = val.replace(/gwam/g,'괌');
+	val = val.replace(/gwap/g,'괖');
+	val = val.replace(/gwab/g,'괍');
+	val = val.replace(/gwac/g,'괗');
+	val = val.replace(/gwaf/g,'괊');
+	val = val.replace(/bodj/g,'봋');
+	val = val.replace(/boch/g,'봊');
+	val = val.replace(/gwav/g,'괎');
+	val = val.replace(/gwak/g,'괔');
+	val = val.replace(/gwag/g,'곽');
+	val = val.replace(/zweg/g,'쒝');
+	val = val.replace(/gwaq/g,'광');
+	val = val.replace(/zwek/g,'쒴');
+	val = val.replace(/zwev/g,'쒮');
+	val = val.replace(/zwef/g,'쒪');
+	val = val.replace(/dzye/g,'뼤');
+	val = val.replace(/zwec/g,'쒷');
+	val = val.replace(/zweb/g,'쒭');
+	val = val.replace(/zwep/g,'쒶');
+	val = val.replace(/zwem/g,'쒬');
+	val = val.replace(/zwed/g,'쒣');
+	val = val.replace(/zwet/g,'쒵');
+	val = val.replace(/zwen/g,'쒠');
+	val = val.replace(/bèdj/g,'벛');
+	val = val.replace(/bèch/g,'벚');
+	val = val.replace(/zwel/g,'쒤');
+	val = val.replace(/zwez/g,'쒰');
+	val = val.replace(/zwes/g,'쒯');
+	val = val.replace(/zyeq/g,'쏑');
+	val = val.replace(/zyeg/g,'쎽');
+	val = val.replace(/zyek/g,'쏔');
+	val = val.replace(/zyev/g,'쏎');
+	val = val.replace(/zyef/g,'쏊');
+	val = val.replace(/zyec/g,'쏗');
+	val = val.replace(/zyeb/g,'쏍');
+	val = val.replace(/dzwe/g,'쀄');
+	val = val.replace(/zyep/g,'쏖');
+	val = val.replace(/zyem/g,'쏌');
+	val = val.replace(/zyed/g,'쏃');
+	val = val.replace(/zyet/g,'쏕');
+	val = val.replace(/zyen/g,'쏀');
+	val = val.replace(/bùdj/g,'뱇');
+	val = val.replace(/bùch/g,'뱆');
+	val = val.replace(/zyel/g,'쏄');
+	val = val.replace(/zyez/g,'쏐');
+	val = val.replace(/zyes/g,'쏏');
+	val = val.replace(/zwuq/g,'쓩');
+	val = val.replace(/zwug/g,'쓕');
+	val = val.replace(/zwuk/g,'쓬');
+	val = val.replace(/zwuv/g,'쓦');
+	val = val.replace(/zwuf/g,'쓢');
+	val = val.replace(/zwuc/g,'쓯');
+	val = val.replace(/zwub/g,'쓥');
+	val = val.replace(/zwup/g,'쓮');
+	val = val.replace(/zwum/g,'쓤');
+	val = val.replace(/dzyo/g,'뾰');
+	val = val.replace(/zwud/g,'쓛');
+	val = val.replace(/zwut/g,'쓭');
+	val = val.replace(/zwun/g,'쓘');
+	val = val.replace(/bidj/g,'빛');
+	val = val.replace(/bich/g,'빚');
+	val = val.replace(/zwul/g,'쓜');
+	val = val.replace(/zwuz/g,'쓨');
+	val = val.replace(/zwus/g,'쓧');
+	val = val.replace(/zyuq/g,'쑹');
+	val = val.replace(/zyug/g,'쑥');
+	val = val.replace(/zyuk/g,'쑼');
+	val = val.replace(/zyuv/g,'쑶');
+	val = val.replace(/zyuf/g,'쑲');
+	val = val.replace(/zyuc/g,'쑿');
+	val = val.replace(/zyub/g,'쑵');
+	val = val.replace(/zyup/g,'쑾');
+	val = val.replace(/zyum/g,'쑴');
+	val = val.replace(/zyud/g,'쑫');
+	val = val.replace(/zyut/g,'쑽');
+	val = val.replace(/dzwo/g,'뾔');
+	val = val.replace(/zyun/g,'쑨');
+	val = val.replace(/budj/g,'븣');
+	val = val.replace(/buch/g,'븢');
+	val = val.replace(/zyul/g,'쑬');
+	val = val.replace(/zyuz/g,'쑸');
+	val = val.replace(/zyus/g,'쑷');
+	val = val.replace(/zwiq/g,'쓍');
+	val = val.replace(/zwig/g,'쒹');
+	val = val.replace(/zwik/g,'쓐');
+	val = val.replace(/zwiv/g,'쓊');
+	val = val.replace(/zwif/g,'쓆');
+	val = val.replace(/zwic/g,'쓓');
+	val = val.replace(/zwib/g,'쓉');
+	val = val.replace(/zwip/g,'쓒');
+	val = val.replace(/zwim/g,'쓈');
+	val = val.replace(/pwaq/g,'퐝');
+	val = val.replace(/zwid/g,'쒿');
+	val = val.replace(/pwag/g,'퐉');
+	val = val.replace(/pwak/g,'퐠');
+	val = val.replace(/zwit/g,'쓑');
+	val = val.replace(/zwin/g,'쒼');
+	val = val.replace(/pwav/g,'퐚');
+	val = val.replace(/pwaf/g,'퐖');
+	val = val.replace(/pwac/g,'퐣');
+	val = val.replace(/pwab/g,'퐙');
+	val = val.replace(/pwap/g,'퐢');
+	val = val.replace(/pwam/g,'퐘');
+	val = val.replace(/pwad/g,'퐏');
+	val = val.replace(/pwat/g,'퐡');
+	val = val.replace(/pwan/g,'퐌');
+	val = val.replace(/pwal/g,'퐐');
+	val = val.replace(/pwaz/g,'퐜');
+	val = val.replace(/pwas/g,'퐛');
+	val = val.replace(/pyaq/g,'퍙');
+	val = val.replace(/zwil/g,'쓀');
+	val = val.replace(/pyag/g,'퍅');
+	val = val.replace(/pyak/g,'퍜');
+	val = val.replace(/zwiz/g,'쓌');
+	val = val.replace(/zwis/g,'쓋');
+	val = val.replace(/pyav/g,'퍖');
+	val = val.replace(/pyaf/g,'퍒');
+	val = val.replace(/pyac/g,'퍟');
+	val = val.replace(/pyab/g,'퍕');
+	val = val.replace(/pyap/g,'퍞');
+	val = val.replace(/pyam/g,'퍔');
+	val = val.replace(/pyad/g,'퍋');
+	val = val.replace(/pyat/g,'퍝');
+	val = val.replace(/pyan/g,'퍈');
+	val = val.replace(/pyal/g,'퍌');
+	val = val.replace(/pyaz/g,'퍘');
+	val = val.replace(/pyas/g,'퍗');
+	val = val.replace(/pwùq/g,'퐹');
+	val = val.replace(/zyiq/g,'씡');
+	val = val.replace(/pwùg/g,'퐥');
+	val = val.replace(/pwùk/g,'퐼');
+	val = val.replace(/zyig/g,'씍');
+	val = val.replace(/zyik/g,'씤');
+	val = val.replace(/pwùv/g,'퐶');
+	val = val.replace(/pwùf/g,'퐲');
+	val = val.replace(/pwùc/g,'퐿');
+	val = val.replace(/pwùb/g,'퐵');
+	val = val.replace(/pwùp/g,'퐾');
+	val = val.replace(/pwùm/g,'퐴');
+	val = val.replace(/pwùd/g,'퐫');
+	val = val.replace(/pwùt/g,'퐽');
+	val = val.replace(/pwùn/g,'퐨');
+	val = val.replace(/pwùl/g,'퐬');
+	val = val.replace(/pwùz/g,'퐸');
+	val = val.replace(/pwùs/g,'퐷');
+	val = val.replace(/pyùq/g,'퍵');
+	val = val.replace(/zyiv/g,'씞');
+	val = val.replace(/pyùg/g,'퍡');
+	val = val.replace(/pyùk/g,'퍸');
+	val = val.replace(/zyif/g,'씚');
+	val = val.replace(/zyic/g,'씧');
+	val = val.replace(/pyùv/g,'퍲');
+	val = val.replace(/pyùf/g,'퍮');
+	val = val.replace(/pyùc/g,'퍻');
+	val = val.replace(/pyùb/g,'퍱');
+	val = val.replace(/pyùp/g,'퍺');
+	val = val.replace(/pyùm/g,'퍰');
+	val = val.replace(/pyùd/g,'퍧');
+	val = val.replace(/pyùt/g,'퍹');
+	val = val.replace(/pyùn/g,'퍤');
+	val = val.replace(/pyùl/g,'퍨');
+	val = val.replace(/pyùz/g,'퍴');
+	val = val.replace(/pyùs/g,'퍳');
+	val = val.replace(/pwèq/g,'풩');
+	val = val.replace(/dzyè/g,'뼈');
+	val = val.replace(/pwèg/g,'풕');
+	val = val.replace(/pwèk/g,'풬');
+	val = val.replace(/zyib/g,'씝');
+	val = val.replace(/zyip/g,'씦');
+	val = val.replace(/pwèv/g,'풦');
+	val = val.replace(/pwèf/g,'풢');
+	val = val.replace(/pwèc/g,'풯');
+	val = val.replace(/pwèb/g,'풥');
+	val = val.replace(/pwèp/g,'풮');
+	val = val.replace(/pwèm/g,'풤');
+	val = val.replace(/pwèd/g,'풛');
+	val = val.replace(/pwèt/g,'풭');
+	val = val.replace(/pwèn/g,'풘');
+	val = val.replace(/pwèl/g,'풜');
+	val = val.replace(/pwèz/g,'풨');
+	val = val.replace(/pwès/g,'풧');
+	val = val.replace(/pyèq/g,'평');
+	val = val.replace(/zyim/g,'씜');
+	val = val.replace(/pyèg/g,'펵');
+	val = val.replace(/pyèk/g,'폌');
+	val = val.replace(/zyid/g,'씓');
+	val = val.replace(/zyit/g,'씥');
+	val = val.replace(/pyèv/g,'폆');
+	val = val.replace(/pyèf/g,'폂');
+	val = val.replace(/pyèc/g,'폏');
+	val = val.replace(/pyèb/g,'폅');
+	val = val.replace(/pyèp/g,'폎');
+	val = val.replace(/pyèm/g,'폄');
+	val = val.replace(/pyèd/g,'펻');
+	val = val.replace(/pyèt/g,'폍');
+	val = val.replace(/pyèn/g,'편');
+	val = val.replace(/pyèl/g,'펼');
+	val = val.replace(/pyèz/g,'폈');
+	val = val.replace(/pyès/g,'폇');
+	val = val.replace(/pwoq/g,'푕');
+	val = val.replace(/zyin/g,'씐');
+	val = val.replace(/pwog/g,'푁');
+	val = val.replace(/pwok/g,'푘');
+	val = val.replace(/zyil/g,'씔');
+	val = val.replace(/zyiz/g,'씠');
+	val = val.replace(/pwov/g,'푒');
+	val = val.replace(/pwof/g,'푎');
+	val = val.replace(/pwoc/g,'푛');
+	val = val.replace(/pwob/g,'푑');
+	val = val.replace(/pwop/g,'푚');
+	val = val.replace(/pwom/g,'푐');
+	val = val.replace(/pwod/g,'푇');
+	val = val.replace(/pwot/g,'푙');
+	val = val.replace(/pwon/g,'푄');
+	val = val.replace(/pwol/g,'푈');
+	val = val.replace(/pwoz/g,'푔');
+	val = val.replace(/pwos/g,'푓');
+	val = val.replace(/pyoq/g,'푱');
+	val = val.replace(/zyis/g,'씟');
+	val = val.replace(/pyog/g,'푝');
+	val = val.replace(/pyok/g,'푴');
+	val = val.replace(/zadj/g,'쌏');
+	val = val.replace(/zach/g,'쌎');
+	val = val.replace(/pyov/g,'푮');
+	val = val.replace(/pyof/g,'푪');
+	val = val.replace(/pyoc/g,'푷');
+	val = val.replace(/pyob/g,'푭');
+	val = val.replace(/pyop/g,'푶');
+	val = val.replace(/pyom/g,'푬');
+	val = val.replace(/pyod/g,'푣');
+	val = val.replace(/pyot/g,'푵');
+	val = val.replace(/pyon/g,'푠');
+	val = val.replace(/pyol/g,'푤');
+	val = val.replace(/pyoz/g,'푰');
+	val = val.replace(/pyos/g,'푯');
+	val = val.replace(/pweq/g,'퓅');
+	val = val.replace(/zedj/g,'쎛');
+	val = val.replace(/pweg/g,'풱');
+	val = val.replace(/pwek/g,'퓈');
+	val = val.replace(/zech/g,'쎚');
+	val = val.replace(/zodj/g,'쏯');
+	val = val.replace(/pwev/g,'퓂');
+	val = val.replace(/pwef/g,'풾');
+	val = val.replace(/pwec/g,'퓋');
+	val = val.replace(/pweb/g,'퓁');
+	val = val.replace(/pwep/g,'퓊');
+	val = val.replace(/pwem/g,'퓀');
+	val = val.replace(/pwed/g,'풷');
+	val = val.replace(/pwet/g,'퓉');
+	val = val.replace(/pwen/g,'풴');
+	val = val.replace(/pwel/g,'풸');
+	val = val.replace(/pwez/g,'퓄');
+	val = val.replace(/pwes/g,'퓃');
+	val = val.replace(/pyeq/g,'폥');
+	val = val.replace(/zoch/g,'쏮');
+	val = val.replace(/pyeg/g,'폑');
+	val = val.replace(/pyek/g,'폨');
+	val = val.replace(/zèdj/g,'썿');
+	val = val.replace(/zèch/g,'썾');
+	val = val.replace(/pyev/g,'폢');
+	val = val.replace(/pyef/g,'폞');
+	val = val.replace(/pyec/g,'폫');
+	val = val.replace(/pyeb/g,'폡');
+	val = val.replace(/pyep/g,'폪');
+	val = val.replace(/pyem/g,'폠');
+	val = val.replace(/pyed/g,'폗');
+	val = val.replace(/pyet/g,'폩');
+	val = val.replace(/pyen/g,'폔');
+	val = val.replace(/pyel/g,'폘');
+	val = val.replace(/pyez/g,'폤');
+	val = val.replace(/pyes/g,'폣');
+	val = val.replace(/pwuq/g,'퓽');
+	val = val.replace(/zùdj/g,'쌫');
+	val = val.replace(/pwug/g,'퓩');
+	val = val.replace(/pwuk/g,'픀');
+	val = val.replace(/zùch/g,'쌪');
+	val = val.replace(/zidj/g,'씿');
+	val = val.replace(/pwuv/g,'퓺');
+	val = val.replace(/pwuf/g,'퓶');
+	val = val.replace(/pwuc/g,'픃');
+	val = val.replace(/pwub/g,'퓹');
+	val = val.replace(/pwup/g,'픂');
+	val = val.replace(/pwum/g,'퓸');
+	val = val.replace(/pwud/g,'퓯');
+	val = val.replace(/pwut/g,'픁');
+	val = val.replace(/pwun/g,'퓬');
+	val = val.replace(/pwul/g,'퓰');
+	val = val.replace(/pwuz/g,'퓼');
+	val = val.replace(/pwus/g,'퓻');
+	val = val.replace(/pyuq/g,'풍');
+	val = val.replace(/zich/g,'씾');
+	val = val.replace(/pyug/g,'푹');
+	val = val.replace(/pyuk/g,'풐');
+	val = val.replace(/zudj/g,'씇');
+	val = val.replace(/zuch/g,'씆');
+	val = val.replace(/pyuv/g,'풊');
+	val = val.replace(/pyuf/g,'풆');
+	val = val.replace(/pyuc/g,'풓');
+	val = val.replace(/pyub/g,'풉');
+	val = val.replace(/pyup/g,'풒');
+	val = val.replace(/pyum/g,'품');
+	val = val.replace(/pyud/g,'푿');
+	val = val.replace(/pyut/g,'풑');
+	val = val.replace(/pyun/g,'푼');
+	val = val.replace(/pyul/g,'풀');
+	val = val.replace(/pyuz/g,'풌');
+	val = val.replace(/pyus/g,'풋');
+	val = val.replace(/pwiq/g,'퓡');
+	val = val.replace(/swaq/g,'쫭');
+	val = val.replace(/pwig/g,'퓍');
+	val = val.replace(/pwik/g,'퓤');
+	val = val.replace(/swag/g,'쫙');
+	val = val.replace(/swak/g,'쫰');
+	val = val.replace(/pwiv/g,'퓞');
+	val = val.replace(/pwif/g,'퓚');
+	val = val.replace(/pwic/g,'퓧');
+	val = val.replace(/pwib/g,'퓝');
+	val = val.replace(/pwip/g,'퓦');
+	val = val.replace(/pwim/g,'퓜');
+	val = val.replace(/pwid/g,'퓓');
+	val = val.replace(/pwit/g,'퓥');
+	val = val.replace(/pwin/g,'퓐');
+	val = val.replace(/pwil/g,'퓔');
+	val = val.replace(/pwiz/g,'퓠');
+	val = val.replace(/pwis/g,'퓟');
+	val = val.replace(/pyiq/g,'픵');
+	val = val.replace(/swav/g,'쫪');
+	val = val.replace(/pyig/g,'픡');
+	val = val.replace(/pyik/g,'픸');
+	val = val.replace(/swaf/g,'쫦');
+	val = val.replace(/swac/g,'쫳');
+	val = val.replace(/pyiv/g,'픲');
+	val = val.replace(/pyif/g,'픮');
+	val = val.replace(/pyic/g,'픻');
+	val = val.replace(/pyib/g,'픱');
+	val = val.replace(/pyip/g,'픺');
+	val = val.replace(/pyim/g,'픰');
+	val = val.replace(/pyid/g,'픧');
+	val = val.replace(/pyit/g,'픹');
+	val = val.replace(/pyin/g,'픤');
+	val = val.replace(/pyil/g,'픨');
+	val = val.replace(/pyiz/g,'픴');
+	val = val.replace(/pyis/g,'픳');
+	val = val.replace(/swab/g,'쫩');
+	val = val.replace(/swap/g,'쫲');
+	val = val.replace(/swam/g,'쫨');
+	val = val.replace(/swad/g,'쫟');
+	val = val.replace(/padj/g,'팣');
+	val = val.replace(/pach/g,'팢');
+	val = val.replace(/swat/g,'쫱');
+	val = val.replace(/swan/g,'쫜');
+	val = val.replace(/swal/g,'쫠');
+	val = val.replace(/swaz/g,'쫬');
+	val = val.replace(/dzwè/g,'뿨');
+	val = val.replace(/swas/g,'쫫');
+	val = val.replace(/syaq/g,'쨩');
+	val = val.replace(/syag/g,'쨕');
+	val = val.replace(/syak/g,'쨬');
+	val = val.replace(/syav/g,'쨦');
+	val = val.replace(/syaf/g,'쨢');
+	val = val.replace(/yich/g,'읮');
+	val = val.replace(/yidj/g,'읯');
+	val = val.replace(/syac/g,'쨯');
+	val = val.replace(/syab/g,'쨥');
+	val = val.replace(/syap/g,'쨮');
+	val = val.replace(/pedj/g,'펯');
+	val = val.replace(/pech/g,'펮');
+	val = val.replace(/syam/g,'쨤');
+	val = val.replace(/syad/g,'쨛');
+	val = val.replace(/syat/g,'쨭');
+	val = val.replace(/syan/g,'쨘');
+	val = val.replace(/syal/g,'쨜');
+	val = val.replace(/syaz/g,'쨨');
+	val = val.replace(/dzyù/g,'뺴');
+	val = val.replace(/syas/g,'쨧');
+	val = val.replace(/swùq/g,'쬉');
+	val = val.replace(/swùg/g,'쫵');
+	val = val.replace(/swùk/g,'쬌');
+	val = val.replace(/swùv/g,'쬆');
+	val = val.replace(/wich/g,'윚');
+	val = val.replace(/widj/g,'윛');
+	val = val.replace(/swùf/g,'쬂');
+	val = val.replace(/swùc/g,'쬏');
+	val = val.replace(/podj/g,'퐃');
+	val = val.replace(/poch/g,'퐂');
+	val = val.replace(/swùb/g,'쬅');
+	val = val.replace(/swùp/g,'쬎');
+	val = val.replace(/swùm/g,'쬄');
+	val = val.replace(/swùd/g,'쫻');
+	val = val.replace(/swùt/g,'쬍');
+	val = val.replace(/swùn/g,'쫸');
+	val = val.replace(/swùl/g,'쫼');
+	val = val.replace(/swùz/g,'쬈');
+	val = val.replace(/dzwù/g,'뽸');
+	val = val.replace(/swùs/g,'쬇');
+	val = val.replace(/syùq/g,'쩅');
+	val = val.replace(/syùg/g,'쨱');
+	val = val.replace(/syùk/g,'쩈');
+	val = val.replace(/yuch/g,'웆');
+	val = val.replace(/yudj/g,'웇');
+	val = val.replace(/syùv/g,'쩂');
+	val = val.replace(/pèdj/g,'펓');
+	val = val.replace(/pèch/g,'펒');
+	val = val.replace(/syùf/g,'쨾');
+	val = val.replace(/syùc/g,'쩋');
+	val = val.replace(/syùb/g,'쩁');
+	val = val.replace(/syùp/g,'쩊');
+	val = val.replace(/syùm/g,'쩀');
+	val = val.replace(/syùd/g,'쨷');
+	val = val.replace(/syùt/g,'쩉');
+	val = val.replace(/syùn/g,'쨴');
+	val = val.replace(/syùl/g,'쨸');
+	val = val.replace(/syùz/g,'쩄');
+	val = val.replace(/dzya/g,'뺘');
+	val = val.replace(/syùs/g,'쩃');
+	val = val.replace(/swèq/g,'쭹');
+	val = val.replace(/swèg/g,'쭥');
+	val = val.replace(/swèk/g,'쭼');
+	val = val.replace(/wuch/g,'윶');
+	val = val.replace(/pùdj/g,'팿');
+	val = val.replace(/pùch/g,'팾');
+	val = val.replace(/wudj/g,'윷');
+	val = val.replace(/swèv/g,'쭶');
+	val = val.replace(/swèf/g,'쭲');
+	val = val.replace(/swèc/g,'쭿');
+	val = val.replace(/swèb/g,'쭵');
+	val = val.replace(/swèp/g,'쭾');
+	val = val.replace(/swèm/g,'쭴');
+	val = val.replace(/swèd/g,'쭫');
+	val = val.replace(/swèt/g,'쭽');
+	val = val.replace(/swèn/g,'쭨');
+	val = val.replace(/swèl/g,'쭬');
+	val = val.replace(/swèz/g,'쭸');
+	val = val.replace(/dzwa/g,'뽜');
+	val = val.replace(/swès/g,'쭷');
+	val = val.replace(/luch/g,'릊');
+	val = val.replace(/ludj/g,'릋');
+	val = val.replace(/pidj/g,'핓');
+	val = val.replace(/pich/g,'핒');
+	val = val.replace(/lich/g,'맂');
+	val = val.replace(/lidj/g,'맃');
+	val = val.replace(/lùch/g,'랮');
+	val = val.replace(/lùdj/g,'랯');
+	val = val.replace(/lèch/g,'렂');
+	val = val.replace(/lèdj/g,'렃');
+	val = val.replace(/loch/g,'롲');
+	val = val.replace(/lodj/g,'롳');
+	val = val.replace(/lech/g,'렞');
+	val = val.replace(/ledj/g,'렟');
+	val = val.replace(/lach/g,'랒');
+	val = val.replace(/ladj/g,'랓');
+	val = val.replace(/lyis/g,'릣');
+	val = val.replace(/lyiz/g,'릤');
+	val = val.replace(/lyil/g,'릘');
+	val = val.replace(/lyin/g,'릔');
+	val = val.replace(/pudj/g,'픛');
+	val = val.replace(/puch/g,'픚');
+	val = val.replace(/lyit/g,'릩');
+	val = val.replace(/lyid/g,'릗');
+	val = val.replace(/lyim/g,'릠');
+	val = val.replace(/lyip/g,'릪');
+	val = val.replace(/lyib/g,'릡');
+	val = val.replace(/lyic/g,'릫');
+	val = val.replace(/lyif/g,'릞');
+	val = val.replace(/lyiv/g,'릢');
+	val = val.replace(/syèq/g,'쪙');
+	val = val.replace(/syèg/g,'쪅');
+	val = val.replace(/lyik/g,'릨');
+	val = val.replace(/lyig/g,'릑');
+	val = val.replace(/mwaq/g,'뫙');
+	val = val.replace(/lyiq/g,'릥');
+	val = val.replace(/mwag/g,'뫅');
+	val = val.replace(/mwak/g,'뫜');
+	val = val.replace(/syèk/g,'쪜');
+	val = val.replace(/yech/g,'옞');
+	val = val.replace(/mwav/g,'뫖');
+	val = val.replace(/mwaf/g,'뫒');
+	val = val.replace(/mwac/g,'뫟');
+	val = val.replace(/mwab/g,'뫕');
+	val = val.replace(/mwap/g,'뫞');
+	val = val.replace(/mwam/g,'뫔');
+	val = val.replace(/mwad/g,'뫋');
+	val = val.replace(/mwat/g,'뫝');
+	val = val.replace(/mwan/g,'뫈');
+	val = val.replace(/mwal/g,'뫌');
+	val = val.replace(/mwaz/g,'뫘');
+	val = val.replace(/mwas/g,'뫗');
+	val = val.replace(/myaq/g,'먕');
+	val = val.replace(/lwis/g,'륏');
+	val = val.replace(/myag/g,'먁');
+	val = val.replace(/myak/g,'먘');
+	val = val.replace(/yedj/g,'옟');
+	val = val.replace(/syèv/g,'쪖');
+	val = val.replace(/myav/g,'먒');
+	val = val.replace(/myaf/g,'먎');
+	val = val.replace(/myac/g,'먛');
+	val = val.replace(/myab/g,'먑');
+	val = val.replace(/myap/g,'먚');
+	val = val.replace(/myam/g,'먐');
+	val = val.replace(/myad/g,'먇');
+	val = val.replace(/myat/g,'먙');
+	val = val.replace(/myan/g,'먄');
+	val = val.replace(/myal/g,'먈');
+	val = val.replace(/myaz/g,'먔');
+	val = val.replace(/myas/g,'먓');
+	val = val.replace(/mwùq/g,'뫵');
+	val = val.replace(/lwiz/g,'륐');
+	val = val.replace(/mwùg/g,'뫡');
+	val = val.replace(/mwùk/g,'뫸');
+	val = val.replace(/syèf/g,'쪒');
+	val = val.replace(/syèc/g,'쪟');
+	val = val.replace(/mwùv/g,'뫲');
+	val = val.replace(/mwùf/g,'뫮');
+	val = val.replace(/mwùc/g,'뫻');
+	val = val.replace(/mwùb/g,'뫱');
+	val = val.replace(/mwùp/g,'뫺');
+	val = val.replace(/mwùm/g,'뫰');
+	val = val.replace(/mwùd/g,'뫧');
+	val = val.replace(/mwùt/g,'뫹');
+	val = val.replace(/mwùn/g,'뫤');
+	val = val.replace(/mwùl/g,'뫨');
+	val = val.replace(/mwùz/g,'뫴');
+	val = val.replace(/mwùs/g,'뫳');
+	val = val.replace(/myùq/g,'먱');
+	val = val.replace(/lwil/g,'륄');
+	val = val.replace(/myùg/g,'먝');
+	val = val.replace(/myùk/g,'먴');
+	val = val.replace(/syèb/g,'쪕');
+	val = val.replace(/syèp/g,'쪞');
+	val = val.replace(/myùv/g,'먮');
+	val = val.replace(/myùf/g,'먪');
+	val = val.replace(/myùc/g,'먷');
+	val = val.replace(/myùb/g,'먭');
+	val = val.replace(/myùp/g,'먶');
+	val = val.replace(/myùm/g,'먬');
+	val = val.replace(/myùd/g,'먣');
+	val = val.replace(/myùt/g,'먵');
+	val = val.replace(/myùn/g,'먠');
+	val = val.replace(/myùl/g,'먤');
+	val = val.replace(/myùz/g,'먰');
+	val = val.replace(/myùs/g,'먯');
+	val = val.replace(/mwèq/g,'뭥');
+	val = val.replace(/lwin/g,'륀');
+	val = val.replace(/mwèg/g,'뭑');
+	val = val.replace(/mwèk/g,'뭨');
+	val = val.replace(/syèm/g,'쪔');
+	val = val.replace(/syèd/g,'쪋');
+	val = val.replace(/mwèv/g,'뭢');
+	val = val.replace(/mwèf/g,'뭞');
+	val = val.replace(/mwèc/g,'뭫');
+	val = val.replace(/mwèb/g,'뭡');
+	val = val.replace(/mwèp/g,'뭪');
+	val = val.replace(/mwèm/g,'뭠');
+	val = val.replace(/mwèd/g,'뭗');
+	val = val.replace(/mwèt/g,'뭩');
+	val = val.replace(/mwèn/g,'뭔');
+	val = val.replace(/mwèl/g,'뭘');
+	val = val.replace(/mwèz/g,'뭤');
+	val = val.replace(/mwès/g,'뭣');
+	val = val.replace(/myèq/g,'명');
+	val = val.replace(/lwit/g,'륕');
+	val = val.replace(/myèg/g,'멱');
+	val = val.replace(/myèk/g,'몈');
+	val = val.replace(/syèt/g,'쪝');
+	val = val.replace(/syèn/g,'쪈');
+	val = val.replace(/myèv/g,'몂');
+	val = val.replace(/myèf/g,'멾');
+	val = val.replace(/myèc/g,'몋');
+	val = val.replace(/myèb/g,'몁');
+	val = val.replace(/myèp/g,'몊');
+	val = val.replace(/myèm/g,'몀');
+	val = val.replace(/myèd/g,'멷');
+	val = val.replace(/myèt/g,'몉');
+	val = val.replace(/myèn/g,'면');
+	val = val.replace(/myèl/g,'멸');
+	val = val.replace(/myèz/g,'몄');
+	val = val.replace(/myès/g,'몃');
+	val = val.replace(/mwoq/g,'묑');
+	val = val.replace(/lwid/g,'륃');
+	val = val.replace(/mwog/g,'뫽');
+	val = val.replace(/mwok/g,'묔');
+	val = val.replace(/syèl/g,'쪌');
+	val = val.replace(/syèz/g,'쪘');
+	val = val.replace(/mwov/g,'묎');
+	val = val.replace(/mwof/g,'묊');
+	val = val.replace(/mwoc/g,'묗');
+	val = val.replace(/mwob/g,'묍');
+	val = val.replace(/mwop/g,'묖');
+	val = val.replace(/mwom/g,'묌');
+	val = val.replace(/mwod/g,'묃');
+	val = val.replace(/mwot/g,'묕');
+	val = val.replace(/mwon/g,'묀');
+	val = val.replace(/mwol/g,'묄');
+	val = val.replace(/mwoz/g,'묐');
+	val = val.replace(/mwos/g,'묏');
+	val = val.replace(/myoq/g,'묭');
+	val = val.replace(/lwim/g,'륌');
+	val = val.replace(/myog/g,'묙');
+	val = val.replace(/myok/g,'묰');
+	val = val.replace(/syès/g,'쪗');
+	val = val.replace(/swoq/g,'쬥');
+	val = val.replace(/myov/g,'묪');
+	val = val.replace(/myof/g,'묦');
+	val = val.replace(/myoc/g,'묳');
+	val = val.replace(/myob/g,'묩');
+	val = val.replace(/myop/g,'묲');
+	val = val.replace(/myom/g,'묨');
+	val = val.replace(/myod/g,'묟');
+	val = val.replace(/myot/g,'묱');
+	val = val.replace(/myon/g,'묜');
+	val = val.replace(/myol/g,'묠');
+	val = val.replace(/myoz/g,'묬');
+	val = val.replace(/myos/g,'묫');
+	val = val.replace(/mweq/g,'뮁');
+	val = val.replace(/lwip/g,'륖');
+	val = val.replace(/mweg/g,'뭭');
+	val = val.replace(/mwek/g,'뮄');
+	val = val.replace(/swog/g,'쬑');
+	val = val.replace(/wech/g,'웾');
+	val = val.replace(/mwev/g,'뭾');
+	val = val.replace(/mwef/g,'뭺');
+	val = val.replace(/mwec/g,'뮇');
+	val = val.replace(/mweb/g,'뭽');
+	val = val.replace(/mwep/g,'뮆');
+	val = val.replace(/mwem/g,'뭼');
+	val = val.replace(/mwed/g,'뭳');
+	val = val.replace(/mwet/g,'뮅');
+	val = val.replace(/mwen/g,'뭰');
+	val = val.replace(/mwel/g,'뭴');
+	val = val.replace(/mwez/g,'뮀');
+	val = val.replace(/mwes/g,'뭿');
+	val = val.replace(/myeq/g,'몡');
+	val = val.replace(/lwib/g,'륍');
+	val = val.replace(/myeg/g,'몍');
+	val = val.replace(/myek/g,'몤');
+	val = val.replace(/wedj/g,'웿');
+	val = val.replace(/swok/g,'쬨');
+	val = val.replace(/myev/g,'몞');
+	val = val.replace(/myef/g,'몚');
+	val = val.replace(/myec/g,'몧');
+	val = val.replace(/myeb/g,'몝');
+	val = val.replace(/myep/g,'몦');
+	val = val.replace(/myem/g,'몜');
+	val = val.replace(/myed/g,'몓');
+	val = val.replace(/myet/g,'몥');
+	val = val.replace(/myen/g,'몐');
+	val = val.replace(/myel/g,'몔');
+	val = val.replace(/myez/g,'몠');
+	val = val.replace(/myes/g,'몟');
+	val = val.replace(/mwuq/g,'뮹');
+	val = val.replace(/lwic/g,'륗');
+	val = val.replace(/mwug/g,'뮥');
+	val = val.replace(/mwuk/g,'뮼');
+	val = val.replace(/swov/g,'쬢');
+	val = val.replace(/swof/g,'쬞');
+	val = val.replace(/mwuv/g,'뮶');
+	val = val.replace(/mwuf/g,'뮲');
+	val = val.replace(/mwuc/g,'뮿');
+	val = val.replace(/mwub/g,'뮵');
+	val = val.replace(/mwup/g,'뮾');
+	val = val.replace(/mwum/g,'뮴');
+	val = val.replace(/mwud/g,'뮫');
+	val = val.replace(/mwut/g,'뮽');
+	val = val.replace(/mwun/g,'뮨');
+	val = val.replace(/mwul/g,'뮬');
+	val = val.replace(/mwuz/g,'뮸');
+	val = val.replace(/mwus/g,'뮷');
+	val = val.replace(/myuq/g,'뭉');
+	val = val.replace(/lwif/g,'륊');
+	val = val.replace(/myug/g,'묵');
+	val = val.replace(/myuk/g,'뭌');
+	val = val.replace(/swoc/g,'쬫');
+	val = val.replace(/swob/g,'쬡');
+	val = val.replace(/myuv/g,'뭆');
+	val = val.replace(/myuf/g,'뭂');
+	val = val.replace(/myuc/g,'뭏');
+	val = val.replace(/myub/g,'뭅');
+	val = val.replace(/myup/g,'뭎');
+	val = val.replace(/myum/g,'뭄');
+	val = val.replace(/myud/g,'묻');
+	val = val.replace(/myut/g,'뭍');
+	val = val.replace(/myun/g,'문');
+	val = val.replace(/myul/g,'물');
+	val = val.replace(/myuz/g,'뭈');
+	val = val.replace(/myus/g,'뭇');
+	val = val.replace(/mwiq/g,'뮝');
+	val = val.replace(/lwiv/g,'륎');
+	val = val.replace(/mwig/g,'뮉');
+	val = val.replace(/mwik/g,'뮠');
+	val = val.replace(/swop/g,'쬪');
+	val = val.replace(/swom/g,'쬠');
+	val = val.replace(/mwiv/g,'뮚');
+	val = val.replace(/mwif/g,'뮖');
+	val = val.replace(/mwic/g,'뮣');
+	val = val.replace(/mwib/g,'뮙');
+	val = val.replace(/mwip/g,'뮢');
+	val = val.replace(/mwim/g,'뮘');
+	val = val.replace(/mwid/g,'뮏');
+	val = val.replace(/mwit/g,'뮡');
+	val = val.replace(/mwin/g,'뮌');
+	val = val.replace(/mwil/g,'뮐');
+	val = val.replace(/mwiz/g,'뮜');
+	val = val.replace(/mwis/g,'뮛');
+	val = val.replace(/myiq/g,'믱');
+	val = val.replace(/swod/g,'쬗');
+	val = val.replace(/myig/g,'믝');
+	val = val.replace(/myik/g,'믴');
+	val = val.replace(/swot/g,'쬩');
+	val = val.replace(/swon/g,'쬔');
+	val = val.replace(/myiv/g,'믮');
+	val = val.replace(/myif/g,'믪');
+	val = val.replace(/myic/g,'믷');
+	val = val.replace(/myib/g,'믭');
+	val = val.replace(/myip/g,'믶');
+	val = val.replace(/myim/g,'믬');
+	val = val.replace(/myid/g,'믣');
+	val = val.replace(/myit/g,'믵');
+	val = val.replace(/myin/g,'믠');
+	val = val.replace(/myil/g,'믤');
+	val = val.replace(/myiz/g,'믰');
+	val = val.replace(/myis/g,'믯');
+	val = val.replace(/swol/g,'쬘');
+	val = val.replace(/lwik/g,'륔');
+	val = val.replace(/lwig/g,'뤽');
+	val = val.replace(/lwiq/g,'륑');
+	val = val.replace(/madj/g,'맟');
+	val = val.replace(/mach/g,'맞');
+	val = val.replace(/lyus/g,'룻');
+	val = val.replace(/lyuz/g,'룼');
+	val = val.replace(/lyul/g,'룰');
+	val = val.replace(/lyun/g,'룬');
+	val = val.replace(/lyut/g,'뤁');
+	val = val.replace(/lyud/g,'룯');
+	val = val.replace(/lyum/g,'룸');
+	val = val.replace(/lyup/g,'뤂');
+	val = val.replace(/lyub/g,'룹');
+	val = val.replace(/lyuc/g,'뤃');
+	val = val.replace(/lyuf/g,'룶');
+	val = val.replace(/lyuv/g,'룺');
+	val = val.replace(/swoz/g,'쬤');
+	val = val.replace(/swos/g,'쬣');
+	val = val.replace(/lyuk/g,'뤀');
+	val = val.replace(/lyug/g,'룩');
+	val = val.replace(/medj/g,'멫');
+	val = val.replace(/mech/g,'멪');
+	val = val.replace(/lyuq/g,'룽');
+	val = val.replace(/lwus/g,'륫');
+	val = val.replace(/lwuz/g,'륬');
+	val = val.replace(/lwul/g,'률');
+	val = val.replace(/lwun/g,'륜');
+	val = val.replace(/lwut/g,'륱');
+	val = val.replace(/lwud/g,'륟');
+	val = val.replace(/lwum/g,'륨');
+	val = val.replace(/lwup/g,'륲');
+	val = val.replace(/lwub/g,'륩');
+	val = val.replace(/lwuc/g,'륳');
+	val = val.replace(/lwuf/g,'륦');
+	val = val.replace(/lwuv/g,'륪');
+	val = val.replace(/syoq/g,'쭁');
+	val = val.replace(/yoch/g,'욪');
+	val = val.replace(/lwuk/g,'륰');
+	val = val.replace(/modj/g,'몿');
+	val = val.replace(/moch/g,'몾');
+	val = val.replace(/lwug/g,'륙');
+	val = val.replace(/lwuq/g,'륭');
+	val = val.replace(/lyes/g,'롓');
+	val = val.replace(/lyez/g,'롔');
+	val = val.replace(/lyel/g,'롈');
+	val = val.replace(/lyen/g,'롄');
+	val = val.replace(/lyet/g,'롙');
+	val = val.replace(/lyed/g,'롇');
+	val = val.replace(/lyem/g,'롐');
+	val = val.replace(/lyep/g,'롚');
+	val = val.replace(/lyeb/g,'롑');
+	val = val.replace(/lyec/g,'롛');
+	val = val.replace(/lyef/g,'롎');
+	val = val.replace(/lyev/g,'롒');
+	val = val.replace(/yodj/g,'욫');
+	val = val.replace(/syog/g,'쬭');
+	val = val.replace(/mèdj/g,'멏');
+	val = val.replace(/mèch/g,'멎');
+	val = val.replace(/lyek/g,'롘');
+	val = val.replace(/lyeg/g,'롁');
+	val = val.replace(/lyeq/g,'롕');
+	val = val.replace(/lwes/g,'뤳');
+	val = val.replace(/lwez/g,'뤴');
+	val = val.replace(/lwel/g,'뤨');
+	val = val.replace(/lwen/g,'뤤');
+	val = val.replace(/lwet/g,'뤹');
+	val = val.replace(/lwed/g,'뤧');
+	val = val.replace(/lwem/g,'뤰');
+	val = val.replace(/lwep/g,'뤺');
+	val = val.replace(/lweb/g,'뤱');
+	val = val.replace(/lwec/g,'뤻');
+	val = val.replace(/lwef/g,'뤮');
+	val = val.replace(/lwev/g,'뤲');
+	val = val.replace(/syok/g,'쭄');
+	val = val.replace(/mùdj/g,'맻');
+	val = val.replace(/mùch/g,'맺');
+	val = val.replace(/syov/g,'쬾');
+	val = val.replace(/lwek/g,'뤸');
+	val = val.replace(/lweg/g,'뤡');
+	val = val.replace(/lweq/g,'뤵');
+	val = val.replace(/lyos/g,'룟');
+	val = val.replace(/lyoz/g,'룠');
+	val = val.replace(/lyol/g,'룔');
+	val = val.replace(/lyon/g,'룐');
+	val = val.replace(/lyot/g,'룥');
+	val = val.replace(/lyod/g,'룓');
+	val = val.replace(/lyom/g,'룜');
+	val = val.replace(/lyop/g,'룦');
+	val = val.replace(/lyob/g,'룝');
+	val = val.replace(/lyoc/g,'룧');
+	val = val.replace(/lyof/g,'룚');
+	val = val.replace(/lyov/g,'룞');
+	val = val.replace(/midj/g,'및');
+	val = val.replace(/mich/g,'밎');
+	val = val.replace(/syof/g,'쬺');
+	val = val.replace(/syoc/g,'쭇');
+	val = val.replace(/lyok/g,'룤');
+	val = val.replace(/lyog/g,'룍');
+	val = val.replace(/lyoq/g,'룡');
+	val = val.replace(/lwos/g,'룃');
+	val = val.replace(/lwoz/g,'룄');
+	val = val.replace(/lwol/g,'뢸');
+	val = val.replace(/lwon/g,'뢴');
+	val = val.replace(/lwot/g,'룉');
+	val = val.replace(/lwod/g,'뢷');
+	val = val.replace(/lwom/g,'룀');
+	val = val.replace(/lwop/g,'룊');
+	val = val.replace(/lwob/g,'룁');
+	val = val.replace(/lwoc/g,'룋');
+	val = val.replace(/lwof/g,'뢾');
+	val = val.replace(/mudj/g,'믗');
+	val = val.replace(/much/g,'믖');
+	val = val.replace(/lwov/g,'룂');
+	val = val.replace(/syob/g,'쬽');
+	val = val.replace(/syop/g,'쭆');
+	val = val.replace(/lwok/g,'룈');
+	val = val.replace(/lwog/g,'뢱');
+	val = val.replace(/lwoq/g,'룅');
+	val = val.replace(/lyès/g,'렷');
+	val = val.replace(/lyèz/g,'렸');
+	val = val.replace(/lyèl/g,'렬');
+	val = val.replace(/lyèn/g,'련');
+	val = val.replace(/lyèt/g,'렽');
+	val = val.replace(/lyèd/g,'렫');
+	val = val.replace(/rwaq/g,'뢍');
+	val = val.replace(/lyèm/g,'렴');
+	val = val.replace(/rwag/g,'롹');
+	val = val.replace(/rwak/g,'뢐');
+	val = val.replace(/syom/g,'쬼');
+	val = val.replace(/syod/g,'쬳');
+	val = val.replace(/rwav/g,'뢊');
+	val = val.replace(/rwaf/g,'뢆');
+	val = val.replace(/rwac/g,'뢓');
+	val = val.replace(/rwab/g,'뢉');
+	val = val.replace(/rwap/g,'뢒');
+	val = val.replace(/rwam/g,'뢈');
+	val = val.replace(/rwad/g,'롿');
+	val = val.replace(/rwat/g,'뢑');
+	val = val.replace(/rwan/g,'롼');
+	val = val.replace(/rwal/g,'뢀');
+	val = val.replace(/rwaz/g,'뢌');
+	val = val.replace(/rwas/g,'뢋');
+	val = val.replace(/ryaq/g,'량');
+	val = val.replace(/lyèp/g,'렾');
+	val = val.replace(/ryag/g,'략');
+	val = val.replace(/ryak/g,'럌');
+	val = val.replace(/syot/g,'쭅');
+	val = val.replace(/syon/g,'쬰');
+	val = val.replace(/ryav/g,'럆');
+	val = val.replace(/ryaf/g,'럂');
+	val = val.replace(/ryac/g,'럏');
+	val = val.replace(/ryab/g,'럅');
+	val = val.replace(/ryap/g,'럎');
+	val = val.replace(/ryam/g,'럄');
+	val = val.replace(/ryad/g,'랻');
+	val = val.replace(/ryat/g,'럍');
+	val = val.replace(/ryan/g,'랸');
+	val = val.replace(/ryal/g,'랼');
+	val = val.replace(/ryaz/g,'럈');
+	val = val.replace(/ryas/g,'럇');
+	val = val.replace(/rwùq/g,'뢩');
+	val = val.replace(/lyèb/g,'렵');
+	val = val.replace(/rwùg/g,'뢕');
+	val = val.replace(/rwùk/g,'뢬');
+	val = val.replace(/syol/g,'쬴');
+	val = val.replace(/syoz/g,'쭀');
+	val = val.replace(/rwùv/g,'뢦');
+	val = val.replace(/rwùf/g,'뢢');
+	val = val.replace(/rwùc/g,'뢯');
+	val = val.replace(/rwùb/g,'뢥');
+	val = val.replace(/rwùp/g,'뢮');
+	val = val.replace(/rwùm/g,'뢤');
+	val = val.replace(/rwùd/g,'뢛');
+	val = val.replace(/rwùt/g,'뢭');
+	val = val.replace(/rwùn/g,'뢘');
+	val = val.replace(/rwùl/g,'뢜');
+	val = val.replace(/rwùz/g,'뢨');
+	val = val.replace(/rwùs/g,'뢧');
+	val = val.replace(/ryùq/g,'럥');
+	val = val.replace(/lyèc/g,'렿');
+	val = val.replace(/ryùg/g,'럑');
+	val = val.replace(/ryùk/g,'럨');
+	val = val.replace(/syos/g,'쬿');
+	val = val.replace(/woch/g,'욎');
+	val = val.replace(/ryùv/g,'럢');
+	val = val.replace(/ryùf/g,'럞');
+	val = val.replace(/ryùc/g,'럫');
+	val = val.replace(/ryùb/g,'럡');
+	val = val.replace(/ryùp/g,'럪');
+	val = val.replace(/ryùm/g,'럠');
+	val = val.replace(/ryùd/g,'럗');
+	val = val.replace(/ryùt/g,'럩');
+	val = val.replace(/ryùn/g,'럔');
+	val = val.replace(/ryùl/g,'럘');
+	val = val.replace(/ryùz/g,'럤');
+	val = val.replace(/ryùs/g,'럣');
+	val = val.replace(/rwèq/g,'뤙');
+	val = val.replace(/lyèf/g,'렲');
+	val = val.replace(/rwèg/g,'뤅');
+	val = val.replace(/rwèk/g,'뤜');
+	val = val.replace(/wodj/g,'욏');
+	val = val.replace(/sweq/g,'쮕');
+	val = val.replace(/rwèv/g,'뤖');
+	val = val.replace(/rwèf/g,'뤒');
+	val = val.replace(/rwèc/g,'뤟');
+	val = val.replace(/rwèb/g,'뤕');
+	val = val.replace(/rwèp/g,'뤞');
+	val = val.replace(/rwèm/g,'뤔');
+	val = val.replace(/rwèd/g,'뤋');
+	val = val.replace(/rwèt/g,'뤝');
+	val = val.replace(/rwèn/g,'뤈');
+	val = val.replace(/rwèl/g,'뤌');
+	val = val.replace(/rwèz/g,'뤘');
+	val = val.replace(/rwès/g,'뤗');
+	val = val.replace(/ryèq/g,'령');
+	val = val.replace(/lyèv/g,'렶');
+	val = val.replace(/ryèg/g,'력');
+	val = val.replace(/ryèk/g,'렼');
+	val = val.replace(/sweg/g,'쮁');
+	val = val.replace(/swek/g,'쮘');
+	val = val.replace(/ryèv/g,'렶');
+	val = val.replace(/ryèf/g,'렲');
+	val = val.replace(/ryèc/g,'렿');
+	val = val.replace(/ryèb/g,'렵');
+	val = val.replace(/ryèp/g,'렾');
+	val = val.replace(/ryèm/g,'렴');
+	val = val.replace(/ryèd/g,'렫');
+	val = val.replace(/ryèt/g,'렽');
+	val = val.replace(/ryèn/g,'련');
+	val = val.replace(/ryèl/g,'렬');
+	val = val.replace(/ryèz/g,'렸');
+	val = val.replace(/ryès/g,'렷');
+	val = val.replace(/rwoq/g,'룅');
+	val = val.replace(/swev/g,'쮒');
+	val = val.replace(/rwog/g,'뢱');
+	val = val.replace(/rwok/g,'룈');
+	val = val.replace(/swef/g,'쮎');
+	val = val.replace(/swec/g,'쮛');
+	val = val.replace(/rwov/g,'룂');
+	val = val.replace(/rwof/g,'뢾');
+	val = val.replace(/rwoc/g,'룋');
+	val = val.replace(/rwob/g,'룁');
+	val = val.replace(/rwop/g,'룊');
+	val = val.replace(/rwom/g,'룀');
+	val = val.replace(/rwod/g,'뢷');
+	val = val.replace(/rwot/g,'룉');
+	val = val.replace(/rwon/g,'뢴');
+	val = val.replace(/rwol/g,'뢸');
+	val = val.replace(/rwoz/g,'룄');
+	val = val.replace(/rwos/g,'룃');
+	val = val.replace(/ryoq/g,'룡');
+	val = val.replace(/sweb/g,'쮑');
+	val = val.replace(/ryog/g,'룍');
+	val = val.replace(/ryok/g,'룤');
+	val = val.replace(/swep/g,'쮚');
+	val = val.replace(/swem/g,'쮐');
+	val = val.replace(/ryov/g,'룞');
+	val = val.replace(/ryof/g,'룚');
+	val = val.replace(/ryoc/g,'룧');
+	val = val.replace(/ryob/g,'룝');
+	val = val.replace(/ryop/g,'룦');
+	val = val.replace(/ryom/g,'룜');
+	val = val.replace(/ryod/g,'룓');
+	val = val.replace(/ryot/g,'룥');
+	val = val.replace(/ryon/g,'룐');
+	val = val.replace(/ryol/g,'룔');
+	val = val.replace(/ryoz/g,'룠');
+	val = val.replace(/ryos/g,'룟');
+	val = val.replace(/rweq/g,'뤵');
+	val = val.replace(/lyèk/g,'렼');
+	val = val.replace(/rweg/g,'뤡');
+	val = val.replace(/rwek/g,'뤸');
+	val = val.replace(/swed/g,'쮇');
+	val = val.replace(/swet/g,'쮙');
+	val = val.replace(/rwev/g,'뤲');
+	val = val.replace(/rwef/g,'뤮');
+	val = val.replace(/rwec/g,'뤻');
+	val = val.replace(/rweb/g,'뤱');
+	val = val.replace(/rwep/g,'뤺');
+	val = val.replace(/rwem/g,'뤰');
+	val = val.replace(/rwed/g,'뤧');
+	val = val.replace(/rwet/g,'뤹');
+	val = val.replace(/rwen/g,'뤤');
+	val = val.replace(/rwel/g,'뤨');
+	val = val.replace(/rwez/g,'뤴');
+	val = val.replace(/rwes/g,'뤳');
+	val = val.replace(/ryeq/g,'롕');
+	val = val.replace(/lyèg/g,'력');
+	val = val.replace(/ryeg/g,'롁');
+	val = val.replace(/ryek/g,'롘');
+	val = val.replace(/swen/g,'쮄');
+	val = val.replace(/swel/g,'쮈');
+	val = val.replace(/ryev/g,'롒');
+	val = val.replace(/ryef/g,'롎');
+	val = val.replace(/ryec/g,'롛');
+	val = val.replace(/ryeb/g,'롑');
+	val = val.replace(/ryep/g,'롚');
+	val = val.replace(/ryem/g,'롐');
+	val = val.replace(/ryed/g,'롇');
+	val = val.replace(/ryet/g,'롙');
+	val = val.replace(/ryen/g,'롄');
+	val = val.replace(/ryel/g,'롈');
+	val = val.replace(/ryez/g,'롔');
+	val = val.replace(/ryes/g,'롓');
+	val = val.replace(/rwuq/g,'륭');
+	val = val.replace(/lyèq/g,'령');
+	val = val.replace(/rwug/g,'륙');
+	val = val.replace(/rwuk/g,'륰');
+	val = val.replace(/swez/g,'쮔');
+	val = val.replace(/yèch/g,'옂');
+	val = val.replace(/rwuv/g,'륪');
+	val = val.replace(/rwuf/g,'륦');
+	val = val.replace(/rwuc/g,'륳');
+	val = val.replace(/rwub/g,'륩');
+	val = val.replace(/rwup/g,'륲');
+	val = val.replace(/rwum/g,'륨');
+	val = val.replace(/rwud/g,'륟');
+	val = val.replace(/rwut/g,'륱');
+	val = val.replace(/rwun/g,'륜');
+	val = val.replace(/rwul/g,'률');
+	val = val.replace(/rwuz/g,'륬');
+	val = val.replace(/rwus/g,'륫');
+	val = val.replace(/ryuq/g,'룽');
+	val = val.replace(/lwès/g,'뤗');
+	val = val.replace(/ryug/g,'룩');
+	val = val.replace(/ryuk/g,'뤀');
+	val = val.replace(/yèdj/g,'옃');
+	val = val.replace(/swes/g,'쮓');
+	val = val.replace(/ryuv/g,'룺');
+	val = val.replace(/ryuf/g,'룶');
+	val = val.replace(/ryuc/g,'뤃');
+	val = val.replace(/ryub/g,'룹');
+	val = val.replace(/ryup/g,'뤂');
+	val = val.replace(/ryum/g,'룸');
+	val = val.replace(/ryud/g,'룯');
+	val = val.replace(/ryut/g,'뤁');
+	val = val.replace(/ryun/g,'룬');
+	val = val.replace(/ryul/g,'룰');
+	val = val.replace(/ryuz/g,'룼');
+	val = val.replace(/ryus/g,'룻');
+	val = val.replace(/rwiq/g,'륑');
+	val = val.replace(/lwèz/g,'뤘');
+	val = val.replace(/rwig/g,'뤽');
+	val = val.replace(/rwik/g,'륔');
+	val = val.replace(/syeq/g,'쪵');
+	val = val.replace(/syek/g,'쪸');
+	val = val.replace(/rwiv/g,'륎');
+	val = val.replace(/rwif/g,'륊');
+	val = val.replace(/rwic/g,'륗');
+	val = val.replace(/rwib/g,'륍');
+	val = val.replace(/rwip/g,'륖');
+	val = val.replace(/rwim/g,'륌');
+	val = val.replace(/rwid/g,'륃');
+	val = val.replace(/rwit/g,'륕');
+	val = val.replace(/rwin/g,'륀');
+	val = val.replace(/rwil/g,'륄');
+	val = val.replace(/rwiz/g,'륐');
+	val = val.replace(/rwis/g,'륏');
+	val = val.replace(/ryiq/g,'릥');
+	val = val.replace(/lwèl/g,'뤌');
+	val = val.replace(/ryig/g,'릑');
+	val = val.replace(/ryik/g,'릨');
+	val = val.replace(/syev/g,'쪲');
+	val = val.replace(/syef/g,'쪮');
+	val = val.replace(/ryiv/g,'릢');
+	val = val.replace(/ryif/g,'릞');
+	val = val.replace(/ryic/g,'릫');
+	val = val.replace(/ryib/g,'릡');
+	val = val.replace(/ryip/g,'릪');
+	val = val.replace(/ryim/g,'릠');
+	val = val.replace(/ryid/g,'릗');
+	val = val.replace(/ryit/g,'릩');
+	val = val.replace(/ryin/g,'릔');
+	val = val.replace(/ryil/g,'릘');
+	val = val.replace(/ryiz/g,'릤');
+	val = val.replace(/ryis/g,'릣');
+	val = val.replace(/lwèn/g,'뤈');
+	val = val.replace(/lwèt/g,'뤝');
+	val = val.replace(/lwèd/g,'뤋');
+	val = val.replace(/lwèm/g,'뤔');
+	val = val.replace(/radj/g,'랓');
+	val = val.replace(/rach/g,'랒');
+	val = val.replace(/lwèp/g,'뤞');
+	val = val.replace(/lwèb/g,'뤕');
+	val = val.replace(/lwèc/g,'뤟');
+	val = val.replace(/lwèf/g,'뤒');
+	val = val.replace(/lwèv/g,'뤖');
+	val = val.replace(/syec/g,'쪻');
+	val = val.replace(/syeb/g,'쪱');
+	val = val.replace(/lwèk/g,'뤜');
+	val = val.replace(/lwèg/g,'뤅');
+	val = val.replace(/lwèq/g,'뤙');
+	val = val.replace(/lyùs/g,'럣');
+	val = val.replace(/lyùz/g,'럤');
+	val = val.replace(/lyùl/g,'럘');
+	val = val.replace(/lyùn/g,'럔');
+	val = val.replace(/lyùt/g,'럩');
+	val = val.replace(/lyùd/g,'럗');
+	val = val.replace(/redj/g,'렟');
+	val = val.replace(/rech/g,'렞');
+	val = val.replace(/lyùm/g,'럠');
+	val = val.replace(/lyùp/g,'럪');
+	val = val.replace(/lyùb/g,'럡');
+	val = val.replace(/lyùc/g,'럫');
+	val = val.replace(/lyùf/g,'럞');
+	val = val.replace(/lyùv/g,'럢');
+	val = val.replace(/syep/g,'쪺');
+	val = val.replace(/syem/g,'쪰');
+	val = val.replace(/lyùk/g,'럨');
+	val = val.replace(/lyùg/g,'럑');
+	val = val.replace(/lyùq/g,'럥');
+	val = val.replace(/lwùs/g,'뢧');
+	val = val.replace(/lwùz/g,'뢨');
+	val = val.replace(/lwùl/g,'뢜');
+	val = val.replace(/lwùn/g,'뢘');
+	val = val.replace(/lwùt/g,'뢭');
+	val = val.replace(/rodj/g,'롳');
+	val = val.replace(/roch/g,'롲');
+	val = val.replace(/lwùd/g,'뢛');
+	val = val.replace(/lwùm/g,'뢤');
+	val = val.replace(/lwùp/g,'뢮');
+	val = val.replace(/lwùb/g,'뢥');
+	val = val.replace(/lwùc/g,'뢯');
+	val = val.replace(/lwùf/g,'뢢');
+	val = val.replace(/lwùv/g,'뢦');
+	val = val.replace(/syed/g,'쪧');
+	val = val.replace(/syet/g,'쪹');
+	val = val.replace(/lwùk/g,'뢬');
+	val = val.replace(/lwùg/g,'뢕');
+	val = val.replace(/lwùq/g,'뢩');
+	val = val.replace(/lyas/g,'럇');
+	val = val.replace(/lyaz/g,'럈');
+	val = val.replace(/lyal/g,'랼');
+	val = val.replace(/lyan/g,'랸');
+	val = val.replace(/rèdj/g,'렃');
+	val = val.replace(/rèch/g,'렂');
+	val = val.replace(/lyat/g,'럍');
+	val = val.replace(/lyad/g,'랻');
+	val = val.replace(/lyam/g,'럄');
+	val = val.replace(/lyap/g,'럎');
+	val = val.replace(/lyab/g,'럅');
+	val = val.replace(/lyac/g,'럏');
+	val = val.replace(/lyaf/g,'럂');
+	val = val.replace(/lyav/g,'럆');
+	val = val.replace(/syen/g,'쪤');
+	val = val.replace(/syel/g,'쪨');
+	val = val.replace(/lyak/g,'럌');
+	val = val.replace(/lyag/g,'략');
+	val = val.replace(/lyaq/g,'량');
+	val = val.replace(/lwas/g,'뢋');
+	val = val.replace(/lwaz/g,'뢌');
+	val = val.replace(/lwal/g,'뢀');
+	val = val.replace(/rùdj/g,'랯');
+	val = val.replace(/rùch/g,'랮');
+	val = val.replace(/lwan/g,'롼');
+	val = val.replace(/lwat/g,'뢑');
+	val = val.replace(/lwad/g,'롿');
+	val = val.replace(/lwam/g,'뢈');
+	val = val.replace(/lwap/g,'뢒');
+	val = val.replace(/lwab/g,'뢉');
+	val = val.replace(/lwac/g,'뢓');
+	val = val.replace(/lwaf/g,'뢆');
+	val = val.replace(/lwav/g,'뢊');
+	val = val.replace(/syez/g,'쪴');
+	val = val.replace(/wèch/g,'웢');
+	val = val.replace(/lwak/g,'뢐');
+	val = val.replace(/lwag/g,'롹');
+	val = val.replace(/lwaq/g,'뢍');
+	val = val.replace(/nuch/g,'늦');
+	val = val.replace(/nudj/g,'늧');
+	val = val.replace(/ridj/g,'맃');
+	val = val.replace(/rich/g,'맂');
+	val = val.replace(/nich/g,'닞');
+	val = val.replace(/nidj/g,'닟');
+	val = val.replace(/nùch/g,'냊');
+	val = val.replace(/nùdj/g,'냋');
+	val = val.replace(/nèch/g,'넞');
+	val = val.replace(/nèdj/g,'넟');
+	val = val.replace(/noch/g,'놎');
+	val = val.replace(/nodj/g,'놏');
+	val = val.replace(/nech/g,'넺');
+	val = val.replace(/nedj/g,'넻');
+	val = val.replace(/nach/g,'낮');
+	val = val.replace(/nadj/g,'낯');
+	val = val.replace(/nyis/g,'늿');
+	val = val.replace(/nyiz/g,'닀');
+	val = val.replace(/nyil/g,'늴');
+	val = val.replace(/nyin/g,'늰');
+	val = val.replace(/rudj/g,'릋');
+	val = val.replace(/ruch/g,'릊');
+	val = val.replace(/nyit/g,'닅');
+	val = val.replace(/nyid/g,'늳');
+	val = val.replace(/nyim/g,'늼');
+	val = val.replace(/nyip/g,'닆');
+	val = val.replace(/nyib/g,'늽');
+	val = val.replace(/nyic/g,'닇');
+	val = val.replace(/nyif/g,'늺');
+	val = val.replace(/nyiv/g,'늾');
+	val = val.replace(/wèdj/g,'웣');
+	val = val.replace(/syes/g,'쪳');
+	val = val.replace(/nyik/g,'닄');
+	val = val.replace(/nyig/g,'늭');
+	val = val.replace(/dwaq/g,'돵');
+	val = val.replace(/nyiq/g,'닁');
+	val = val.replace(/dwag/g,'돡');
+	val = val.replace(/dwak/g,'돸');
+	val = val.replace(/swuq/g,'쯍');
+	val = val.replace(/swug/g,'쮹');
+	val = val.replace(/dwav/g,'돲');
+	val = val.replace(/dwaf/g,'돮');
+	val = val.replace(/dwac/g,'돻');
+	val = val.replace(/dwab/g,'돱');
+	val = val.replace(/dwap/g,'돺');
+	val = val.replace(/dwam/g,'돰');
+	val = val.replace(/dwad/g,'돧');
+	val = val.replace(/dwat/g,'돹');
+	val = val.replace(/dwan/g,'돤');
+	val = val.replace(/dwal/g,'돨');
+	val = val.replace(/dwaz/g,'돴');
+	val = val.replace(/dwas/g,'돳');
+	val = val.replace(/dyaq/g,'댱');
+	val = val.replace(/nwis/g,'뉫');
+	val = val.replace(/dyag/g,'댝');
+	val = val.replace(/dyak/g,'댴');
+	val = val.replace(/swuk/g,'쯐');
+	val = val.replace(/swuv/g,'쯊');
+	val = val.replace(/dyav/g,'댮');
+	val = val.replace(/dyaf/g,'댪');
+	val = val.replace(/dyac/g,'댷');
+	val = val.replace(/dyab/g,'댭');
+	val = val.replace(/dyap/g,'댶');
+	val = val.replace(/dyam/g,'댬');
+	val = val.replace(/dyad/g,'댣');
+	val = val.replace(/dyat/g,'댵');
+	val = val.replace(/dyan/g,'댠');
+	val = val.replace(/dyal/g,'댤');
+	val = val.replace(/dyaz/g,'댰');
+	val = val.replace(/dyas/g,'댯');
+	val = val.replace(/dwùq/g,'됑');
+	val = val.replace(/nwiz/g,'뉬');
+	val = val.replace(/dwùg/g,'돽');
+	val = val.replace(/dwùk/g,'됔');
+	val = val.replace(/swuf/g,'쯆');
+	val = val.replace(/swuc/g,'쯓');
+	val = val.replace(/dwùv/g,'됎');
+	val = val.replace(/dwùf/g,'됊');
+	val = val.replace(/dwùc/g,'됗');
+	val = val.replace(/dwùb/g,'됍');
+	val = val.replace(/dwùp/g,'됖');
+	val = val.replace(/dwùm/g,'됌');
+	val = val.replace(/dwùd/g,'됃');
+	val = val.replace(/dwùt/g,'됕');
+	val = val.replace(/dwùn/g,'됀');
+	val = val.replace(/dwùl/g,'됄');
+	val = val.replace(/dwùz/g,'됐');
+	val = val.replace(/dwùs/g,'됏');
+	val = val.replace(/dyùq/g,'덍');
+	val = val.replace(/nwil/g,'뉠');
+	val = val.replace(/dyùg/g,'댹');
+	val = val.replace(/dyùk/g,'덐');
+	val = val.replace(/swub/g,'쯉');
+	val = val.replace(/swup/g,'쯒');
+	val = val.replace(/dyùv/g,'덊');
+	val = val.replace(/dyùf/g,'덆');
+	val = val.replace(/dyùc/g,'덓');
+	val = val.replace(/dyùb/g,'덉');
+	val = val.replace(/dyùp/g,'덒');
+	val = val.replace(/dyùm/g,'덈');
+	val = val.replace(/dyùd/g,'댿');
+	val = val.replace(/dyùt/g,'덑');
+	val = val.replace(/dyùn/g,'댼');
+	val = val.replace(/dyùl/g,'덀');
+	val = val.replace(/dyùz/g,'덌');
+	val = val.replace(/dyùs/g,'덋');
+	val = val.replace(/dwèq/g,'뒁');
+	val = val.replace(/nwin/g,'뉜');
+	val = val.replace(/dwèg/g,'둭');
+	val = val.replace(/dwèk/g,'뒄');
+	val = val.replace(/swum/g,'쯈');
+	val = val.replace(/swud/g,'쮿');
+	val = val.replace(/dwèv/g,'둾');
+	val = val.replace(/dwèf/g,'둺');
+	val = val.replace(/dwèc/g,'뒇');
+	val = val.replace(/dwèb/g,'둽');
+	val = val.replace(/dwèp/g,'뒆');
+	val = val.replace(/dwèm/g,'둼');
+	val = val.replace(/dwèd/g,'둳');
+	val = val.replace(/dwèt/g,'뒅');
+	val = val.replace(/dwèn/g,'둰');
+	val = val.replace(/dwèl/g,'둴');
+	val = val.replace(/dwèz/g,'뒀');
+	val = val.replace(/dwès/g,'둿');
+	val = val.replace(/dyèq/g,'뎡');
+	val = val.replace(/nwit/g,'뉱');
+	val = val.replace(/dyèg/g,'뎍');
+	val = val.replace(/dyèk/g,'뎤');
+	val = val.replace(/swut/g,'쯑');
+	val = val.replace(/swun/g,'쮼');
+	val = val.replace(/dyèv/g,'뎞');
+	val = val.replace(/dyèf/g,'뎚');
+	val = val.replace(/dyèc/g,'뎧');
+	val = val.replace(/dyèb/g,'뎝');
+	val = val.replace(/dyèp/g,'뎦');
+	val = val.replace(/dyèm/g,'뎜');
+	val = val.replace(/dyèd/g,'뎓');
+	val = val.replace(/dyèt/g,'뎥');
+	val = val.replace(/dyèn/g,'뎐');
+	val = val.replace(/dyèl/g,'뎔');
+	val = val.replace(/dyèz/g,'뎠');
+	val = val.replace(/dyès/g,'뎟');
+	val = val.replace(/dwoq/g,'됭');
+	val = val.replace(/nwid/g,'뉟');
+	val = val.replace(/dwog/g,'됙');
+	val = val.replace(/dwok/g,'됰');
+	val = val.replace(/swul/g,'쯀');
+	val = val.replace(/yùch/g,'얮');
+	val = val.replace(/dwov/g,'됪');
+	val = val.replace(/dwof/g,'됦');
+	val = val.replace(/dwoc/g,'됳');
+	val = val.replace(/dwob/g,'됩');
+	val = val.replace(/dwop/g,'됲');
+	val = val.replace(/dwom/g,'됨');
+	val = val.replace(/dwod/g,'됟');
+	val = val.replace(/dwot/g,'됱');
+	val = val.replace(/dwon/g,'된');
+	val = val.replace(/dwol/g,'될');
+	val = val.replace(/dwoz/g,'됬');
+	val = val.replace(/dwos/g,'됫');
+	val = val.replace(/dyoq/g,'둉');
+	val = val.replace(/nwim/g,'뉨');
+	val = val.replace(/dyog/g,'됵');
+	val = val.replace(/dyok/g,'둌');
+	val = val.replace(/yùdj/g,'얯');
+	val = val.replace(/swuz/g,'쯌');
+	val = val.replace(/dyov/g,'둆');
+	val = val.replace(/dyof/g,'둂');
+	val = val.replace(/dyoc/g,'둏');
+	val = val.replace(/dyob/g,'둅');
+	val = val.replace(/dyop/g,'둎');
+	val = val.replace(/dyom/g,'둄');
+	val = val.replace(/dyod/g,'됻');
+	val = val.replace(/dyot/g,'둍');
+	val = val.replace(/dyon/g,'됸');
+	val = val.replace(/dyol/g,'됼');
+	val = val.replace(/dyoz/g,'둈');
+	val = val.replace(/dyos/g,'둇');
+	val = val.replace(/dweq/g,'뒝');
+	val = val.replace(/nwip/g,'뉲');
+	val = val.replace(/dweg/g,'뒉');
+	val = val.replace(/dwek/g,'뒠');
+	val = val.replace(/swus/g,'쯋');
+	val = val.replace(/syuq/g,'쭝');
+	val = val.replace(/dwev/g,'뒚');
+	val = val.replace(/dwef/g,'뒖');
+	val = val.replace(/dwec/g,'뒣');
+	val = val.replace(/dweb/g,'뒙');
+	val = val.replace(/dwep/g,'뒢');
+	val = val.replace(/dwem/g,'뒘');
+	val = val.replace(/dwed/g,'뒏');
+	val = val.replace(/dwet/g,'뒡');
+	val = val.replace(/dwen/g,'뒌');
+	val = val.replace(/dwel/g,'뒐');
+	val = val.replace(/dwez/g,'뒜');
+	val = val.replace(/dwes/g,'뒛');
+	val = val.replace(/dyeq/g,'뎽');
+	val = val.replace(/nwib/g,'뉩');
+	val = val.replace(/dyeg/g,'뎩');
+	val = val.replace(/dyek/g,'돀');
+	val = val.replace(/syug/g,'쭉');
+	val = val.replace(/syuk/g,'쭠');
+	val = val.replace(/dyev/g,'뎺');
+	val = val.replace(/dyef/g,'뎶');
+	val = val.replace(/dyec/g,'돃');
+	val = val.replace(/dyeb/g,'뎹');
+	val = val.replace(/dyep/g,'돂');
+	val = val.replace(/dyem/g,'뎸');
+	val = val.replace(/dyed/g,'뎯');
+	val = val.replace(/dyet/g,'돁');
+	val = val.replace(/dyen/g,'뎬');
+	val = val.replace(/dyel/g,'뎰');
+	val = val.replace(/dyez/g,'뎼');
+	val = val.replace(/dyes/g,'뎻');
+	val = val.replace(/dwuq/g,'듕');
+	val = val.replace(/nwic/g,'뉳');
+	val = val.replace(/dwug/g,'듁');
+	val = val.replace(/dwuk/g,'듘');
+	val = val.replace(/syuv/g,'쭚');
+	val = val.replace(/syuf/g,'쭖');
+	val = val.replace(/dwuv/g,'듒');
+	val = val.replace(/dwuf/g,'듎');
+	val = val.replace(/dwuc/g,'듛');
+	val = val.replace(/dwub/g,'듑');
+	val = val.replace(/dwup/g,'듚');
+	val = val.replace(/dwum/g,'듐');
+	val = val.replace(/dwud/g,'듇');
+	val = val.replace(/dwut/g,'듙');
+	val = val.replace(/dwun/g,'듄');
+	val = val.replace(/dwul/g,'듈');
+	val = val.replace(/dwuz/g,'듔');
+	val = val.replace(/dwus/g,'듓');
+	val = val.replace(/dyuq/g,'둥');
+	val = val.replace(/nwif/g,'뉦');
+	val = val.replace(/dyug/g,'둑');
+	val = val.replace(/dyuk/g,'둨');
+	val = val.replace(/syuc/g,'쭣');
+	val = val.replace(/syub/g,'쭙');
+	val = val.replace(/dyuv/g,'둢');
+	val = val.replace(/dyuf/g,'둞');
+	val = val.replace(/dyuc/g,'둫');
+	val = val.replace(/dyub/g,'둡');
+	val = val.replace(/dyup/g,'둪');
+	val = val.replace(/dyum/g,'둠');
+	val = val.replace(/dyud/g,'둗');
+	val = val.replace(/dyut/g,'둩');
+	val = val.replace(/dyun/g,'둔');
+	val = val.replace(/dyul/g,'둘');
+	val = val.replace(/dyuz/g,'둤');
+	val = val.replace(/dyus/g,'둣');
+	val = val.replace(/dwiq/g,'뒹');
+	val = val.replace(/nwiv/g,'뉪');
+	val = val.replace(/dwig/g,'뒥');
+	val = val.replace(/dwik/g,'뒼');
+	val = val.replace(/syup/g,'쭢');
+	val = val.replace(/syum/g,'쭘');
+	val = val.replace(/dwiv/g,'뒶');
+	val = val.replace(/dwif/g,'뒲');
+	val = val.replace(/dwic/g,'뒿');
+	val = val.replace(/dwib/g,'뒵');
+	val = val.replace(/dwip/g,'뒾');
+	val = val.replace(/dwim/g,'뒴');
+	val = val.replace(/dwid/g,'뒫');
+	val = val.replace(/dwit/g,'뒽');
+	val = val.replace(/dwin/g,'뒨');
+	val = val.replace(/dwil/g,'뒬');
+	val = val.replace(/dwiz/g,'뒸');
+	val = val.replace(/dwis/g,'뒷');
+	val = val.replace(/dyiq/g,'딍');
+	val = val.replace(/syud/g,'쭏');
+	val = val.replace(/dyig/g,'듹');
+	val = val.replace(/dyik/g,'딐');
+	val = val.replace(/syut/g,'쭡');
+	val = val.replace(/syun/g,'쭌');
+	val = val.replace(/dyiv/g,'딊');
+	val = val.replace(/dyif/g,'딆');
+	val = val.replace(/dyic/g,'딓');
+	val = val.replace(/dyib/g,'딉');
+	val = val.replace(/dyip/g,'딒');
+	val = val.replace(/dyim/g,'딈');
+	val = val.replace(/dyid/g,'듿');
+	val = val.replace(/dyit/g,'딑');
+	val = val.replace(/dyin/g,'듼');
+	val = val.replace(/dyil/g,'딀');
+	val = val.replace(/dyiz/g,'딌');
+	val = val.replace(/dyis/g,'딋');
+	val = val.replace(/wùch/g,'왲');
+	val = val.replace(/nwik/g,'뉰');
+	val = val.replace(/nwig/g,'뉙');
+	val = val.replace(/nwiq/g,'뉭');
+	val = val.replace(/dadj/g,'닻');
+	val = val.replace(/dach/g,'닺');
+	val = val.replace(/nyus/g,'눗');
+	val = val.replace(/nyuz/g,'눘');
+	val = val.replace(/nyul/g,'눌');
+	val = val.replace(/nyun/g,'눈');
+	val = val.replace(/nyut/g,'눝');
+	val = val.replace(/nyud/g,'눋');
+	val = val.replace(/nyum/g,'눔');
+	val = val.replace(/nyup/g,'눞');
+	val = val.replace(/nyub/g,'눕');
+	val = val.replace(/nyuc/g,'눟');
+	val = val.replace(/nyuf/g,'눒');
+	val = val.replace(/nyuv/g,'눖');
+	val = val.replace(/wùdj/g,'왳');
+	val = val.replace(/syul/g,'쭐');
+	val = val.replace(/nyuk/g,'눜');
+	val = val.replace(/nyug/g,'눅');
+	val = val.replace(/dedj/g,'뎇');
+	val = val.replace(/dech/g,'뎆');
+	val = val.replace(/nyuq/g,'눙');
+	val = val.replace(/nwus/g,'늇');
+	val = val.replace(/nwuz/g,'늈');
+	val = val.replace(/nwul/g,'뉼');
+	val = val.replace(/nwun/g,'뉸');
+	val = val.replace(/nwut/g,'늍');
+	val = val.replace(/nwud/g,'뉻');
+	val = val.replace(/nwum/g,'늄');
+	val = val.replace(/nwup/g,'늎');
+	val = val.replace(/nwub/g,'늅');
+	val = val.replace(/nwuc/g,'늏');
+	val = val.replace(/nwuf/g,'늂');
+	val = val.replace(/nwuv/g,'늆');
+	val = val.replace(/syuz/g,'쭜');
+	val = val.replace(/syus/g,'쭛');
+	val = val.replace(/nwuk/g,'늌');
+	val = val.replace(/dodj/g,'돛');
+	val = val.replace(/doch/g,'돚');
+	val = val.replace(/nwug/g,'뉵');
+	val = val.replace(/nwuq/g,'늉');
+	val = val.replace(/nyes/g,'녯');
+	val = val.replace(/nyez/g,'녰');
+	val = val.replace(/nyel/g,'녤');
+	val = val.replace(/nyen/g,'녠');
+	val = val.replace(/nyet/g,'녵');
+	val = val.replace(/nyed/g,'녣');
+	val = val.replace(/nyem/g,'녬');
+	val = val.replace(/nyep/g,'녶');
+	val = val.replace(/nyeb/g,'녭');
+	val = val.replace(/nyec/g,'녷');
+	val = val.replace(/nyef/g,'녪');
+	val = val.replace(/nyev/g,'녮');
+	val = val.replace(/swiq/g,'쮱');
+	val = val.replace(/swig/g,'쮝');
+	val = val.replace(/dèdj/g,'덫');
+	val = val.replace(/dèch/g,'덪');
+	val = val.replace(/nyek/g,'녴');
+	val = val.replace(/nyeg/g,'녝');
+	val = val.replace(/nyeq/g,'녱');
+	val = val.replace(/nwes/g,'뉏');
+	val = val.replace(/nwez/g,'뉐');
+	val = val.replace(/nwel/g,'뉄');
+	val = val.replace(/nwen/g,'뉀');
+	val = val.replace(/nwet/g,'뉕');
+	val = val.replace(/nwed/g,'뉃');
+	val = val.replace(/nwem/g,'뉌');
+	val = val.replace(/nwep/g,'뉖');
+	val = val.replace(/nweb/g,'뉍');
+	val = val.replace(/nwec/g,'뉗');
+	val = val.replace(/nwef/g,'뉊');
+	val = val.replace(/nwev/g,'뉎');
+	val = val.replace(/swik/g,'쮴');
+	val = val.replace(/dùdj/g,'댗');
+	val = val.replace(/dùch/g,'댖');
+	val = val.replace(/swiv/g,'쮮');
+	val = val.replace(/nwek/g,'뉔');
+	val = val.replace(/nweg/g,'눽');
+	val = val.replace(/nweq/g,'뉑');
+	val = val.replace(/nyos/g,'뇻');
+	val = val.replace(/nyoz/g,'뇼');
+	val = val.replace(/nyol/g,'뇰');
+	val = val.replace(/nyon/g,'뇬');
+	val = val.replace(/nyot/g,'눁');
+	val = val.replace(/nyod/g,'뇯');
+	val = val.replace(/nyom/g,'뇸');
+	val = val.replace(/nyop/g,'눂');
+	val = val.replace(/nyob/g,'뇹');
+	val = val.replace(/nyoc/g,'눃');
+	val = val.replace(/nyof/g,'뇶');
+	val = val.replace(/nyov/g,'뇺');
+	val = val.replace(/didj/g,'딫');
+	val = val.replace(/dich/g,'딪');
+	val = val.replace(/swif/g,'쮪');
+	val = val.replace(/swic/g,'쮷');
+	val = val.replace(/nyok/g,'눀');
+	val = val.replace(/nyog/g,'뇩');
+	val = val.replace(/nyoq/g,'뇽');
+	val = val.replace(/nwos/g,'뇟');
+	val = val.replace(/nwoz/g,'뇠');
+	val = val.replace(/nwol/g,'뇔');
+	val = val.replace(/nwon/g,'뇐');
+	val = val.replace(/nwot/g,'뇥');
+	val = val.replace(/nwod/g,'뇓');
+	val = val.replace(/nwom/g,'뇜');
+	val = val.replace(/nwop/g,'뇦');
+	val = val.replace(/nwob/g,'뇝');
+	val = val.replace(/nwoc/g,'뇧');
+	val = val.replace(/nwof/g,'뇚');
+	val = val.replace(/dudj/g,'듳');
+	val = val.replace(/duch/g,'듲');
+	val = val.replace(/nwov/g,'뇞');
+	val = val.replace(/swib/g,'쮭');
+	val = val.replace(/swip/g,'쮶');
+	val = val.replace(/nwok/g,'뇤');
+	val = val.replace(/nwog/g,'뇍');
+	val = val.replace(/nwoq/g,'뇡');
+	val = val.replace(/nyès/g,'녓');
+	val = val.replace(/nyèz/g,'녔');
+	val = val.replace(/nyèl/g,'녈');
+	val = val.replace(/nyèn/g,'년');
+	val = val.replace(/nyèt/g,'녙');
+	val = val.replace(/nyèd/g,'녇');
+	val = val.replace(/twaq/g,'퇑');
+	val = val.replace(/nyèm/g,'념');
+	val = val.replace(/twag/g,'톽');
+	val = val.replace(/twak/g,'퇔');
+	val = val.replace(/swim/g,'쮬');
+	val = val.replace(/swid/g,'쮣');
+	val = val.replace(/twav/g,'퇎');
+	val = val.replace(/twaf/g,'퇊');
+	val = val.replace(/twac/g,'퇗');
+	val = val.replace(/twab/g,'퇍');
+	val = val.replace(/twap/g,'퇖');
+	val = val.replace(/twam/g,'퇌');
+	val = val.replace(/twad/g,'퇃');
+	val = val.replace(/twat/g,'퇕');
+	val = val.replace(/twan/g,'퇀');
+	val = val.replace(/twal/g,'퇄');
+	val = val.replace(/twaz/g,'퇐');
+	val = val.replace(/twas/g,'퇏');
+	val = val.replace(/tyaq/g,'턍');
+	val = val.replace(/nyèp/g,'녚');
+	val = val.replace(/tyag/g,'탹');
+	val = val.replace(/tyak/g,'턐');
+	val = val.replace(/swit/g,'쮵');
+	val = val.replace(/yach/g,'얒');
+	val = val.replace(/tyav/g,'턊');
+	val = val.replace(/tyaf/g,'턆');
+	val = val.replace(/tyac/g,'턓');
+	val = val.replace(/tyab/g,'턉');
+	val = val.replace(/tyap/g,'턒');
+	val = val.replace(/tyam/g,'턈');
+	val = val.replace(/tyad/g,'탿');
+	val = val.replace(/tyat/g,'턑');
+	val = val.replace(/tyan/g,'탼');
+	val = val.replace(/tyal/g,'턀');
+	val = val.replace(/tyaz/g,'턌');
+	val = val.replace(/tyas/g,'턋');
+	val = val.replace(/twùq/g,'퇭');
+	val = val.replace(/nyèb/g,'녑');
+	val = val.replace(/twùg/g,'퇙');
+	val = val.replace(/twùk/g,'퇰');
+	val = val.replace(/yadj/g,'얓');
+	val = val.replace(/swin/g,'쮠');
+	val = val.replace(/twùv/g,'퇪');
+	val = val.replace(/twùf/g,'퇦');
+	val = val.replace(/twùc/g,'퇳');
+	val = val.replace(/twùb/g,'퇩');
+	val = val.replace(/twùp/g,'퇲');
+	val = val.replace(/twùm/g,'퇨');
+	val = val.replace(/twùd/g,'퇟');
+	val = val.replace(/twùt/g,'퇱');
+	val = val.replace(/twùn/g,'퇜');
+	val = val.replace(/twùl/g,'퇠');
+	val = val.replace(/twùz/g,'퇬');
+	val = val.replace(/twùs/g,'퇫');
+	val = val.replace(/tyùq/g,'턩');
+	val = val.replace(/nyèc/g,'녛');
+	val = val.replace(/tyùg/g,'턕');
+	val = val.replace(/tyùk/g,'턬');
+	val = val.replace(/swil/g,'쮤');
+	val = val.replace(/swiz/g,'쮰');
+	val = val.replace(/tyùv/g,'턦');
+	val = val.replace(/tyùf/g,'턢');
+	val = val.replace(/tyùc/g,'턯');
+	val = val.replace(/tyùb/g,'턥');
+	val = val.replace(/tyùp/g,'턮');
+	val = val.replace(/tyùm/g,'턤');
+	val = val.replace(/tyùd/g,'턛');
+	val = val.replace(/tyùt/g,'턭');
+	val = val.replace(/tyùn/g,'턘');
+	val = val.replace(/tyùl/g,'턜');
+	val = val.replace(/tyùz/g,'턨');
+	val = val.replace(/tyùs/g,'턧');
+	val = val.replace(/twèq/g,'퉝');
+	val = val.replace(/nyèf/g,'녎');
+	val = val.replace(/twèg/g,'퉉');
+	val = val.replace(/twèk/g,'퉠');
+	val = val.replace(/swis/g,'쮯');
+	val = val.replace(/syiq/g,'찅');
+	val = val.replace(/twèv/g,'퉚');
+	val = val.replace(/twèf/g,'퉖');
+	val = val.replace(/twèc/g,'퉣');
+	val = val.replace(/twèb/g,'퉙');
+	val = val.replace(/twèp/g,'퉢');
+	val = val.replace(/twèm/g,'퉘');
+	val = val.replace(/twèd/g,'퉏');
+	val = val.replace(/twèt/g,'퉡');
+	val = val.replace(/twèn/g,'퉌');
+	val = val.replace(/twèl/g,'퉐');
+	val = val.replace(/twèz/g,'퉜');
+	val = val.replace(/twès/g,'퉛');
+	val = val.replace(/tyèq/g,'텽');
+	val = val.replace(/nyèv/g,'녒');
+	val = val.replace(/tyèg/g,'텩');
+	val = val.replace(/tyèk/g,'톀');
+	val = val.replace(/syig/g,'쯱');
+	val = val.replace(/syik/g,'찈');
+	val = val.replace(/tyèv/g,'텺');
+	val = val.replace(/tyèf/g,'텶');
+	val = val.replace(/tyèc/g,'톃');
+	val = val.replace(/tyèb/g,'텹');
+	val = val.replace(/tyèp/g,'톂');
+	val = val.replace(/tyèm/g,'텸');
+	val = val.replace(/tyèd/g,'텯');
+	val = val.replace(/tyèt/g,'톁');
+	val = val.replace(/tyèn/g,'텬');
+	val = val.replace(/tyèl/g,'텰');
+	val = val.replace(/tyèz/g,'텼');
+	val = val.replace(/tyès/g,'텻');
+	val = val.replace(/twoq/g,'툉');
+	val = val.replace(/syiv/g,'찂');
+	val = val.replace(/twog/g,'퇵');
+	val = val.replace(/twok/g,'툌');
+	val = val.replace(/syif/g,'쯾');
+	val = val.replace(/syic/g,'찋');
+	val = val.replace(/twov/g,'툆');
+	val = val.replace(/twof/g,'툂');
+	val = val.replace(/twoc/g,'툏');
+	val = val.replace(/twob/g,'툅');
+	val = val.replace(/twop/g,'툎');
+	val = val.replace(/twom/g,'툄');
+	val = val.replace(/twod/g,'퇻');
+	val = val.replace(/twot/g,'툍');
+	val = val.replace(/twon/g,'퇸');
+	val = val.replace(/twol/g,'퇼');
+	val = val.replace(/twoz/g,'툈');
+	val = val.replace(/twos/g,'툇');
+	val = val.replace(/tyoq/g,'툥');
+	val = val.replace(/syib/g,'찁');
+	val = val.replace(/tyog/g,'툑');
+	val = val.replace(/tyok/g,'툨');
+	val = val.replace(/syip/g,'찊');
+	val = val.replace(/syim/g,'찀');
+	val = val.replace(/tyov/g,'툢');
+	val = val.replace(/tyof/g,'툞');
+	val = val.replace(/tyoc/g,'툫');
+	val = val.replace(/tyob/g,'툡');
+	val = val.replace(/tyop/g,'툪');
+	val = val.replace(/tyom/g,'툠');
+	val = val.replace(/tyod/g,'툗');
+	val = val.replace(/tyot/g,'툩');
+	val = val.replace(/tyon/g,'툔');
+	val = val.replace(/tyol/g,'툘');
+	val = val.replace(/tyoz/g,'툤');
+	val = val.replace(/tyos/g,'툣');
+	val = val.replace(/tidj/g,'팇');
+	val = val.replace(/nyèk/g,'녘');
+	val = val.replace(/tweg/g,'퉥');
+	val = val.replace(/twek/g,'퉼');
+	val = val.replace(/syid/g,'쯷');
+	val = val.replace(/wach/g,'왖');
+	val = val.replace(/twev/g,'퉶');
+	val = val.replace(/twef/g,'퉲');
+	val = val.replace(/twec/g,'퉿');
+	val = val.replace(/tweb/g,'퉵');
+	val = val.replace(/twep/g,'퉾');
+	val = val.replace(/twem/g,'퉴');
+	val = val.replace(/twed/g,'퉫');
+	val = val.replace(/twet/g,'퉽');
+	val = val.replace(/twen/g,'퉨');
+	val = val.replace(/twel/g,'퉬');
+	val = val.replace(/twez/g,'퉸');
+	val = val.replace(/twes/g,'퉷');
+	val = val.replace(/tyeq/g,'톙');
+	val = val.replace(/nyèg/g,'녁');
+	val = val.replace(/tyeg/g,'톅');
+	val = val.replace(/tyek/g,'톜');
+	val = val.replace(/wadj/g,'왗');
+	val = val.replace(/syit/g,'찉');
+	val = val.replace(/tyev/g,'톖');
+	val = val.replace(/tyef/g,'톒');
+	val = val.replace(/tyec/g,'톟');
+	val = val.replace(/tyeb/g,'톕');
+	val = val.replace(/tyep/g,'톞');
+	val = val.replace(/tyem/g,'톔');
+	val = val.replace(/tyed/g,'톋');
+	val = val.replace(/tyet/g,'톝');
+	val = val.replace(/tyen/g,'톈');
+	val = val.replace(/tyel/g,'톌');
+	val = val.replace(/tyez/g,'톘');
+	val = val.replace(/tyes/g,'톗');
+	val = val.replace(/twuq/g,'튱');
+	val = val.replace(/nyèq/g,'녕');
+	val = val.replace(/twug/g,'튝');
+	val = val.replace(/twuk/g,'튴');
+	val = val.replace(/syin/g,'쯴');
+	val = val.replace(/syil/g,'쯸');
+	val = val.replace(/twuv/g,'튮');
+	val = val.replace(/twuf/g,'튪');
+	val = val.replace(/twuc/g,'튷');
+	val = val.replace(/twub/g,'튭');
+	val = val.replace(/twup/g,'튶');
+	val = val.replace(/twum/g,'튬');
+	val = val.replace(/twud/g,'튣');
+	val = val.replace(/twut/g,'튵');
+	val = val.replace(/twun/g,'튠');
+	val = val.replace(/twul/g,'튤');
+	val = val.replace(/twuz/g,'튰');
+	val = val.replace(/twus/g,'튯');
+	val = val.replace(/tyuq/g,'퉁');
+	val = val.replace(/nwès/g,'눳');
+	val = val.replace(/tyug/g,'툭');
+	val = val.replace(/tyuk/g,'퉄');
+	val = val.replace(/syiz/g,'찄');
+	val = val.replace(/syis/g,'찃');
+	val = val.replace(/tyuv/g,'툾');
+	val = val.replace(/tyuf/g,'툺');
+	val = val.replace(/tyuc/g,'퉇');
+	val = val.replace(/tyub/g,'툽');
+	val = val.replace(/tyup/g,'퉆');
+	val = val.replace(/tyum/g,'툼');
+	val = val.replace(/tyud/g,'툳');
+	val = val.replace(/tyut/g,'퉅');
+	val = val.replace(/tyun/g,'툰');
+	val = val.replace(/tyul/g,'툴');
+	val = val.replace(/tyuz/g,'퉀');
+	val = val.replace(/tyus/g,'툿');
+	val = val.replace(/twiq/g,'튕');
+	val = val.replace(/nwèz/g,'눴');
+	val = val.replace(/twig/g,'튁');
+	val = val.replace(/twik/g,'튘');
+	val = val.replace(/sadj/g,'짳');
+	val = val.replace(/sach/g,'짲');
+	val = val.replace(/twiv/g,'튒');
+	val = val.replace(/twif/g,'튎');
+	val = val.replace(/twic/g,'튛');
+	val = val.replace(/twib/g,'튑');
+	val = val.replace(/twip/g,'튚');
+	val = val.replace(/twim/g,'튐');
+	val = val.replace(/twid/g,'튇');
+	val = val.replace(/twit/g,'튙');
+	val = val.replace(/twin/g,'튄');
+	val = val.replace(/twil/g,'튈');
+	val = val.replace(/twiz/g,'튔');
+	val = val.replace(/twis/g,'튓');
+	val = val.replace(/tyiq/g,'틩');
+	val = val.replace(/nwèl/g,'눨');
+	val = val.replace(/tyig/g,'틕');
+	val = val.replace(/tyik/g,'틬');
+	val = val.replace(/sedj/g,'쩿');
+	val = val.replace(/sech/g,'쩾');
+	val = val.replace(/tyiv/g,'틦');
+	val = val.replace(/tyif/g,'틢');
+	val = val.replace(/tyic/g,'틯');
+	val = val.replace(/tyib/g,'틥');
+	val = val.replace(/tyip/g,'틮');
+	val = val.replace(/tyim/g,'틤');
+	val = val.replace(/tyid/g,'틛');
+	val = val.replace(/tyit/g,'틭');
+	val = val.replace(/tyin/g,'틘');
+	val = val.replace(/tyil/g,'틜');
+	val = val.replace(/tyiz/g,'틨');
+	val = val.replace(/tyis/g,'틧');
+	val = val.replace(/nwèn/g,'눤');
+	val = val.replace(/nwèt/g,'눹');
+	val = val.replace(/nwèd/g,'눧');
+	val = val.replace(/nwèm/g,'눰');
+	val = val.replace(/tadj/g,'탗');
+	val = val.replace(/tach/g,'탖');
+	val = val.replace(/nwèp/g,'눺');
+	val = val.replace(/nwèb/g,'눱');
+	val = val.replace(/nwèc/g,'눻');
+	val = val.replace(/nwèf/g,'눮');
+	val = val.replace(/nwèv/g,'눲');
+	val = val.replace(/sodj/g,'쫓');
+	val = val.replace(/soch/g,'쫒');
+	val = val.replace(/nwèk/g,'눸');
+	val = val.replace(/nwèg/g,'눡');
+	val = val.replace(/nwèq/g,'눵');
+	val = val.replace(/nyùs/g,'냿');
+	val = val.replace(/nyùz/g,'넀');
+	val = val.replace(/nyùl/g,'냴');
+	val = val.replace(/nyùn/g,'냰');
+	val = val.replace(/nyùt/g,'넅');
+	val = val.replace(/nyùd/g,'냳');
+	val = val.replace(/tedj/g,'텣');
+	val = val.replace(/tech/g,'텢');
+	val = val.replace(/nyùm/g,'냼');
+	val = val.replace(/nyùp/g,'넆');
+	val = val.replace(/nyùb/g,'냽');
+	val = val.replace(/nyùc/g,'넇');
+	val = val.replace(/nyùf/g,'냺');
+	val = val.replace(/nyùv/g,'냾');
+	val = val.replace(/sèdj/g,'쩣');
+	val = val.replace(/sèch/g,'쩢');
+	val = val.replace(/nyùk/g,'넄');
+	val = val.replace(/nyùg/g,'냭');
+	val = val.replace(/nyùq/g,'넁');
+	val = val.replace(/nwùs/g,'뇃');
+	val = val.replace(/nwùz/g,'뇄');
+	val = val.replace(/nwùl/g,'놸');
+	val = val.replace(/nwùn/g,'놴');
+	val = val.replace(/nwùt/g,'뇉');
+	val = val.replace(/todj/g,'톷');
+	val = val.replace(/toch/g,'톶');
+	val = val.replace(/nwùd/g,'놷');
+	val = val.replace(/nwùm/g,'뇀');
+	val = val.replace(/nwùp/g,'뇊');
+	val = val.replace(/nwùb/g,'뇁');
+	val = val.replace(/nwùc/g,'뇋');
+	val = val.replace(/nwùf/g,'놾');
+	val = val.replace(/nwùv/g,'뇂');
+	val = val.replace(/sùdj/g,'쨏');
+	val = val.replace(/sùch/g,'쨎');
+	val = val.replace(/nwùk/g,'뇈');
+	val = val.replace(/nwùg/g,'놱');
+	val = val.replace(/nwùq/g,'뇅');
+	val = val.replace(/nyas/g,'냣');
+	val = val.replace(/nyaz/g,'냤');
+	val = val.replace(/nyal/g,'냘');
+	val = val.replace(/nyan/g,'냔');
+	val = val.replace(/tèdj/g,'텇');
+	val = val.replace(/tèch/g,'텆');
+	val = val.replace(/nyat/g,'냩');
+	val = val.replace(/nyad/g,'냗');
+	val = val.replace(/nyam/g,'냠');
+	val = val.replace(/nyap/g,'냪');
+	val = val.replace(/nyab/g,'냡');
+	val = val.replace(/nyac/g,'냫');
+	val = val.replace(/nyaf/g,'냞');
+	val = val.replace(/nyav/g,'냢');
+	val = val.replace(/sidj/g,'찣');
+	val = val.replace(/sich/g,'찢');
+	val = val.replace(/nyak/g,'냨');
+	val = val.replace(/nyag/g,'냑');
+	val = val.replace(/nyaq/g,'냥');
+	val = val.replace(/nwas/g,'놧');
+	val = val.replace(/nwaz/g,'놨');
+	val = val.replace(/nwal/g,'놜');
+	val = val.replace(/tùdj/g,'탳');
+	val = val.replace(/tùch/g,'탲');
+	val = val.replace(/nwan/g,'놘');
+	val = val.replace(/nwat/g,'놭');
+	val = val.replace(/nwad/g,'놛');
+	val = val.replace(/nwam/g,'놤');
+	val = val.replace(/nwap/g,'놮');
+	val = val.replace(/nwab/g,'놥');
+	val = val.replace(/nwac/g,'놯');
+	val = val.replace(/nwaf/g,'놢');
+	val = val.replace(/nwav/g,'놦');
+	val = val.replace(/sudj/g,'쯫');
+	val = val.replace(/such/g,'쯪');
+	val = val.replace(/nwak/g,'놬');
+	val = val.replace(/nwag/g,'놕');
+	val = val.replace(/nwaq/g,'놩');
+	val = val.replace(/tuch/g,'틎');
+	val = val.replace(/tudj/g,'틏');
+	val = val.replace(/tich/g,'팆');
+	val = val.replace(/tweq/g,'퉹');
+	val = val.replace(/tiv/g,'팂');
+	val = val.replace(/tif/g,'틾');
+	val = val.replace(/tic/g,'팋');
+	val = val.replace(/tib/g,'팁');
+	val = val.replace(/tip/g,'팊');
+	val = val.replace(/tim/g,'팀');
+	val = val.replace(/tid/g,'틷');
+	val = val.replace(/tit/g,'팉');
+	val = val.replace(/tin/g,'틴');
+	val = val.replace(/til/g,'틸');
+	val = val.replace(/tiz/g,'팄');
+	val = val.replace(/tis/g,'팃');
+	val = val.replace(/tuq/g,'틍');
+	val = val.replace(/woz/g,'욌');
+	val = val.replace(/tug/g,'특');
+	val = val.replace(/tuk/g,'틐');
+	val = val.replace(/tik/g,'팈');
+	val = val.replace(/tig/g,'틱');
+	val = val.replace(/tuv/g,'틊');
+	val = val.replace(/tuf/g,'틆');
+	val = val.replace(/tuc/g,'틓');
+	val = val.replace(/tub/g,'틉');
+	val = val.replace(/tup/g,'틒');
+	val = val.replace(/tum/g,'틈');
+	val = val.replace(/tud/g,'튿');
+	val = val.replace(/tut/g,'틑');
+	val = val.replace(/tun/g,'튼');
+	val = val.replace(/tul/g,'틀');
+	val = val.replace(/tuz/g,'틌');
+	val = val.replace(/tus/g,'틋');
+	val = val.replace(/wol/g,'욀');
+	val = val.replace(/nwa/g,'놔');
+	val = val.replace(/tiq/g,'팅');
+	val = val.replace(/tùs/g,'탯');
+	val = val.replace(/tùz/g,'탰');
+	val = val.replace(/tùl/g,'탤');
+	val = val.replace(/tùn/g,'탠');
+	val = val.replace(/tùt/g,'탵');
+	val = val.replace(/tùd/g,'탣');
+	val = val.replace(/tùm/g,'탬');
+	val = val.replace(/tùp/g,'탶');
+	val = val.replace(/tùb/g,'탭');
+	val = val.replace(/tùc/g,'탷');
+	val = val.replace(/tùf/g,'탪');
+	val = val.replace(/tùv/g,'탮');
+	val = val.replace(/tùk/g,'탴');
+	val = val.replace(/tùg/g,'택');
+	val = val.replace(/won/g,'왼');
+	val = val.replace(/tùq/g,'탱');
+	val = val.replace(/nya/g,'냐');
+	val = val.replace(/tès/g,'텃');
+	val = val.replace(/tèz/g,'텄');
+	val = val.replace(/tèl/g,'털');
+	val = val.replace(/tèn/g,'턴');
+	val = val.replace(/tèt/g,'텉');
+	val = val.replace(/tèd/g,'턷');
+	val = val.replace(/tèm/g,'텀');
+	val = val.replace(/tèp/g,'텊');
+	val = val.replace(/tèb/g,'텁');
+	val = val.replace(/tèc/g,'텋');
+	val = val.replace(/tèf/g,'턾');
+	val = val.replace(/tèv/g,'텂');
+	val = val.replace(/tèk/g,'텈');
+	val = val.replace(/tèg/g,'턱');
+	val = val.replace(/wot/g,'욑');
+	val = val.replace(/tèq/g,'텅');
+	val = val.replace(/tos/g,'톳');
+	val = val.replace(/nwù/g,'놰');
+	val = val.replace(/toz/g,'톴');
+	val = val.replace(/tol/g,'톨');
+	val = val.replace(/ton/g,'톤');
+	val = val.replace(/tot/g,'톹');
+	val = val.replace(/tod/g,'톧');
+	val = val.replace(/tom/g,'톰');
+	val = val.replace(/top/g,'톺');
+	val = val.replace(/tob/g,'톱');
+	val = val.replace(/toc/g,'톻');
+	val = val.replace(/tof/g,'톮');
+	val = val.replace(/tov/g,'톲');
+	val = val.replace(/tok/g,'톸');
+	val = val.replace(/tog/g,'톡');
+	val = val.replace(/wod/g,'왿');
+	val = val.replace(/toq/g,'통');
+	val = val.replace(/tes/g,'텟');
+	val = val.replace(/tez/g,'텠');
+	val = val.replace(/nyù/g,'냬');
+	val = val.replace(/tel/g,'텔');
+	val = val.replace(/ten/g,'텐');
+	val = val.replace(/tet/g,'텥');
+	val = val.replace(/ted/g,'텓');
+	val = val.replace(/tem/g,'템');
+	val = val.replace(/tep/g,'텦');
+	val = val.replace(/teb/g,'텝');
+	val = val.replace(/tec/g,'텧');
+	val = val.replace(/tef/g,'텚');
+	val = val.replace(/tev/g,'텞');
+	val = val.replace(/tek/g,'텤');
+	val = val.replace(/teg/g,'텍');
+	val = val.replace(/wom/g,'욈');
+	val = val.replace(/teq/g,'텡');
+	val = val.replace(/tas/g,'탓');
+	val = val.replace(/taz/g,'탔');
+	val = val.replace(/tal/g,'탈');
+	val = val.replace(/nwè/g,'눠');
+	val = val.replace(/tan/g,'탄');
+	val = val.replace(/tat/g,'탙');
+	val = val.replace(/tad/g,'탇');
+	val = val.replace(/tam/g,'탐');
+	val = val.replace(/tap/g,'탚');
+	val = val.replace(/tab/g,'탑');
+	val = val.replace(/tac/g,'탛');
+	val = val.replace(/taf/g,'탎');
+	val = val.replace(/tav/g,'탒');
+	val = val.replace(/tak/g,'탘');
+	val = val.replace(/tag/g,'탁');
+	val = val.replace(/wop/g,'욒');
+	val = val.replace(/taq/g,'탕');
+	val = val.replace(/tyi/g,'틔');
+	val = val.replace(/twi/g,'튀');
+	val = val.replace(/tyu/g,'투');
+	val = val.replace(/twu/g,'튜');
+	val = val.replace(/nyè/g,'녀');
+	val = val.replace(/tye/g,'톄');
+	val = val.replace(/twe/g,'퉤');
+	val = val.replace(/tyo/g,'툐');
+	val = val.replace(/two/g,'퇴');
+	val = val.replace(/tyè/g,'텨');
+	val = val.replace(/twè/g,'퉈');
+	val = val.replace(/tyù/g,'턔');
+	val = val.replace(/twù/g,'퇘');
+	val = val.replace(/tya/g,'탸');
+	val = val.replace(/twa/g,'톼');
+	val = val.replace(/dus/g,'듯');
+	val = val.replace(/duz/g,'듰');
+	val = val.replace(/dul/g,'들');
+	val = val.replace(/dun/g,'든');
+	val = val.replace(/dut/g,'듵');
+	val = val.replace(/dud/g,'듣');
+	val = val.replace(/dum/g,'듬');
+	val = val.replace(/nwo/g,'뇌');
+	val = val.replace(/dup/g,'듶');
+	val = val.replace(/dub/g,'듭');
+	val = val.replace(/duc/g,'듷');
+	val = val.replace(/duf/g,'듪');
+	val = val.replace(/duv/g,'듮');
+	val = val.replace(/duk/g,'듴');
+	val = val.replace(/dug/g,'득');
+	val = val.replace(/wob/g,'욉');
+	val = val.replace(/duq/g,'등');
+	val = val.replace(/dis/g,'딧');
+	val = val.replace(/diz/g,'딨');
+	val = val.replace(/dil/g,'딜');
+	val = val.replace(/din/g,'딘');
+	val = val.replace(/dit/g,'딭');
+	val = val.replace(/did/g,'딛');
+	val = val.replace(/dim/g,'딤');
+	val = val.replace(/dip/g,'딮');
+	val = val.replace(/nyo/g,'뇨');
+	val = val.replace(/dib/g,'딥');
+	val = val.replace(/dic/g,'딯');
+	val = val.replace(/dif/g,'딢');
+	val = val.replace(/div/g,'딦');
+	val = val.replace(/dik/g,'딬');
+	val = val.replace(/dig/g,'딕');
+	val = val.replace(/woc/g,'욓');
+	val = val.replace(/diq/g,'딩');
+	val = val.replace(/dùs/g,'댓');
+	val = val.replace(/dùz/g,'댔');
+	val = val.replace(/dùl/g,'댈');
+	val = val.replace(/dùn/g,'댄');
+	val = val.replace(/dùt/g,'댙');
+	val = val.replace(/dùd/g,'댇');
+	val = val.replace(/dùm/g,'댐');
+	val = val.replace(/dùp/g,'댚');
+	val = val.replace(/dùb/g,'댑');
+	val = val.replace(/nwe/g,'눼');
+	val = val.replace(/dùc/g,'댛');
+	val = val.replace(/dùf/g,'댎');
+	val = val.replace(/dùv/g,'댒');
+	val = val.replace(/dùk/g,'댘');
+	val = val.replace(/dùg/g,'댁');
+	val = val.replace(/wof/g,'욆');
+	val = val.replace(/dùq/g,'댕');
+	val = val.replace(/dès/g,'덧');
+	val = val.replace(/dèz/g,'덨');
+	val = val.replace(/dèl/g,'덜');
+	val = val.replace(/dèn/g,'던');
+	val = val.replace(/dèt/g,'덭');
+	val = val.replace(/dèd/g,'덛');
+	val = val.replace(/dèm/g,'덤');
+	val = val.replace(/dèp/g,'덮');
+	val = val.replace(/dèb/g,'덥');
+	val = val.replace(/dèc/g,'덯');
+	val = val.replace(/nye/g,'녜');
+	val = val.replace(/dèf/g,'덢');
+	val = val.replace(/dèv/g,'덦');
+	val = val.replace(/dèk/g,'덬');
+	val = val.replace(/dèg/g,'덕');
+	val = val.replace(/wov/g,'욊');
+	val = val.replace(/dèq/g,'덩');
+	val = val.replace(/dos/g,'돗');
+	val = val.replace(/doz/g,'돘');
+	val = val.replace(/dol/g,'돌');
+	val = val.replace(/don/g,'돈');
+	val = val.replace(/dot/g,'돝');
+	val = val.replace(/dod/g,'돋');
+	val = val.replace(/dom/g,'돔');
+	val = val.replace(/dop/g,'돞');
+	val = val.replace(/dob/g,'돕');
+	val = val.replace(/doc/g,'돟');
+	val = val.replace(/dof/g,'돒');
+	val = val.replace(/nwu/g,'뉴');
+	val = val.replace(/dov/g,'돖');
+	val = val.replace(/dok/g,'돜');
+	val = val.replace(/dog/g,'독');
+	val = val.replace(/wok/g,'욐');
+	val = val.replace(/doq/g,'동');
+	val = val.replace(/des/g,'뎃');
+	val = val.replace(/dez/g,'뎄');
+	val = val.replace(/del/g,'델');
+	val = val.replace(/den/g,'덴');
+	val = val.replace(/det/g,'뎉');
+	val = val.replace(/ded/g,'덷');
+	val = val.replace(/dem/g,'뎀');
+	val = val.replace(/dep/g,'뎊');
+	val = val.replace(/deb/g,'뎁');
+	val = val.replace(/dec/g,'뎋');
+	val = val.replace(/def/g,'덾');
+	val = val.replace(/dev/g,'뎂');
+	val = val.replace(/nyu/g,'누');
+	val = val.replace(/dek/g,'뎈');
+	val = val.replace(/deg/g,'덱');
+	val = val.replace(/swe/g,'쮀');
+	val = val.replace(/deq/g,'뎅');
+	val = val.replace(/das/g,'닷');
+	val = val.replace(/daz/g,'닸');
+	val = val.replace(/dal/g,'달');
+	val = val.replace(/dan/g,'단');
+	val = val.replace(/dat/g,'닽');
+	val = val.replace(/dad/g,'닫');
+	val = val.replace(/dam/g,'담');
+	val = val.replace(/dap/g,'닾');
+	val = val.replace(/dab/g,'답');
+	val = val.replace(/dac/g,'닿');
+	val = val.replace(/daf/g,'닲');
+	val = val.replace(/dav/g,'닶');
+	val = val.replace(/dak/g,'닼');
+	val = val.replace(/nwi/g,'뉘');
+	val = val.replace(/dag/g,'닥');
+	val = val.replace(/wog/g,'왹');
+	val = val.replace(/daq/g,'당');
+	val = val.replace(/dyi/g,'듸');
+	val = val.replace(/dwi/g,'뒤');
+	val = val.replace(/dyu/g,'두');
+	val = val.replace(/dwu/g,'듀');
+	val = val.replace(/dye/g,'뎨');
+	val = val.replace(/dwe/g,'뒈');
+	val = val.replace(/dyo/g,'됴');
+	val = val.replace(/dwo/g,'되');
+	val = val.replace(/dyè/g,'뎌');
+	val = val.replace(/dwè/g,'둬');
+	val = val.replace(/dyù/g,'댸');
+	val = val.replace(/dwù/g,'돼');
+	val = val.replace(/dya/g,'댜');
+	val = val.replace(/dwa/g,'돠');
+	val = val.replace(/nyi/g,'늬');
+	val = val.replace(/rus/g,'릇');
+	val = val.replace(/ruz/g,'릈');
+	val = val.replace(/rul/g,'를');
+	val = val.replace(/run/g,'른');
+	val = val.replace(/rut/g,'릍');
+	val = val.replace(/rud/g,'륻');
+	val = val.replace(/rum/g,'름');
+	val = val.replace(/rup/g,'릎');
+	val = val.replace(/rub/g,'릅');
+	val = val.replace(/ruc/g,'릏');
+	val = val.replace(/ruf/g,'릂');
+	val = val.replace(/ruv/g,'릆');
+	val = val.replace(/ruk/g,'릌');
+	val = val.replace(/rug/g,'륵');
+	val = val.replace(/sic/g,'찧');
+	val = val.replace(/ruq/g,'릉');
+	val = val.replace(/naq/g,'낭');
+	val = val.replace(/woq/g,'욍');
+	val = val.replace(/nag/g,'낙');
+	val = val.replace(/nak/g,'낰');
+	val = val.replace(/ris/g,'릿');
+	val = val.replace(/riz/g,'맀');
+	val = val.replace(/nav/g,'낪');
+	val = val.replace(/naf/g,'낦');
+	val = val.replace(/nac/g,'낳');
+	val = val.replace(/nab/g,'납');
+	val = val.replace(/nap/g,'낲');
+	val = val.replace(/nam/g,'남');
+	val = val.replace(/nad/g,'낟');
+	val = val.replace(/nat/g,'낱');
+	val = val.replace(/nan/g,'난');
+	val = val.replace(/nal/g,'날');
+	val = val.replace(/naz/g,'났');
+	val = val.replace(/nas/g,'낫');
+	val = val.replace(/neq/g,'넹');
+	val = val.replace(/yès/g,'엿');
+	val = val.replace(/neg/g,'넥');
+	val = val.replace(/nek/g,'넼');
+	val = val.replace(/ril/g,'릴');
+	val = val.replace(/rin/g,'린');
+	val = val.replace(/nev/g,'넶');
+	val = val.replace(/nef/g,'넲');
+	val = val.replace(/nec/g,'넿');
+	val = val.replace(/neb/g,'넵');
+	val = val.replace(/nep/g,'넾');
+	val = val.replace(/nem/g,'넴');
+	val = val.replace(/ned/g,'넫');
+	val = val.replace(/net/g,'넽');
+	val = val.replace(/nen/g,'넨');
+	val = val.replace(/nel/g,'넬');
+	val = val.replace(/nez/g,'넸');
+	val = val.replace(/nes/g,'넷');
+	val = val.replace(/noq/g,'농');
+	val = val.replace(/yèz/g,'였');
+	val = val.replace(/nog/g,'녹');
+	val = val.replace(/nok/g,'놐');
+	val = val.replace(/rit/g,'맅');
+	val = val.replace(/rid/g,'릳');
+	val = val.replace(/nov/g,'놊');
+	val = val.replace(/nof/g,'놆');
+	val = val.replace(/noc/g,'놓');
+	val = val.replace(/nob/g,'놉');
+	val = val.replace(/nop/g,'높');
+	val = val.replace(/nom/g,'놈');
+	val = val.replace(/nod/g,'녿');
+	val = val.replace(/not/g,'놑');
+	val = val.replace(/non/g,'논');
+	val = val.replace(/nol/g,'놀');
+	val = val.replace(/noz/g,'놌');
+	val = val.replace(/nos/g,'놋');
+	val = val.replace(/nèq/g,'넝');
+	val = val.replace(/yèl/g,'열');
+	val = val.replace(/nèg/g,'넉');
+	val = val.replace(/nèk/g,'넠');
+	val = val.replace(/rim/g,'림');
+	val = val.replace(/rip/g,'맆');
+	val = val.replace(/nèv/g,'넚');
+	val = val.replace(/nèf/g,'넖');
+	val = val.replace(/nèc/g,'넣');
+	val = val.replace(/nèb/g,'넙');
+	val = val.replace(/nèp/g,'넢');
+	val = val.replace(/nèm/g,'넘');
+	val = val.replace(/nèd/g,'넏');
+	val = val.replace(/nèt/g,'넡');
+	val = val.replace(/nèn/g,'넌');
+	val = val.replace(/nèl/g,'널');
+	val = val.replace(/nèz/g,'넜');
+	val = val.replace(/nès/g,'넛');
+	val = val.replace(/nùq/g,'냉');
+	val = val.replace(/yèn/g,'연');
+	val = val.replace(/nùg/g,'낵');
+	val = val.replace(/nùk/g,'냌');
+	val = val.replace(/rib/g,'립');
+	val = val.replace(/ric/g,'맇');
+	val = val.replace(/nùv/g,'냆');
+	val = val.replace(/nùf/g,'냂');
+	val = val.replace(/nùc/g,'냏');
+	val = val.replace(/nùb/g,'냅');
+	val = val.replace(/nùp/g,'냎');
+	val = val.replace(/nùm/g,'냄');
+	val = val.replace(/nùd/g,'낻');
+	val = val.replace(/nùt/g,'냍');
+	val = val.replace(/nùn/g,'낸');
+	val = val.replace(/nùl/g,'낼');
+	val = val.replace(/nùz/g,'냈');
+	val = val.replace(/nùs/g,'냇');
+	val = val.replace(/niq/g,'닝');
+	val = val.replace(/yèt/g,'옅');
+	val = val.replace(/nig/g,'닉');
+	val = val.replace(/nik/g,'닠');
+	val = val.replace(/rif/g,'릺');
+	val = val.replace(/riv/g,'릾');
+	val = val.replace(/niv/g,'닚');
+	val = val.replace(/nif/g,'닖');
+	val = val.replace(/nic/g,'닣');
+	val = val.replace(/nib/g,'닙');
+	val = val.replace(/nip/g,'닢');
+	val = val.replace(/nim/g,'님');
+	val = val.replace(/nid/g,'닏');
+	val = val.replace(/nit/g,'닡');
+	val = val.replace(/nin/g,'닌');
+	val = val.replace(/nil/g,'닐');
+	val = val.replace(/niz/g,'닜');
+	val = val.replace(/nis/g,'닛');
+	val = val.replace(/nuq/g,'능');
+	val = val.replace(/yèd/g,'엳');
+	val = val.replace(/nug/g,'늑');
+	val = val.replace(/nuk/g,'늨');
+	val = val.replace(/rik/g,'맄');
+	val = val.replace(/rig/g,'릭');
+	val = val.replace(/nuv/g,'늢');
+	val = val.replace(/nuf/g,'늞');
+	val = val.replace(/nuc/g,'늫');
+	val = val.replace(/nub/g,'늡');
+	val = val.replace(/nup/g,'늪');
+	val = val.replace(/num/g,'늠');
+	val = val.replace(/nud/g,'늗');
+	val = val.replace(/nut/g,'늩');
+	val = val.replace(/nun/g,'는');
+	val = val.replace(/nul/g,'늘');
+	val = val.replace(/nuz/g,'늤');
+	val = val.replace(/nus/g,'늣');
+	val = val.replace(/yèm/g,'염');
+	val = val.replace(/lwa/g,'롸');
+	val = val.replace(/riq/g,'링');
+	val = val.replace(/rùs/g,'랫');
+	val = val.replace(/rùz/g,'랬');
+	val = val.replace(/rùl/g,'랠');
+	val = val.replace(/rùn/g,'랜');
+	val = val.replace(/rùt/g,'랱');
+	val = val.replace(/rùd/g,'랟');
+	val = val.replace(/rùm/g,'램');
+	val = val.replace(/rùp/g,'랲');
+	val = val.replace(/rùb/g,'랩');
+	val = val.replace(/rùc/g,'랳');
+	val = val.replace(/rùf/g,'랦');
+	val = val.replace(/rùv/g,'랪');
+	val = val.replace(/rùk/g,'랰');
+	val = val.replace(/rùg/g,'랙');
+	val = val.replace(/yèp/g,'옆');
+	val = val.replace(/rùq/g,'랭');
+	val = val.replace(/lya/g,'랴');
+	val = val.replace(/rès/g,'럿');
+	val = val.replace(/rèz/g,'렀');
+	val = val.replace(/rèl/g,'럴');
+	val = val.replace(/rèn/g,'런');
+	val = val.replace(/rèt/g,'렅');
+	val = val.replace(/rèd/g,'럳');
+	val = val.replace(/rèm/g,'럼');
+	val = val.replace(/rèp/g,'렆');
+	val = val.replace(/rèb/g,'럽');
+	val = val.replace(/rèc/g,'렇');
+	val = val.replace(/rèf/g,'럺');
+	val = val.replace(/rèv/g,'럾');
+	val = val.replace(/rèk/g,'렄');
+	val = val.replace(/règ/g,'럭');
+	val = val.replace(/yèb/g,'엽');
+	val = val.replace(/rèq/g,'렁');
+	val = val.replace(/ros/g,'롯');
+	val = val.replace(/lwù/g,'뢔');
+	val = val.replace(/roz/g,'롰');
+	val = val.replace(/rol/g,'롤');
+	val = val.replace(/ron/g,'론');
+	val = val.replace(/rot/g,'롵');
+	val = val.replace(/rod/g,'롣');
+	val = val.replace(/rom/g,'롬');
+	val = val.replace(/rop/g,'롶');
+	val = val.replace(/rob/g,'롭');
+	val = val.replace(/roc/g,'롷');
+	val = val.replace(/rof/g,'롪');
+	val = val.replace(/rov/g,'롮');
+	val = val.replace(/rok/g,'롴');
+	val = val.replace(/rog/g,'록');
+	val = val.replace(/yèc/g,'옇');
+	val = val.replace(/roq/g,'롱');
+	val = val.replace(/res/g,'렛');
+	val = val.replace(/rez/g,'렜');
+	val = val.replace(/lyù/g,'럐');
+	val = val.replace(/rel/g,'렐');
+	val = val.replace(/ren/g,'렌');
+	val = val.replace(/ret/g,'렡');
+	val = val.replace(/red/g,'렏');
+	val = val.replace(/rem/g,'렘');
+	val = val.replace(/rep/g,'렢');
+	val = val.replace(/reb/g,'렙');
+	val = val.replace(/rec/g,'렣');
+	val = val.replace(/ref/g,'렖');
+	val = val.replace(/rev/g,'렚');
+	val = val.replace(/rek/g,'렠');
+	val = val.replace(/reg/g,'렉');
+	val = val.replace(/yèf/g,'엺');
+	val = val.replace(/req/g,'렝');
+	val = val.replace(/ras/g,'랏');
+	val = val.replace(/raz/g,'랐');
+	val = val.replace(/ral/g,'랄');
+	val = val.replace(/lwè/g,'뤄');
+	val = val.replace(/ran/g,'란');
+	val = val.replace(/rat/g,'랕');
+	val = val.replace(/rad/g,'랃');
+	val = val.replace(/ram/g,'람');
+	val = val.replace(/rap/g,'랖');
+	val = val.replace(/rab/g,'랍');
+	val = val.replace(/rac/g,'랗');
+	val = val.replace(/raf/g,'랊');
+	val = val.replace(/rav/g,'랎');
+	val = val.replace(/rak/g,'랔');
+	val = val.replace(/rag/g,'락');
+	val = val.replace(/yèv/g,'엾');
+	val = val.replace(/raq/g,'랑');
+	val = val.replace(/ryi/g,'릐');
+	val = val.replace(/rwi/g,'뤼');
+	val = val.replace(/ryu/g,'루');
+	val = val.replace(/rwu/g,'류');
+	val = val.replace(/lyè/g,'려');
+	val = val.replace(/rye/g,'례');
+	val = val.replace(/rwe/g,'뤠');
+	val = val.replace(/ryo/g,'료');
+	val = val.replace(/rwo/g,'뢰');
+	val = val.replace(/ryè/g,'려');
+	val = val.replace(/rwè/g,'뤄');
+	val = val.replace(/ryù/g,'럐');
+	val = val.replace(/rwù/g,'뢔');
+	val = val.replace(/rya/g,'랴');
+	val = val.replace(/rwa/g,'롸');
+	val = val.replace(/mus/g,'믓');
+	val = val.replace(/muz/g,'믔');
+	val = val.replace(/mul/g,'믈');
+	val = val.replace(/mun/g,'믄');
+	val = val.replace(/mut/g,'믙');
+	val = val.replace(/mud/g,'믇');
+	val = val.replace(/mum/g,'믐');
+	val = val.replace(/lwo/g,'뢰');
+	val = val.replace(/mup/g,'믚');
+	val = val.replace(/mub/g,'믑');
+	val = val.replace(/muc/g,'믛');
+	val = val.replace(/muf/g,'믎');
+	val = val.replace(/muv/g,'믒');
+	val = val.replace(/muk/g,'믘');
+	val = val.replace(/mug/g,'믁');
+	val = val.replace(/yèk/g,'옄');
+	val = val.replace(/muq/g,'믕');
+	val = val.replace(/mis/g,'밋');
+	val = val.replace(/miz/g,'밌');
+	val = val.replace(/mil/g,'밀');
+	val = val.replace(/min/g,'민');
+	val = val.replace(/mit/g,'밑');
+	val = val.replace(/mid/g,'믿');
+	val = val.replace(/mim/g,'밈');
+	val = val.replace(/mip/g,'밒');
+	val = val.replace(/lyo/g,'료');
+	val = val.replace(/mib/g,'밉');
+	val = val.replace(/mic/g,'밓');
+	val = val.replace(/mif/g,'밆');
+	val = val.replace(/miv/g,'밊');
+	val = val.replace(/mik/g,'밐');
+	val = val.replace(/mig/g,'믹');
+	val = val.replace(/yèg/g,'역');
+	val = val.replace(/miq/g,'밍');
+	val = val.replace(/mùs/g,'맷');
+	val = val.replace(/mùz/g,'맸');
+	val = val.replace(/mùl/g,'맬');
+	val = val.replace(/mùn/g,'맨');
+	val = val.replace(/mùt/g,'맽');
+	val = val.replace(/mùd/g,'맫');
+	val = val.replace(/mùm/g,'맴');
+	val = val.replace(/mùp/g,'맾');
+	val = val.replace(/mùb/g,'맵');
+	val = val.replace(/lwe/g,'뤠');
+	val = val.replace(/mùc/g,'맿');
+	val = val.replace(/mùf/g,'맲');
+	val = val.replace(/mùv/g,'맶');
+	val = val.replace(/mùk/g,'맼');
+	val = val.replace(/mùg/g,'맥');
+	val = val.replace(/sye/g,'쪠');
+	val = val.replace(/mùq/g,'맹');
+	val = val.replace(/mès/g,'멋');
+	val = val.replace(/mèz/g,'멌');
+	val = val.replace(/mèl/g,'멀');
+	val = val.replace(/mèn/g,'먼');
+	val = val.replace(/mèt/g,'멑');
+	val = val.replace(/mèd/g,'먿');
+	val = val.replace(/mèm/g,'멈');
+	val = val.replace(/mèp/g,'멒');
+	val = val.replace(/mèb/g,'멉');
+	val = val.replace(/mèc/g,'멓');
+	val = val.replace(/lye/g,'례');
+	val = val.replace(/mèf/g,'멆');
+	val = val.replace(/mèv/g,'멊');
+	val = val.replace(/mèk/g,'멐');
+	val = val.replace(/mèg/g,'먹');
+	val = val.replace(/suz/g,'쯨');
+	val = val.replace(/mèq/g,'멍');
+	val = val.replace(/mos/g,'못');
+	val = val.replace(/moz/g,'몼');
+	val = val.replace(/mol/g,'몰');
+	val = val.replace(/mon/g,'몬');
+	val = val.replace(/mot/g,'뫁');
+	val = val.replace(/mod/g,'몯');
+	val = val.replace(/mom/g,'몸');
+	val = val.replace(/mop/g,'뫂');
+	val = val.replace(/mob/g,'몹');
+	val = val.replace(/moc/g,'뫃');
+	val = val.replace(/mof/g,'몶');
+	val = val.replace(/lwu/g,'류');
+	val = val.replace(/mov/g,'몺');
+	val = val.replace(/mok/g,'뫀');
+	val = val.replace(/mog/g,'목');
+	val = val.replace(/sib/g,'찝');
+	val = val.replace(/moq/g,'몽');
+	val = val.replace(/mes/g,'멧');
+	val = val.replace(/mez/g,'멨');
+	val = val.replace(/mel/g,'멜');
+	val = val.replace(/men/g,'멘');
+	val = val.replace(/met/g,'멭');
+	val = val.replace(/med/g,'멛');
+	val = val.replace(/mem/g,'멤');
+	val = val.replace(/mep/g,'멮');
+	val = val.replace(/meb/g,'멥');
+	val = val.replace(/mec/g,'멯');
+	val = val.replace(/mef/g,'멢');
+	val = val.replace(/mev/g,'멦');
+	val = val.replace(/lyu/g,'루');
+	val = val.replace(/mek/g,'멬');
+	val = val.replace(/meg/g,'멕');
+	val = val.replace(/yèq/g,'영');
+	val = val.replace(/meq/g,'멩');
+	val = val.replace(/mas/g,'맛');
+	val = val.replace(/maz/g,'맜');
+	val = val.replace(/mal/g,'말');
+	val = val.replace(/man/g,'만');
+	val = val.replace(/mat/g,'맡');
+	val = val.replace(/mad/g,'맏');
+	val = val.replace(/mam/g,'맘');
+	val = val.replace(/map/g,'맢');
+	val = val.replace(/mab/g,'맙');
+	val = val.replace(/mac/g,'맣');
+	val = val.replace(/maf/g,'맖');
+	val = val.replace(/mav/g,'맚');
+	val = val.replace(/mak/g,'맠');
+	val = val.replace(/lwi/g,'뤼');
+	val = val.replace(/mag/g,'막');
+	val = val.replace(/wès/g,'웟');
+	val = val.replace(/maq/g,'망');
+	val = val.replace(/myi/g,'믜');
+	val = val.replace(/mwi/g,'뮈');
+	val = val.replace(/myu/g,'무');
+	val = val.replace(/mwu/g,'뮤');
+	val = val.replace(/mye/g,'몌');
+	val = val.replace(/mwe/g,'뭬');
+	val = val.replace(/myo/g,'묘');
+	val = val.replace(/mwo/g,'뫼');
+	val = val.replace(/myè/g,'며');
+	val = val.replace(/mwè/g,'뭐');
+	val = val.replace(/myù/g,'먜');
+	val = val.replace(/mwù/g,'뫠');
+	val = val.replace(/mya/g,'먀');
+	val = val.replace(/mwa/g,'뫄');
+	val = val.replace(/lyi/g,'릐');
+	val = val.replace(/pus/g,'픗');
+	val = val.replace(/puz/g,'픘');
+	val = val.replace(/pul/g,'플');
+	val = val.replace(/pun/g,'픈');
+	val = val.replace(/put/g,'픝');
+	val = val.replace(/pud/g,'픋');
+	val = val.replace(/pum/g,'픔');
+	val = val.replace(/pup/g,'픞');
+	val = val.replace(/pub/g,'픕');
+	val = val.replace(/puc/g,'픟');
+	val = val.replace(/puf/g,'픒');
+	val = val.replace(/puv/g,'픖');
+	val = val.replace(/puk/g,'픜');
+	val = val.replace(/pug/g,'픅');
+	val = val.replace(/wèz/g,'웠');
+	val = val.replace(/puq/g,'픙');
+	val = val.replace(/laq/g,'랑');
+	val = val.replace(/wèl/g,'월');
+	val = val.replace(/lag/g,'락');
+	val = val.replace(/lak/g,'랔');
+	val = val.replace(/pis/g,'핏');
+	val = val.replace(/piz/g,'핐');
+	val = val.replace(/lav/g,'랎');
+	val = val.replace(/laf/g,'랊');
+	val = val.replace(/lac/g,'랗');
+	val = val.replace(/lab/g,'랍');
+	val = val.replace(/lap/g,'랖');
+	val = val.replace(/lam/g,'람');
+	val = val.replace(/lad/g,'랃');
+	val = val.replace(/lat/g,'랕');
+	val = val.replace(/lan/g,'란');
+	val = val.replace(/lal/g,'랄');
+	val = val.replace(/laz/g,'랐');
+	val = val.replace(/las/g,'랏');
+	val = val.replace(/leq/g,'렝');
+	val = val.replace(/wèn/g,'원');
+	val = val.replace(/leg/g,'렉');
+	val = val.replace(/lek/g,'렠');
+	val = val.replace(/pil/g,'필');
+	val = val.replace(/pin/g,'핀');
+	val = val.replace(/lev/g,'렚');
+	val = val.replace(/lef/g,'렖');
+	val = val.replace(/lec/g,'렣');
+	val = val.replace(/leb/g,'렙');
+	val = val.replace(/lep/g,'렢');
+	val = val.replace(/lem/g,'렘');
+	val = val.replace(/led/g,'렏');
+	val = val.replace(/let/g,'렡');
+	val = val.replace(/len/g,'렌');
+	val = val.replace(/lel/g,'렐');
+	val = val.replace(/lez/g,'렜');
+	val = val.replace(/les/g,'렛');
+	val = val.replace(/loq/g,'롱');
+	val = val.replace(/wèt/g,'웥');
+	val = val.replace(/log/g,'록');
+	val = val.replace(/lok/g,'롴');
+	val = val.replace(/pit/g,'핕');
+	val = val.replace(/pid/g,'핃');
+	val = val.replace(/lov/g,'롮');
+	val = val.replace(/lof/g,'롪');
+	val = val.replace(/loc/g,'롷');
+	val = val.replace(/lob/g,'롭');
+	val = val.replace(/lop/g,'롶');
+	val = val.replace(/lom/g,'롬');
+	val = val.replace(/lod/g,'롣');
+	val = val.replace(/lot/g,'롵');
+	val = val.replace(/lon/g,'론');
+	val = val.replace(/lol/g,'롤');
+	val = val.replace(/loz/g,'롰');
+	val = val.replace(/los/g,'롯');
+	val = val.replace(/lèq/g,'렁');
+	val = val.replace(/wèd/g,'웓');
+	val = val.replace(/lèg/g,'럭');
+	val = val.replace(/lèk/g,'렄');
+	val = val.replace(/pim/g,'핌');
+	val = val.replace(/pip/g,'핖');
+	val = val.replace(/lèv/g,'럾');
+	val = val.replace(/lèf/g,'럺');
+	val = val.replace(/lèc/g,'렇');
+	val = val.replace(/lèb/g,'럽');
+	val = val.replace(/lèp/g,'렆');
+	val = val.replace(/lèm/g,'럼');
+	val = val.replace(/lèd/g,'럳');
+	val = val.replace(/lèt/g,'렅');
+	val = val.replace(/lèn/g,'런');
+	val = val.replace(/lèl/g,'럴');
+	val = val.replace(/lèz/g,'렀');
+	val = val.replace(/lès/g,'럿');
+	val = val.replace(/lùq/g,'랭');
+	val = val.replace(/wèm/g,'웜');
+	val = val.replace(/lùg/g,'랙');
+	val = val.replace(/lùk/g,'랰');
+	val = val.replace(/pib/g,'핍');
+	val = val.replace(/pic/g,'핗');
+	val = val.replace(/lùv/g,'랪');
+	val = val.replace(/lùf/g,'랦');
+	val = val.replace(/lùc/g,'랳');
+	val = val.replace(/lùb/g,'랩');
+	val = val.replace(/lùp/g,'랲');
+	val = val.replace(/lùm/g,'램');
+	val = val.replace(/lùd/g,'랟');
+	val = val.replace(/lùt/g,'랱');
+	val = val.replace(/lùn/g,'랜');
+	val = val.replace(/lùl/g,'랠');
+	val = val.replace(/lùz/g,'랬');
+	val = val.replace(/lùs/g,'랫');
+	val = val.replace(/liq/g,'링');
+	val = val.replace(/wèp/g,'웦');
+	val = val.replace(/lig/g,'릭');
+	val = val.replace(/lik/g,'맄');
+	val = val.replace(/pif/g,'핊');
+	val = val.replace(/piv/g,'핎');
+	val = val.replace(/liv/g,'릾');
+	val = val.replace(/lif/g,'릺');
+	val = val.replace(/lic/g,'맇');
+	val = val.replace(/lib/g,'립');
+	val = val.replace(/lip/g,'맆');
+	val = val.replace(/lim/g,'림');
+	val = val.replace(/lid/g,'릳');
+	val = val.replace(/lit/g,'맅');
+	val = val.replace(/lin/g,'린');
+	val = val.replace(/lil/g,'릴');
+	val = val.replace(/liz/g,'맀');
+	val = val.replace(/lis/g,'릿');
+	val = val.replace(/luq/g,'릉');
+	val = val.replace(/wèb/g,'웝');
+	val = val.replace(/lug/g,'륵');
+	val = val.replace(/luk/g,'릌');
+	val = val.replace(/pik/g,'핔');
+	val = val.replace(/pig/g,'픽');
+	val = val.replace(/luv/g,'릆');
+	val = val.replace(/luf/g,'릂');
+	val = val.replace(/luc/g,'릏');
+	val = val.replace(/lub/g,'릅');
+	val = val.replace(/lup/g,'릎');
+	val = val.replace(/lum/g,'름');
+	val = val.replace(/lud/g,'륻');
+	val = val.replace(/lut/g,'릍');
+	val = val.replace(/lun/g,'른');
+	val = val.replace(/lul/g,'를');
+	val = val.replace(/luz/g,'릈');
+	val = val.replace(/lus/g,'릇');
+	val = val.replace(/wèc/g,'웧');
+	val = val.replace(/piq/g,'핑');
+	val = val.replace(/pùs/g,'팻');
+	val = val.replace(/pùz/g,'팼');
+	val = val.replace(/pùl/g,'팰');
+	val = val.replace(/pùn/g,'팬');
+	val = val.replace(/pùt/g,'퍁');
+	val = val.replace(/pùd/g,'팯');
+	val = val.replace(/pùm/g,'팸');
+	val = val.replace(/pùp/g,'퍂');
+	val = val.replace(/pùb/g,'팹');
+	val = val.replace(/pùc/g,'퍃');
+	val = val.replace(/pùf/g,'팶');
+	val = val.replace(/pùv/g,'팺');
+	val = val.replace(/pùk/g,'퍀');
+	val = val.replace(/pùg/g,'팩');
+	val = val.replace(/wèf/g,'웚');
+	val = val.replace(/pùq/g,'팽');
+	val = val.replace(/pès/g,'펏');
+	val = val.replace(/pèz/g,'펐');
+	val = val.replace(/pèl/g,'펄');
+	val = val.replace(/pèn/g,'펀');
+	val = val.replace(/pèt/g,'펕');
+	val = val.replace(/pèd/g,'펃');
+	val = val.replace(/pèm/g,'펌');
+	val = val.replace(/pèp/g,'펖');
+	val = val.replace(/pèb/g,'펍');
+	val = val.replace(/pèc/g,'펗');
+	val = val.replace(/pèf/g,'펊');
+	val = val.replace(/pèv/g,'펎');
+	val = val.replace(/pèk/g,'펔');
+	val = val.replace(/pèg/g,'퍽');
+	val = val.replace(/wèv/g,'웞');
+	val = val.replace(/pèq/g,'펑');
+	val = val.replace(/pos/g,'폿');
+	val = val.replace(/poz/g,'퐀');
+	val = val.replace(/pol/g,'폴');
+	val = val.replace(/pon/g,'폰');
+	val = val.replace(/pot/g,'퐅');
+	val = val.replace(/pod/g,'폳');
+	val = val.replace(/pom/g,'폼');
+	val = val.replace(/pop/g,'퐆');
+	val = val.replace(/pob/g,'폽');
+	val = val.replace(/poc/g,'퐇');
+	val = val.replace(/pof/g,'폺');
+	val = val.replace(/pov/g,'폾');
+	val = val.replace(/pok/g,'퐄');
+	val = val.replace(/pog/g,'폭');
+	val = val.replace(/wèk/g,'웤');
+	val = val.replace(/poq/g,'퐁');
+	val = val.replace(/pes/g,'펫');
+	val = val.replace(/pez/g,'펬');
+	val = val.replace(/pel/g,'펠');
+	val = val.replace(/pen/g,'펜');
+	val = val.replace(/pet/g,'펱');
+	val = val.replace(/ped/g,'펟');
+	val = val.replace(/pem/g,'펨');
+	val = val.replace(/pep/g,'펲');
+	val = val.replace(/peb/g,'펩');
+	val = val.replace(/pec/g,'펳');
+	val = val.replace(/pef/g,'펦');
+	val = val.replace(/pev/g,'펪');
+	val = val.replace(/pek/g,'펰');
+	val = val.replace(/peg/g,'펙');
+	val = val.replace(/wèg/g,'웍');
+	val = val.replace(/peq/g,'펭');
+	val = val.replace(/pas/g,'팟');
+	val = val.replace(/paz/g,'팠');
+	val = val.replace(/pal/g,'팔');
+	val = val.replace(/pan/g,'판');
+	val = val.replace(/pat/g,'팥');
+	val = val.replace(/pad/g,'팓');
+	val = val.replace(/pam/g,'팜');
+	val = val.replace(/pap/g,'팦');
+	val = val.replace(/pab/g,'팝');
+	val = val.replace(/pac/g,'팧');
+	val = val.replace(/paf/g,'팚');
+	val = val.replace(/pav/g,'팞');
+	val = val.replace(/pak/g,'팤');
+	val = val.replace(/pag/g,'팍');
+	val = val.replace(/swu/g,'쮸');
+	val = val.replace(/paq/g,'팡');
+	val = val.replace(/pyi/g,'픠');
+	val = val.replace(/pwi/g,'퓌');
+	val = val.replace(/pyu/g,'푸');
+	val = val.replace(/pwu/g,'퓨');
+	val = val.replace(/pye/g,'폐');
+	val = val.replace(/pwe/g,'풰');
+	val = val.replace(/pyo/g,'표');
+	val = val.replace(/pwo/g,'푀');
+	val = val.replace(/pyè/g,'펴');
+	val = val.replace(/pwè/g,'풔');
+	val = val.replace(/pyù/g,'퍠');
+	val = val.replace(/pwù/g,'퐤');
+	val = val.replace(/pya/g,'퍄');
+	val = val.replace(/pwa/g,'퐈');
+	val = val.replace(/bus/g,'븟');
+	val = val.replace(/buz/g,'븠');
+	val = val.replace(/bul/g,'블');
+	val = val.replace(/bun/g,'븐');
+	val = val.replace(/but/g,'븥');
+	val = val.replace(/bud/g,'븓');
+	val = val.replace(/bum/g,'븜');
+	val = val.replace(/bup/g,'븦');
+	val = val.replace(/bub/g,'븝');
+	val = val.replace(/buc/g,'븧');
+	val = val.replace(/buf/g,'븚');
+	val = val.replace(/buv/g,'븞');
+	val = val.replace(/buk/g,'븤');
+	val = val.replace(/bug/g,'븍');
+	val = val.replace(/sip/g,'찦');
+	val = val.replace(/buq/g,'븡');
+	val = val.replace(/bis/g,'빗');
+	val = val.replace(/biz/g,'빘');
+	val = val.replace(/bil/g,'빌');
+	val = val.replace(/bin/g,'빈');
+	val = val.replace(/bit/g,'빝');
+	val = val.replace(/bid/g,'빋');
+	val = val.replace(/bim/g,'빔');
+	val = val.replace(/bip/g,'빞');
+	val = val.replace(/bib/g,'빕');
+	val = val.replace(/bic/g,'빟');
+	val = val.replace(/bif/g,'빒');
+	val = val.replace(/biv/g,'빖');
+	val = val.replace(/bik/g,'빜');
+	val = val.replace(/big/g,'빅');
+	val = val.replace(/wèq/g,'웡');
+	val = val.replace(/biq/g,'빙');
+	val = val.replace(/bùs/g,'뱃');
+	val = val.replace(/bùz/g,'뱄');
+	val = val.replace(/bùl/g,'밸');
+	val = val.replace(/bùn/g,'밴');
+	val = val.replace(/bùt/g,'뱉');
+	val = val.replace(/bùd/g,'밷');
+	val = val.replace(/bùm/g,'뱀');
+	val = val.replace(/bùp/g,'뱊');
+	val = val.replace(/bùb/g,'뱁');
+	val = val.replace(/bùc/g,'뱋');
+	val = val.replace(/bùf/g,'밾');
+	val = val.replace(/bùv/g,'뱂');
+	val = val.replace(/bùk/g,'뱈');
+	val = val.replace(/bùg/g,'백');
+	val = val.replace(/yùs/g,'얫');
+	val = val.replace(/bùq/g,'뱅');
+	val = val.replace(/bès/g,'벗');
+	val = val.replace(/bèz/g,'벘');
+	val = val.replace(/bèl/g,'벌');
+	val = val.replace(/bèn/g,'번');
+	val = val.replace(/bèt/g,'벝');
+	val = val.replace(/bèd/g,'벋');
+	val = val.replace(/bèm/g,'범');
+	val = val.replace(/bèp/g,'벞');
+	val = val.replace(/bèb/g,'법');
+	val = val.replace(/bèc/g,'벟');
+	val = val.replace(/bèf/g,'벒');
+	val = val.replace(/bèv/g,'벖');
+	val = val.replace(/bèk/g,'벜');
+	val = val.replace(/bèg/g,'벅');
+	val = val.replace(/yùz/g,'얬');
+	val = val.replace(/bèq/g,'벙');
+	val = val.replace(/bos/g,'봇');
+	val = val.replace(/boz/g,'봈');
+	val = val.replace(/bol/g,'볼');
+	val = val.replace(/bon/g,'본');
+	val = val.replace(/bot/g,'봍');
+	val = val.replace(/bod/g,'볻');
+	val = val.replace(/bom/g,'봄');
+	val = val.replace(/bop/g,'봎');
+	val = val.replace(/bob/g,'봅');
+	val = val.replace(/boc/g,'봏');
+	val = val.replace(/bof/g,'봂');
+	val = val.replace(/bov/g,'봆');
+	val = val.replace(/bok/g,'봌');
+	val = val.replace(/bog/g,'복');
+	val = val.replace(/yùl/g,'얠');
+	val = val.replace(/boq/g,'봉');
+	val = val.replace(/bes/g,'벳');
+	val = val.replace(/bez/g,'벴');
+	val = val.replace(/bel/g,'벨');
+	val = val.replace(/ben/g,'벤');
+	val = val.replace(/bet/g,'벹');
+	val = val.replace(/bed/g,'벧');
+	val = val.replace(/bem/g,'벰');
+	val = val.replace(/bep/g,'벺');
+	val = val.replace(/beb/g,'벱');
+	val = val.replace(/bec/g,'벻');
+	val = val.replace(/bef/g,'벮');
+	val = val.replace(/bev/g,'벲');
+	val = val.replace(/bek/g,'벸');
+	val = val.replace(/beg/g,'벡');
+	val = val.replace(/yùn/g,'얜');
+	val = val.replace(/beq/g,'벵');
+	val = val.replace(/bas/g,'밧');
+	val = val.replace(/baz/g,'밨');
+	val = val.replace(/bal/g,'발');
+	val = val.replace(/ban/g,'반');
+	val = val.replace(/bat/g,'밭');
+	val = val.replace(/bad/g,'받');
+	val = val.replace(/bam/g,'밤');
+	val = val.replace(/bap/g,'밮');
+	val = val.replace(/bab/g,'밥');
+	val = val.replace(/bac/g,'밯');
+	val = val.replace(/baf/g,'밢');
+	val = val.replace(/bav/g,'밦');
+	val = val.replace(/bak/g,'밬');
+	val = val.replace(/bag/g,'박');
+	val = val.replace(/yùt/g,'얱');
+	val = val.replace(/baq/g,'방');
+	val = val.replace(/byi/g,'븨');
+	val = val.replace(/bwi/g,'뷔');
+	val = val.replace(/byu/g,'부');
+	val = val.replace(/bwu/g,'뷰');
+	val = val.replace(/bye/g,'볘');
+	val = val.replace(/bwe/g,'붸');
+	val = val.replace(/byo/g,'뵤');
+	val = val.replace(/bwo/g,'뵈');
+	val = val.replace(/byè/g,'벼');
+	val = val.replace(/bwè/g,'붜');
+	val = val.replace(/byù/g,'뱨');
+	val = val.replace(/bwù/g,'봬');
+	val = val.replace(/bya/g,'뱌');
+	val = val.replace(/bwa/g,'봐');
+	val = val.replace(/cus/g,'흣');
+	val = val.replace(/cuz/g,'흤');
+	val = val.replace(/cul/g,'흘');
+	val = val.replace(/cun/g,'흔');
+	val = val.replace(/cut/g,'흩');
+	val = val.replace(/cud/g,'흗');
+	val = val.replace(/cum/g,'흠');
+	val = val.replace(/cup/g,'흪');
+	val = val.replace(/cub/g,'흡');
+	val = val.replace(/cuc/g,'흫');
+	val = val.replace(/cuf/g,'흞');
+	val = val.replace(/cuv/g,'흢');
+	val = val.replace(/cuk/g,'흨');
+	val = val.replace(/cug/g,'흑');
+	val = val.replace(/yùd/g,'얟');
+	val = val.replace(/cuq/g,'흥');
+	val = val.replace(/cis/g,'힛');
+	val = val.replace(/ciz/g,'힜');
+	val = val.replace(/cil/g,'힐');
+	val = val.replace(/cin/g,'힌');
+	val = val.replace(/cit/g,'힡');
+	val = val.replace(/cid/g,'힏');
+	val = val.replace(/cim/g,'힘');
+	val = val.replace(/cip/g,'힢');
+	val = val.replace(/cib/g,'힙');
+	val = val.replace(/cic/g,'힣');
+	val = val.replace(/cif/g,'힖');
+	val = val.replace(/civ/g,'힚');
+	val = val.replace(/cik/g,'힠');
+	val = val.replace(/cig/g,'힉');
+	val = val.replace(/yùm/g,'얨');
+	val = val.replace(/dza/g,'빠');
+	val = val.replace(/ciq/g,'힝');
+	val = val.replace(/cùs/g,'햇');
+	val = val.replace(/cùz/g,'했');
+	val = val.replace(/cùl/g,'핼');
+	val = val.replace(/cùn/g,'핸');
+	val = val.replace(/cùt/g,'햍');
+	val = val.replace(/cùd/g,'핻');
+	val = val.replace(/cùm/g,'햄');
+	val = val.replace(/cùp/g,'햎');
+	val = val.replace(/cùb/g,'햅');
+	val = val.replace(/cùc/g,'햏');
+	val = val.replace(/cùf/g,'햂');
+	val = val.replace(/cùv/g,'햆');
+	val = val.replace(/cùk/g,'햌');
+	val = val.replace(/cùg/g,'핵');
+	val = val.replace(/yùp/g,'얲');
+	val = val.replace(/cùq/g,'행');
+	val = val.replace(/dze/g,'뻬');
+	val = val.replace(/cès/g,'헛');
+	val = val.replace(/cèz/g,'헜');
+	val = val.replace(/cèl/g,'헐');
+	val = val.replace(/cèn/g,'헌');
+	val = val.replace(/cèt/g,'헡');
+	val = val.replace(/cèd/g,'헏');
+	val = val.replace(/cèm/g,'험');
+	val = val.replace(/cèp/g,'헢');
+	val = val.replace(/cèb/g,'헙');
+	val = val.replace(/cèc/g,'헣');
+	val = val.replace(/cèf/g,'헖');
+	val = val.replace(/cèv/g,'헚');
+	val = val.replace(/cèk/g,'헠');
+	val = val.replace(/cèg/g,'헉');
+	val = val.replace(/yùb/g,'얩');
+	val = val.replace(/cèq/g,'헝');
+	val = val.replace(/cos/g,'홋');
+	val = val.replace(/dzo/g,'뽀');
+	val = val.replace(/coz/g,'홌');
+	val = val.replace(/col/g,'홀');
+	val = val.replace(/con/g,'혼');
+	val = val.replace(/cot/g,'홑');
+	val = val.replace(/cod/g,'혿');
+	val = val.replace(/com/g,'홈');
+	val = val.replace(/cop/g,'홒');
+	val = val.replace(/cob/g,'홉');
+	val = val.replace(/coc/g,'홓');
+	val = val.replace(/cof/g,'홆');
+	val = val.replace(/cov/g,'홊');
+	val = val.replace(/cok/g,'홐');
+	val = val.replace(/cog/g,'혹');
+	val = val.replace(/yùc/g,'얳');
+	val = val.replace(/coq/g,'홍');
+	val = val.replace(/ces/g,'헷');
+	val = val.replace(/cez/g,'헸');
+	val = val.replace(/dzè/g,'뻐');
+	val = val.replace(/cel/g,'헬');
+	val = val.replace(/cen/g,'헨');
+	val = val.replace(/cet/g,'헽');
+	val = val.replace(/ced/g,'헫');
+	val = val.replace(/cem/g,'헴');
+	val = val.replace(/cep/g,'헾');
+	val = val.replace(/ceb/g,'헵');
+	val = val.replace(/cec/g,'헿');
+	val = val.replace(/cef/g,'헲');
+	val = val.replace(/cev/g,'헶');
+	val = val.replace(/cek/g,'헼');
+	val = val.replace(/ceg/g,'헥');
+	val = val.replace(/yùf/g,'얦');
+	val = val.replace(/ceq/g,'헹');
+	val = val.replace(/cas/g,'핫');
+	val = val.replace(/caz/g,'핬');
+	val = val.replace(/cal/g,'할');
+	val = val.replace(/dzù/g,'빼');
+	val = val.replace(/can/g,'한');
+	val = val.replace(/cat/g,'핱');
+	val = val.replace(/cad/g,'핟');
+	val = val.replace(/cam/g,'함');
+	val = val.replace(/cap/g,'핲');
+	val = val.replace(/cab/g,'합');
+	val = val.replace(/cac/g,'핳');
+	val = val.replace(/caf/g,'핦');
+	val = val.replace(/cav/g,'핪');
+	val = val.replace(/cak/g,'핰');
+	val = val.replace(/cag/g,'학');
+	val = val.replace(/yùv/g,'얪');
+	val = val.replace(/caq/g,'항');
+	val = val.replace(/cyi/g,'희');
+	val = val.replace(/cwi/g,'휘');
+	val = val.replace(/cyu/g,'후');
+	val = val.replace(/cwu/g,'휴');
+	val = val.replace(/dzi/g,'삐');
+	val = val.replace(/cye/g,'혜');
+	val = val.replace(/cwe/g,'훼');
+	val = val.replace(/cyo/g,'효');
+	val = val.replace(/cwo/g,'회');
+	val = val.replace(/cyè/g,'혀');
+	val = val.replace(/cwè/g,'훠');
+	val = val.replace(/cyù/g,'햬');
+	val = val.replace(/cwù/g,'홰');
+	val = val.replace(/cya/g,'햐');
+	val = val.replace(/cwa/g,'화');
+	val = val.replace(/fus/g,'픗');
+	val = val.replace(/fuz/g,'픘');
+	val = val.replace(/ful/g,'플');
+	val = val.replace(/fun/g,'픈');
+	val = val.replace(/fut/g,'픝');
+	val = val.replace(/fud/g,'픋');
+	val = val.replace(/fum/g,'픔');
+	val = val.replace(/dzu/g,'쁘');
+	val = val.replace(/fup/g,'픞');
+	val = val.replace(/fub/g,'픕');
+	val = val.replace(/fuc/g,'픟');
+	val = val.replace(/fuf/g,'픒');
+	val = val.replace(/fuv/g,'픖');
+	val = val.replace(/fuk/g,'픜');
+	val = val.replace(/fug/g,'픅');
+	val = val.replace(/yùk/g,'얰');
+	val = val.replace(/fuq/g,'픙');
+	val = val.replace(/fis/g,'핏');
+	val = val.replace(/fiz/g,'핐');
+	val = val.replace(/fil/g,'필');
+	val = val.replace(/fin/g,'핀');
+	val = val.replace(/fit/g,'핕');
+	val = val.replace(/fid/g,'핃');
+	val = val.replace(/fim/g,'핌');
+	val = val.replace(/fip/g,'핖');
+	val = val.replace(/fib/g,'핍');
+	val = val.replace(/fic/g,'핗');
+	val = val.replace(/fif/g,'핊');
+	val = val.replace(/fiv/g,'핎');
+	val = val.replace(/fik/g,'핔');
+	val = val.replace(/fig/g,'픽');
+	val = val.replace(/yùg/g,'얙');
+	val = val.replace(/fiq/g,'핑');
+	val = val.replace(/fùs/g,'팻');
+	val = val.replace(/fùz/g,'팼');
+	val = val.replace(/fùl/g,'팰');
+	val = val.replace(/fùn/g,'팬');
+	val = val.replace(/fùt/g,'퍁');
+	val = val.replace(/fùd/g,'팯');
+	val = val.replace(/fùm/g,'팸');
+	val = val.replace(/fùp/g,'퍂');
+	val = val.replace(/fùb/g,'팹');
+	val = val.replace(/fùc/g,'퍃');
+	val = val.replace(/fùf/g,'팶');
+	val = val.replace(/fùv/g,'팺');
+	val = val.replace(/fùk/g,'퍀');
+	val = val.replace(/fùg/g,'팩');
+	val = val.replace(/sim/g,'찜');
+	val = val.replace(/fùq/g,'팽');
+	val = val.replace(/fès/g,'펏');
+	val = val.replace(/fèz/g,'펐');
+	val = val.replace(/fèl/g,'펄');
+	val = val.replace(/fèn/g,'펀');
+	val = val.replace(/fèt/g,'펕');
+	val = val.replace(/fèd/g,'펃');
+	val = val.replace(/fèm/g,'펌');
+	val = val.replace(/fèp/g,'펖');
+	val = val.replace(/fèb/g,'펍');
+	val = val.replace(/fèc/g,'펗');
+	val = val.replace(/fèf/g,'펊');
+	val = val.replace(/fèv/g,'펎');
+	val = val.replace(/fèk/g,'펔');
+	val = val.replace(/fèg/g,'퍽');
+	val = val.replace(/syu/g,'쭈');
+	val = val.replace(/fèq/g,'펑');
+	val = val.replace(/fos/g,'폿');
+	val = val.replace(/foz/g,'퐀');
+	val = val.replace(/fol/g,'폴');
+	val = val.replace(/fon/g,'폰');
+	val = val.replace(/fot/g,'퐅');
+	val = val.replace(/fod/g,'폳');
+	val = val.replace(/fom/g,'폼');
+	val = val.replace(/fop/g,'퐆');
+	val = val.replace(/fob/g,'폽');
+	val = val.replace(/foc/g,'퐇');
+	val = val.replace(/fof/g,'폺');
+	val = val.replace(/fov/g,'폾');
+	val = val.replace(/fok/g,'퐄');
+	val = val.replace(/fog/g,'폭');
+	val = val.replace(/yùq/g,'얭');
+	val = val.replace(/foq/g,'퐁');
+	val = val.replace(/fes/g,'펫');
+	val = val.replace(/fez/g,'펬');
+	val = val.replace(/fel/g,'펠');
+	val = val.replace(/fen/g,'펜');
+	val = val.replace(/fet/g,'펱');
+	val = val.replace(/fed/g,'펟');
+	val = val.replace(/fem/g,'펨');
+	val = val.replace(/fep/g,'펲');
+	val = val.replace(/feb/g,'펩');
+	val = val.replace(/fec/g,'펳');
+	val = val.replace(/fef/g,'펦');
+	val = val.replace(/fev/g,'펪');
+	val = val.replace(/fek/g,'펰');
+	val = val.replace(/feg/g,'펙');
+	val = val.replace(/wùs/g,'왯');
+	val = val.replace(/feq/g,'펭');
+	val = val.replace(/fas/g,'팟');
+	val = val.replace(/faz/g,'팠');
+	val = val.replace(/fal/g,'팔');
+	val = val.replace(/fan/g,'판');
+	val = val.replace(/fat/g,'팥');
+	val = val.replace(/fad/g,'팓');
+	val = val.replace(/fam/g,'팜');
+	val = val.replace(/fap/g,'팦');
+	val = val.replace(/fab/g,'팝');
+	val = val.replace(/fac/g,'팧');
+	val = val.replace(/faf/g,'팚');
+	val = val.replace(/fav/g,'팞');
+	val = val.replace(/fak/g,'팤');
+	val = val.replace(/fag/g,'팍');
+	val = val.replace(/wùz/g,'왰');
+	val = val.replace(/faq/g,'팡');
+	val = val.replace(/fyi/g,'픠');
+	val = val.replace(/fwi/g,'퓌');
+	val = val.replace(/fyu/g,'푸');
+	val = val.replace(/fwu/g,'퓨');
+	val = val.replace(/fye/g,'폐');
+	val = val.replace(/fwe/g,'풰');
+	val = val.replace(/fyo/g,'표');
+	val = val.replace(/fwo/g,'푀');
+	val = val.replace(/fyè/g,'펴');
+	val = val.replace(/fwè/g,'풔');
+	val = val.replace(/fyù/g,'퍠');
+	val = val.replace(/fwù/g,'퐤');
+	val = val.replace(/fya/g,'퍄');
+	val = val.replace(/fwa/g,'퐈');
+	val = val.replace(/vus/g,'븟');
+	val = val.replace(/vuz/g,'븠');
+	val = val.replace(/vul/g,'블');
+	val = val.replace(/vun/g,'븐');
+	val = val.replace(/vut/g,'븥');
+	val = val.replace(/vud/g,'븓');
+	val = val.replace(/vum/g,'븜');
+	val = val.replace(/vup/g,'븦');
+	val = val.replace(/vub/g,'븝');
+	val = val.replace(/vuc/g,'븧');
+	val = val.replace(/vuf/g,'븚');
+	val = val.replace(/vuv/g,'븞');
+	val = val.replace(/vuk/g,'븤');
+	val = val.replace(/vug/g,'븍');
+	val = val.replace(/wùl/g,'왤');
+	val = val.replace(/vuq/g,'븡');
+	val = val.replace(/vis/g,'빗');
+	val = val.replace(/viz/g,'빘');
+	val = val.replace(/vil/g,'빌');
+	val = val.replace(/vin/g,'빈');
+	val = val.replace(/vit/g,'빝');
+	val = val.replace(/vid/g,'빋');
+	val = val.replace(/vim/g,'빔');
+	val = val.replace(/vip/g,'빞');
+	val = val.replace(/vib/g,'빕');
+	val = val.replace(/vic/g,'빟');
+	val = val.replace(/vif/g,'빒');
+	val = val.replace(/viv/g,'빖');
+	val = val.replace(/vik/g,'빜');
+	val = val.replace(/vig/g,'빅');
+	val = val.replace(/wùn/g,'왠');
+	val = val.replace(/viq/g,'빙');
+	val = val.replace(/vùs/g,'뱃');
+	val = val.replace(/vùz/g,'뱄');
+	val = val.replace(/vùl/g,'밸');
+	val = val.replace(/vùn/g,'밴');
+	val = val.replace(/vùt/g,'뱉');
+	val = val.replace(/vùd/g,'밷');
+	val = val.replace(/vùm/g,'뱀');
+	val = val.replace(/vùp/g,'뱊');
+	val = val.replace(/vùb/g,'뱁');
+	val = val.replace(/vùc/g,'뱋');
+	val = val.replace(/vùf/g,'밾');
+	val = val.replace(/vùv/g,'뱂');
+	val = val.replace(/vùk/g,'뱈');
+	val = val.replace(/vùg/g,'백');
+	val = val.replace(/wùt/g,'왵');
+	val = val.replace(/vùq/g,'뱅');
+	val = val.replace(/vès/g,'벗');
+	val = val.replace(/vèz/g,'벘');
+	val = val.replace(/vèl/g,'벌');
+	val = val.replace(/vèn/g,'번');
+	val = val.replace(/vèt/g,'벝');
+	val = val.replace(/vèd/g,'벋');
+	val = val.replace(/vèm/g,'범');
+	val = val.replace(/vèp/g,'벞');
+	val = val.replace(/vèb/g,'법');
+	val = val.replace(/vèc/g,'벟');
+	val = val.replace(/vèf/g,'벒');
+	val = val.replace(/vèv/g,'벖');
+	val = val.replace(/vèk/g,'벜');
+	val = val.replace(/vèg/g,'벅');
+	val = val.replace(/wùd/g,'왣');
+	val = val.replace(/vèq/g,'벙');
+	val = val.replace(/vos/g,'봇');
+	val = val.replace(/voz/g,'봈');
+	val = val.replace(/vol/g,'볼');
+	val = val.replace(/von/g,'본');
+	val = val.replace(/vot/g,'봍');
+	val = val.replace(/vod/g,'볻');
+	val = val.replace(/vom/g,'봄');
+	val = val.replace(/vop/g,'봎');
+	val = val.replace(/vob/g,'봅');
+	val = val.replace(/voc/g,'봏');
+	val = val.replace(/vof/g,'봂');
+	val = val.replace(/vov/g,'봆');
+	val = val.replace(/vok/g,'봌');
+	val = val.replace(/vog/g,'복');
+	val = val.replace(/wùm/g,'왬');
+	val = val.replace(/voq/g,'봉');
+	val = val.replace(/ves/g,'벳');
+	val = val.replace(/vez/g,'벴');
+	val = val.replace(/vel/g,'벨');
+	val = val.replace(/ven/g,'벤');
+	val = val.replace(/vet/g,'벹');
+	val = val.replace(/ved/g,'벧');
+	val = val.replace(/vem/g,'벰');
+	val = val.replace(/vep/g,'벺');
+	val = val.replace(/veb/g,'벱');
+	val = val.replace(/vec/g,'벻');
+	val = val.replace(/vef/g,'벮');
+	val = val.replace(/vev/g,'벲');
+	val = val.replace(/vek/g,'벸');
+	val = val.replace(/veg/g,'벡');
+	val = val.replace(/wùp/g,'왶');
+	val = val.replace(/veq/g,'벵');
+	val = val.replace(/vas/g,'밧');
+	val = val.replace(/vaz/g,'밨');
+	val = val.replace(/val/g,'발');
+	val = val.replace(/van/g,'반');
+	val = val.replace(/vat/g,'밭');
+	val = val.replace(/vad/g,'받');
+	val = val.replace(/vam/g,'밤');
+	val = val.replace(/vap/g,'밮');
+	val = val.replace(/vab/g,'밥');
+	val = val.replace(/vac/g,'밯');
+	val = val.replace(/vaf/g,'밢');
+	val = val.replace(/vav/g,'밦');
+	val = val.replace(/vak/g,'밬');
+	val = val.replace(/vag/g,'박');
+	val = val.replace(/wùb/g,'왭');
+	val = val.replace(/vaq/g,'방');
+	val = val.replace(/vyi/g,'븨');
+	val = val.replace(/vwi/g,'뷔');
+	val = val.replace(/vyu/g,'부');
+	val = val.replace(/vwu/g,'뷰');
+	val = val.replace(/vye/g,'볘');
+	val = val.replace(/vwe/g,'붸');
+	val = val.replace(/vyo/g,'뵤');
+	val = val.replace(/vwo/g,'뵈');
+	val = val.replace(/vyè/g,'벼');
+	val = val.replace(/vwè/g,'붜');
+	val = val.replace(/vyù/g,'뱨');
+	val = val.replace(/vwù/g,'봬');
+	val = val.replace(/vya/g,'뱌');
+	val = val.replace(/vwa/g,'봐');
+	val = val.replace(/shu/g,'스');
+	val = val.replace(/shi/g,'시');
+	val = val.replace(/shù/g,'새');
+	val = val.replace(/shè/g,'서');
+	val = val.replace(/sho/g,'소');
+	val = val.replace(/she/g,'세');
+	val = val.replace(/sha/g,'사');
+	val = val.replace(/zhu/g,'스');
+	val = val.replace(/zhi/g,'시');
+	val = val.replace(/zhù/g,'새');
+	val = val.replace(/zhè/g,'서');
+	val = val.replace(/zho/g,'소');
+	val = val.replace(/zhe/g,'세');
+	val = val.replace(/zha/g,'사');
+	val = val.replace(/chu/g,'즈');
+	val = val.replace(/chi/g,'지');
+	val = val.replace(/chù/g,'재');
+	val = val.replace(/chè/g,'저');
+	val = val.replace(/cho/g,'조');
+	val = val.replace(/che/g,'제');
+	val = val.replace(/cha/g,'자');
+	val = val.replace(/dju/g,'츠');
+	val = val.replace(/dji/g,'치');
+	val = val.replace(/djù/g,'채');
+	val = val.replace(/tsa/g,'따');
+	val = val.replace(/djè/g,'처');
+	val = val.replace(/djo/g,'초');
+	val = val.replace(/dje/g,'체');
+	val = val.replace(/dja/g,'차');
+	val = val.replace(/kus/g,'큿');
+	val = val.replace(/kuz/g,'킀');
+	val = val.replace(/kul/g,'클');
+	val = val.replace(/kun/g,'큰');
+	val = val.replace(/kut/g,'킅');
+	val = val.replace(/kud/g,'큳');
+	val = val.replace(/kum/g,'큼');
+	val = val.replace(/kup/g,'킆');
+	val = val.replace(/kub/g,'큽');
+	val = val.replace(/kuc/g,'킇');
+	val = val.replace(/kuf/g,'큺');
+	val = val.replace(/kuv/g,'큾');
+	val = val.replace(/kuk/g,'킄');
+	val = val.replace(/tse/g,'떼');
+	val = val.replace(/kug/g,'큭');
+	val = val.replace(/wùc/g,'왷');
+	val = val.replace(/kuq/g,'킁');
+	val = val.replace(/kis/g,'킷');
+	val = val.replace(/kiz/g,'킸');
+	val = val.replace(/kil/g,'킬');
+	val = val.replace(/kin/g,'킨');
+	val = val.replace(/kit/g,'킽');
+	val = val.replace(/kid/g,'킫');
+	val = val.replace(/kim/g,'킴');
+	val = val.replace(/kip/g,'킾');
+	val = val.replace(/kib/g,'킵');
+	val = val.replace(/kic/g,'킿');
+	val = val.replace(/kif/g,'킲');
+	val = val.replace(/kiv/g,'킶');
+	val = val.replace(/kik/g,'킼');
+	val = val.replace(/kig/g,'킥');
+	val = val.replace(/tso/g,'또');
+	val = val.replace(/wùf/g,'왪');
+	val = val.replace(/kiq/g,'킹');
+	val = val.replace(/kùs/g,'캣');
+	val = val.replace(/kùz/g,'캤');
+	val = val.replace(/kùl/g,'캘');
+	val = val.replace(/kùn/g,'캔');
+	val = val.replace(/kùt/g,'캩');
+	val = val.replace(/kùd/g,'캗');
+	val = val.replace(/kùm/g,'캠');
+	val = val.replace(/kùp/g,'캪');
+	val = val.replace(/kùb/g,'캡');
+	val = val.replace(/kùc/g,'캫');
+	val = val.replace(/kùf/g,'캞');
+	val = val.replace(/kùv/g,'캢');
+	val = val.replace(/kùk/g,'캨');
+	val = val.replace(/kùg/g,'캑');
+	val = val.replace(/wùv/g,'왮');
+	val = val.replace(/tsè/g,'떠');
+	val = val.replace(/kùq/g,'캥');
+	val = val.replace(/kès/g,'컷');
+	val = val.replace(/kèz/g,'컸');
+	val = val.replace(/kèl/g,'컬');
+	val = val.replace(/kèn/g,'컨');
+	val = val.replace(/kèt/g,'컽');
+	val = val.replace(/kèd/g,'컫');
+	val = val.replace(/kèm/g,'컴');
+	val = val.replace(/kèp/g,'컾');
+	val = val.replace(/kèb/g,'컵');
+	val = val.replace(/kèc/g,'컿');
+	val = val.replace(/kèf/g,'컲');
+	val = val.replace(/kèv/g,'컶');
+	val = val.replace(/kèk/g,'컼');
+	val = val.replace(/kèg/g,'컥');
+	val = val.replace(/wùk/g,'왴');
+	val = val.replace(/kèq/g,'컹');
+	val = val.replace(/tsù/g,'때');
+	val = val.replace(/kos/g,'콧');
+	val = val.replace(/koz/g,'콨');
+	val = val.replace(/kol/g,'콜');
+	val = val.replace(/kon/g,'콘');
+	val = val.replace(/kot/g,'콭');
+	val = val.replace(/kod/g,'콛');
+	val = val.replace(/kom/g,'콤');
+	val = val.replace(/kop/g,'콮');
+	val = val.replace(/kob/g,'콥');
+	val = val.replace(/koc/g,'콯');
+	val = val.replace(/kof/g,'콢');
+	val = val.replace(/kov/g,'콦');
+	val = val.replace(/kok/g,'콬');
+	val = val.replace(/kog/g,'콕');
+	val = val.replace(/wùg/g,'왝');
+	val = val.replace(/koq/g,'콩');
+	val = val.replace(/kes/g,'켓');
+	val = val.replace(/tsi/g,'띠');
+	val = val.replace(/kez/g,'켔');
+	val = val.replace(/kel/g,'켈');
+	val = val.replace(/ken/g,'켄');
+	val = val.replace(/ket/g,'켙');
+	val = val.replace(/ked/g,'켇');
+	val = val.replace(/kem/g,'켐');
+	val = val.replace(/kep/g,'켚');
+	val = val.replace(/keb/g,'켑');
+	val = val.replace(/kec/g,'켛');
+	val = val.replace(/kef/g,'켎');
+	val = val.replace(/kev/g,'켒');
+	val = val.replace(/kek/g,'켘');
+	val = val.replace(/keg/g,'켁');
+	val = val.replace(/sid/g,'찓');
+	val = val.replace(/keq/g,'켕');
+	val = val.replace(/kas/g,'캇');
+	val = val.replace(/kaz/g,'캈');
+	val = val.replace(/tsu/g,'뜨');
+	val = val.replace(/kal/g,'칼');
+	val = val.replace(/kan/g,'칸');
+	val = val.replace(/kat/g,'캍');
+	val = val.replace(/kad/g,'칻');
+	val = val.replace(/kam/g,'캄');
+	val = val.replace(/kap/g,'캎');
+	val = val.replace(/kab/g,'캅');
+	val = val.replace(/kac/g,'캏');
+	val = val.replace(/kaf/g,'캂');
+	val = val.replace(/kav/g,'캆');
+	val = val.replace(/kak/g,'캌');
+	val = val.replace(/kag/g,'칵');
+	val = val.replace(/wùq/g,'왱');
+	val = val.replace(/kaq/g,'캉');
+	val = val.replace(/kyi/g,'킈');
+	val = val.replace(/kwi/g,'퀴');
+	val = val.replace(/kyu/g,'쿠');
+	val = val.replace(/zwa/g,'쏴');
+	val = val.replace(/kwu/g,'큐');
+	val = val.replace(/kye/g,'켸');
+	val = val.replace(/kwe/g,'퀘');
+	val = val.replace(/kyo/g,'쿄');
+	val = val.replace(/kwo/g,'쾨');
+	val = val.replace(/kyè/g,'켜');
+	val = val.replace(/kwè/g,'쿼');
+	val = val.replace(/kyù/g,'컈');
+	val = val.replace(/kwù/g,'쾌');
+	val = val.replace(/kya/g,'캬');
+	val = val.replace(/kwa/g,'콰');
+	val = val.replace(/gus/g,'긋');
+	val = val.replace(/guz/g,'긌');
+	val = val.replace(/gul/g,'글');
+	val = val.replace(/gun/g,'근');
+	val = val.replace(/gut/g,'긑');
+	val = val.replace(/gud/g,'귿');
+	val = val.replace(/zya/g,'쌰');
+	val = val.replace(/gum/g,'금');
+	val = val.replace(/gup/g,'긒');
+	val = val.replace(/gub/g,'급');
+	val = val.replace(/guc/g,'긓');
+	val = val.replace(/guf/g,'긆');
+	val = val.replace(/guv/g,'긊');
+	val = val.replace(/guk/g,'긐');
+	val = val.replace(/gug/g,'극');
+	val = val.replace(/swi/g,'쮜');
+	val = val.replace(/guq/g,'긍');
+	val = val.replace(/gis/g,'깃');
+	val = val.replace(/giz/g,'깄');
+	val = val.replace(/gil/g,'길');
+	val = val.replace(/gin/g,'긴');
+	val = val.replace(/git/g,'깉');
+	val = val.replace(/gid/g,'긷');
+	val = val.replace(/gim/g,'김');
+	val = val.replace(/zwù/g,'쐐');
+	val = val.replace(/gip/g,'깊');
+	val = val.replace(/gib/g,'깁');
+	val = val.replace(/gic/g,'깋');
+	val = val.replace(/gif/g,'긾');
+	val = val.replace(/giv/g,'깂');
+	val = val.replace(/gik/g,'깈');
+	val = val.replace(/gig/g,'긱');
+	val = val.replace(/yas/g,'얏');
+	val = val.replace(/giq/g,'깅');
+	val = val.replace(/gùs/g,'갯');
+	val = val.replace(/gùz/g,'갰');
+	val = val.replace(/gùl/g,'갤');
+	val = val.replace(/gùn/g,'갠');
+	val = val.replace(/gùt/g,'갵');
+	val = val.replace(/gùd/g,'갣');
+	val = val.replace(/gùm/g,'갬');
+	val = val.replace(/gùp/g,'갶');
+	val = val.replace(/zyù/g,'썌');
+	val = val.replace(/gùb/g,'갭');
+	val = val.replace(/gùc/g,'갷');
+	val = val.replace(/gùf/g,'갪');
+	val = val.replace(/gùv/g,'갮');
+	val = val.replace(/gùk/g,'갴');
+	val = val.replace(/gùg/g,'객');
+	val = val.replace(/yaz/g,'얐');
+	val = val.replace(/gùq/g,'갱');
+	val = val.replace(/gès/g,'것');
+	val = val.replace(/gèz/g,'겄');
+	val = val.replace(/gèl/g,'걸');
+	val = val.replace(/gèn/g,'건');
+	val = val.replace(/gèt/g,'겉');
+	val = val.replace(/gèd/g,'걷');
+	val = val.replace(/gèm/g,'검');
+	val = val.replace(/gèp/g,'겊');
+	val = val.replace(/gèb/g,'겁');
+	val = val.replace(/zwè/g,'쒀');
+	val = val.replace(/gèc/g,'겋');
+	val = val.replace(/gèf/g,'걾');
+	val = val.replace(/gèv/g,'겂');
+	val = val.replace(/gèk/g,'겈');
+	val = val.replace(/gèg/g,'걱');
+	val = val.replace(/yal/g,'얄');
+	val = val.replace(/gèq/g,'겅');
+	val = val.replace(/gos/g,'곳');
+	val = val.replace(/goz/g,'곴');
+	val = val.replace(/gol/g,'골');
+	val = val.replace(/gon/g,'곤');
+	val = val.replace(/got/g,'곹');
+	val = val.replace(/god/g,'곧');
+	val = val.replace(/gom/g,'곰');
+	val = val.replace(/gop/g,'곺');
+	val = val.replace(/gob/g,'곱');
+	val = val.replace(/goc/g,'곻');
+	val = val.replace(/zyè/g,'쎠');
+	val = val.replace(/gof/g,'곮');
+	val = val.replace(/gov/g,'곲');
+	val = val.replace(/gok/g,'곸');
+	val = val.replace(/gog/g,'곡');
+	val = val.replace(/yan/g,'얀');
+	val = val.replace(/goq/g,'공');
+	val = val.replace(/ges/g,'겟');
+	val = val.replace(/gez/g,'겠');
+	val = val.replace(/gel/g,'겔');
+	val = val.replace(/gen/g,'겐');
+	val = val.replace(/get/g,'겥');
+	val = val.replace(/ged/g,'겓');
+	val = val.replace(/gem/g,'겜');
+	val = val.replace(/gep/g,'겦');
+	val = val.replace(/geb/g,'겝');
+	val = val.replace(/gec/g,'겧');
+	val = val.replace(/gef/g,'겚');
+	val = val.replace(/zwo/g,'쐬');
+	val = val.replace(/gev/g,'겞');
+	val = val.replace(/gek/g,'겤');
+	val = val.replace(/geg/g,'겍');
+	val = val.replace(/yat/g,'얕');
+	val = val.replace(/geq/g,'겡');
+	val = val.replace(/gas/g,'갓');
+	val = val.replace(/gaz/g,'갔');
+	val = val.replace(/gal/g,'갈');
+	val = val.replace(/gan/g,'간');
+	val = val.replace(/gat/g,'같');
+	val = val.replace(/gad/g,'갇');
+	val = val.replace(/gam/g,'감');
+	val = val.replace(/gap/g,'갚');
+	val = val.replace(/gab/g,'갑');
+	val = val.replace(/gac/g,'갛');
+	val = val.replace(/gaf/g,'갎');
+	val = val.replace(/gav/g,'값');
+	val = val.replace(/zyo/g,'쑈');
+	val = val.replace(/gak/g,'갘');
+	val = val.replace(/gag/g,'각');
+	val = val.replace(/yad/g,'얃');
+	val = val.replace(/gaq/g,'강');
+	val = val.replace(/gyi/g,'긔');
+	val = val.replace(/gwi/g,'귀');
+	val = val.replace(/gyu/g,'구');
+	val = val.replace(/gwu/g,'규');
+	val = val.replace(/gye/g,'계');
+	val = val.replace(/gwe/g,'궤');
+	val = val.replace(/gyo/g,'교');
+	val = val.replace(/gwo/g,'괴');
+	val = val.replace(/gyè/g,'겨');
+	val = val.replace(/gwè/g,'궈');
+	val = val.replace(/gyù/g,'걔');
+	val = val.replace(/gwù/g,'괘');
+	val = val.replace(/gya/g,'갸');
+	val = val.replace(/zwe/g,'쒜');
+	val = val.replace(/gwa/g,'과');
+	val = val.replace(/yam/g,'얌');
+	val = val.replace(/yap/g,'얖');
+	val = val.replace(/yab/g,'얍');
+	val = val.replace(/yac/g,'얗');
+	val = val.replace(/yaf/g,'얊');
+	val = val.replace(/yav/g,'얎');
+	val = val.replace(/yak/g,'얔');
+	val = val.replace(/yag/g,'약');
+	val = val.replace(/sit/g,'찥');
+	val = val.replace(/yaq/g,'양');
+	val = val.replace(/was/g,'왓');
+	val = val.replace(/syi/g,'쯰');
+	val = val.replace(/uch/g,'읒');
+	val = val.replace(/udj/g,'읓');
+	val = val.replace(/waz/g,'왔');
+	val = val.replace(/wal/g,'왈');
+	val = val.replace(/zye/g,'쎼');
+	val = val.replace(/wan/g,'완');
+	val = val.replace(/wat/g,'왙');
+	val = val.replace(/wad/g,'왇');
+	val = val.replace(/wam/g,'왐');
+	val = val.replace(/wap/g,'왚');
+	val = val.replace(/wab/g,'왑');
+	val = val.replace(/wac/g,'왛');
+	val = val.replace(/waf/g,'왎');
+	val = val.replace(/wav/g,'왒');
+	val = val.replace(/wak/g,'왘');
+	val = val.replace(/wag/g,'왁');
+	val = val.replace(/sin/g,'찐');
+	val = val.replace(/waq/g,'왕');
+	val = val.replace(/sil/g,'찔');
+	val = val.replace(/ich/g,'잊');
+	val = val.replace(/idj/g,'잋');
+	val = val.replace(/saq/g,'짱');
+	val = val.replace(/zwu/g,'쓔');
+	val = val.replace(/siz/g,'찠');
+	val = val.replace(/sag/g,'짝');
+	val = val.replace(/sak/g,'짴');
+	val = val.replace(/sis/g,'찟');
+	val = val.replace(/suq/g,'쯩');
+	val = val.replace(/sav/g,'짮');
+	val = val.replace(/saf/g,'짪');
+	val = val.replace(/sac/g,'짷');
+	val = val.replace(/sab/g,'짭');
+	val = val.replace(/sap/g,'짶');
+	val = val.replace(/sam/g,'짬');
+	val = val.replace(/sad/g,'짣');
+	val = val.replace(/sat/g,'짵');
+	val = val.replace(/san/g,'짠');
+	val = val.replace(/sal/g,'짤');
+	val = val.replace(/ùch/g,'앶');
+	val = val.replace(/ùdj/g,'앷');
+	val = val.replace(/zyu/g,'쑤');
+	val = val.replace(/saz/g,'짰');
+	val = val.replace(/sas/g,'짯');
+	val = val.replace(/seq/g,'쩽');
+	val = val.replace(/sus/g,'쯧');
+	val = val.replace(/seg/g,'쩩');
+	val = val.replace(/sek/g,'쪀');
+	val = val.replace(/sug/g,'쯕');
+	val = val.replace(/suk/g,'쯬');
+	val = val.replace(/sev/g,'쩺');
+	val = val.replace(/sef/g,'쩶');
+	val = val.replace(/sec/g,'쪃');
+	val = val.replace(/seb/g,'쩹');
+	val = val.replace(/sep/g,'쪂');
+	val = val.replace(/sem/g,'쩸');
+	val = val.replace(/sed/g,'쩯');
+	val = val.replace(/set/g,'쪁');
+	val = val.replace(/èch/g,'엊');
+	val = val.replace(/zwi/g,'쒸');
+	val = val.replace(/èdj/g,'엋');
+	val = val.replace(/sen/g,'쩬');
+	val = val.replace(/sel/g,'쩰');
+	val = val.replace(/sez/g,'쩼');
+	val = val.replace(/ses/g,'쩻');
+	val = val.replace(/soq/g,'쫑');
+	val = val.replace(/-ch/g,'ㅈ');
+	val = val.replace(/sog/g,'쪽');
+	val = val.replace(/sok/g,'쫔');
+	val = val.replace(/-dj/g,'ㅊ');
+	val = val.replace(/suv/g,'쯦');
+	val = val.replace(/sov/g,'쫎');
+	val = val.replace(/sof/g,'쫊');
+	val = val.replace(/soc/g,'쫗');
+	val = val.replace(/sob/g,'쫍');
+	val = val.replace(/sop/g,'쫖');
+	val = val.replace(/som/g,'쫌');
+	val = val.replace(/zyi/g,'씌');
+	val = val.replace(/och/g,'옺');
+	val = val.replace(/odj/g,'옻');
+	val = val.replace(/sod/g,'쫃');
+	val = val.replace(/sot/g,'쫕');
+	val = val.replace(/son/g,'쫀');
+	val = val.replace(/sol/g,'쫄');
+	val = val.replace(/soz/g,'쫐');
+	val = val.replace(/sos/g,'쫏');
+	val = val.replace(/sèq/g,'쩡');
+	val = val.replace(/suf/g,'쯢');
+	val = val.replace(/sèg/g,'쩍');
+	val = val.replace(/sèk/g,'쩤');
+	val = val.replace(/suc/g,'쯯');
+	val = val.replace(/sub/g,'쯥');
+	val = val.replace(/sèv/g,'쩞');
+	val = val.replace(/sèf/g,'쩚');
+	val = val.replace(/zaq/g,'쌍');
+	val = val.replace(/sèc/g,'쩧');
+	val = val.replace(/zag/g,'싹');
+	val = val.replace(/zak/g,'쌐');
+	val = val.replace(/sèb/g,'쩝');
+	val = val.replace(/sèp/g,'쩦');
+	val = val.replace(/zav/g,'쌊');
+	val = val.replace(/zaf/g,'쌆');
+	val = val.replace(/zac/g,'쌓');
+	val = val.replace(/zab/g,'쌉');
+	val = val.replace(/zap/g,'쌒');
+	val = val.replace(/zam/g,'쌈');
+	val = val.replace(/zad/g,'싿');
+	val = val.replace(/zat/g,'쌑');
+	val = val.replace(/zan/g,'싼');
+	val = val.replace(/zal/g,'쌀');
+	val = val.replace(/zaz/g,'쌌');
+	val = val.replace(/zas/g,'쌋');
+	val = val.replace(/zeq/g,'쎙');
+	val = val.replace(/sèm/g,'쩜');
+	val = val.replace(/zeg/g,'쎅');
+	val = val.replace(/zek/g,'쎜');
+	val = val.replace(/ech/g,'엦');
+	val = val.replace(/edj/g,'엧');
+	val = val.replace(/zev/g,'쎖');
+	val = val.replace(/zef/g,'쎒');
+	val = val.replace(/zec/g,'쎟');
+	val = val.replace(/zeb/g,'쎕');
+	val = val.replace(/zep/g,'쎞');
+	val = val.replace(/zem/g,'쎔');
+	val = val.replace(/zed/g,'쎋');
+	val = val.replace(/zet/g,'쎝');
+	val = val.replace(/zen/g,'쎈');
+	val = val.replace(/zel/g,'쎌');
+	val = val.replace(/zez/g,'쎘');
+	val = val.replace(/zes/g,'쎗');
+	val = val.replace(/zoq/g,'쏭');
+	val = val.replace(/sèd/g,'쩓');
+	val = val.replace(/zog/g,'쏙');
+	val = val.replace(/zok/g,'쏰');
+	val = val.replace(/sèt/g,'쩥');
+	val = val.replace(/sèn/g,'쩐');
+	val = val.replace(/zov/g,'쏪');
+	val = val.replace(/zof/g,'쏦');
+	val = val.replace(/zoc/g,'쏳');
+	val = val.replace(/zob/g,'쏩');
+	val = val.replace(/zop/g,'쏲');
+	val = val.replace(/zom/g,'쏨');
+	val = val.replace(/zod/g,'쏟');
+	val = val.replace(/zot/g,'쏱');
+	val = val.replace(/zon/g,'쏜');
+	val = val.replace(/zol/g,'쏠');
+	val = val.replace(/zoz/g,'쏬');
+	val = val.replace(/zos/g,'쏫');
+	val = val.replace(/zèq/g,'썽');
+	val = val.replace(/sèl/g,'쩔');
+	val = val.replace(/zèg/g,'썩');
+	val = val.replace(/zèk/g,'쎀');
+	val = val.replace(/sèz/g,'쩠');
+	val = val.replace(/sès/g,'쩟');
+	val = val.replace(/zèv/g,'썺');
+	val = val.replace(/zèf/g,'썶');
+	val = val.replace(/zèc/g,'쎃');
+	val = val.replace(/zèb/g,'썹');
+	val = val.replace(/zèp/g,'쎂');
+	val = val.replace(/zèm/g,'썸');
+	val = val.replace(/zèd/g,'썯');
+	val = val.replace(/zèt/g,'쎁');
+	val = val.replace(/zèn/g,'썬');
+	val = val.replace(/zèl/g,'썰');
+	val = val.replace(/zèz/g,'썼');
+	val = val.replace(/zès/g,'썻');
+	val = val.replace(/zùq/g,'쌩');
+	val = val.replace(/sùq/g,'쨍');
+	val = val.replace(/zùg/g,'쌕');
+	val = val.replace(/zùk/g,'쌬');
+	val = val.replace(/sup/g,'쯮');
+	val = val.replace(/sùg/g,'짹');
+	val = val.replace(/zùv/g,'쌦');
+	val = val.replace(/zùf/g,'쌢');
+	val = val.replace(/zùc/g,'쌯');
+	val = val.replace(/zùb/g,'쌥');
+	val = val.replace(/zùp/g,'쌮');
+	val = val.replace(/zùm/g,'쌤');
+	val = val.replace(/zùd/g,'쌛');
+	val = val.replace(/zùt/g,'쌭');
+	val = val.replace(/zùn/g,'쌘');
+	val = val.replace(/zùl/g,'쌜');
+	val = val.replace(/zùz/g,'쌨');
+	val = val.replace(/zùs/g,'쌧');
+	val = val.replace(/ziq/g,'씽');
+	val = val.replace(/sùk/g,'쨐');
+	val = val.replace(/zig/g,'씩');
+	val = val.replace(/zik/g,'앀');
+	val = val.replace(/sum/g,'쯤');
+	val = val.replace(/sud/g,'쯛');
+	val = val.replace(/ziv/g,'씺');
+	val = val.replace(/zif/g,'씶');
+	val = val.replace(/zic/g,'앃');
+	val = val.replace(/zib/g,'씹');
+	val = val.replace(/zip/g,'앂');
+	val = val.replace(/zim/g,'씸');
+	val = val.replace(/zid/g,'씯');
+	val = val.replace(/zit/g,'앁');
+	val = val.replace(/zin/g,'씬');
+	val = val.replace(/zil/g,'씰');
+	val = val.replace(/ziz/g,'씼');
+	val = val.replace(/zis/g,'씻');
+	val = val.replace(/zuq/g,'씅');
+	val = val.replace(/sùv/g,'쨊');
+	val = val.replace(/zug/g,'쓱');
+	val = val.replace(/zuk/g,'씈');
+	val = val.replace(/sùf/g,'쨆');
+	val = val.replace(/sùc/g,'쨓');
+	val = val.replace(/zuv/g,'씂');
+	val = val.replace(/zuf/g,'쓾');
+	val = val.replace(/zuc/g,'씋');
+	val = val.replace(/zub/g,'씁');
+	val = val.replace(/zup/g,'씊');
+	val = val.replace(/zum/g,'씀');
+	val = val.replace(/zud/g,'쓷');
+	val = val.replace(/zut/g,'씉');
+	val = val.replace(/zun/g,'쓴');
+	val = val.replace(/zul/g,'쓸');
+	val = val.replace(/zuz/g,'씄');
+	val = val.replace(/zus/g,'씃');
+	val = val.replace(/sùb/g,'쨉');
+	val = val.replace(/swa/g,'쫘');
+	val = val.replace(/sùp/g,'쨒');
+	val = val.replace(/sùm/g,'쨈');
+	val = val.replace(/sùd/g,'짿');
+	val = val.replace(/sùt/g,'쨑');
+	val = val.replace(/sùn/g,'짼');
+	val = val.replace(/ach/g,'앚');
+	val = val.replace(/adj/g,'앛');
+	val = val.replace(/sùl/g,'쨀');
+	val = val.replace(/sùz/g,'쨌');
+	val = val.replace(/sùs/g,'쨋');
+	val = val.replace(/siq/g,'찡');
+	val = val.replace(/yis/g,'읫');
+	val = val.replace(/yiz/g,'읬');
+	val = val.replace(/yil/g,'읠');
+	val = val.replace(/yin/g,'읜');
+	val = val.replace(/yit/g,'읱');
+	val = val.replace(/yid/g,'읟');
+	val = val.replace(/sya/g,'쨔');
+	val = val.replace(/yim/g,'읨');
+	val = val.replace(/yip/g,'읲');
+	val = val.replace(/yib/g,'읩');
+	val = val.replace(/yic/g,'읳');
+	val = val.replace(/yif/g,'읦');
+	val = val.replace(/yiv/g,'읪');
+	val = val.replace(/yik/g,'읰');
+	val = val.replace(/yig/g,'읙');
+	val = val.replace(/sut/g,'쯭');
+	val = val.replace(/yiq/g,'읭');
+	val = val.replace(/wis/g,'윗');
+	val = val.replace(/wiz/g,'윘');
+	val = val.replace(/wil/g,'윌');
+	val = val.replace(/win/g,'윈');
+	val = val.replace(/wit/g,'윝');
+	val = val.replace(/wid/g,'윋');
+	val = val.replace(/wim/g,'윔');
+	val = val.replace(/swù/g,'쫴');
+	val = val.replace(/wip/g,'윞');
+	val = val.replace(/wib/g,'윕');
+	val = val.replace(/wic/g,'윟');
+	val = val.replace(/wif/g,'윒');
+	val = val.replace(/wiv/g,'윖');
+	val = val.replace(/wik/g,'윜');
+	val = val.replace(/wig/g,'윅');
+	val = val.replace(/sig/g,'찍');
+	val = val.replace(/wiq/g,'윙');
+	val = val.replace(/yus/g,'웃');
+	val = val.replace(/yuz/g,'웄');
+	val = val.replace(/yul/g,'울');
+	val = val.replace(/yun/g,'운');
+	val = val.replace(/yut/g,'웉');
+	val = val.replace(/yud/g,'욷');
+	val = val.replace(/yum/g,'움');
+	val = val.replace(/yup/g,'웊');
+	val = val.replace(/syù/g,'쨰');
+	val = val.replace(/yub/g,'웁');
+	val = val.replace(/yuc/g,'웋');
+	val = val.replace(/yuf/g,'욾');
+	val = val.replace(/yuv/g,'웂');
+	val = val.replace(/yuk/g,'웈');
+	val = val.replace(/yug/g,'욱');
+	val = val.replace(/sik/g,'찤');
+	val = val.replace(/yuq/g,'웅');
+	val = val.replace(/wus/g,'윳');
+	val = val.replace(/wuz/g,'윴');
+	val = val.replace(/wul/g,'율');
+	val = val.replace(/wun/g,'윤');
+	val = val.replace(/wut/g,'윹');
+	val = val.replace(/wud/g,'윧');
+	val = val.replace(/wum/g,'윰');
+	val = val.replace(/wup/g,'윺');
+	val = val.replace(/wub/g,'윱');
+	val = val.replace(/swè/g,'쭤');
+	val = val.replace(/wuc/g,'윻');
+	val = val.replace(/wuf/g,'윮');
+	val = val.replace(/wuv/g,'윲');
+	val = val.replace(/wuk/g,'윸');
+	val = val.replace(/wug/g,'육');
+	val = val.replace(/sun/g,'쯘');
+	val = val.replace(/wuq/g,'융');
+	val = val.replace(/yes/g,'옛');
+	val = val.replace(/yez/g,'옜');
+	val = val.replace(/yel/g,'옐');
+	val = val.replace(/yen/g,'옌');
+	val = val.replace(/yet/g,'옡');
+	val = val.replace(/yed/g,'옏');
+	val = val.replace(/yem/g,'옘');
+	val = val.replace(/yep/g,'옢');
+	val = val.replace(/yeb/g,'옙');
+	val = val.replace(/yec/g,'옣');
+	val = val.replace(/syè/g,'쪄');
+	val = val.replace(/yef/g,'옖');
+	val = val.replace(/yev/g,'옚');
+	val = val.replace(/yek/g,'옠');
+	val = val.replace(/yeg/g,'옉');
+	val = val.replace(/sul/g,'쯜');
+	val = val.replace(/yeq/g,'옝');
+	val = val.replace(/wes/g,'웻');
+	val = val.replace(/wez/g,'웼');
+	val = val.replace(/wel/g,'웰');
+	val = val.replace(/wen/g,'웬');
+	val = val.replace(/wet/g,'윁');
+	val = val.replace(/wed/g,'웯');
+	val = val.replace(/wem/g,'웸');
+	val = val.replace(/wep/g,'윂');
+	val = val.replace(/web/g,'웹');
+	val = val.replace(/wec/g,'윃');
+	val = val.replace(/wef/g,'웶');
+	val = val.replace(/swo/g,'쬐');
+	val = val.replace(/wev/g,'웺');
+	val = val.replace(/wek/g,'윀');
+	val = val.replace(/weg/g,'웩');
+	val = val.replace(/siv/g,'찞');
+	val = val.replace(/weq/g,'웽');
+	val = val.replace(/yos/g,'욧');
+	val = val.replace(/yoz/g,'욨');
+	val = val.replace(/yol/g,'욜');
+	val = val.replace(/yon/g,'욘');
+	val = val.replace(/yot/g,'욭');
+	val = val.replace(/yod/g,'욛');
+	val = val.replace(/yom/g,'욤');
+	val = val.replace(/yop/g,'욮');
+	val = val.replace(/yob/g,'욥');
+	val = val.replace(/yoc/g,'욯');
+	val = val.replace(/yof/g,'욢');
+	val = val.replace(/yov/g,'욦');
+	val = val.replace(/syo/g,'쬬');
+	val = val.replace(/yok/g,'욬');
+	val = val.replace(/yog/g,'욕');
+	val = val.replace(/sif/g,'찚');
+	val = val.replace(/yoq/g,'용');
+	val = val.replace(/wos/g,'욋');
+	val = val.replace(/tu/g,'트');
+	val = val.replace(/ti/g,'티');
+	val = val.replace(/tù/g,'태');
+	val = val.replace(/tè/g,'터');
+	val = val.replace(/to/g,'토');
+	val = val.replace(/te/g,'테');
+	val = val.replace(/ta/g,'타');
+	val = val.replace(/du/g,'드');
+	val = val.replace(/di/g,'디');
+	val = val.replace(/dù/g,'대');
+	val = val.replace(/dè/g,'더');
+	val = val.replace(/do/g,'도');
+	val = val.replace(/de/g,'데');
+	val = val.replace(/da/g,'다');
+	val = val.replace(/ru/g,'르');
+	val = val.replace(/na/g,'나');
+	val = val.replace(/ne/g,'네');
+	val = val.replace(/no/g,'노');
+	val = val.replace(/nè/g,'너');
+	val = val.replace(/nù/g,'내');
+	val = val.replace(/ni/g,'니');
+	val = val.replace(/nu/g,'느');
+	val = val.replace(/ri/g,'리');
+	val = val.replace(/rù/g,'래');
+	val = val.replace(/rè/g,'러');
+	val = val.replace(/ro/g,'로');
+	val = val.replace(/re/g,'레');
+	val = val.replace(/ra/g,'라');
+	val = val.replace(/mu/g,'므');
+	val = val.replace(/mi/g,'미');
+	val = val.replace(/mù/g,'매');
+	val = val.replace(/mè/g,'머');
+	val = val.replace(/mo/g,'모');
+	val = val.replace(/me/g,'메');
+	val = val.replace(/ma/g,'마');
+	val = val.replace(/pu/g,'프');
+	val = val.replace(/la/g,'라');
+	val = val.replace(/le/g,'레');
+	val = val.replace(/lo/g,'로');
+	val = val.replace(/lè/g,'러');
+	val = val.replace(/lù/g,'래');
+	val = val.replace(/li/g,'리');
+	val = val.replace(/lu/g,'르');
+	val = val.replace(/pi/g,'피');
+	val = val.replace(/pù/g,'패');
+	val = val.replace(/pè/g,'퍼');
+	val = val.replace(/po/g,'포');
+	val = val.replace(/pe/g,'페');
+	val = val.replace(/pa/g,'파');
+	val = val.replace(/bu/g,'브');
+	val = val.replace(/bi/g,'비');
+	val = val.replace(/bù/g,'배');
+	val = val.replace(/bè/g,'버');
+	val = val.replace(/bo/g,'보');
+	val = val.replace(/be/g,'베');
+	val = val.replace(/ba/g,'바');
+	val = val.replace(/cu/g,'흐');
+	val = val.replace(/ci/g,'히');
+	val = val.replace(/cù/g,'해');
+	val = val.replace(/cè/g,'허');
+	val = val.replace(/co/g,'호');
+	val = val.replace(/ce/g,'헤');
+	val = val.replace(/ca/g,'하');
+	val = val.replace(/fu/g,'프');
+	val = val.replace(/fi/g,'피');
+	val = val.replace(/fù/g,'패');
+	val = val.replace(/fè/g,'퍼');
+	val = val.replace(/fo/g,'포');
+	val = val.replace(/fe/g,'페');
+	val = val.replace(/fa/g,'파');
+	val = val.replace(/vu/g,'브');
+	val = val.replace(/vi/g,'비');
+	val = val.replace(/vù/g,'배');
+	val = val.replace(/vè/g,'버');
+	val = val.replace(/vo/g,'보');
+	val = val.replace(/ve/g,'베');
+	val = val.replace(/va/g,'바');
+	val = val.replace(/ku/g,'크');
+	val = val.replace(/ki/g,'키');
+	val = val.replace(/kù/g,'캐');
+	val = val.replace(/kè/g,'커');
+	val = val.replace(/ko/g,'코');
+	val = val.replace(/ke/g,'케');
+	val = val.replace(/ka/g,'카');
+	val = val.replace(/gu/g,'그');
+	val = val.replace(/gi/g,'기');
+	val = val.replace(/gù/g,'개');
+	val = val.replace(/gè/g,'거');
+	val = val.replace(/go/g,'고');
+	val = val.replace(/ge/g,'게');
+	val = val.replace(/ga/g,'가');
+	val = val.replace(/us/g,'읏');
+	val = val.replace(/uz/g,'읐');
+	val = val.replace(/ul/g,'을');
+	val = val.replace(/un/g,'은');
+	val = val.replace(/ut/g,'읕');
+	val = val.replace(/ud/g,'읃');
+	val = val.replace(/um/g,'음');
+	val = val.replace(/up/g,'읖');
+	val = val.replace(/ub/g,'읍');
+	val = val.replace(/uc/g,'읗');
+	val = val.replace(/uf/g,'읊');
+	val = val.replace(/uv/g,'읎');
+	val = val.replace(/uk/g,'읔');
+	val = val.replace(/ug/g,'윽');
+	val = val.replace(/sù/g,'째');
+	val = val.replace(/uq/g,'응');
+	val = val.replace(/is/g,'잇');
+	val = val.replace(/iz/g,'있');
+	val = val.replace(/il/g,'일');
+	val = val.replace(/in/g,'인');
+	val = val.replace(/it/g,'잍');
+	val = val.replace(/id/g,'읻');
+	val = val.replace(/im/g,'임');
+	val = val.replace(/ip/g,'잎');
+	val = val.replace(/ib/g,'입');
+	val = val.replace(/ic/g,'잏');
+	val = val.replace(/if/g,'잂');
+	val = val.replace(/iv/g,'잆');
+	val = val.replace(/ik/g,'잌');
+	val = val.replace(/ig/g,'익');
+	val = val.replace(/-g/g,'ㄱ');
+	val = val.replace(/su/g,'쯔');
+	val = val.replace(/ùs/g,'앳');
+	val = val.replace(/ùz/g,'앴');
+	val = val.replace(/ùl/g,'앨');
+	val = val.replace(/ùn/g,'앤');
+	val = val.replace(/ùt/g,'앹');
+	val = val.replace(/ùd/g,'앧');
+	val = val.replace(/ùm/g,'앰');
+	val = val.replace(/ùp/g,'앺');
+	val = val.replace(/ùb/g,'앱');
+	val = val.replace(/ùc/g,'앻');
+	val = val.replace(/ùf/g,'앮');
+	val = val.replace(/ùv/g,'앲');
+	val = val.replace(/ùk/g,'앸');
+	val = val.replace(/ùg/g,'액');
+	val = val.replace(/-s/g,'ㅅ');
+	val = val.replace(/ùq/g,'앵');
+	val = val.replace(/ès/g,'엇');
+	val = val.replace(/èz/g,'었');
+	val = val.replace(/èl/g,'얼');
+	val = val.replace(/èn/g,'언');
+	val = val.replace(/èt/g,'엍');
+	val = val.replace(/èd/g,'얻');
+	val = val.replace(/èm/g,'엄');
+	val = val.replace(/èp/g,'엎');
+	val = val.replace(/èb/g,'업');
+	val = val.replace(/èc/g,'엏');
+	val = val.replace(/èf/g,'엂');
+	val = val.replace(/èv/g,'없');
+	val = val.replace(/èk/g,'엌');
+	val = val.replace(/èg/g,'억');
+	val = val.replace(/si/g,'찌');
+	val = val.replace(/èq/g,'엉');
+	val = val.replace(/os/g,'옷');
+	val = val.replace(/oz/g,'옸');
+	val = val.replace(/ol/g,'올');
+	val = val.replace(/on/g,'온');
+	val = val.replace(/ot/g,'옽');
+	val = val.replace(/od/g,'옫');
+	val = val.replace(/om/g,'옴');
+	val = val.replace(/op/g,'옾');
+	val = val.replace(/ob/g,'옵');
+	val = val.replace(/oc/g,'옿');
+	val = val.replace(/of/g,'옲');
+	val = val.replace(/ov/g,'옶');
+	val = val.replace(/ok/g,'옼');
+	val = val.replace(/og/g,'옥');
+	val = val.replace(/-z/g,'ㅆ');
+	val = val.replace(/oq/g,'옹');
+	val = val.replace(/es/g,'엣');
+	val = val.replace(/ez/g,'엤');
+	val = val.replace(/el/g,'엘');
+	val = val.replace(/en/g,'엔');
+	val = val.replace(/et/g,'엩');
+	val = val.replace(/ed/g,'엗');
+	val = val.replace(/em/g,'엠');
+	val = val.replace(/ep/g,'엪');
+	val = val.replace(/eb/g,'엡');
+	val = val.replace(/ec/g,'엫');
+	val = val.replace(/za/g,'싸');
+	val = val.replace(/ef/g,'엞');
+	val = val.replace(/ev/g,'엢');
+	val = val.replace(/ze/g,'쎄');
+	val = val.replace(/zo/g,'쏘');
+	val = val.replace(/ek/g,'엨');
+	val = val.replace(/eg/g,'엑');
+	val = val.replace(/zè/g,'써');
+	val = val.replace(/-l/g,'ㅉ');
+	val = val.replace(/eq/g,'엥');
+	val = val.replace(/zù/g,'쌔');
+	val = val.replace(/as/g,'앗');
+	val = val.replace(/az/g,'았');
+	val = val.replace(/zi/g,'씨');
+	val = val.replace(/al/g,'알');
+	val = val.replace(/an/g,'안');
+	val = val.replace(/zu/g,'쓰');
+	val = val.replace(/at/g,'앝');
+	val = val.replace(/ad/g,'앋');
+	val = val.replace(/am/g,'암');
+	val = val.replace(/ap/g,'앞');
+	val = val.replace(/ab/g,'압');
+	val = val.replace(/ac/g,'앟');
+	val = val.replace(/af/g,'앒');
+	val = val.replace(/av/g,'앖');
+	val = val.replace(/ak/g,'앜');
+	val = val.replace(/ag/g,'악');
+	val = val.replace(/-c/g,'ㅎ');
+	val = val.replace(/aq/g,'앙');
+	val = val.replace(/yi/g,'의');
+	val = val.replace(/wi/g,'위');
+	val = val.replace(/yu/g,'우');
+	val = val.replace(/wu/g,'유');
+	val = val.replace(/ye/g,'예');
+	val = val.replace(/we/g,'웨');
+	val = val.replace(/yo/g,'요');
+	val = val.replace(/wo/g,'외');
+	val = val.replace(/yè/g,'여');
+	val = val.replace(/wè/g,'워');
+	val = val.replace(/yù/g,'얘');
+	val = val.replace(/wù/g,'왜');
+	val = val.replace(/ya/g,'야');
+	val = val.replace(/wa/g,'와');
+	val = val.replace(/-m/g,'ㅁ');
+	val = val.replace(/sa/g,'짜');
+	val = val.replace(/-n/g,'ㄴ');
+	val = val.replace(/-p/g,'ㅍ');
+	val = val.replace(/se/g,'쩨');
+	val = val.replace(/-f/g,'ㄿ');
+	val = val.replace(/-b/g,'ㅂ');
+	val = val.replace(/so/g,'쪼');
+	val = val.replace(/-v/g,'ㅄ');
+	val = val.replace(/-t/g,'ㅌ');
+	val = val.replace(/sè/g,'쩌');
+	val = val.replace(/-d/g,'ㄷ');
+	val = val.replace(/-k/g,'ㅋ');
+	val = val.replace(/iq/g,'잉');
+	val = val.replace(/u/g,'으');
+	val = val.replace(/i/g,'이');
+	val = val.replace(/ù/g,'애');
+	val = val.replace(/è/g,'어');
+	val = val.replace(/o/g,'오');
+	val = val.replace(/e/g,'에');
+	val = val.replace(/a/g,'아');
 	return val;
 }
