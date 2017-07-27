@@ -49,9 +49,6 @@
 			  var val = text.value;
 			  val = val.replace(/eh/g, "\u00e8");
 			  val = val.replace(/uh/g, "\u00f9");
-			  val = val.replace(/f([aieouèù])/g, "v$1")
-			  val = val.replace(/b([aieouèù])/g, "v$1")
-			  val = val.replace(/r([aieouèù])/g, "v$1")
 			  text.value = val;
 			  /*for(r in rep) {
 				var re = new RegExp(r, 'g');
